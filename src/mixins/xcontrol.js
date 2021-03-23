@@ -2,8 +2,11 @@
 
 export default {
     mounted() {
+        debugger
         this.ctrllist()
+        debugger
         this.skin_styles()
+        debugger
     },
     methods: {
         // Build / rebuild component list
