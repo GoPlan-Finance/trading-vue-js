@@ -1,5 +1,5 @@
 /*!
- * TradingVue.JS - v1.0.1 - Tue Mar 23 2021
+ * TradingVue.JS - v1.0.1 - Thu Mar 25 2021
  *     https://github.com/tvjsx/trading-vue-js
  *     Copyright (c) 2019 C451 Code's All Right;
  *     Licensed under the MIT license
@@ -97,7 +97,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 35);
+/******/ 	return __webpack_require__(__webpack_require__.s = 78);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -157,10 +157,10 @@ return /******/ (function(modules) { // webpackBootstrap
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "B", function() { return remove; });
 /* unused harmony export slotFlagsText */
 /* unused harmony export stringifyStyle */
-/* unused harmony export toDisplayString */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "C", function() { return toHandlerKey; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "D", function() { return toNumber; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "E", function() { return toRawType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "C", function() { return toDisplayString; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "D", function() { return toHandlerKey; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "E", function() { return toNumber; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "F", function() { return toRawType; });
 /* unused harmony export toTypeString */
 /**
  * Make a map and return a function for checking if a key
@@ -659,7 +659,7 @@ const getGlobalThis = () => {
 
 
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(13)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18)))
 
 /***/ }),
 /* 1 */
@@ -1220,10 +1220,62 @@ const getGlobalThis = () => {
 
 
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(13)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18)))
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+module.exports = _classCallCheck;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithoutHoles = __webpack_require__(40);
+
+var iterableToArray = __webpack_require__(41);
+
+var unsupportedIterableToArray = __webpack_require__(22);
+
+var nonIterableSpread = __webpack_require__(42);
+
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
+}
+
+module.exports = _toConsumableArray;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+module.exports = _createClass;
+
+/***/ }),
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1781,69 +1833,3052 @@ const getGlobalThis = () => {
 
 
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(13)))
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-module.exports = _classCallCheck;
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports) {
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-module.exports = _createClass;
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithoutHoles = __webpack_require__(24);
-
-var iterableToArray = __webpack_require__(25);
-
-var unsupportedIterableToArray = __webpack_require__(19);
-
-var nonIterableSpread = __webpack_require__(26);
-
-function _toConsumableArray(arr) {
-  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
-}
-
-module.exports = _toConsumableArray;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18)))
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(30);
+var arrayWithHoles = __webpack_require__(43);
 
+var iterableToArrayLimit = __webpack_require__(44);
+
+var unsupportedIterableToArray = __webpack_require__(22);
+
+var nonIterableRest = __webpack_require__(45);
+
+function _slicedToArray(arr, i) {
+  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
+}
+
+module.exports = _slicedToArray;
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+// eslint-disable-next-line func-names
+module.exports = function (useSourceMap) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item, useSourceMap);
+
+      if (item[2]) {
+        return "@media ".concat(item[2], " {").concat(content, "}");
+      }
+
+      return content;
+    }).join('');
+  }; // import a list of modules into the list
+  // eslint-disable-next-line func-names
+
+
+  list.i = function (modules, mediaQuery, dedupe) {
+    if (typeof modules === 'string') {
+      // eslint-disable-next-line no-param-reassign
+      modules = [[null, modules, '']];
+    }
+
+    var alreadyImportedModules = {};
+
+    if (dedupe) {
+      for (var i = 0; i < this.length; i++) {
+        // eslint-disable-next-line prefer-destructuring
+        var id = this[i][0];
+
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+
+    for (var _i = 0; _i < modules.length; _i++) {
+      var item = [].concat(modules[_i]);
+
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        // eslint-disable-next-line no-continue
+        continue;
+      }
+
+      if (mediaQuery) {
+        if (!item[2]) {
+          item[2] = mediaQuery;
+        } else {
+          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
+        }
+      }
+
+      list.push(item);
+    }
+  };
+
+  return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring
+
+  var cssMapping = item[3];
+
+  if (!cssMapping) {
+    return content;
+  }
+
+  if (useSourceMap && typeof btoa === 'function') {
+    var sourceMapping = toComment(cssMapping);
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return "/*# sourceURL=".concat(cssMapping.sourceRoot || '').concat(source, " */");
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+  }
+
+  return [content].join('\n');
+} // Adapted from convert-source-map (MIT)
+
+
+function toComment(sourceMap) {
+  // eslint-disable-next-line no-undef
+  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+  var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
+  return "/*# ".concat(data, " */");
+}
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "default", function() { return /* binding */ addStylesClient; });
+
+// CONCATENATED MODULE: ./node_modules/vue-style-loader/lib/listToStyles.js
+/**
+ * Translates the list format produced by css-loader into something
+ * easier to manipulate.
+ */
+function listToStyles (parentId, list) {
+  var styles = []
+  var newStyles = {}
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i]
+    var id = item[0]
+    var css = item[1]
+    var media = item[2]
+    var sourceMap = item[3]
+    var part = {
+      id: parentId + ':' + i,
+      css: css,
+      media: media,
+      sourceMap: sourceMap
+    }
+    if (!newStyles[id]) {
+      styles.push(newStyles[id] = { id: id, parts: [part] })
+    } else {
+      newStyles[id].parts.push(part)
+    }
+  }
+  return styles
+}
+
+// CONCATENATED MODULE: ./node_modules/vue-style-loader/lib/addStylesClient.js
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+  Modified by Evan You @yyx990803
+*/
+
+
+
+var hasDocument = typeof document !== 'undefined'
+
+if (typeof DEBUG !== 'undefined' && DEBUG) {
+  if (!hasDocument) {
+    throw new Error(
+    'vue-style-loader cannot be used in a non-browser environment. ' +
+    "Use { target: 'node' } in your Webpack config to indicate a server-rendering environment."
+  ) }
+}
+
+/*
+type StyleObject = {
+  id: number;
+  parts: Array<StyleObjectPart>
+}
+
+type StyleObjectPart = {
+  css: string;
+  media: string;
+  sourceMap: ?string
+}
+*/
+
+var stylesInDom = {/*
+  [id: number]: {
+    id: number,
+    refs: number,
+    parts: Array<(obj?: StyleObjectPart) => void>
+  }
+*/}
+
+var head = hasDocument && (document.head || document.getElementsByTagName('head')[0])
+var singletonElement = null
+var singletonCounter = 0
+var isProduction = false
+var noop = function () {}
+var options = null
+var ssrIdKey = 'data-vue-ssr-id'
+
+// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+// tags it will allow on a page
+var isOldIE = typeof navigator !== 'undefined' && /msie [6-9]\b/.test(navigator.userAgent.toLowerCase())
+
+function addStylesClient (parentId, list, _isProduction, _options) {
+  isProduction = _isProduction
+
+  options = _options || {}
+
+  var styles = listToStyles(parentId, list)
+  addStylesToDom(styles)
+
+  return function update (newList) {
+    var mayRemove = []
+    for (var i = 0; i < styles.length; i++) {
+      var item = styles[i]
+      var domStyle = stylesInDom[item.id]
+      domStyle.refs--
+      mayRemove.push(domStyle)
+    }
+    if (newList) {
+      styles = listToStyles(parentId, newList)
+      addStylesToDom(styles)
+    } else {
+      styles = []
+    }
+    for (var i = 0; i < mayRemove.length; i++) {
+      var domStyle = mayRemove[i]
+      if (domStyle.refs === 0) {
+        for (var j = 0; j < domStyle.parts.length; j++) {
+          domStyle.parts[j]()
+        }
+        delete stylesInDom[domStyle.id]
+      }
+    }
+  }
+}
+
+function addStylesToDom (styles /* Array<StyleObject> */) {
+  for (var i = 0; i < styles.length; i++) {
+    var item = styles[i]
+    var domStyle = stylesInDom[item.id]
+    if (domStyle) {
+      domStyle.refs++
+      for (var j = 0; j < domStyle.parts.length; j++) {
+        domStyle.parts[j](item.parts[j])
+      }
+      for (; j < item.parts.length; j++) {
+        domStyle.parts.push(addStyle(item.parts[j]))
+      }
+      if (domStyle.parts.length > item.parts.length) {
+        domStyle.parts.length = item.parts.length
+      }
+    } else {
+      var parts = []
+      for (var j = 0; j < item.parts.length; j++) {
+        parts.push(addStyle(item.parts[j]))
+      }
+      stylesInDom[item.id] = { id: item.id, refs: 1, parts: parts }
+    }
+  }
+}
+
+function createStyleElement () {
+  var styleElement = document.createElement('style')
+  styleElement.type = 'text/css'
+  head.appendChild(styleElement)
+  return styleElement
+}
+
+function addStyle (obj /* StyleObjectPart */) {
+  var update, remove
+  var styleElement = document.querySelector('style[' + ssrIdKey + '~="' + obj.id + '"]')
+
+  if (styleElement) {
+    if (isProduction) {
+      // has SSR styles and in production mode.
+      // simply do nothing.
+      return noop
+    } else {
+      // has SSR styles but in dev mode.
+      // for some reason Chrome can't handle source map in server-rendered
+      // style tags - source maps in <style> only works if the style tag is
+      // created and inserted dynamically. So we remove the server rendered
+      // styles and inject new ones.
+      styleElement.parentNode.removeChild(styleElement)
+    }
+  }
+
+  if (isOldIE) {
+    // use singleton mode for IE9.
+    var styleIndex = singletonCounter++
+    styleElement = singletonElement || (singletonElement = createStyleElement())
+    update = applyToSingletonTag.bind(null, styleElement, styleIndex, false)
+    remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true)
+  } else {
+    // use multi-style-tag mode in all other cases
+    styleElement = createStyleElement()
+    update = applyToTag.bind(null, styleElement)
+    remove = function () {
+      styleElement.parentNode.removeChild(styleElement)
+    }
+  }
+
+  update(obj)
+
+  return function updateStyle (newObj /* StyleObjectPart */) {
+    if (newObj) {
+      if (newObj.css === obj.css &&
+          newObj.media === obj.media &&
+          newObj.sourceMap === obj.sourceMap) {
+        return
+      }
+      update(obj = newObj)
+    } else {
+      remove()
+    }
+  }
+}
+
+var replaceText = (function () {
+  var textStore = []
+
+  return function (index, replacement) {
+    textStore[index] = replacement
+    return textStore.filter(Boolean).join('\n')
+  }
+})()
+
+function applyToSingletonTag (styleElement, index, remove, obj) {
+  var css = remove ? '' : obj.css
+
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = replaceText(index, css)
+  } else {
+    var cssNode = document.createTextNode(css)
+    var childNodes = styleElement.childNodes
+    if (childNodes[index]) styleElement.removeChild(childNodes[index])
+    if (childNodes.length) {
+      styleElement.insertBefore(cssNode, childNodes[index])
+    } else {
+      styleElement.appendChild(cssNode)
+    }
+  }
+}
+
+function applyToTag (styleElement, obj) {
+  var css = obj.css
+  var media = obj.media
+  var sourceMap = obj.sourceMap
+
+  if (media) {
+    styleElement.setAttribute('media', media)
+  }
+  if (options.ssrId) {
+    styleElement.setAttribute(ssrIdKey, obj.id)
+  }
+
+  if (sourceMap) {
+    // https://developer.chrome.com/devtools/docs/javascript-debugging
+    // this makes source maps inside style tags work properly in Chrome
+    css += '\n/*# sourceURL=' + sourceMap.sources[0] + ' */'
+    // http://stackoverflow.com/a/26603875
+    css += '\n/*# sourceMappingURL=data:application/json;base64,' + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + ' */'
+  }
+
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css
+  } else {
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild)
+    }
+    styleElement.appendChild(document.createTextNode(css))
+  }
+}
+
+
+/***/ }),
+/* 9 */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"extended.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAANElEQVR4nGNggABGEMEEIlhABAeI+AASF0AlHmAqA4kzKAAx8wGQuAMKwd6AoYzBAWonAwAcLwTgNfJ3RQAAAABJRU5ErkJggg==\",\"ray.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAAMklEQVR4nGNgQAJMIIIFRHCACAEQoQAiHICYvQEkjkrwYypjAIkzwk2zAREuqIQFzD4AE3kE4BEmGggAAAAASUVORK5CYII=\",\"segment.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAgMAAAC5h23wAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAATU1NJCQkCxcHIQAAAAN0Uk5TAP8SmutI5AAAACxJREFUeJxjYMACGAMgNAsLdpoVKi8AVe8A1QblQlWRKt0AoULw2w1zGxoAABdiAviQhF/mAAAAAElFTkSuQmCC\",\"add.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAH5QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKBgYGGxsbKioqPz8/Pj4+BQUFCQkJAQEBZGRkh4eHAgICEBAQNjY2g4ODgYGBAAAAAwMDeXl5d3d3GBgYERERgICAgICANDQ0PDw8Y2NjCAgIhYWFGhoaJycnOjo6YWFhgICAdXV14Y16sQAAACp0Uk5TAAILDxIKESEnJiYoKCgTKSkpKCAnKSkFKCkpJiDl/ycpKSA2JyYpKSkpOkQ+xgAAARdJREFUeJzllNt2gyAQRTWiRsHLoDU0GpPYmMv//2BMS+sgl6Z9bM8bi73gnJkBz/sn8lcBIUHofwtG8TpJKUuTLI6cYF7QEqRKynP71VX9AkhNXVlsbMQrLLQVGyPZLsGHWgPrCxMJwHUPlXa79NBp2et5d9f3u3m1XxatQNn7SagOXCUjCjYUDuqxcWlHj4MSfw12FDJchFViRN8+1qcQoUH6lR1L1mEMEErofB6WzEUwylzomfzOQGiOJdXiWH7mQoUyMa4WXJQWOBvLFvPCGxt6FSr5kyH0qi0YddNG2/pgCsOjff4ZTizXPNwKIzl56OoGg9d9Z/+5cs6On+CFCfevFQ3ZaTycx1YMbvDdRvjkp/lHdAcPXzokxcwfDwAAAABJRU5ErkJggg==\",\"cursor.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAgMAAAC5h23wAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAxQTFRFAAAATU1NTU1NTU1NwlMHHwAAAAR0Uk5TAOvhxbpPrUkAAAAkSURBVHicY2BgYHBggAByabxg1WoGBq2pRCk9AKUbcND43AEAufYHlSuusE4AAAAASUVORK5CYII=\",\"display_off.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAU1QTFRFAAAAh4eHh4eHAAAAAAAAAAAAAwMDAAAAAAAAhoaGGBgYgYGBAAAAPz8/AgICg4ODCQkJhISEh4eHh4eHPj4+NjY2gYGBg4ODgYGBgYGBgoKCAQEBJycngoKChYWFEBAQg4ODCAgIKioqZGRkCgoKBQUFERERd3d3gYGBGxsbNDQ0hISEgYGBPDw8gYGBgYGBh4eHh4eHhYWFh4eHgoKChYWFgYGBgYGBg4ODhoaGg4ODYWFhgoKCBgYGdXV1goKCg4ODgYGBgICAgYGBAAAAg4ODhYWFhISEh4eHgoKChYWFOjo6goKCGhoah4eHh4eHh4eHgoKCh4eHeXl5hoaGgoKChISEgYGBgYGBgoKCY2NjgYGBgoKCh4eHgoKCgYGBhoaGg4ODhoaGhYWFh4eHgYGBhoaGhoaGhoaGg4ODgoKChISEgoKChYWFh4eHfKktUwAAAG90Uk5TACn/AhEFKA8SLCbxCigoVBNKUTYoJ/lh3PyAKSaTNiBtICYpISggKSkmJ0LEKef3lGxA8rn//+pcMSkpnCcptHPJKe0LUjnx5LzKKaMnX73hl64pLnhkzNSgKeLv17LQ+liIzaLe7PfTw5tFpz3K1fXR/gAAAgBJREFUeJzllNdXwjAUxknB0lIoCKVsGTIFQRAZ7r333nuv///R3LZ4mlDQZ/0ekp7b37n5bnITk+mfyDxv5Tir3fwjaElO5BIOKZFLJS1dQVfI0Y809TtEV+elo95RpFPWG+1go4fdQ5QybI8haaNBkM2ANbM09bnrwaPY7iFKrz7EMBdu7CHdVruXIt0M1hb+GKA3LTRKkp5lTA6Dg6xIkhaHhvQ1IlW/UCouQdJNJTRIpk1qO7+wUpcfpl537oBc7VNip3Gi/AmVPBAC1UrL6HXtSGVT+k2Yz0Focad07OMRf3P5BEbd63PFQx7HN+w61JoAm+uBlV48O/0jkLSMmtPCmQ8HwlYdykFV4/LJPp7e3hVyFdapHNehLk6PSjhSkBvwu/cFyJGIYvOyhoc1jjYQFGbygD4CWjoAMla/og3YoSw+KPhjPNoFcim4iFD+pFYA8zZ9WeYU5OBjZ3ORWyCfG03E+47kKpCIJTpGO4KP8XMgtw990xG/PBNTgmPEEXwf7P42oOdFIRAoBCtqTKL6Rcwq4Xsgh5xYC/mmSs6yJKk1YbnVeTq1NaEpmlHbmVn2EORkW2trF2ZzmHGTSUMGl1a9hp4ySRpdQ8yKGURpMmRIYg9pb1YPzg6kO79cLlE6bYFjEtv91bLEUxvhwbWwjY13BxUb9l8+mn9EX8x3Nki8ff5wAAAAAElFTkSuQmCC\",\"display_on.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAR1QTFRFAAAAh4eHgYGBAAAAAAAAgYGBAAAAAwMDAAAAAAAAgYGBg4ODGBgYgYGBhISEAAAAPz8/AgIChoaGCQkJhYWFPj4+NjY2goKCgYGBAQEBJycngYGBgoKCEBAQCAgIhISEKioqZGRkCgoKBQUFERERd3d3gYGBg4ODgYGBGxsbNDQ0hISEgoKCgoKChYWFPDw8gYGBgYGBhoaGgoKCg4ODgoKCgYGBgoKCgoKCgoKCg4ODgoKChoaGgoKCgYGBhoaGg4ODYWFhBgYGdXV1gYGBg4ODgoKCgICAg4ODg4ODhISEAAAAg4ODOjo6gYGBGhoaeXl5goKCgYGBgoKChYWFgoKChISEgoKCY2NjgYGBg4ODgYGBgYGBg4ODgYGBo8n54AAAAF90Uk5TACn/AhH3BSgPEuhUJvFACigoLBM2KCeA6ykm+pMgIEkmKSEoICn9XCkmJ0u6nDop4sUypGuEzLZ6vmCYLZ/dLykpJynUYa8pcllCC1Ip2ycpisl1PadFsintbsPQZdi/bTW7AAAB4UlEQVR4nOWUZ1fCMBSGSSGWFiq0UDbIkr2XbBwMxS0b1P//M0xK9XSiftX7oel585zkvfcmMRj+SRhvzRRlthm/BU3Ry3TYzofTsajpIOjw2iNAjIiddehvHXSdA0mkXEEdG0fkE1DEKXmkSVqVIA6rBmsktUgAWLWHoGp30UNclbtLmwQgoyya91wPTbFy0mQXJ5zJQO6BgXRjfH0iSkX5stHIXr5r0bB/lu8syjR8rzsFbR2SpX+5J2eMP3csLtYsEY2K8BeTFuE2jaVCBw7bHOBuxq16AXmpbui3LtIfbRLUHMY2q4lcFo2WB4KA1SUAlWumNEKCzyxBKZxVHvYGaFguCBx1vM/x0IPzoqQoj5SdP4mns2cCGhBsrgj0uaeUBtzMyxQN8w4mYROTW8+r0oANp8W5mf6WQw5aCYJ2o7ymPaKMi2uVpmWM4TW6tdImgGo1bT4nK6DbbsCc0AZSdmLEFszzHrh6riVvRrNA3/9SE8QLWQu+Gjto9+gE9NBMwr9zi83gFeeFTe11zpm1CHE3HeyVCSknf3MIDcFTbfJKdbR1L4xX49L+/BoillV5uPJqkshD3JWSgpNMXP/lcrD8+hO84MnDr5YpFHv0Fe99VjJ0GBRs2H74aP6R+ACr+TFvZNAQ1wAAAABJRU5ErkJggg==\",\"down.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAKVQTFRFAAAAg4ODgICAAAAAAAAAAAAACAgIAAAAAAAAAAAAAAAAOTk5hYWFEBAQfHx8ODg4dnZ2NDQ0XV1dGxsbKCgogICAFBQUIiIiZGRkgICAgICAFRUVAAAAgICAgICAgICAf39/Li4ugICAcHBwgoKCgICAgoKCgICAg4ODgYGBPj4+goKCgICAhISEgYGBgICAgoKCgICAgYGBgYGBf39/gICAgICAIdPQHAAAADd0Uk5TACn/KAIRIBMFDwooKyApKSknKSYmzCcmKfL7JRCUi2L3J7IpcLUrr0VbKXntNEnkMbxrUcG56CMpi50AAAFZSURBVHic5ZRpf4MgDIeFKFatWm/tfW091u7evv9Hm1Acoujm2y0vFPH5Jf+EEE37J6bblmlatv4jaBCI4rMfR0CMXtAEJ0fccgfM7tAkQHXzArdDxggmqGETGCnJWROkNlOwOqhIhKCtgbSicw1uK/dATSK0aRatIzytA8ik4XSiyJnLSm+VPxULgeyLI3uHRJH+qcB4WZGrKb4c20WwI7b3iUt74OS6XD+xZWrXUCtme0uKTvfcJ65CZFa9VOebqwXmft+oT8yF+/VymT4XeGB+Xx8L+j4gBcoFIDT+oMz6Qp93Y74pCeBpUXaLuW0rUk6r1iv3nP322ewYkgv2nZIvgpSPQDrY5wTjRJDNg9XAE/+uSXIVX812GdKEmtvR2rtWaw+5MAOuofJy79SXu9TgBl4d9DZdI0NjgyiswNCB/qk1J5Bmvp+lQOa9IJNhW4bxm6H5R+wLQYMSQXZNzbcAAAAASUVORK5CYII=\",\"price_range.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAAIUlEQVR4nGNggAPm/w9gTA4QIQMitECEJ1yMEgLNDiAAADfgBMRu78GgAAAAAElFTkSuQmCC\",\"price_time.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAAOklEQVR4nGNggAPm/w9gTA4QIQPEClpMQMITRHCACScQoQQihBgY9P//grKgYk5wdTACYhQHFjuAAABZFAlc4e1fcQAAAABJRU5ErkJggg==\",\"remove.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAK5QTFRFAAAAh4eHgICAAAAAAAAAh4eHAAAAAwMDAAAAAAAAgICAGBgYAAAAPz8/AgICgICACQkJhoaGhoaGgICAPj4+NjY2gYGBg4ODgYGBAQEBJycngoKCEBAQgICAgICACAgIKioqZGRkCgoKBQUFERERd3d3gYGBGxsbNDQ0gICAPDw8YWFhBgYGdXV1gICAg4ODgICAAAAAOjo6GhoaeXl5gICAhYWFY2NjhYWFgICA9O0oCgAAADp0Uk5TACn/AhErBSgPEvEmCigowxMuMcgoJ7hWrCkmdCD6vSAmKSEoICkpJie6KSknKSkp0wspJynCMik11rrLte8AAAFwSURBVHic5ZTXkoIwFIZNAAPSpKkoRQV7Wcva3v/FFiRmEwise7t7bs7MP98k/ylJq/VPQjjKiiJrwo+gON0uxro7XiRTsRHs+voE4JjoRrf+6sD7AFTMvaDGRht9glLMUJtLqmUwD5XDCohHAmBUPQSV27GHtFK7xycBWJab5uPaR+Hlmue7GfZxHwyWFHVMQghXFgD2A8IOZtfssdNJIXcyFEaSfchzp9BuMVP+Fhvr5Qh0nGfqYTGhm3BcYFUaQBKOhMWzRqHyGFRY03ppQ5lCFZ30RloVZGQTaa3QqEt0OyrQnkSkk8I1YJkvAwPCMgY0UpbzXRZhVbosIWGbZTLNQszGMCM42FJEjWDDjIAMtp+xj6x2K+/DqNDc0r4Yc8yGl3uer2aIyT1iyd8sYSuY8cldZbVrH4zPebTvP8OMNSoedj6XzDyk3pwG98u0/ufqGu7tBW5c1PxriXFyHq5PQxXFzeDThvbmp/lH4gt6WxfZ03H8DwAAAABJRU5ErkJggg==\",\"settings.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAW5QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKBgYGGxsbKioqQEBAPj4+BQUFCAgIAQEBPz8/ZWVlh4eHZGRkAgICCQkJDw8PNjY2g4ODgoKCNTU1EBAQAAAAAwMDeXl5d3d3AAAAGBgYAAAAERERioqKgoKCgoKCgoKCgYGBgoKChISEhoaGNDQ0g4ODgICAgICAgICAgYGBgYGBhYWFgICAgICAPT09AAAAgYGBgICAgICAgICAgICAY2NjCAgIgICAgICAhYWFhYWFgYGBHBwcgICAhYWFGhoagYGBgYGBg4ODhoaGJycnAAAAhISEgICAg4ODPDw8AAAAgoKCgICAhISEOjo6h4eHgoKCgYGBgICAf39/gYGBgoKCgICAGBgYgYGBg4ODg4ODgICACwsLgYGBgICAgYGBgYGBgYGBgICAgYGBYWFhf39/g4ODPj4+gYGBg4ODgICAhYWFgoKCgYGBgICAgYGBgoKCdXV1T0kC9QAAAHp0Uk5TAAILDxMKESEnJiYpKSgTKSgpKSkoEyAnKSknIAYoKSkFJQEgKl94jYVvVC4nU9f/+K8pOu71KBCi3NPq/ikg0e01Nokm1UUnsZVqQSYOT9lrKRJz5lIpK12jyu+sesgnhGVLxCG55a6Um+GaKfJCKKRgKUt8ocergymDQ9knAAABsElEQVR4nOWUV1vCMBSGg1AQpBZrcVdE3KJxo4LgnuCoe4F7orjHv7doTk3bgF7rd5OnX94nZ+SkCP0TWQqsNpuVs/wI2h2FTleR2+XkHfa8YLHgKRGJSj2SN3fosvIKkVJlVXWONGrkWtEgn1zHJP1GMCs/g7XILFIUpXoTWmaKTnIImGovh72Gxqbmlta2dvgOGpsmQO0dnfhTXd3E6JH0pN1DNnr7MFE/HDsQ0qEO6Pxg9sCh4XDkGx2J6sovBD+G8eiYuo5PxLTKeLoJBZNgT2EcnjY0YYajUKsL7Fk1gcjU3PwChcYTFGorAnsRqlpa1tAVhUbdmr+6RtjIOlgbCjMBUdzc2t7ZzbJ7zAQ4p6GSfRVNwkeKLsvCg31w2JBdjlT0GDxZNzEnpcQ+xWfnFxeXVyp6Tay07gq+L/YUOoBvbomV0V8skiq//DutWfeEfJD1JPLCED4+Pb8kX986tApNQ4iqfSJT76bRzvlgBPODQXW/foYqK5lyeBeYJEL1gaoeGnwIBhjRoQ9SZgTAdEbO/9cKRfmZ+MpGPCVHQ3nBzzS4hKIkuNyh/5g+ALiAXSSas9hwAAAAAElFTkSuQmCC\",\"time_range.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAAJElEQVR4nGNgwAsUGJhQCScQoQQihBgY9P//grKgYk4YOvACACOpBKG6Svj+AAAAAElFTkSuQmCC\",\"trash.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAALUlEQVR4nGNgAIN6ENHQACX4//9gYBBgYIESYC4LkA0lPEkmGFAI5v8PILYCAHygDJxlK0RUAAAAAElFTkSuQmCC\",\"up.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAMZQTFRFAAAAh4eHgICAAAAAAAAAAAAAAwMDAAAAAAAAGBgYAAAAPz8/AgICCQkJgICAh4eHPj4+NjY2AQEBJycnEBAQgICAgICACAgIKioqZGRkCgoKBQUFgYGBERERd3d3gYGBGxsbNDQ0gICAgYGBPDw8gYGBh4eHgICAYWFhBgYGgYGBdXV1goKCg4ODhYWFgICAgoKCAAAAhISEOjo6gICAGhoagYGBeXl5hoaGgICAY2Njg4ODgoKCgoKCgYGBgoKCg4ODgoKC64uw1gAAAEJ0Uk5TACn/AhEFKA8SJgooKBP7KignKSYg9c0gJikhKLQgKSkmJ7ywKY8s5SknlClxKTMpXwtFKe0neiku8ClKWmSbbFFjM5GHSgAAAW5JREFUeJzllGd/gjAQxk3AMFWWOHDvVa2rVbu//5cqhJWQQO3b9nkVjv/v7rnLKJX+iYS9JMuSKvwIiu3loKkZzYHXFgvBiqW1QKSWplfySzvmAyDUN50cG2X0DDLqoTKXVLJgIIXDCohHAqCzHhymeuShy/Ru8kkAhtmhWUTvW9fdEnPQaVLU0n8XF0L3kn5P6LTtZPKgNoK+RrUkcGtQ7S9TsgOxxinrkUPYD+LwLCIh7CTsWSVQqRmTuPqpitlZFLQlApXjrsYBc335wOw47ksmUSMMrgKi/gnAE/awCqNHmTUwDf5X34LlBuedsgbUsK15kPMxTIXzzvFSIdsSPBw7nGD1K+7bL3F9xStEnZhoCw71TbpL71GBBbUF1MZmZWTOi97PI3eIJn9zCEtOj0+umaOde2EszqW9/xr6rM54WFtc0vfQNak57Ibd/Jerohu3GFwYqPjVEhve2Z4cbQU1ikFsQ73z0fwj+ga3VBezGuggFQAAAABJRU5ErkJggg==\"}");
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(76);
+
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/*! Hammer.JS - v2.0.7 - 2016-04-22
+ * http://hammerjs.github.io/
+ *
+ * Copyright (c) 2016 Jorik Tangelder;
+ * Licensed under the MIT license */
+(function(window, document, exportName, undefined) {
+  'use strict';
+
+var VENDOR_PREFIXES = ['', 'webkit', 'Moz', 'MS', 'ms', 'o'];
+var TEST_ELEMENT = document.createElement('div');
+
+var TYPE_FUNCTION = 'function';
+
+var round = Math.round;
+var abs = Math.abs;
+var now = Date.now;
+
+/**
+ * set a timeout with a given scope
+ * @param {Function} fn
+ * @param {Number} timeout
+ * @param {Object} context
+ * @returns {number}
+ */
+function setTimeoutContext(fn, timeout, context) {
+    return setTimeout(bindFn(fn, context), timeout);
+}
+
+/**
+ * if the argument is an array, we want to execute the fn on each entry
+ * if it aint an array we don't want to do a thing.
+ * this is used by all the methods that accept a single and array argument.
+ * @param {*|Array} arg
+ * @param {String} fn
+ * @param {Object} [context]
+ * @returns {Boolean}
+ */
+function invokeArrayArg(arg, fn, context) {
+    if (Array.isArray(arg)) {
+        each(arg, context[fn], context);
+        return true;
+    }
+    return false;
+}
+
+/**
+ * walk objects and arrays
+ * @param {Object} obj
+ * @param {Function} iterator
+ * @param {Object} context
+ */
+function each(obj, iterator, context) {
+    var i;
+
+    if (!obj) {
+        return;
+    }
+
+    if (obj.forEach) {
+        obj.forEach(iterator, context);
+    } else if (obj.length !== undefined) {
+        i = 0;
+        while (i < obj.length) {
+            iterator.call(context, obj[i], i, obj);
+            i++;
+        }
+    } else {
+        for (i in obj) {
+            obj.hasOwnProperty(i) && iterator.call(context, obj[i], i, obj);
+        }
+    }
+}
+
+/**
+ * wrap a method with a deprecation warning and stack trace
+ * @param {Function} method
+ * @param {String} name
+ * @param {String} message
+ * @returns {Function} A new function wrapping the supplied method.
+ */
+function deprecate(method, name, message) {
+    var deprecationMessage = 'DEPRECATED METHOD: ' + name + '\n' + message + ' AT \n';
+    return function() {
+        var e = new Error('get-stack-trace');
+        var stack = e && e.stack ? e.stack.replace(/^[^\(]+?[\n$]/gm, '')
+            .replace(/^\s+at\s+/gm, '')
+            .replace(/^Object.<anonymous>\s*\(/gm, '{anonymous}()@') : 'Unknown Stack Trace';
+
+        var log = window.console && (window.console.warn || window.console.log);
+        if (log) {
+            log.call(window.console, deprecationMessage, stack);
+        }
+        return method.apply(this, arguments);
+    };
+}
+
+/**
+ * extend object.
+ * means that properties in dest will be overwritten by the ones in src.
+ * @param {Object} target
+ * @param {...Object} objects_to_assign
+ * @returns {Object} target
+ */
+var assign;
+if (typeof Object.assign !== 'function') {
+    assign = function assign(target) {
+        if (target === undefined || target === null) {
+            throw new TypeError('Cannot convert undefined or null to object');
+        }
+
+        var output = Object(target);
+        for (var index = 1; index < arguments.length; index++) {
+            var source = arguments[index];
+            if (source !== undefined && source !== null) {
+                for (var nextKey in source) {
+                    if (source.hasOwnProperty(nextKey)) {
+                        output[nextKey] = source[nextKey];
+                    }
+                }
+            }
+        }
+        return output;
+    };
+} else {
+    assign = Object.assign;
+}
+
+/**
+ * extend object.
+ * means that properties in dest will be overwritten by the ones in src.
+ * @param {Object} dest
+ * @param {Object} src
+ * @param {Boolean} [merge=false]
+ * @returns {Object} dest
+ */
+var extend = deprecate(function extend(dest, src, merge) {
+    var keys = Object.keys(src);
+    var i = 0;
+    while (i < keys.length) {
+        if (!merge || (merge && dest[keys[i]] === undefined)) {
+            dest[keys[i]] = src[keys[i]];
+        }
+        i++;
+    }
+    return dest;
+}, 'extend', 'Use `assign`.');
+
+/**
+ * merge the values from src in the dest.
+ * means that properties that exist in dest will not be overwritten by src
+ * @param {Object} dest
+ * @param {Object} src
+ * @returns {Object} dest
+ */
+var merge = deprecate(function merge(dest, src) {
+    return extend(dest, src, true);
+}, 'merge', 'Use `assign`.');
+
+/**
+ * simple class inheritance
+ * @param {Function} child
+ * @param {Function} base
+ * @param {Object} [properties]
+ */
+function inherit(child, base, properties) {
+    var baseP = base.prototype,
+        childP;
+
+    childP = child.prototype = Object.create(baseP);
+    childP.constructor = child;
+    childP._super = baseP;
+
+    if (properties) {
+        assign(childP, properties);
+    }
+}
+
+/**
+ * simple function bind
+ * @param {Function} fn
+ * @param {Object} context
+ * @returns {Function}
+ */
+function bindFn(fn, context) {
+    return function boundFn() {
+        return fn.apply(context, arguments);
+    };
+}
+
+/**
+ * let a boolean value also be a function that must return a boolean
+ * this first item in args will be used as the context
+ * @param {Boolean|Function} val
+ * @param {Array} [args]
+ * @returns {Boolean}
+ */
+function boolOrFn(val, args) {
+    if (typeof val == TYPE_FUNCTION) {
+        return val.apply(args ? args[0] || undefined : undefined, args);
+    }
+    return val;
+}
+
+/**
+ * use the val2 when val1 is undefined
+ * @param {*} val1
+ * @param {*} val2
+ * @returns {*}
+ */
+function ifUndefined(val1, val2) {
+    return (val1 === undefined) ? val2 : val1;
+}
+
+/**
+ * addEventListener with multiple events at once
+ * @param {EventTarget} target
+ * @param {String} types
+ * @param {Function} handler
+ */
+function addEventListeners(target, types, handler) {
+    each(splitStr(types), function(type) {
+        target.addEventListener(type, handler, false);
+    });
+}
+
+/**
+ * removeEventListener with multiple events at once
+ * @param {EventTarget} target
+ * @param {String} types
+ * @param {Function} handler
+ */
+function removeEventListeners(target, types, handler) {
+    each(splitStr(types), function(type) {
+        target.removeEventListener(type, handler, false);
+    });
+}
+
+/**
+ * find if a node is in the given parent
+ * @method hasParent
+ * @param {HTMLElement} node
+ * @param {HTMLElement} parent
+ * @return {Boolean} found
+ */
+function hasParent(node, parent) {
+    while (node) {
+        if (node == parent) {
+            return true;
+        }
+        node = node.parentNode;
+    }
+    return false;
+}
+
+/**
+ * small indexOf wrapper
+ * @param {String} str
+ * @param {String} find
+ * @returns {Boolean} found
+ */
+function inStr(str, find) {
+    return str.indexOf(find) > -1;
+}
+
+/**
+ * split string on whitespace
+ * @param {String} str
+ * @returns {Array} words
+ */
+function splitStr(str) {
+    return str.trim().split(/\s+/g);
+}
+
+/**
+ * find if a array contains the object using indexOf or a simple polyFill
+ * @param {Array} src
+ * @param {String} find
+ * @param {String} [findByKey]
+ * @return {Boolean|Number} false when not found, or the index
+ */
+function inArray(src, find, findByKey) {
+    if (src.indexOf && !findByKey) {
+        return src.indexOf(find);
+    } else {
+        var i = 0;
+        while (i < src.length) {
+            if ((findByKey && src[i][findByKey] == find) || (!findByKey && src[i] === find)) {
+                return i;
+            }
+            i++;
+        }
+        return -1;
+    }
+}
+
+/**
+ * convert array-like objects to real arrays
+ * @param {Object} obj
+ * @returns {Array}
+ */
+function toArray(obj) {
+    return Array.prototype.slice.call(obj, 0);
+}
+
+/**
+ * unique array with objects based on a key (like 'id') or just by the array's value
+ * @param {Array} src [{id:1},{id:2},{id:1}]
+ * @param {String} [key]
+ * @param {Boolean} [sort=False]
+ * @returns {Array} [{id:1},{id:2}]
+ */
+function uniqueArray(src, key, sort) {
+    var results = [];
+    var values = [];
+    var i = 0;
+
+    while (i < src.length) {
+        var val = key ? src[i][key] : src[i];
+        if (inArray(values, val) < 0) {
+            results.push(src[i]);
+        }
+        values[i] = val;
+        i++;
+    }
+
+    if (sort) {
+        if (!key) {
+            results = results.sort();
+        } else {
+            results = results.sort(function sortUniqueArray(a, b) {
+                return a[key] > b[key];
+            });
+        }
+    }
+
+    return results;
+}
+
+/**
+ * get the prefixed property
+ * @param {Object} obj
+ * @param {String} property
+ * @returns {String|Undefined} prefixed
+ */
+function prefixed(obj, property) {
+    var prefix, prop;
+    var camelProp = property[0].toUpperCase() + property.slice(1);
+
+    var i = 0;
+    while (i < VENDOR_PREFIXES.length) {
+        prefix = VENDOR_PREFIXES[i];
+        prop = (prefix) ? prefix + camelProp : property;
+
+        if (prop in obj) {
+            return prop;
+        }
+        i++;
+    }
+    return undefined;
+}
+
+/**
+ * get a unique id
+ * @returns {number} uniqueId
+ */
+var _uniqueId = 1;
+function uniqueId() {
+    return _uniqueId++;
+}
+
+/**
+ * get the window object of an element
+ * @param {HTMLElement} element
+ * @returns {DocumentView|Window}
+ */
+function getWindowForElement(element) {
+    var doc = element.ownerDocument || element;
+    return (doc.defaultView || doc.parentWindow || window);
+}
+
+var MOBILE_REGEX = /mobile|tablet|ip(ad|hone|od)|android/i;
+
+var SUPPORT_TOUCH = ('ontouchstart' in window);
+var SUPPORT_POINTER_EVENTS = prefixed(window, 'PointerEvent') !== undefined;
+var SUPPORT_ONLY_TOUCH = SUPPORT_TOUCH && MOBILE_REGEX.test(navigator.userAgent);
+
+var INPUT_TYPE_TOUCH = 'touch';
+var INPUT_TYPE_PEN = 'pen';
+var INPUT_TYPE_MOUSE = 'mouse';
+var INPUT_TYPE_KINECT = 'kinect';
+
+var COMPUTE_INTERVAL = 25;
+
+var INPUT_START = 1;
+var INPUT_MOVE = 2;
+var INPUT_END = 4;
+var INPUT_CANCEL = 8;
+
+var DIRECTION_NONE = 1;
+var DIRECTION_LEFT = 2;
+var DIRECTION_RIGHT = 4;
+var DIRECTION_UP = 8;
+var DIRECTION_DOWN = 16;
+
+var DIRECTION_HORIZONTAL = DIRECTION_LEFT | DIRECTION_RIGHT;
+var DIRECTION_VERTICAL = DIRECTION_UP | DIRECTION_DOWN;
+var DIRECTION_ALL = DIRECTION_HORIZONTAL | DIRECTION_VERTICAL;
+
+var PROPS_XY = ['x', 'y'];
+var PROPS_CLIENT_XY = ['clientX', 'clientY'];
+
+/**
+ * create new input type manager
+ * @param {Manager} manager
+ * @param {Function} callback
+ * @returns {Input}
+ * @constructor
+ */
+function Input(manager, callback) {
+    var self = this;
+    this.manager = manager;
+    this.callback = callback;
+    this.element = manager.element;
+    this.target = manager.options.inputTarget;
+
+    // smaller wrapper around the handler, for the scope and the enabled state of the manager,
+    // so when disabled the input events are completely bypassed.
+    this.domHandler = function(ev) {
+        if (boolOrFn(manager.options.enable, [manager])) {
+            self.handler(ev);
+        }
+    };
+
+    this.init();
+
+}
+
+Input.prototype = {
+    /**
+     * should handle the inputEvent data and trigger the callback
+     * @virtual
+     */
+    handler: function() { },
+
+    /**
+     * bind the events
+     */
+    init: function() {
+        this.evEl && addEventListeners(this.element, this.evEl, this.domHandler);
+        this.evTarget && addEventListeners(this.target, this.evTarget, this.domHandler);
+        this.evWin && addEventListeners(getWindowForElement(this.element), this.evWin, this.domHandler);
+    },
+
+    /**
+     * unbind the events
+     */
+    destroy: function() {
+        this.evEl && removeEventListeners(this.element, this.evEl, this.domHandler);
+        this.evTarget && removeEventListeners(this.target, this.evTarget, this.domHandler);
+        this.evWin && removeEventListeners(getWindowForElement(this.element), this.evWin, this.domHandler);
+    }
+};
+
+/**
+ * create new input type manager
+ * called by the Manager constructor
+ * @param {Hammer} manager
+ * @returns {Input}
+ */
+function createInputInstance(manager) {
+    var Type;
+    var inputClass = manager.options.inputClass;
+
+    if (inputClass) {
+        Type = inputClass;
+    } else if (SUPPORT_POINTER_EVENTS) {
+        Type = PointerEventInput;
+    } else if (SUPPORT_ONLY_TOUCH) {
+        Type = TouchInput;
+    } else if (!SUPPORT_TOUCH) {
+        Type = MouseInput;
+    } else {
+        Type = TouchMouseInput;
+    }
+    return new (Type)(manager, inputHandler);
+}
+
+/**
+ * handle input events
+ * @param {Manager} manager
+ * @param {String} eventType
+ * @param {Object} input
+ */
+function inputHandler(manager, eventType, input) {
+    var pointersLen = input.pointers.length;
+    var changedPointersLen = input.changedPointers.length;
+    var isFirst = (eventType & INPUT_START && (pointersLen - changedPointersLen === 0));
+    var isFinal = (eventType & (INPUT_END | INPUT_CANCEL) && (pointersLen - changedPointersLen === 0));
+
+    input.isFirst = !!isFirst;
+    input.isFinal = !!isFinal;
+
+    if (isFirst) {
+        manager.session = {};
+    }
+
+    // source event is the normalized value of the domEvents
+    // like 'touchstart, mouseup, pointerdown'
+    input.eventType = eventType;
+
+    // compute scale, rotation etc
+    computeInputData(manager, input);
+
+    // emit secret event
+    manager.emit('hammer.input', input);
+
+    manager.recognize(input);
+    manager.session.prevInput = input;
+}
+
+/**
+ * extend the data with some usable properties like scale, rotate, velocity etc
+ * @param {Object} manager
+ * @param {Object} input
+ */
+function computeInputData(manager, input) {
+    var session = manager.session;
+    var pointers = input.pointers;
+    var pointersLength = pointers.length;
+
+    // store the first input to calculate the distance and direction
+    if (!session.firstInput) {
+        session.firstInput = simpleCloneInputData(input);
+    }
+
+    // to compute scale and rotation we need to store the multiple touches
+    if (pointersLength > 1 && !session.firstMultiple) {
+        session.firstMultiple = simpleCloneInputData(input);
+    } else if (pointersLength === 1) {
+        session.firstMultiple = false;
+    }
+
+    var firstInput = session.firstInput;
+    var firstMultiple = session.firstMultiple;
+    var offsetCenter = firstMultiple ? firstMultiple.center : firstInput.center;
+
+    var center = input.center = getCenter(pointers);
+    input.timeStamp = now();
+    input.deltaTime = input.timeStamp - firstInput.timeStamp;
+
+    input.angle = getAngle(offsetCenter, center);
+    input.distance = getDistance(offsetCenter, center);
+
+    computeDeltaXY(session, input);
+    input.offsetDirection = getDirection(input.deltaX, input.deltaY);
+
+    var overallVelocity = getVelocity(input.deltaTime, input.deltaX, input.deltaY);
+    input.overallVelocityX = overallVelocity.x;
+    input.overallVelocityY = overallVelocity.y;
+    input.overallVelocity = (abs(overallVelocity.x) > abs(overallVelocity.y)) ? overallVelocity.x : overallVelocity.y;
+
+    input.scale = firstMultiple ? getScale(firstMultiple.pointers, pointers) : 1;
+    input.rotation = firstMultiple ? getRotation(firstMultiple.pointers, pointers) : 0;
+
+    input.maxPointers = !session.prevInput ? input.pointers.length : ((input.pointers.length >
+        session.prevInput.maxPointers) ? input.pointers.length : session.prevInput.maxPointers);
+
+    computeIntervalInputData(session, input);
+
+    // find the correct target
+    var target = manager.element;
+    if (hasParent(input.srcEvent.target, target)) {
+        target = input.srcEvent.target;
+    }
+    input.target = target;
+}
+
+function computeDeltaXY(session, input) {
+    var center = input.center;
+    var offset = session.offsetDelta || {};
+    var prevDelta = session.prevDelta || {};
+    var prevInput = session.prevInput || {};
+
+    if (input.eventType === INPUT_START || prevInput.eventType === INPUT_END) {
+        prevDelta = session.prevDelta = {
+            x: prevInput.deltaX || 0,
+            y: prevInput.deltaY || 0
+        };
+
+        offset = session.offsetDelta = {
+            x: center.x,
+            y: center.y
+        };
+    }
+
+    input.deltaX = prevDelta.x + (center.x - offset.x);
+    input.deltaY = prevDelta.y + (center.y - offset.y);
+}
+
+/**
+ * velocity is calculated every x ms
+ * @param {Object} session
+ * @param {Object} input
+ */
+function computeIntervalInputData(session, input) {
+    var last = session.lastInterval || input,
+        deltaTime = input.timeStamp - last.timeStamp,
+        velocity, velocityX, velocityY, direction;
+
+    if (input.eventType != INPUT_CANCEL && (deltaTime > COMPUTE_INTERVAL || last.velocity === undefined)) {
+        var deltaX = input.deltaX - last.deltaX;
+        var deltaY = input.deltaY - last.deltaY;
+
+        var v = getVelocity(deltaTime, deltaX, deltaY);
+        velocityX = v.x;
+        velocityY = v.y;
+        velocity = (abs(v.x) > abs(v.y)) ? v.x : v.y;
+        direction = getDirection(deltaX, deltaY);
+
+        session.lastInterval = input;
+    } else {
+        // use latest velocity info if it doesn't overtake a minimum period
+        velocity = last.velocity;
+        velocityX = last.velocityX;
+        velocityY = last.velocityY;
+        direction = last.direction;
+    }
+
+    input.velocity = velocity;
+    input.velocityX = velocityX;
+    input.velocityY = velocityY;
+    input.direction = direction;
+}
+
+/**
+ * create a simple clone from the input used for storage of firstInput and firstMultiple
+ * @param {Object} input
+ * @returns {Object} clonedInputData
+ */
+function simpleCloneInputData(input) {
+    // make a simple copy of the pointers because we will get a reference if we don't
+    // we only need clientXY for the calculations
+    var pointers = [];
+    var i = 0;
+    while (i < input.pointers.length) {
+        pointers[i] = {
+            clientX: round(input.pointers[i].clientX),
+            clientY: round(input.pointers[i].clientY)
+        };
+        i++;
+    }
+
+    return {
+        timeStamp: now(),
+        pointers: pointers,
+        center: getCenter(pointers),
+        deltaX: input.deltaX,
+        deltaY: input.deltaY
+    };
+}
+
+/**
+ * get the center of all the pointers
+ * @param {Array} pointers
+ * @return {Object} center contains `x` and `y` properties
+ */
+function getCenter(pointers) {
+    var pointersLength = pointers.length;
+
+    // no need to loop when only one touch
+    if (pointersLength === 1) {
+        return {
+            x: round(pointers[0].clientX),
+            y: round(pointers[0].clientY)
+        };
+    }
+
+    var x = 0, y = 0, i = 0;
+    while (i < pointersLength) {
+        x += pointers[i].clientX;
+        y += pointers[i].clientY;
+        i++;
+    }
+
+    return {
+        x: round(x / pointersLength),
+        y: round(y / pointersLength)
+    };
+}
+
+/**
+ * calculate the velocity between two points. unit is in px per ms.
+ * @param {Number} deltaTime
+ * @param {Number} x
+ * @param {Number} y
+ * @return {Object} velocity `x` and `y`
+ */
+function getVelocity(deltaTime, x, y) {
+    return {
+        x: x / deltaTime || 0,
+        y: y / deltaTime || 0
+    };
+}
+
+/**
+ * get the direction between two points
+ * @param {Number} x
+ * @param {Number} y
+ * @return {Number} direction
+ */
+function getDirection(x, y) {
+    if (x === y) {
+        return DIRECTION_NONE;
+    }
+
+    if (abs(x) >= abs(y)) {
+        return x < 0 ? DIRECTION_LEFT : DIRECTION_RIGHT;
+    }
+    return y < 0 ? DIRECTION_UP : DIRECTION_DOWN;
+}
+
+/**
+ * calculate the absolute distance between two points
+ * @param {Object} p1 {x, y}
+ * @param {Object} p2 {x, y}
+ * @param {Array} [props] containing x and y keys
+ * @return {Number} distance
+ */
+function getDistance(p1, p2, props) {
+    if (!props) {
+        props = PROPS_XY;
+    }
+    var x = p2[props[0]] - p1[props[0]],
+        y = p2[props[1]] - p1[props[1]];
+
+    return Math.sqrt((x * x) + (y * y));
+}
+
+/**
+ * calculate the angle between two coordinates
+ * @param {Object} p1
+ * @param {Object} p2
+ * @param {Array} [props] containing x and y keys
+ * @return {Number} angle
+ */
+function getAngle(p1, p2, props) {
+    if (!props) {
+        props = PROPS_XY;
+    }
+    var x = p2[props[0]] - p1[props[0]],
+        y = p2[props[1]] - p1[props[1]];
+    return Math.atan2(y, x) * 180 / Math.PI;
+}
+
+/**
+ * calculate the rotation degrees between two pointersets
+ * @param {Array} start array of pointers
+ * @param {Array} end array of pointers
+ * @return {Number} rotation
+ */
+function getRotation(start, end) {
+    return getAngle(end[1], end[0], PROPS_CLIENT_XY) + getAngle(start[1], start[0], PROPS_CLIENT_XY);
+}
+
+/**
+ * calculate the scale factor between two pointersets
+ * no scale is 1, and goes down to 0 when pinched together, and bigger when pinched out
+ * @param {Array} start array of pointers
+ * @param {Array} end array of pointers
+ * @return {Number} scale
+ */
+function getScale(start, end) {
+    return getDistance(end[0], end[1], PROPS_CLIENT_XY) / getDistance(start[0], start[1], PROPS_CLIENT_XY);
+}
+
+var MOUSE_INPUT_MAP = {
+    mousedown: INPUT_START,
+    mousemove: INPUT_MOVE,
+    mouseup: INPUT_END
+};
+
+var MOUSE_ELEMENT_EVENTS = 'mousedown';
+var MOUSE_WINDOW_EVENTS = 'mousemove mouseup';
+
+/**
+ * Mouse events input
+ * @constructor
+ * @extends Input
+ */
+function MouseInput() {
+    this.evEl = MOUSE_ELEMENT_EVENTS;
+    this.evWin = MOUSE_WINDOW_EVENTS;
+
+    this.pressed = false; // mousedown state
+
+    Input.apply(this, arguments);
+}
+
+inherit(MouseInput, Input, {
+    /**
+     * handle mouse events
+     * @param {Object} ev
+     */
+    handler: function MEhandler(ev) {
+        var eventType = MOUSE_INPUT_MAP[ev.type];
+
+        // on start we want to have the left mouse button down
+        if (eventType & INPUT_START && ev.button === 0) {
+            this.pressed = true;
+        }
+
+        if (eventType & INPUT_MOVE && ev.which !== 1) {
+            eventType = INPUT_END;
+        }
+
+        // mouse must be down
+        if (!this.pressed) {
+            return;
+        }
+
+        if (eventType & INPUT_END) {
+            this.pressed = false;
+        }
+
+        this.callback(this.manager, eventType, {
+            pointers: [ev],
+            changedPointers: [ev],
+            pointerType: INPUT_TYPE_MOUSE,
+            srcEvent: ev
+        });
+    }
+});
+
+var POINTER_INPUT_MAP = {
+    pointerdown: INPUT_START,
+    pointermove: INPUT_MOVE,
+    pointerup: INPUT_END,
+    pointercancel: INPUT_CANCEL,
+    pointerout: INPUT_CANCEL
+};
+
+// in IE10 the pointer types is defined as an enum
+var IE10_POINTER_TYPE_ENUM = {
+    2: INPUT_TYPE_TOUCH,
+    3: INPUT_TYPE_PEN,
+    4: INPUT_TYPE_MOUSE,
+    5: INPUT_TYPE_KINECT // see https://twitter.com/jacobrossi/status/480596438489890816
+};
+
+var POINTER_ELEMENT_EVENTS = 'pointerdown';
+var POINTER_WINDOW_EVENTS = 'pointermove pointerup pointercancel';
+
+// IE10 has prefixed support, and case-sensitive
+if (window.MSPointerEvent && !window.PointerEvent) {
+    POINTER_ELEMENT_EVENTS = 'MSPointerDown';
+    POINTER_WINDOW_EVENTS = 'MSPointerMove MSPointerUp MSPointerCancel';
+}
+
+/**
+ * Pointer events input
+ * @constructor
+ * @extends Input
+ */
+function PointerEventInput() {
+    this.evEl = POINTER_ELEMENT_EVENTS;
+    this.evWin = POINTER_WINDOW_EVENTS;
+
+    Input.apply(this, arguments);
+
+    this.store = (this.manager.session.pointerEvents = []);
+}
+
+inherit(PointerEventInput, Input, {
+    /**
+     * handle mouse events
+     * @param {Object} ev
+     */
+    handler: function PEhandler(ev) {
+        var store = this.store;
+        var removePointer = false;
+
+        var eventTypeNormalized = ev.type.toLowerCase().replace('ms', '');
+        var eventType = POINTER_INPUT_MAP[eventTypeNormalized];
+        var pointerType = IE10_POINTER_TYPE_ENUM[ev.pointerType] || ev.pointerType;
+
+        var isTouch = (pointerType == INPUT_TYPE_TOUCH);
+
+        // get index of the event in the store
+        var storeIndex = inArray(store, ev.pointerId, 'pointerId');
+
+        // start and mouse must be down
+        if (eventType & INPUT_START && (ev.button === 0 || isTouch)) {
+            if (storeIndex < 0) {
+                store.push(ev);
+                storeIndex = store.length - 1;
+            }
+        } else if (eventType & (INPUT_END | INPUT_CANCEL)) {
+            removePointer = true;
+        }
+
+        // it not found, so the pointer hasn't been down (so it's probably a hover)
+        if (storeIndex < 0) {
+            return;
+        }
+
+        // update the event in the store
+        store[storeIndex] = ev;
+
+        this.callback(this.manager, eventType, {
+            pointers: store,
+            changedPointers: [ev],
+            pointerType: pointerType,
+            srcEvent: ev
+        });
+
+        if (removePointer) {
+            // remove from the store
+            store.splice(storeIndex, 1);
+        }
+    }
+});
+
+var SINGLE_TOUCH_INPUT_MAP = {
+    touchstart: INPUT_START,
+    touchmove: INPUT_MOVE,
+    touchend: INPUT_END,
+    touchcancel: INPUT_CANCEL
+};
+
+var SINGLE_TOUCH_TARGET_EVENTS = 'touchstart';
+var SINGLE_TOUCH_WINDOW_EVENTS = 'touchstart touchmove touchend touchcancel';
+
+/**
+ * Touch events input
+ * @constructor
+ * @extends Input
+ */
+function SingleTouchInput() {
+    this.evTarget = SINGLE_TOUCH_TARGET_EVENTS;
+    this.evWin = SINGLE_TOUCH_WINDOW_EVENTS;
+    this.started = false;
+
+    Input.apply(this, arguments);
+}
+
+inherit(SingleTouchInput, Input, {
+    handler: function TEhandler(ev) {
+        var type = SINGLE_TOUCH_INPUT_MAP[ev.type];
+
+        // should we handle the touch events?
+        if (type === INPUT_START) {
+            this.started = true;
+        }
+
+        if (!this.started) {
+            return;
+        }
+
+        var touches = normalizeSingleTouches.call(this, ev, type);
+
+        // when done, reset the started state
+        if (type & (INPUT_END | INPUT_CANCEL) && touches[0].length - touches[1].length === 0) {
+            this.started = false;
+        }
+
+        this.callback(this.manager, type, {
+            pointers: touches[0],
+            changedPointers: touches[1],
+            pointerType: INPUT_TYPE_TOUCH,
+            srcEvent: ev
+        });
+    }
+});
+
+/**
+ * @this {TouchInput}
+ * @param {Object} ev
+ * @param {Number} type flag
+ * @returns {undefined|Array} [all, changed]
+ */
+function normalizeSingleTouches(ev, type) {
+    var all = toArray(ev.touches);
+    var changed = toArray(ev.changedTouches);
+
+    if (type & (INPUT_END | INPUT_CANCEL)) {
+        all = uniqueArray(all.concat(changed), 'identifier', true);
+    }
+
+    return [all, changed];
+}
+
+var TOUCH_INPUT_MAP = {
+    touchstart: INPUT_START,
+    touchmove: INPUT_MOVE,
+    touchend: INPUT_END,
+    touchcancel: INPUT_CANCEL
+};
+
+var TOUCH_TARGET_EVENTS = 'touchstart touchmove touchend touchcancel';
+
+/**
+ * Multi-user touch events input
+ * @constructor
+ * @extends Input
+ */
+function TouchInput() {
+    this.evTarget = TOUCH_TARGET_EVENTS;
+    this.targetIds = {};
+
+    Input.apply(this, arguments);
+}
+
+inherit(TouchInput, Input, {
+    handler: function MTEhandler(ev) {
+        var type = TOUCH_INPUT_MAP[ev.type];
+        var touches = getTouches.call(this, ev, type);
+        if (!touches) {
+            return;
+        }
+
+        this.callback(this.manager, type, {
+            pointers: touches[0],
+            changedPointers: touches[1],
+            pointerType: INPUT_TYPE_TOUCH,
+            srcEvent: ev
+        });
+    }
+});
+
+/**
+ * @this {TouchInput}
+ * @param {Object} ev
+ * @param {Number} type flag
+ * @returns {undefined|Array} [all, changed]
+ */
+function getTouches(ev, type) {
+    var allTouches = toArray(ev.touches);
+    var targetIds = this.targetIds;
+
+    // when there is only one touch, the process can be simplified
+    if (type & (INPUT_START | INPUT_MOVE) && allTouches.length === 1) {
+        targetIds[allTouches[0].identifier] = true;
+        return [allTouches, allTouches];
+    }
+
+    var i,
+        targetTouches,
+        changedTouches = toArray(ev.changedTouches),
+        changedTargetTouches = [],
+        target = this.target;
+
+    // get target touches from touches
+    targetTouches = allTouches.filter(function(touch) {
+        return hasParent(touch.target, target);
+    });
+
+    // collect touches
+    if (type === INPUT_START) {
+        i = 0;
+        while (i < targetTouches.length) {
+            targetIds[targetTouches[i].identifier] = true;
+            i++;
+        }
+    }
+
+    // filter changed touches to only contain touches that exist in the collected target ids
+    i = 0;
+    while (i < changedTouches.length) {
+        if (targetIds[changedTouches[i].identifier]) {
+            changedTargetTouches.push(changedTouches[i]);
+        }
+
+        // cleanup removed touches
+        if (type & (INPUT_END | INPUT_CANCEL)) {
+            delete targetIds[changedTouches[i].identifier];
+        }
+        i++;
+    }
+
+    if (!changedTargetTouches.length) {
+        return;
+    }
+
+    return [
+        // merge targetTouches with changedTargetTouches so it contains ALL touches, including 'end' and 'cancel'
+        uniqueArray(targetTouches.concat(changedTargetTouches), 'identifier', true),
+        changedTargetTouches
+    ];
+}
+
+/**
+ * Combined touch and mouse input
+ *
+ * Touch has a higher priority then mouse, and while touching no mouse events are allowed.
+ * This because touch devices also emit mouse events while doing a touch.
+ *
+ * @constructor
+ * @extends Input
+ */
+
+var DEDUP_TIMEOUT = 2500;
+var DEDUP_DISTANCE = 25;
+
+function TouchMouseInput() {
+    Input.apply(this, arguments);
+
+    var handler = bindFn(this.handler, this);
+    this.touch = new TouchInput(this.manager, handler);
+    this.mouse = new MouseInput(this.manager, handler);
+
+    this.primaryTouch = null;
+    this.lastTouches = [];
+}
+
+inherit(TouchMouseInput, Input, {
+    /**
+     * handle mouse and touch events
+     * @param {Hammer} manager
+     * @param {String} inputEvent
+     * @param {Object} inputData
+     */
+    handler: function TMEhandler(manager, inputEvent, inputData) {
+        var isTouch = (inputData.pointerType == INPUT_TYPE_TOUCH),
+            isMouse = (inputData.pointerType == INPUT_TYPE_MOUSE);
+
+        if (isMouse && inputData.sourceCapabilities && inputData.sourceCapabilities.firesTouchEvents) {
+            return;
+        }
+
+        // when we're in a touch event, record touches to  de-dupe synthetic mouse event
+        if (isTouch) {
+            recordTouches.call(this, inputEvent, inputData);
+        } else if (isMouse && isSyntheticEvent.call(this, inputData)) {
+            return;
+        }
+
+        this.callback(manager, inputEvent, inputData);
+    },
+
+    /**
+     * remove the event listeners
+     */
+    destroy: function destroy() {
+        this.touch.destroy();
+        this.mouse.destroy();
+    }
+});
+
+function recordTouches(eventType, eventData) {
+    if (eventType & INPUT_START) {
+        this.primaryTouch = eventData.changedPointers[0].identifier;
+        setLastTouch.call(this, eventData);
+    } else if (eventType & (INPUT_END | INPUT_CANCEL)) {
+        setLastTouch.call(this, eventData);
+    }
+}
+
+function setLastTouch(eventData) {
+    var touch = eventData.changedPointers[0];
+
+    if (touch.identifier === this.primaryTouch) {
+        var lastTouch = {x: touch.clientX, y: touch.clientY};
+        this.lastTouches.push(lastTouch);
+        var lts = this.lastTouches;
+        var removeLastTouch = function() {
+            var i = lts.indexOf(lastTouch);
+            if (i > -1) {
+                lts.splice(i, 1);
+            }
+        };
+        setTimeout(removeLastTouch, DEDUP_TIMEOUT);
+    }
+}
+
+function isSyntheticEvent(eventData) {
+    var x = eventData.srcEvent.clientX, y = eventData.srcEvent.clientY;
+    for (var i = 0; i < this.lastTouches.length; i++) {
+        var t = this.lastTouches[i];
+        var dx = Math.abs(x - t.x), dy = Math.abs(y - t.y);
+        if (dx <= DEDUP_DISTANCE && dy <= DEDUP_DISTANCE) {
+            return true;
+        }
+    }
+    return false;
+}
+
+var PREFIXED_TOUCH_ACTION = prefixed(TEST_ELEMENT.style, 'touchAction');
+var NATIVE_TOUCH_ACTION = PREFIXED_TOUCH_ACTION !== undefined;
+
+// magical touchAction value
+var TOUCH_ACTION_COMPUTE = 'compute';
+var TOUCH_ACTION_AUTO = 'auto';
+var TOUCH_ACTION_MANIPULATION = 'manipulation'; // not implemented
+var TOUCH_ACTION_NONE = 'none';
+var TOUCH_ACTION_PAN_X = 'pan-x';
+var TOUCH_ACTION_PAN_Y = 'pan-y';
+var TOUCH_ACTION_MAP = getTouchActionProps();
+
+/**
+ * Touch Action
+ * sets the touchAction property or uses the js alternative
+ * @param {Manager} manager
+ * @param {String} value
+ * @constructor
+ */
+function TouchAction(manager, value) {
+    this.manager = manager;
+    this.set(value);
+}
+
+TouchAction.prototype = {
+    /**
+     * set the touchAction value on the element or enable the polyfill
+     * @param {String} value
+     */
+    set: function(value) {
+        // find out the touch-action by the event handlers
+        if (value == TOUCH_ACTION_COMPUTE) {
+            value = this.compute();
+        }
+
+        if (NATIVE_TOUCH_ACTION && this.manager.element.style && TOUCH_ACTION_MAP[value]) {
+            this.manager.element.style[PREFIXED_TOUCH_ACTION] = value;
+        }
+        this.actions = value.toLowerCase().trim();
+    },
+
+    /**
+     * just re-set the touchAction value
+     */
+    update: function() {
+        this.set(this.manager.options.touchAction);
+    },
+
+    /**
+     * compute the value for the touchAction property based on the recognizer's settings
+     * @returns {String} value
+     */
+    compute: function() {
+        var actions = [];
+        each(this.manager.recognizers, function(recognizer) {
+            if (boolOrFn(recognizer.options.enable, [recognizer])) {
+                actions = actions.concat(recognizer.getTouchAction());
+            }
+        });
+        return cleanTouchActions(actions.join(' '));
+    },
+
+    /**
+     * this method is called on each input cycle and provides the preventing of the browser behavior
+     * @param {Object} input
+     */
+    preventDefaults: function(input) {
+        var srcEvent = input.srcEvent;
+        var direction = input.offsetDirection;
+
+        // if the touch action did prevented once this session
+        if (this.manager.session.prevented) {
+            srcEvent.preventDefault();
+            return;
+        }
+
+        var actions = this.actions;
+        var hasNone = inStr(actions, TOUCH_ACTION_NONE) && !TOUCH_ACTION_MAP[TOUCH_ACTION_NONE];
+        var hasPanY = inStr(actions, TOUCH_ACTION_PAN_Y) && !TOUCH_ACTION_MAP[TOUCH_ACTION_PAN_Y];
+        var hasPanX = inStr(actions, TOUCH_ACTION_PAN_X) && !TOUCH_ACTION_MAP[TOUCH_ACTION_PAN_X];
+
+        if (hasNone) {
+            //do not prevent defaults if this is a tap gesture
+
+            var isTapPointer = input.pointers.length === 1;
+            var isTapMovement = input.distance < 2;
+            var isTapTouchTime = input.deltaTime < 250;
+
+            if (isTapPointer && isTapMovement && isTapTouchTime) {
+                return;
+            }
+        }
+
+        if (hasPanX && hasPanY) {
+            // `pan-x pan-y` means browser handles all scrolling/panning, do not prevent
+            return;
+        }
+
+        if (hasNone ||
+            (hasPanY && direction & DIRECTION_HORIZONTAL) ||
+            (hasPanX && direction & DIRECTION_VERTICAL)) {
+            return this.preventSrc(srcEvent);
+        }
+    },
+
+    /**
+     * call preventDefault to prevent the browser's default behavior (scrolling in most cases)
+     * @param {Object} srcEvent
+     */
+    preventSrc: function(srcEvent) {
+        this.manager.session.prevented = true;
+        srcEvent.preventDefault();
+    }
+};
+
+/**
+ * when the touchActions are collected they are not a valid value, so we need to clean things up. *
+ * @param {String} actions
+ * @returns {*}
+ */
+function cleanTouchActions(actions) {
+    // none
+    if (inStr(actions, TOUCH_ACTION_NONE)) {
+        return TOUCH_ACTION_NONE;
+    }
+
+    var hasPanX = inStr(actions, TOUCH_ACTION_PAN_X);
+    var hasPanY = inStr(actions, TOUCH_ACTION_PAN_Y);
+
+    // if both pan-x and pan-y are set (different recognizers
+    // for different directions, e.g. horizontal pan but vertical swipe?)
+    // we need none (as otherwise with pan-x pan-y combined none of these
+    // recognizers will work, since the browser would handle all panning
+    if (hasPanX && hasPanY) {
+        return TOUCH_ACTION_NONE;
+    }
+
+    // pan-x OR pan-y
+    if (hasPanX || hasPanY) {
+        return hasPanX ? TOUCH_ACTION_PAN_X : TOUCH_ACTION_PAN_Y;
+    }
+
+    // manipulation
+    if (inStr(actions, TOUCH_ACTION_MANIPULATION)) {
+        return TOUCH_ACTION_MANIPULATION;
+    }
+
+    return TOUCH_ACTION_AUTO;
+}
+
+function getTouchActionProps() {
+    if (!NATIVE_TOUCH_ACTION) {
+        return false;
+    }
+    var touchMap = {};
+    var cssSupports = window.CSS && window.CSS.supports;
+    ['auto', 'manipulation', 'pan-y', 'pan-x', 'pan-x pan-y', 'none'].forEach(function(val) {
+
+        // If css.supports is not supported but there is native touch-action assume it supports
+        // all values. This is the case for IE 10 and 11.
+        touchMap[val] = cssSupports ? window.CSS.supports('touch-action', val) : true;
+    });
+    return touchMap;
+}
+
+/**
+ * Recognizer flow explained; *
+ * All recognizers have the initial state of POSSIBLE when a input session starts.
+ * The definition of a input session is from the first input until the last input, with all it's movement in it. *
+ * Example session for mouse-input: mousedown -> mousemove -> mouseup
+ *
+ * On each recognizing cycle (see Manager.recognize) the .recognize() method is executed
+ * which determines with state it should be.
+ *
+ * If the recognizer has the state FAILED, CANCELLED or RECOGNIZED (equals ENDED), it is reset to
+ * POSSIBLE to give it another change on the next cycle.
+ *
+ *               Possible
+ *                  |
+ *            +-----+---------------+
+ *            |                     |
+ *      +-----+-----+               |
+ *      |           |               |
+ *   Failed      Cancelled          |
+ *                          +-------+------+
+ *                          |              |
+ *                      Recognized       Began
+ *                                         |
+ *                                      Changed
+ *                                         |
+ *                                  Ended/Recognized
+ */
+var STATE_POSSIBLE = 1;
+var STATE_BEGAN = 2;
+var STATE_CHANGED = 4;
+var STATE_ENDED = 8;
+var STATE_RECOGNIZED = STATE_ENDED;
+var STATE_CANCELLED = 16;
+var STATE_FAILED = 32;
+
+/**
+ * Recognizer
+ * Every recognizer needs to extend from this class.
+ * @constructor
+ * @param {Object} options
+ */
+function Recognizer(options) {
+    this.options = assign({}, this.defaults, options || {});
+
+    this.id = uniqueId();
+
+    this.manager = null;
+
+    // default is enable true
+    this.options.enable = ifUndefined(this.options.enable, true);
+
+    this.state = STATE_POSSIBLE;
+
+    this.simultaneous = {};
+    this.requireFail = [];
+}
+
+Recognizer.prototype = {
+    /**
+     * @virtual
+     * @type {Object}
+     */
+    defaults: {},
+
+    /**
+     * set options
+     * @param {Object} options
+     * @return {Recognizer}
+     */
+    set: function(options) {
+        assign(this.options, options);
+
+        // also update the touchAction, in case something changed about the directions/enabled state
+        this.manager && this.manager.touchAction.update();
+        return this;
+    },
+
+    /**
+     * recognize simultaneous with an other recognizer.
+     * @param {Recognizer} otherRecognizer
+     * @returns {Recognizer} this
+     */
+    recognizeWith: function(otherRecognizer) {
+        if (invokeArrayArg(otherRecognizer, 'recognizeWith', this)) {
+            return this;
+        }
+
+        var simultaneous = this.simultaneous;
+        otherRecognizer = getRecognizerByNameIfManager(otherRecognizer, this);
+        if (!simultaneous[otherRecognizer.id]) {
+            simultaneous[otherRecognizer.id] = otherRecognizer;
+            otherRecognizer.recognizeWith(this);
+        }
+        return this;
+    },
+
+    /**
+     * drop the simultaneous link. it doesnt remove the link on the other recognizer.
+     * @param {Recognizer} otherRecognizer
+     * @returns {Recognizer} this
+     */
+    dropRecognizeWith: function(otherRecognizer) {
+        if (invokeArrayArg(otherRecognizer, 'dropRecognizeWith', this)) {
+            return this;
+        }
+
+        otherRecognizer = getRecognizerByNameIfManager(otherRecognizer, this);
+        delete this.simultaneous[otherRecognizer.id];
+        return this;
+    },
+
+    /**
+     * recognizer can only run when an other is failing
+     * @param {Recognizer} otherRecognizer
+     * @returns {Recognizer} this
+     */
+    requireFailure: function(otherRecognizer) {
+        if (invokeArrayArg(otherRecognizer, 'requireFailure', this)) {
+            return this;
+        }
+
+        var requireFail = this.requireFail;
+        otherRecognizer = getRecognizerByNameIfManager(otherRecognizer, this);
+        if (inArray(requireFail, otherRecognizer) === -1) {
+            requireFail.push(otherRecognizer);
+            otherRecognizer.requireFailure(this);
+        }
+        return this;
+    },
+
+    /**
+     * drop the requireFailure link. it does not remove the link on the other recognizer.
+     * @param {Recognizer} otherRecognizer
+     * @returns {Recognizer} this
+     */
+    dropRequireFailure: function(otherRecognizer) {
+        if (invokeArrayArg(otherRecognizer, 'dropRequireFailure', this)) {
+            return this;
+        }
+
+        otherRecognizer = getRecognizerByNameIfManager(otherRecognizer, this);
+        var index = inArray(this.requireFail, otherRecognizer);
+        if (index > -1) {
+            this.requireFail.splice(index, 1);
+        }
+        return this;
+    },
+
+    /**
+     * has require failures boolean
+     * @returns {boolean}
+     */
+    hasRequireFailures: function() {
+        return this.requireFail.length > 0;
+    },
+
+    /**
+     * if the recognizer can recognize simultaneous with an other recognizer
+     * @param {Recognizer} otherRecognizer
+     * @returns {Boolean}
+     */
+    canRecognizeWith: function(otherRecognizer) {
+        return !!this.simultaneous[otherRecognizer.id];
+    },
+
+    /**
+     * You should use `tryEmit` instead of `emit` directly to check
+     * that all the needed recognizers has failed before emitting.
+     * @param {Object} input
+     */
+    emit: function(input) {
+        var self = this;
+        var state = this.state;
+
+        function emit(event) {
+            self.manager.emit(event, input);
+        }
+
+        // 'panstart' and 'panmove'
+        if (state < STATE_ENDED) {
+            emit(self.options.event + stateStr(state));
+        }
+
+        emit(self.options.event); // simple 'eventName' events
+
+        if (input.additionalEvent) { // additional event(panleft, panright, pinchin, pinchout...)
+            emit(input.additionalEvent);
+        }
+
+        // panend and pancancel
+        if (state >= STATE_ENDED) {
+            emit(self.options.event + stateStr(state));
+        }
+    },
+
+    /**
+     * Check that all the require failure recognizers has failed,
+     * if true, it emits a gesture event,
+     * otherwise, setup the state to FAILED.
+     * @param {Object} input
+     */
+    tryEmit: function(input) {
+        if (this.canEmit()) {
+            return this.emit(input);
+        }
+        // it's failing anyway
+        this.state = STATE_FAILED;
+    },
+
+    /**
+     * can we emit?
+     * @returns {boolean}
+     */
+    canEmit: function() {
+        var i = 0;
+        while (i < this.requireFail.length) {
+            if (!(this.requireFail[i].state & (STATE_FAILED | STATE_POSSIBLE))) {
+                return false;
+            }
+            i++;
+        }
+        return true;
+    },
+
+    /**
+     * update the recognizer
+     * @param {Object} inputData
+     */
+    recognize: function(inputData) {
+        // make a new copy of the inputData
+        // so we can change the inputData without messing up the other recognizers
+        var inputDataClone = assign({}, inputData);
+
+        // is is enabled and allow recognizing?
+        if (!boolOrFn(this.options.enable, [this, inputDataClone])) {
+            this.reset();
+            this.state = STATE_FAILED;
+            return;
+        }
+
+        // reset when we've reached the end
+        if (this.state & (STATE_RECOGNIZED | STATE_CANCELLED | STATE_FAILED)) {
+            this.state = STATE_POSSIBLE;
+        }
+
+        this.state = this.process(inputDataClone);
+
+        // the recognizer has recognized a gesture
+        // so trigger an event
+        if (this.state & (STATE_BEGAN | STATE_CHANGED | STATE_ENDED | STATE_CANCELLED)) {
+            this.tryEmit(inputDataClone);
+        }
+    },
+
+    /**
+     * return the state of the recognizer
+     * the actual recognizing happens in this method
+     * @virtual
+     * @param {Object} inputData
+     * @returns {Const} STATE
+     */
+    process: function(inputData) { }, // jshint ignore:line
+
+    /**
+     * return the preferred touch-action
+     * @virtual
+     * @returns {Array}
+     */
+    getTouchAction: function() { },
+
+    /**
+     * called when the gesture isn't allowed to recognize
+     * like when another is being recognized or it is disabled
+     * @virtual
+     */
+    reset: function() { }
+};
+
+/**
+ * get a usable string, used as event postfix
+ * @param {Const} state
+ * @returns {String} state
+ */
+function stateStr(state) {
+    if (state & STATE_CANCELLED) {
+        return 'cancel';
+    } else if (state & STATE_ENDED) {
+        return 'end';
+    } else if (state & STATE_CHANGED) {
+        return 'move';
+    } else if (state & STATE_BEGAN) {
+        return 'start';
+    }
+    return '';
+}
+
+/**
+ * direction cons to string
+ * @param {Const} direction
+ * @returns {String}
+ */
+function directionStr(direction) {
+    if (direction == DIRECTION_DOWN) {
+        return 'down';
+    } else if (direction == DIRECTION_UP) {
+        return 'up';
+    } else if (direction == DIRECTION_LEFT) {
+        return 'left';
+    } else if (direction == DIRECTION_RIGHT) {
+        return 'right';
+    }
+    return '';
+}
+
+/**
+ * get a recognizer by name if it is bound to a manager
+ * @param {Recognizer|String} otherRecognizer
+ * @param {Recognizer} recognizer
+ * @returns {Recognizer}
+ */
+function getRecognizerByNameIfManager(otherRecognizer, recognizer) {
+    var manager = recognizer.manager;
+    if (manager) {
+        return manager.get(otherRecognizer);
+    }
+    return otherRecognizer;
+}
+
+/**
+ * This recognizer is just used as a base for the simple attribute recognizers.
+ * @constructor
+ * @extends Recognizer
+ */
+function AttrRecognizer() {
+    Recognizer.apply(this, arguments);
+}
+
+inherit(AttrRecognizer, Recognizer, {
+    /**
+     * @namespace
+     * @memberof AttrRecognizer
+     */
+    defaults: {
+        /**
+         * @type {Number}
+         * @default 1
+         */
+        pointers: 1
+    },
+
+    /**
+     * Used to check if it the recognizer receives valid input, like input.distance > 10.
+     * @memberof AttrRecognizer
+     * @param {Object} input
+     * @returns {Boolean} recognized
+     */
+    attrTest: function(input) {
+        var optionPointers = this.options.pointers;
+        return optionPointers === 0 || input.pointers.length === optionPointers;
+    },
+
+    /**
+     * Process the input and return the state for the recognizer
+     * @memberof AttrRecognizer
+     * @param {Object} input
+     * @returns {*} State
+     */
+    process: function(input) {
+        var state = this.state;
+        var eventType = input.eventType;
+
+        var isRecognized = state & (STATE_BEGAN | STATE_CHANGED);
+        var isValid = this.attrTest(input);
+
+        // on cancel input and we've recognized before, return STATE_CANCELLED
+        if (isRecognized && (eventType & INPUT_CANCEL || !isValid)) {
+            return state | STATE_CANCELLED;
+        } else if (isRecognized || isValid) {
+            if (eventType & INPUT_END) {
+                return state | STATE_ENDED;
+            } else if (!(state & STATE_BEGAN)) {
+                return STATE_BEGAN;
+            }
+            return state | STATE_CHANGED;
+        }
+        return STATE_FAILED;
+    }
+});
+
+/**
+ * Pan
+ * Recognized when the pointer is down and moved in the allowed direction.
+ * @constructor
+ * @extends AttrRecognizer
+ */
+function PanRecognizer() {
+    AttrRecognizer.apply(this, arguments);
+
+    this.pX = null;
+    this.pY = null;
+}
+
+inherit(PanRecognizer, AttrRecognizer, {
+    /**
+     * @namespace
+     * @memberof PanRecognizer
+     */
+    defaults: {
+        event: 'pan',
+        threshold: 10,
+        pointers: 1,
+        direction: DIRECTION_ALL
+    },
+
+    getTouchAction: function() {
+        var direction = this.options.direction;
+        var actions = [];
+        if (direction & DIRECTION_HORIZONTAL) {
+            actions.push(TOUCH_ACTION_PAN_Y);
+        }
+        if (direction & DIRECTION_VERTICAL) {
+            actions.push(TOUCH_ACTION_PAN_X);
+        }
+        return actions;
+    },
+
+    directionTest: function(input) {
+        var options = this.options;
+        var hasMoved = true;
+        var distance = input.distance;
+        var direction = input.direction;
+        var x = input.deltaX;
+        var y = input.deltaY;
+
+        // lock to axis?
+        if (!(direction & options.direction)) {
+            if (options.direction & DIRECTION_HORIZONTAL) {
+                direction = (x === 0) ? DIRECTION_NONE : (x < 0) ? DIRECTION_LEFT : DIRECTION_RIGHT;
+                hasMoved = x != this.pX;
+                distance = Math.abs(input.deltaX);
+            } else {
+                direction = (y === 0) ? DIRECTION_NONE : (y < 0) ? DIRECTION_UP : DIRECTION_DOWN;
+                hasMoved = y != this.pY;
+                distance = Math.abs(input.deltaY);
+            }
+        }
+        input.direction = direction;
+        return hasMoved && distance > options.threshold && direction & options.direction;
+    },
+
+    attrTest: function(input) {
+        return AttrRecognizer.prototype.attrTest.call(this, input) &&
+            (this.state & STATE_BEGAN || (!(this.state & STATE_BEGAN) && this.directionTest(input)));
+    },
+
+    emit: function(input) {
+
+        this.pX = input.deltaX;
+        this.pY = input.deltaY;
+
+        var direction = directionStr(input.direction);
+
+        if (direction) {
+            input.additionalEvent = this.options.event + direction;
+        }
+        this._super.emit.call(this, input);
+    }
+});
+
+/**
+ * Pinch
+ * Recognized when two or more pointers are moving toward (zoom-in) or away from each other (zoom-out).
+ * @constructor
+ * @extends AttrRecognizer
+ */
+function PinchRecognizer() {
+    AttrRecognizer.apply(this, arguments);
+}
+
+inherit(PinchRecognizer, AttrRecognizer, {
+    /**
+     * @namespace
+     * @memberof PinchRecognizer
+     */
+    defaults: {
+        event: 'pinch',
+        threshold: 0,
+        pointers: 2
+    },
+
+    getTouchAction: function() {
+        return [TOUCH_ACTION_NONE];
+    },
+
+    attrTest: function(input) {
+        return this._super.attrTest.call(this, input) &&
+            (Math.abs(input.scale - 1) > this.options.threshold || this.state & STATE_BEGAN);
+    },
+
+    emit: function(input) {
+        if (input.scale !== 1) {
+            var inOut = input.scale < 1 ? 'in' : 'out';
+            input.additionalEvent = this.options.event + inOut;
+        }
+        this._super.emit.call(this, input);
+    }
+});
+
+/**
+ * Press
+ * Recognized when the pointer is down for x ms without any movement.
+ * @constructor
+ * @extends Recognizer
+ */
+function PressRecognizer() {
+    Recognizer.apply(this, arguments);
+
+    this._timer = null;
+    this._input = null;
+}
+
+inherit(PressRecognizer, Recognizer, {
+    /**
+     * @namespace
+     * @memberof PressRecognizer
+     */
+    defaults: {
+        event: 'press',
+        pointers: 1,
+        time: 251, // minimal time of the pointer to be pressed
+        threshold: 9 // a minimal movement is ok, but keep it low
+    },
+
+    getTouchAction: function() {
+        return [TOUCH_ACTION_AUTO];
+    },
+
+    process: function(input) {
+        var options = this.options;
+        var validPointers = input.pointers.length === options.pointers;
+        var validMovement = input.distance < options.threshold;
+        var validTime = input.deltaTime > options.time;
+
+        this._input = input;
+
+        // we only allow little movement
+        // and we've reached an end event, so a tap is possible
+        if (!validMovement || !validPointers || (input.eventType & (INPUT_END | INPUT_CANCEL) && !validTime)) {
+            this.reset();
+        } else if (input.eventType & INPUT_START) {
+            this.reset();
+            this._timer = setTimeoutContext(function() {
+                this.state = STATE_RECOGNIZED;
+                this.tryEmit();
+            }, options.time, this);
+        } else if (input.eventType & INPUT_END) {
+            return STATE_RECOGNIZED;
+        }
+        return STATE_FAILED;
+    },
+
+    reset: function() {
+        clearTimeout(this._timer);
+    },
+
+    emit: function(input) {
+        if (this.state !== STATE_RECOGNIZED) {
+            return;
+        }
+
+        if (input && (input.eventType & INPUT_END)) {
+            this.manager.emit(this.options.event + 'up', input);
+        } else {
+            this._input.timeStamp = now();
+            this.manager.emit(this.options.event, this._input);
+        }
+    }
+});
+
+/**
+ * Rotate
+ * Recognized when two or more pointer are moving in a circular motion.
+ * @constructor
+ * @extends AttrRecognizer
+ */
+function RotateRecognizer() {
+    AttrRecognizer.apply(this, arguments);
+}
+
+inherit(RotateRecognizer, AttrRecognizer, {
+    /**
+     * @namespace
+     * @memberof RotateRecognizer
+     */
+    defaults: {
+        event: 'rotate',
+        threshold: 0,
+        pointers: 2
+    },
+
+    getTouchAction: function() {
+        return [TOUCH_ACTION_NONE];
+    },
+
+    attrTest: function(input) {
+        return this._super.attrTest.call(this, input) &&
+            (Math.abs(input.rotation) > this.options.threshold || this.state & STATE_BEGAN);
+    }
+});
+
+/**
+ * Swipe
+ * Recognized when the pointer is moving fast (velocity), with enough distance in the allowed direction.
+ * @constructor
+ * @extends AttrRecognizer
+ */
+function SwipeRecognizer() {
+    AttrRecognizer.apply(this, arguments);
+}
+
+inherit(SwipeRecognizer, AttrRecognizer, {
+    /**
+     * @namespace
+     * @memberof SwipeRecognizer
+     */
+    defaults: {
+        event: 'swipe',
+        threshold: 10,
+        velocity: 0.3,
+        direction: DIRECTION_HORIZONTAL | DIRECTION_VERTICAL,
+        pointers: 1
+    },
+
+    getTouchAction: function() {
+        return PanRecognizer.prototype.getTouchAction.call(this);
+    },
+
+    attrTest: function(input) {
+        var direction = this.options.direction;
+        var velocity;
+
+        if (direction & (DIRECTION_HORIZONTAL | DIRECTION_VERTICAL)) {
+            velocity = input.overallVelocity;
+        } else if (direction & DIRECTION_HORIZONTAL) {
+            velocity = input.overallVelocityX;
+        } else if (direction & DIRECTION_VERTICAL) {
+            velocity = input.overallVelocityY;
+        }
+
+        return this._super.attrTest.call(this, input) &&
+            direction & input.offsetDirection &&
+            input.distance > this.options.threshold &&
+            input.maxPointers == this.options.pointers &&
+            abs(velocity) > this.options.velocity && input.eventType & INPUT_END;
+    },
+
+    emit: function(input) {
+        var direction = directionStr(input.offsetDirection);
+        if (direction) {
+            this.manager.emit(this.options.event + direction, input);
+        }
+
+        this.manager.emit(this.options.event, input);
+    }
+});
+
+/**
+ * A tap is ecognized when the pointer is doing a small tap/click. Multiple taps are recognized if they occur
+ * between the given interval and position. The delay option can be used to recognize multi-taps without firing
+ * a single tap.
+ *
+ * The eventData from the emitted event contains the property `tapCount`, which contains the amount of
+ * multi-taps being recognized.
+ * @constructor
+ * @extends Recognizer
+ */
+function TapRecognizer() {
+    Recognizer.apply(this, arguments);
+
+    // previous time and center,
+    // used for tap counting
+    this.pTime = false;
+    this.pCenter = false;
+
+    this._timer = null;
+    this._input = null;
+    this.count = 0;
+}
+
+inherit(TapRecognizer, Recognizer, {
+    /**
+     * @namespace
+     * @memberof PinchRecognizer
+     */
+    defaults: {
+        event: 'tap',
+        pointers: 1,
+        taps: 1,
+        interval: 300, // max time between the multi-tap taps
+        time: 250, // max time of the pointer to be down (like finger on the screen)
+        threshold: 9, // a minimal movement is ok, but keep it low
+        posThreshold: 10 // a multi-tap can be a bit off the initial position
+    },
+
+    getTouchAction: function() {
+        return [TOUCH_ACTION_MANIPULATION];
+    },
+
+    process: function(input) {
+        var options = this.options;
+
+        var validPointers = input.pointers.length === options.pointers;
+        var validMovement = input.distance < options.threshold;
+        var validTouchTime = input.deltaTime < options.time;
+
+        this.reset();
+
+        if ((input.eventType & INPUT_START) && (this.count === 0)) {
+            return this.failTimeout();
+        }
+
+        // we only allow little movement
+        // and we've reached an end event, so a tap is possible
+        if (validMovement && validTouchTime && validPointers) {
+            if (input.eventType != INPUT_END) {
+                return this.failTimeout();
+            }
+
+            var validInterval = this.pTime ? (input.timeStamp - this.pTime < options.interval) : true;
+            var validMultiTap = !this.pCenter || getDistance(this.pCenter, input.center) < options.posThreshold;
+
+            this.pTime = input.timeStamp;
+            this.pCenter = input.center;
+
+            if (!validMultiTap || !validInterval) {
+                this.count = 1;
+            } else {
+                this.count += 1;
+            }
+
+            this._input = input;
+
+            // if tap count matches we have recognized it,
+            // else it has began recognizing...
+            var tapCount = this.count % options.taps;
+            if (tapCount === 0) {
+                // no failing requirements, immediately trigger the tap event
+                // or wait as long as the multitap interval to trigger
+                if (!this.hasRequireFailures()) {
+                    return STATE_RECOGNIZED;
+                } else {
+                    this._timer = setTimeoutContext(function() {
+                        this.state = STATE_RECOGNIZED;
+                        this.tryEmit();
+                    }, options.interval, this);
+                    return STATE_BEGAN;
+                }
+            }
+        }
+        return STATE_FAILED;
+    },
+
+    failTimeout: function() {
+        this._timer = setTimeoutContext(function() {
+            this.state = STATE_FAILED;
+        }, this.options.interval, this);
+        return STATE_FAILED;
+    },
+
+    reset: function() {
+        clearTimeout(this._timer);
+    },
+
+    emit: function() {
+        if (this.state == STATE_RECOGNIZED) {
+            this._input.tapCount = this.count;
+            this.manager.emit(this.options.event, this._input);
+        }
+    }
+});
+
+/**
+ * Simple way to create a manager with a default set of recognizers.
+ * @param {HTMLElement} element
+ * @param {Object} [options]
+ * @constructor
+ */
+function Hammer(element, options) {
+    options = options || {};
+    options.recognizers = ifUndefined(options.recognizers, Hammer.defaults.preset);
+    return new Manager(element, options);
+}
+
+/**
+ * @const {string}
+ */
+Hammer.VERSION = '2.0.7';
+
+/**
+ * default settings
+ * @namespace
+ */
+Hammer.defaults = {
+    /**
+     * set if DOM events are being triggered.
+     * But this is slower and unused by simple implementations, so disabled by default.
+     * @type {Boolean}
+     * @default false
+     */
+    domEvents: false,
+
+    /**
+     * The value for the touchAction property/fallback.
+     * When set to `compute` it will magically set the correct value based on the added recognizers.
+     * @type {String}
+     * @default compute
+     */
+    touchAction: TOUCH_ACTION_COMPUTE,
+
+    /**
+     * @type {Boolean}
+     * @default true
+     */
+    enable: true,
+
+    /**
+     * EXPERIMENTAL FEATURE -- can be removed/changed
+     * Change the parent input target element.
+     * If Null, then it is being set the to main element.
+     * @type {Null|EventTarget}
+     * @default null
+     */
+    inputTarget: null,
+
+    /**
+     * force an input class
+     * @type {Null|Function}
+     * @default null
+     */
+    inputClass: null,
+
+    /**
+     * Default recognizer setup when calling `Hammer()`
+     * When creating a new Manager these will be skipped.
+     * @type {Array}
+     */
+    preset: [
+        // RecognizerClass, options, [recognizeWith, ...], [requireFailure, ...]
+        [RotateRecognizer, {enable: false}],
+        [PinchRecognizer, {enable: false}, ['rotate']],
+        [SwipeRecognizer, {direction: DIRECTION_HORIZONTAL}],
+        [PanRecognizer, {direction: DIRECTION_HORIZONTAL}, ['swipe']],
+        [TapRecognizer],
+        [TapRecognizer, {event: 'doubletap', taps: 2}, ['tap']],
+        [PressRecognizer]
+    ],
+
+    /**
+     * Some CSS properties can be used to improve the working of Hammer.
+     * Add them to this method and they will be set when creating a new Manager.
+     * @namespace
+     */
+    cssProps: {
+        /**
+         * Disables text selection to improve the dragging gesture. Mainly for desktop browsers.
+         * @type {String}
+         * @default 'none'
+         */
+        userSelect: 'none',
+
+        /**
+         * Disable the Windows Phone grippers when pressing an element.
+         * @type {String}
+         * @default 'none'
+         */
+        touchSelect: 'none',
+
+        /**
+         * Disables the default callout shown when you touch and hold a touch target.
+         * On iOS, when you touch and hold a touch target such as a link, Safari displays
+         * a callout containing information about the link. This property allows you to disable that callout.
+         * @type {String}
+         * @default 'none'
+         */
+        touchCallout: 'none',
+
+        /**
+         * Specifies whether zooming is enabled. Used by IE10>
+         * @type {String}
+         * @default 'none'
+         */
+        contentZooming: 'none',
+
+        /**
+         * Specifies that an entire element should be draggable instead of its contents. Mainly for desktop browsers.
+         * @type {String}
+         * @default 'none'
+         */
+        userDrag: 'none',
+
+        /**
+         * Overrides the highlight color shown when the user taps a link or a JavaScript
+         * clickable element in iOS. This property obeys the alpha value, if specified.
+         * @type {String}
+         * @default 'rgba(0,0,0,0)'
+         */
+        tapHighlightColor: 'rgba(0,0,0,0)'
+    }
+};
+
+var STOP = 1;
+var FORCED_STOP = 2;
+
+/**
+ * Manager
+ * @param {HTMLElement} element
+ * @param {Object} [options]
+ * @constructor
+ */
+function Manager(element, options) {
+    this.options = assign({}, Hammer.defaults, options || {});
+
+    this.options.inputTarget = this.options.inputTarget || element;
+
+    this.handlers = {};
+    this.session = {};
+    this.recognizers = [];
+    this.oldCssProps = {};
+
+    this.element = element;
+    this.input = createInputInstance(this);
+    this.touchAction = new TouchAction(this, this.options.touchAction);
+
+    toggleCssProps(this, true);
+
+    each(this.options.recognizers, function(item) {
+        var recognizer = this.add(new (item[0])(item[1]));
+        item[2] && recognizer.recognizeWith(item[2]);
+        item[3] && recognizer.requireFailure(item[3]);
+    }, this);
+}
+
+Manager.prototype = {
+    /**
+     * set options
+     * @param {Object} options
+     * @returns {Manager}
+     */
+    set: function(options) {
+        assign(this.options, options);
+
+        // Options that need a little more setup
+        if (options.touchAction) {
+            this.touchAction.update();
+        }
+        if (options.inputTarget) {
+            // Clean up existing event listeners and reinitialize
+            this.input.destroy();
+            this.input.target = options.inputTarget;
+            this.input.init();
+        }
+        return this;
+    },
+
+    /**
+     * stop recognizing for this session.
+     * This session will be discarded, when a new [input]start event is fired.
+     * When forced, the recognizer cycle is stopped immediately.
+     * @param {Boolean} [force]
+     */
+    stop: function(force) {
+        this.session.stopped = force ? FORCED_STOP : STOP;
+    },
+
+    /**
+     * run the recognizers!
+     * called by the inputHandler function on every movement of the pointers (touches)
+     * it walks through all the recognizers and tries to detect the gesture that is being made
+     * @param {Object} inputData
+     */
+    recognize: function(inputData) {
+        var session = this.session;
+        if (session.stopped) {
+            return;
+        }
+
+        // run the touch-action polyfill
+        this.touchAction.preventDefaults(inputData);
+
+        var recognizer;
+        var recognizers = this.recognizers;
+
+        // this holds the recognizer that is being recognized.
+        // so the recognizer's state needs to be BEGAN, CHANGED, ENDED or RECOGNIZED
+        // if no recognizer is detecting a thing, it is set to `null`
+        var curRecognizer = session.curRecognizer;
+
+        // reset when the last recognizer is recognized
+        // or when we're in a new session
+        if (!curRecognizer || (curRecognizer && curRecognizer.state & STATE_RECOGNIZED)) {
+            curRecognizer = session.curRecognizer = null;
+        }
+
+        var i = 0;
+        while (i < recognizers.length) {
+            recognizer = recognizers[i];
+
+            // find out if we are allowed try to recognize the input for this one.
+            // 1.   allow if the session is NOT forced stopped (see the .stop() method)
+            // 2.   allow if we still haven't recognized a gesture in this session, or the this recognizer is the one
+            //      that is being recognized.
+            // 3.   allow if the recognizer is allowed to run simultaneous with the current recognized recognizer.
+            //      this can be setup with the `recognizeWith()` method on the recognizer.
+            if (session.stopped !== FORCED_STOP && ( // 1
+                    !curRecognizer || recognizer == curRecognizer || // 2
+                    recognizer.canRecognizeWith(curRecognizer))) { // 3
+                recognizer.recognize(inputData);
+            } else {
+                recognizer.reset();
+            }
+
+            // if the recognizer has been recognizing the input as a valid gesture, we want to store this one as the
+            // current active recognizer. but only if we don't already have an active recognizer
+            if (!curRecognizer && recognizer.state & (STATE_BEGAN | STATE_CHANGED | STATE_ENDED)) {
+                curRecognizer = session.curRecognizer = recognizer;
+            }
+            i++;
+        }
+    },
+
+    /**
+     * get a recognizer by its event name.
+     * @param {Recognizer|String} recognizer
+     * @returns {Recognizer|Null}
+     */
+    get: function(recognizer) {
+        if (recognizer instanceof Recognizer) {
+            return recognizer;
+        }
+
+        var recognizers = this.recognizers;
+        for (var i = 0; i < recognizers.length; i++) {
+            if (recognizers[i].options.event == recognizer) {
+                return recognizers[i];
+            }
+        }
+        return null;
+    },
+
+    /**
+     * add a recognizer to the manager
+     * existing recognizers with the same event name will be removed
+     * @param {Recognizer} recognizer
+     * @returns {Recognizer|Manager}
+     */
+    add: function(recognizer) {
+        if (invokeArrayArg(recognizer, 'add', this)) {
+            return this;
+        }
+
+        // remove existing
+        var existing = this.get(recognizer.options.event);
+        if (existing) {
+            this.remove(existing);
+        }
+
+        this.recognizers.push(recognizer);
+        recognizer.manager = this;
+
+        this.touchAction.update();
+        return recognizer;
+    },
+
+    /**
+     * remove a recognizer by name or instance
+     * @param {Recognizer|String} recognizer
+     * @returns {Manager}
+     */
+    remove: function(recognizer) {
+        if (invokeArrayArg(recognizer, 'remove', this)) {
+            return this;
+        }
+
+        recognizer = this.get(recognizer);
+
+        // let's make sure this recognizer exists
+        if (recognizer) {
+            var recognizers = this.recognizers;
+            var index = inArray(recognizers, recognizer);
+
+            if (index !== -1) {
+                recognizers.splice(index, 1);
+                this.touchAction.update();
+            }
+        }
+
+        return this;
+    },
+
+    /**
+     * bind event
+     * @param {String} events
+     * @param {Function} handler
+     * @returns {EventEmitter} this
+     */
+    on: function(events, handler) {
+        if (events === undefined) {
+            return;
+        }
+        if (handler === undefined) {
+            return;
+        }
+
+        var handlers = this.handlers;
+        each(splitStr(events), function(event) {
+            handlers[event] = handlers[event] || [];
+            handlers[event].push(handler);
+        });
+        return this;
+    },
+
+    /**
+     * unbind event, leave emit blank to remove all handlers
+     * @param {String} events
+     * @param {Function} [handler]
+     * @returns {EventEmitter} this
+     */
+    off: function(events, handler) {
+        if (events === undefined) {
+            return;
+        }
+
+        var handlers = this.handlers;
+        each(splitStr(events), function(event) {
+            if (!handler) {
+                delete handlers[event];
+            } else {
+                handlers[event] && handlers[event].splice(inArray(handlers[event], handler), 1);
+            }
+        });
+        return this;
+    },
+
+    /**
+     * emit event to the listeners
+     * @param {String} event
+     * @param {Object} data
+     */
+    emit: function(event, data) {
+        // we also want to trigger dom events
+        if (this.options.domEvents) {
+            triggerDomEvent(event, data);
+        }
+
+        // no handlers, so skip it all
+        var handlers = this.handlers[event] && this.handlers[event].slice();
+        if (!handlers || !handlers.length) {
+            return;
+        }
+
+        data.type = event;
+        data.preventDefault = function() {
+            data.srcEvent.preventDefault();
+        };
+
+        var i = 0;
+        while (i < handlers.length) {
+            handlers[i](data);
+            i++;
+        }
+    },
+
+    /**
+     * destroy the manager and unbinds all events
+     * it doesn't unbind dom events, that is the user own responsibility
+     */
+    destroy: function() {
+        this.element && toggleCssProps(this, false);
+
+        this.handlers = {};
+        this.session = {};
+        this.input.destroy();
+        this.element = null;
+    }
+};
+
+/**
+ * add/remove the css properties as defined in manager.options.cssProps
+ * @param {Manager} manager
+ * @param {Boolean} add
+ */
+function toggleCssProps(manager, add) {
+    var element = manager.element;
+    if (!element.style) {
+        return;
+    }
+    var prop;
+    each(manager.options.cssProps, function(value, name) {
+        prop = prefixed(element.style, name);
+        if (add) {
+            manager.oldCssProps[prop] = element.style[prop];
+            element.style[prop] = value;
+        } else {
+            element.style[prop] = manager.oldCssProps[prop] || '';
+        }
+    });
+    if (!add) {
+        manager.oldCssProps = {};
+    }
+}
+
+/**
+ * trigger dom event
+ * @param {String} event
+ * @param {Object} data
+ */
+function triggerDomEvent(event, data) {
+    var gestureEvent = document.createEvent('Event');
+    gestureEvent.initEvent(event, true, true);
+    gestureEvent.gesture = data;
+    data.target.dispatchEvent(gestureEvent);
+}
+
+assign(Hammer, {
+    INPUT_START: INPUT_START,
+    INPUT_MOVE: INPUT_MOVE,
+    INPUT_END: INPUT_END,
+    INPUT_CANCEL: INPUT_CANCEL,
+
+    STATE_POSSIBLE: STATE_POSSIBLE,
+    STATE_BEGAN: STATE_BEGAN,
+    STATE_CHANGED: STATE_CHANGED,
+    STATE_ENDED: STATE_ENDED,
+    STATE_RECOGNIZED: STATE_RECOGNIZED,
+    STATE_CANCELLED: STATE_CANCELLED,
+    STATE_FAILED: STATE_FAILED,
+
+    DIRECTION_NONE: DIRECTION_NONE,
+    DIRECTION_LEFT: DIRECTION_LEFT,
+    DIRECTION_RIGHT: DIRECTION_RIGHT,
+    DIRECTION_UP: DIRECTION_UP,
+    DIRECTION_DOWN: DIRECTION_DOWN,
+    DIRECTION_HORIZONTAL: DIRECTION_HORIZONTAL,
+    DIRECTION_VERTICAL: DIRECTION_VERTICAL,
+    DIRECTION_ALL: DIRECTION_ALL,
+
+    Manager: Manager,
+    Input: Input,
+    TouchAction: TouchAction,
+
+    TouchInput: TouchInput,
+    MouseInput: MouseInput,
+    PointerEventInput: PointerEventInput,
+    TouchMouseInput: TouchMouseInput,
+    SingleTouchInput: SingleTouchInput,
+
+    Recognizer: Recognizer,
+    AttrRecognizer: AttrRecognizer,
+    Tap: TapRecognizer,
+    Pan: PanRecognizer,
+    Swipe: SwipeRecognizer,
+    Pinch: PinchRecognizer,
+    Rotate: RotateRecognizer,
+    Press: PressRecognizer,
+
+    on: addEventListeners,
+    off: removeEventListeners,
+    each: each,
+    merge: merge,
+    extend: extend,
+    assign: assign,
+    inherit: inherit,
+    bindFn: bindFn,
+    prefixed: prefixed
+});
+
+// this prevents errors when Hammer is loaded in the presence of an AMD
+//  style loader but by script tag, not by the loader.
+var freeGlobal = (typeof window !== 'undefined' ? window : (typeof self !== 'undefined' ? self : {})); // jshint ignore:line
+freeGlobal.Hammer = Hammer;
+
+if (true) {
+    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+        return Hammer;
+    }).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+} else {}
+
+})(window, document, 'Hammer');
+
+
+/***/ }),
+/* 12 */
 /***/ (function(module, exports) {
 
 function _getPrototypeOf(o) {
@@ -1856,7 +4891,7 @@ function _getPrototypeOf(o) {
 module.exports = _getPrototypeOf;
 
 /***/ }),
-/* 8 */
+/* 13 */
 /***/ (function(module, exports) {
 
 function _typeof(obj) {
@@ -1878,7 +4913,7 @@ function _typeof(obj) {
 module.exports = _typeof;
 
 /***/ }),
-/* 9 */
+/* 14 */
 /***/ (function(module, exports) {
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
@@ -1920,10 +4955,10 @@ function _asyncToGenerator(fn) {
 module.exports = _asyncToGenerator;
 
 /***/ }),
-/* 10 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var setPrototypeOf = __webpack_require__(23);
+var setPrototypeOf = __webpack_require__(51);
 
 function _inherits(subClass, superClass) {
   if (typeof superClass !== "function" && superClass !== null) {
@@ -1943,12 +4978,12 @@ function _inherits(subClass, superClass) {
 module.exports = _inherits;
 
 /***/ }),
-/* 11 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _typeof = __webpack_require__(8);
+var _typeof = __webpack_require__(13);
 
-var assertThisInitialized = __webpack_require__(14);
+var assertThisInitialized = __webpack_require__(19);
 
 function _possibleConstructorReturn(self, call) {
   if (call && (_typeof(call) === "object" || typeof call === "function")) {
@@ -1961,7 +4996,7 @@ function _possibleConstructorReturn(self, call) {
 module.exports = _possibleConstructorReturn;
 
 /***/ }),
-/* 12 */
+/* 17 */
 /***/ (function(module, exports) {
 
 function _defineProperty(obj, key, value) {
@@ -1982,7 +5017,7 @@ function _defineProperty(obj, key, value) {
 module.exports = _defineProperty;
 
 /***/ }),
-/* 13 */
+/* 18 */
 /***/ (function(module, exports) {
 
 var g;
@@ -2008,7 +5043,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 14 */
+/* 19 */
 /***/ (function(module, exports) {
 
 function _assertThisInitialized(self) {
@@ -2022,7 +5057,7 @@ function _assertThisInitialized(self) {
 module.exports = _assertThisInitialized;
 
 /***/ }),
-/* 15 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -2032,9 +5067,9 @@ module.exports = _assertThisInitialized;
 /**
  * Dependencies
  */
-var util = __webpack_require__(27),
-    cmp = __webpack_require__(28),
-    bin = __webpack_require__(29);
+var util = __webpack_require__(46),
+    cmp = __webpack_require__(47),
+    bin = __webpack_require__(48);
 
 /**
  * Module interface definition
@@ -2246,31 +5281,7 @@ IndexedArray.prototype.getRange = function (begin, end) {
 
 
 /***/ }),
-/* 16 */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"extended.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAANElEQVR4nGNggABGEMEEIlhABAeI+AASF0AlHmAqA4kzKAAx8wGQuAMKwd6AoYzBAWonAwAcLwTgNfJ3RQAAAABJRU5ErkJggg==\",\"ray.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAAMklEQVR4nGNgQAJMIIIFRHCACAEQoQAiHICYvQEkjkrwYypjAIkzwk2zAREuqIQFzD4AE3kE4BEmGggAAAAASUVORK5CYII=\",\"segment.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAgMAAAC5h23wAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAATU1NJCQkCxcHIQAAAAN0Uk5TAP8SmutI5AAAACxJREFUeJxjYMACGAMgNAsLdpoVKi8AVe8A1QblQlWRKt0AoULw2w1zGxoAABdiAviQhF/mAAAAAElFTkSuQmCC\",\"add.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAH5QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKBgYGGxsbKioqPz8/Pj4+BQUFCQkJAQEBZGRkh4eHAgICEBAQNjY2g4ODgYGBAAAAAwMDeXl5d3d3GBgYERERgICAgICANDQ0PDw8Y2NjCAgIhYWFGhoaJycnOjo6YWFhgICAdXV14Y16sQAAACp0Uk5TAAILDxIKESEnJiYoKCgTKSkpKCAnKSkFKCkpJiDl/ycpKSA2JyYpKSkpOkQ+xgAAARdJREFUeJzllNt2gyAQRTWiRsHLoDU0GpPYmMv//2BMS+sgl6Z9bM8bi73gnJkBz/sn8lcBIUHofwtG8TpJKUuTLI6cYF7QEqRKynP71VX9AkhNXVlsbMQrLLQVGyPZLsGHWgPrCxMJwHUPlXa79NBp2et5d9f3u3m1XxatQNn7SagOXCUjCjYUDuqxcWlHj4MSfw12FDJchFViRN8+1qcQoUH6lR1L1mEMEErofB6WzEUwylzomfzOQGiOJdXiWH7mQoUyMa4WXJQWOBvLFvPCGxt6FSr5kyH0qi0YddNG2/pgCsOjff4ZTizXPNwKIzl56OoGg9d9Z/+5cs6On+CFCfevFQ3ZaTycx1YMbvDdRvjkp/lHdAcPXzokxcwfDwAAAABJRU5ErkJggg==\",\"cursor.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAgMAAAC5h23wAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAxQTFRFAAAATU1NTU1NTU1NwlMHHwAAAAR0Uk5TAOvhxbpPrUkAAAAkSURBVHicY2BgYHBggAByabxg1WoGBq2pRCk9AKUbcND43AEAufYHlSuusE4AAAAASUVORK5CYII=\",\"display_off.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAU1QTFRFAAAAh4eHh4eHAAAAAAAAAAAAAwMDAAAAAAAAhoaGGBgYgYGBAAAAPz8/AgICg4ODCQkJhISEh4eHh4eHPj4+NjY2gYGBg4ODgYGBgYGBgoKCAQEBJycngoKChYWFEBAQg4ODCAgIKioqZGRkCgoKBQUFERERd3d3gYGBGxsbNDQ0hISEgYGBPDw8gYGBgYGBh4eHh4eHhYWFh4eHgoKChYWFgYGBgYGBg4ODhoaGg4ODYWFhgoKCBgYGdXV1goKCg4ODgYGBgICAgYGBAAAAg4ODhYWFhISEh4eHgoKChYWFOjo6goKCGhoah4eHh4eHh4eHgoKCh4eHeXl5hoaGgoKChISEgYGBgYGBgoKCY2NjgYGBgoKCh4eHgoKCgYGBhoaGg4ODhoaGhYWFh4eHgYGBhoaGhoaGhoaGg4ODgoKChISEgoKChYWFh4eHfKktUwAAAG90Uk5TACn/AhEFKA8SLCbxCigoVBNKUTYoJ/lh3PyAKSaTNiBtICYpISggKSkmJ0LEKef3lGxA8rn//+pcMSkpnCcptHPJKe0LUjnx5LzKKaMnX73hl64pLnhkzNSgKeLv17LQ+liIzaLe7PfTw5tFpz3K1fXR/gAAAgBJREFUeJzllNdXwjAUxknB0lIoCKVsGTIFQRAZ7r333nuv///R3LZ4mlDQZ/0ekp7b37n5bnITk+mfyDxv5Tir3fwjaElO5BIOKZFLJS1dQVfI0Y809TtEV+elo95RpFPWG+1go4fdQ5QybI8haaNBkM2ANbM09bnrwaPY7iFKrz7EMBdu7CHdVruXIt0M1hb+GKA3LTRKkp5lTA6Dg6xIkhaHhvQ1IlW/UCouQdJNJTRIpk1qO7+wUpcfpl537oBc7VNip3Gi/AmVPBAC1UrL6HXtSGVT+k2Yz0Focad07OMRf3P5BEbd63PFQx7HN+w61JoAm+uBlV48O/0jkLSMmtPCmQ8HwlYdykFV4/LJPp7e3hVyFdapHNehLk6PSjhSkBvwu/cFyJGIYvOyhoc1jjYQFGbygD4CWjoAMla/og3YoSw+KPhjPNoFcim4iFD+pFYA8zZ9WeYU5OBjZ3ORWyCfG03E+47kKpCIJTpGO4KP8XMgtw990xG/PBNTgmPEEXwf7P42oOdFIRAoBCtqTKL6Rcwq4Xsgh5xYC/mmSs6yJKk1YbnVeTq1NaEpmlHbmVn2EORkW2trF2ZzmHGTSUMGl1a9hp4ySRpdQ8yKGURpMmRIYg9pb1YPzg6kO79cLlE6bYFjEtv91bLEUxvhwbWwjY13BxUb9l8+mn9EX8x3Nki8ff5wAAAAAElFTkSuQmCC\",\"display_on.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAR1QTFRFAAAAh4eHgYGBAAAAAAAAgYGBAAAAAwMDAAAAAAAAgYGBg4ODGBgYgYGBhISEAAAAPz8/AgIChoaGCQkJhYWFPj4+NjY2goKCgYGBAQEBJycngYGBgoKCEBAQCAgIhISEKioqZGRkCgoKBQUFERERd3d3gYGBg4ODgYGBGxsbNDQ0hISEgoKCgoKChYWFPDw8gYGBgYGBhoaGgoKCg4ODgoKCgYGBgoKCgoKCgoKCg4ODgoKChoaGgoKCgYGBhoaGg4ODYWFhBgYGdXV1gYGBg4ODgoKCgICAg4ODg4ODhISEAAAAg4ODOjo6gYGBGhoaeXl5goKCgYGBgoKChYWFgoKChISEgoKCY2NjgYGBg4ODgYGBgYGBg4ODgYGBo8n54AAAAF90Uk5TACn/AhH3BSgPEuhUJvFACigoLBM2KCeA6ykm+pMgIEkmKSEoICn9XCkmJ0u6nDop4sUypGuEzLZ6vmCYLZ/dLykpJynUYa8pcllCC1Ip2ycpisl1PadFsintbsPQZdi/bTW7AAAB4UlEQVR4nOWUZ1fCMBSGSSGWFiq0UDbIkr2XbBwMxS0b1P//M0xK9XSiftX7oel585zkvfcmMRj+SRhvzRRlthm/BU3Ry3TYzofTsajpIOjw2iNAjIiddehvHXSdA0mkXEEdG0fkE1DEKXmkSVqVIA6rBmsktUgAWLWHoGp30UNclbtLmwQgoyya91wPTbFy0mQXJ5zJQO6BgXRjfH0iSkX5stHIXr5r0bB/lu8syjR8rzsFbR2SpX+5J2eMP3csLtYsEY2K8BeTFuE2jaVCBw7bHOBuxq16AXmpbui3LtIfbRLUHMY2q4lcFo2WB4KA1SUAlWumNEKCzyxBKZxVHvYGaFguCBx1vM/x0IPzoqQoj5SdP4mns2cCGhBsrgj0uaeUBtzMyxQN8w4mYROTW8+r0oANp8W5mf6WQw5aCYJ2o7ymPaKMi2uVpmWM4TW6tdImgGo1bT4nK6DbbsCc0AZSdmLEFszzHrh6riVvRrNA3/9SE8QLWQu+Gjto9+gE9NBMwr9zi83gFeeFTe11zpm1CHE3HeyVCSknf3MIDcFTbfJKdbR1L4xX49L+/BoillV5uPJqkshD3JWSgpNMXP/lcrD8+hO84MnDr5YpFHv0Fe99VjJ0GBRs2H74aP6R+ACr+TFvZNAQ1wAAAABJRU5ErkJggg==\",\"down.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAKVQTFRFAAAAg4ODgICAAAAAAAAAAAAACAgIAAAAAAAAAAAAAAAAOTk5hYWFEBAQfHx8ODg4dnZ2NDQ0XV1dGxsbKCgogICAFBQUIiIiZGRkgICAgICAFRUVAAAAgICAgICAgICAf39/Li4ugICAcHBwgoKCgICAgoKCgICAg4ODgYGBPj4+goKCgICAhISEgYGBgICAgoKCgICAgYGBgYGBf39/gICAgICAIdPQHAAAADd0Uk5TACn/KAIRIBMFDwooKyApKSknKSYmzCcmKfL7JRCUi2L3J7IpcLUrr0VbKXntNEnkMbxrUcG56CMpi50AAAFZSURBVHic5ZRpf4MgDIeFKFatWm/tfW091u7evv9Hm1Acoujm2y0vFPH5Jf+EEE37J6bblmlatv4jaBCI4rMfR0CMXtAEJ0fccgfM7tAkQHXzArdDxggmqGETGCnJWROkNlOwOqhIhKCtgbSicw1uK/dATSK0aRatIzytA8ik4XSiyJnLSm+VPxULgeyLI3uHRJH+qcB4WZGrKb4c20WwI7b3iUt74OS6XD+xZWrXUCtme0uKTvfcJ65CZFa9VOebqwXmft+oT8yF+/VymT4XeGB+Xx8L+j4gBcoFIDT+oMz6Qp93Y74pCeBpUXaLuW0rUk6r1iv3nP322ewYkgv2nZIvgpSPQDrY5wTjRJDNg9XAE/+uSXIVX812GdKEmtvR2rtWaw+5MAOuofJy79SXu9TgBl4d9DZdI0NjgyiswNCB/qk1J5Bmvp+lQOa9IJNhW4bxm6H5R+wLQYMSQXZNzbcAAAAASUVORK5CYII=\",\"price_range.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAAIUlEQVR4nGNggAPm/w9gTA4QIQMitECEJ1yMEgLNDiAAADfgBMRu78GgAAAAAElFTkSuQmCC\",\"price_time.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAAOklEQVR4nGNggAPm/w9gTA4QIQPEClpMQMITRHCACScQoQQihBgY9P//grKgYk5wdTACYhQHFjuAAABZFAlc4e1fcQAAAABJRU5ErkJggg==\",\"remove.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAK5QTFRFAAAAh4eHgICAAAAAAAAAh4eHAAAAAwMDAAAAAAAAgICAGBgYAAAAPz8/AgICgICACQkJhoaGhoaGgICAPj4+NjY2gYGBg4ODgYGBAQEBJycngoKCEBAQgICAgICACAgIKioqZGRkCgoKBQUFERERd3d3gYGBGxsbNDQ0gICAPDw8YWFhBgYGdXV1gICAg4ODgICAAAAAOjo6GhoaeXl5gICAhYWFY2NjhYWFgICA9O0oCgAAADp0Uk5TACn/AhErBSgPEvEmCigowxMuMcgoJ7hWrCkmdCD6vSAmKSEoICkpJie6KSknKSkp0wspJynCMik11rrLte8AAAFwSURBVHic5ZTXkoIwFIZNAAPSpKkoRQV7Wcva3v/FFiRmEwise7t7bs7MP98k/ylJq/VPQjjKiiJrwo+gON0uxro7XiRTsRHs+voE4JjoRrf+6sD7AFTMvaDGRht9glLMUJtLqmUwD5XDCohHAmBUPQSV27GHtFK7xycBWJab5uPaR+Hlmue7GfZxHwyWFHVMQghXFgD2A8IOZtfssdNJIXcyFEaSfchzp9BuMVP+Fhvr5Qh0nGfqYTGhm3BcYFUaQBKOhMWzRqHyGFRY03ppQ5lCFZ30RloVZGQTaa3QqEt0OyrQnkSkk8I1YJkvAwPCMgY0UpbzXRZhVbosIWGbZTLNQszGMCM42FJEjWDDjIAMtp+xj6x2K+/DqNDc0r4Yc8yGl3uer2aIyT1iyd8sYSuY8cldZbVrH4zPebTvP8OMNSoedj6XzDyk3pwG98u0/ufqGu7tBW5c1PxriXFyHq5PQxXFzeDThvbmp/lH4gt6WxfZ03H8DwAAAABJRU5ErkJggg==\",\"settings.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAW5QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKBgYGGxsbKioqQEBAPj4+BQUFCAgIAQEBPz8/ZWVlh4eHZGRkAgICCQkJDw8PNjY2g4ODgoKCNTU1EBAQAAAAAwMDeXl5d3d3AAAAGBgYAAAAERERioqKgoKCgoKCgoKCgYGBgoKChISEhoaGNDQ0g4ODgICAgICAgICAgYGBgYGBhYWFgICAgICAPT09AAAAgYGBgICAgICAgICAgICAY2NjCAgIgICAgICAhYWFhYWFgYGBHBwcgICAhYWFGhoagYGBgYGBg4ODhoaGJycnAAAAhISEgICAg4ODPDw8AAAAgoKCgICAhISEOjo6h4eHgoKCgYGBgICAf39/gYGBgoKCgICAGBgYgYGBg4ODg4ODgICACwsLgYGBgICAgYGBgYGBgYGBgICAgYGBYWFhf39/g4ODPj4+gYGBg4ODgICAhYWFgoKCgYGBgICAgYGBgoKCdXV1T0kC9QAAAHp0Uk5TAAILDxMKESEnJiYpKSgTKSgpKSkoEyAnKSknIAYoKSkFJQEgKl94jYVvVC4nU9f/+K8pOu71KBCi3NPq/ikg0e01Nokm1UUnsZVqQSYOT9lrKRJz5lIpK12jyu+sesgnhGVLxCG55a6Um+GaKfJCKKRgKUt8ocergymDQ9knAAABsElEQVR4nOWUV1vCMBSGg1AQpBZrcVdE3KJxo4LgnuCoe4F7orjHv7doTk3bgF7rd5OnX94nZ+SkCP0TWQqsNpuVs/wI2h2FTleR2+XkHfa8YLHgKRGJSj2SN3fosvIKkVJlVXWONGrkWtEgn1zHJP1GMCs/g7XILFIUpXoTWmaKTnIImGovh72Gxqbmlta2dvgOGpsmQO0dnfhTXd3E6JH0pN1DNnr7MFE/HDsQ0qEO6Pxg9sCh4XDkGx2J6sovBD+G8eiYuo5PxLTKeLoJBZNgT2EcnjY0YYajUKsL7Fk1gcjU3PwChcYTFGorAnsRqlpa1tAVhUbdmr+6RtjIOlgbCjMBUdzc2t7ZzbJ7zAQ4p6GSfRVNwkeKLsvCg31w2JBdjlT0GDxZNzEnpcQ+xWfnFxeXVyp6Tay07gq+L/YUOoBvbomV0V8skiq//DutWfeEfJD1JPLCED4+Pb8kX986tApNQ4iqfSJT76bRzvlgBPODQXW/foYqK5lyeBeYJEL1gaoeGnwIBhjRoQ9SZgTAdEbO/9cKRfmZ+MpGPCVHQ3nBzzS4hKIkuNyh/5g+ALiAXSSas9hwAAAAAElFTkSuQmCC\",\"time_range.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAAJElEQVR4nGNgwAsUGJhQCScQoQQihBgY9P//grKgYk4YOvACACOpBKG6Svj+AAAAAElFTkSuQmCC\",\"trash.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAALUlEQVR4nGNgAIN6ENHQACX4//9gYBBgYIESYC4LkA0lPEkmGFAI5v8PILYCAHygDJxlK0RUAAAAAElFTkSuQmCC\",\"up.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAMZQTFRFAAAAh4eHgICAAAAAAAAAAAAAAwMDAAAAAAAAGBgYAAAAPz8/AgICCQkJgICAh4eHPj4+NjY2AQEBJycnEBAQgICAgICACAgIKioqZGRkCgoKBQUFgYGBERERd3d3gYGBGxsbNDQ0gICAgYGBPDw8gYGBh4eHgICAYWFhBgYGgYGBdXV1goKCg4ODhYWFgICAgoKCAAAAhISEOjo6gICAGhoagYGBeXl5hoaGgICAY2Njg4ODgoKCgoKCgYGBgoKCg4ODgoKC64uw1gAAAEJ0Uk5TACn/AhEFKA8SJgooKBP7KignKSYg9c0gJikhKLQgKSkmJ7ywKY8s5SknlClxKTMpXwtFKe0neiku8ClKWmSbbFFjM5GHSgAAAW5JREFUeJzllGd/gjAQxk3AMFWWOHDvVa2rVbu//5cqhJWQQO3b9nkVjv/v7rnLKJX+iYS9JMuSKvwIiu3loKkZzYHXFgvBiqW1QKSWplfySzvmAyDUN50cG2X0DDLqoTKXVLJgIIXDCohHAqCzHhymeuShy/Ru8kkAhtmhWUTvW9fdEnPQaVLU0n8XF0L3kn5P6LTtZPKgNoK+RrUkcGtQ7S9TsgOxxinrkUPYD+LwLCIh7CTsWSVQqRmTuPqpitlZFLQlApXjrsYBc335wOw47ksmUSMMrgKi/gnAE/awCqNHmTUwDf5X34LlBuedsgbUsK15kPMxTIXzzvFSIdsSPBw7nGD1K+7bL3F9xStEnZhoCw71TbpL71GBBbUF1MZmZWTOi97PI3eIJn9zCEtOj0+umaOde2EszqW9/xr6rM54WFtc0vfQNak57Ibd/Jerohu3GFwYqPjVEhve2Z4cbQU1ikFsQ73z0fwj+ga3VBezGuggFQAAAABJRU5ErkJggg==\"}");
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithHoles = __webpack_require__(32);
-
-var iterableToArrayLimit = __webpack_require__(33);
-
-var unsupportedIterableToArray = __webpack_require__(19);
-
-var nonIterableRest = __webpack_require__(34);
-
-function _slicedToArray(arr, i) {
-  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
-}
-
-module.exports = _slicedToArray;
-
-/***/ }),
-/* 18 */
+/* 21 */
 /***/ (function(module, exports) {
 
 function _arrayLikeToArray(arr, len) {
@@ -2286,10 +5297,10 @@ function _arrayLikeToArray(arr, len) {
 module.exports = _arrayLikeToArray;
 
 /***/ }),
-/* 19 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeToArray = __webpack_require__(18);
+var arrayLikeToArray = __webpack_require__(21);
 
 function _unsupportedIterableToArray(o, minLen) {
   if (!o) return;
@@ -2303,7 +5314,215 @@ function _unsupportedIterableToArray(o, minLen) {
 module.exports = _unsupportedIterableToArray;
 
 /***/ }),
-/* 20 */
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(50);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(8).default
+var update = add("0526467e", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(53);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(8).default
+var update = add("018e7adb", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(55);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(8).default
+var update = add("40ae9af3", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(57);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(8).default
+var update = add("37cfaef9", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(59);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(8).default
+var update = add("8136cf0a", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(61);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(8).default
+var update = add("5f2c446f", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(63);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(8).default
+var update = add("328cbcf8", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(65);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(8).default
+var update = add("4df0894c", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(67);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(8).default
+var update = add("14c22adc", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(69);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(8).default
+var update = add("e8aefb4e", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(71);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(8).default
+var update = add("4090e0ce", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(73);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(8).default
+var update = add("3eea33a5", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(75);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(8).default
+var update = add("051af7ee", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2861,16 +6080,346 @@ const getGlobalThis = () => {
 
 
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(13)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18)))
 
 /***/ }),
-/* 21 */
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+ * Hamster.js v1.1.2
+ * (c) 2013 Monospaced http://monospaced.com
+ * License: MIT
+ */
+
+(function(window, document){
+'use strict';
+
+/**
+ * Hamster
+ * use this to create instances
+ * @returns {Hamster.Instance}
+ * @constructor
+ */
+var Hamster = function(element) {
+  return new Hamster.Instance(element);
+};
+
+// default event name
+Hamster.SUPPORT = 'wheel';
+
+// default DOM methods
+Hamster.ADD_EVENT = 'addEventListener';
+Hamster.REMOVE_EVENT = 'removeEventListener';
+Hamster.PREFIX = '';
+
+// until browser inconsistencies have been fixed...
+Hamster.READY = false;
+
+Hamster.Instance = function(element){
+  if (!Hamster.READY) {
+    // fix browser inconsistencies
+    Hamster.normalise.browser();
+
+    // Hamster is ready...!
+    Hamster.READY = true;
+  }
+
+  this.element = element;
+
+  // store attached event handlers
+  this.handlers = [];
+
+  // return instance
+  return this;
+};
+
+/**
+ * create new hamster instance
+ * all methods should return the instance itself, so it is chainable.
+ * @param   {HTMLElement}       element
+ * @returns {Hamster.Instance}
+ * @constructor
+ */
+Hamster.Instance.prototype = {
+  /**
+   * bind events to the instance
+   * @param   {Function}    handler
+   * @param   {Boolean}     useCapture
+   * @returns {Hamster.Instance}
+   */
+  wheel: function onEvent(handler, useCapture){
+    Hamster.event.add(this, Hamster.SUPPORT, handler, useCapture);
+
+    // handle MozMousePixelScroll in older Firefox
+    if (Hamster.SUPPORT === 'DOMMouseScroll') {
+      Hamster.event.add(this, 'MozMousePixelScroll', handler, useCapture);
+    }
+
+    return this;
+  },
+
+  /**
+   * unbind events to the instance
+   * @param   {Function}    handler
+   * @param   {Boolean}     useCapture
+   * @returns {Hamster.Instance}
+   */
+  unwheel: function offEvent(handler, useCapture){
+    // if no handler argument,
+    // unbind the last bound handler (if exists)
+    if (handler === undefined && (handler = this.handlers.slice(-1)[0])) {
+      handler = handler.original;
+    }
+
+    Hamster.event.remove(this, Hamster.SUPPORT, handler, useCapture);
+
+    // handle MozMousePixelScroll in older Firefox
+    if (Hamster.SUPPORT === 'DOMMouseScroll') {
+      Hamster.event.remove(this, 'MozMousePixelScroll', handler, useCapture);
+    }
+
+    return this;
+  }
+};
+
+Hamster.event = {
+  /**
+   * cross-browser 'addWheelListener'
+   * @param   {Instance}    hamster
+   * @param   {String}      eventName
+   * @param   {Function}    handler
+   * @param   {Boolean}     useCapture
+   */
+  add: function add(hamster, eventName, handler, useCapture){
+    // store the original handler
+    var originalHandler = handler;
+
+    // redefine the handler
+    handler = function(originalEvent){
+
+      if (!originalEvent) {
+        originalEvent = window.event;
+      }
+
+      // create a normalised event object,
+      // and normalise "deltas" of the mouse wheel
+      var event = Hamster.normalise.event(originalEvent),
+          delta = Hamster.normalise.delta(originalEvent);
+
+      // fire the original handler with normalised arguments
+      return originalHandler(event, delta[0], delta[1], delta[2]);
+
+    };
+
+    // cross-browser addEventListener
+    hamster.element[Hamster.ADD_EVENT](Hamster.PREFIX + eventName, handler, useCapture || false);
+
+    // store original and normalised handlers on the instance
+    hamster.handlers.push({
+      original: originalHandler,
+      normalised: handler
+    });
+  },
+
+  /**
+   * removeWheelListener
+   * @param   {Instance}    hamster
+   * @param   {String}      eventName
+   * @param   {Function}    handler
+   * @param   {Boolean}     useCapture
+   */
+  remove: function remove(hamster, eventName, handler, useCapture){
+    // find the normalised handler on the instance
+    var originalHandler = handler,
+        lookup = {},
+        handlers;
+    for (var i = 0, len = hamster.handlers.length; i < len; ++i) {
+      lookup[hamster.handlers[i].original] = hamster.handlers[i];
+    }
+    handlers = lookup[originalHandler];
+    handler = handlers.normalised;
+
+    // cross-browser removeEventListener
+    hamster.element[Hamster.REMOVE_EVENT](Hamster.PREFIX + eventName, handler, useCapture || false);
+
+    // remove original and normalised handlers from the instance
+    for (var h in hamster.handlers) {
+      if (hamster.handlers[h] == handlers) {
+        hamster.handlers.splice(h, 1);
+        break;
+      }
+    }
+  }
+};
+
+/**
+ * these hold the lowest deltas,
+ * used to normalise the delta values
+ * @type {Number}
+ */
+var lowestDelta,
+    lowestDeltaXY;
+
+Hamster.normalise = {
+  /**
+   * fix browser inconsistencies
+   */
+  browser: function normaliseBrowser(){
+    // detect deprecated wheel events
+    if (!('onwheel' in document || document.documentMode >= 9)) {
+      Hamster.SUPPORT = document.onmousewheel !== undefined ?
+                        'mousewheel' : // webkit and IE < 9 support at least "mousewheel"
+                        'DOMMouseScroll'; // assume remaining browsers are older Firefox
+    }
+
+    // detect deprecated event model
+    if (!window.addEventListener) {
+      // assume IE < 9
+      Hamster.ADD_EVENT = 'attachEvent';
+      Hamster.REMOVE_EVENT = 'detachEvent';
+      Hamster.PREFIX = 'on';
+    }
+
+  },
+
+  /**
+   * create a normalised event object
+   * @param   {Function}    originalEvent
+   * @returns {Object}      event
+   */
+   event: function normaliseEvent(originalEvent){
+    var event = {
+          // keep a reference to the original event object
+          originalEvent: originalEvent,
+          target: originalEvent.target || originalEvent.srcElement,
+          type: 'wheel',
+          deltaMode: originalEvent.type === 'MozMousePixelScroll' ? 0 : 1,
+          deltaX: 0,
+          deltaZ: 0,
+          preventDefault: function(){
+            if (originalEvent.preventDefault) {
+              originalEvent.preventDefault();
+            } else {
+              originalEvent.returnValue = false;
+            }
+          },
+          stopPropagation: function(){
+            if (originalEvent.stopPropagation) {
+              originalEvent.stopPropagation();
+            } else {
+              originalEvent.cancelBubble = false;
+            }
+          }
+        };
+
+    // calculate deltaY (and deltaX) according to the event
+
+    // 'mousewheel'
+    if (originalEvent.wheelDelta) {
+      event.deltaY = - 1/40 * originalEvent.wheelDelta;
+    }
+    // webkit
+    if (originalEvent.wheelDeltaX) {
+      event.deltaX = - 1/40 * originalEvent.wheelDeltaX;
+    }
+
+    // 'DomMouseScroll'
+    if (originalEvent.detail) {
+      event.deltaY = originalEvent.detail;
+    }
+
+    return event;
+  },
+
+  /**
+   * normalise 'deltas' of the mouse wheel
+   * @param   {Function}    originalEvent
+   * @returns {Array}       deltas
+   */
+  delta: function normaliseDelta(originalEvent){
+    var delta = 0,
+      deltaX = 0,
+      deltaY = 0,
+      absDelta = 0,
+      absDeltaXY = 0,
+      fn;
+
+    // normalise deltas according to the event
+
+    // 'wheel' event
+    if (originalEvent.deltaY) {
+      deltaY = originalEvent.deltaY * -1;
+      delta  = deltaY;
+    }
+    if (originalEvent.deltaX) {
+      deltaX = originalEvent.deltaX;
+      delta  = deltaX * -1;
+    }
+
+    // 'mousewheel' event
+    if (originalEvent.wheelDelta) {
+      delta = originalEvent.wheelDelta;
+    }
+    // webkit
+    if (originalEvent.wheelDeltaY) {
+      deltaY = originalEvent.wheelDeltaY;
+    }
+    if (originalEvent.wheelDeltaX) {
+      deltaX = originalEvent.wheelDeltaX * -1;
+    }
+
+    // 'DomMouseScroll' event
+    if (originalEvent.detail) {
+      delta = originalEvent.detail * -1;
+    }
+
+    // Don't return NaN
+    if (delta === 0) {
+      return [0, 0, 0];
+    }
+
+    // look for lowest delta to normalize the delta values
+    absDelta = Math.abs(delta);
+    if (!lowestDelta || absDelta < lowestDelta) {
+      lowestDelta = absDelta;
+    }
+    absDeltaXY = Math.max(Math.abs(deltaY), Math.abs(deltaX));
+    if (!lowestDeltaXY || absDeltaXY < lowestDeltaXY) {
+      lowestDeltaXY = absDeltaXY;
+    }
+
+    // convert deltas to whole numbers
+    fn = delta > 0 ? 'floor' : 'ceil';
+    delta  = Math[fn](delta / lowestDelta);
+    deltaX = Math[fn](deltaX / lowestDeltaXY);
+    deltaY = Math[fn](deltaY / lowestDeltaXY);
+
+    return [delta, deltaX, deltaY];
+  }
+};
+
+if (typeof window.define === 'function' && window.define.amd) {
+  // AMD
+  window.define('hamster', [], function(){
+    return Hamster;
+  });
+} else if (true) {
+  // CommonJS
+  module.exports = Hamster;
+} else {}
+
+})(window, window.document);
+
+
+/***/ }),
+/* 38 */
 /***/ (function(module) {
 
 module.exports = JSON.parse("[\"PQKj+ACAKAzBXAdgYwC4EsD2joFtMAm8ANgKYDOAlJAN6TBQDupARgA4CGyA1gEKaZU5VACcObAFChwYKAEgGkACoALUpHxEykZFzVSZsyHIBuHEZHSJhHYmQIBZQiQqQAvLQC+AbgOHgfjLyiqrqIqQAjvDo4ZAIKBjYgRDG8WhYiJAA+lnM7FzcWeFRMaQ5eM5kAJIE1DTJsg0g8gpQAMJqPJawGpXq6OSWmbrI+tJBxnLosNBWNnakjn3kANqaLjUAunVNLXLhqPAimXOotvZOWhRrfVsAdKQAHmyYIkK+4ylycp67k4ptcIcVDqDiQRCkRi9K4wDiIAiQNjwVCWFFWVCYSCoNQ6PSkSh/b5mCzrbQeU7nRaXFyrUmkLbuWiE77oABc0I2BAANMy5MR2bBbORSDzPkZvnIni83uR2TRfmLmpMfLtmYoAKKPUjIZHqbHqOlxJDpJKKlp02m3AibO66OwVK4PZ6vIRcjlkN10p3S13ZXKsTg8IqRaLhHKUD6GZpqqAAMWIHAA5licYaOINiJgOARFsyvcRGaJ4KRI/4Y5AAEqkQ7HFPqKUuwaYHr692kZkHI6ZL0NmWliY/VVmwmKBvCuttpssABW2pR0ByeUDhQt4cJi4DBWDJTDWTuuEZFv7EBHUDHetTfVxo3bZuMG/yQeKobKe+QjIpCyWV3Ix8ad9aSAc1gKx1ETasQQsNJEkyWBXkgFRzHwRAAE9IF7IR139R9CmfUocjuBEPGgjJoAw8g3UQDhcBFSBwNQSCdgAqYZgAQgfZdtxfAjMDI50ZUo6j8SYqM9gAeRnOdCNIECIQABRETA2FIN4UL4n0KPBIS3ToUhEHgGixBYMh2SLWj6PZejIMgTwI2ZBVROMFVhwAxRgNAv0KGpbRsHQ/jMIAjitzw3c7gsYjjRg9TGxE/xJmmaBUBQ5Tm0gABlFDcBYTAC1YtwPAAciQdyIQIArIAAMgq9LMuy4g7gxNLRCsRMlCTWKB2+CTZzQaTZNIBSlJUpLooEmqspyhrMCakQWraxMdMgMxiGLdkCu80hytsv8lW+By4q6yTepKgbFOU1TRt9Aqci8voCsW5bVqxERixsuyAOc0TTx0IEQUgMFBW4dQqJo8hA3UTAjtQb7NHUaqAEZ2Ue/pBjBQ10G5SAQv6aHXKgWHKsgAAmdlDPA/67ERM7hvQVxUuRoYMQnawYcIOHIAAFnZTtawZxg1EyWwgQINDrEgSGetxxzAIJ6qAA4AB9EcgFhSEQkx1GIdAgaxkNSiwpdgr10KUQihJSORz02Y6r4WIddn4eoBmPCCp9jdfaBkfe6W7dlyA5eoHnMmRnaWgS+3CY56gqqxZLSHp2xXvywqJbncqY4ZjPE9IO4bvIDbA+rLsluz0PJmJcFBg8bqpOQX7SGgfS7G9g65Fd3D3YIkRG6oMvDslvrQMG86RusN0CuAjgSFQe7aHQ/TDI4YzSFMl7aORpHs7evvfbZwmicq6qkpSnoGbyyACuEWbEETArqDg7uK6BtCrBLlb8T9Q23Z3V9CJ7t1n5uhItgaAz86i6xrMHbOKxn6bG8DZO4LArAEEbiQYgADSAoUoC3TqQdK590+mWPGdFqwABEZJT2IKgTUPojTm18g/HQmBcCcAwEgrWSVICMHQNicE2AAC0iERDITQhaA2m5v7cT3JkM2JocB0htuKUw5gSEMRUoeK8McvR5w2pAAA/LyYBmR6LkMFNPaA4C8F0hWBPCh08CpwJspAVkhjIoZFURtGhjYLFzysX0eBhDOrty4vhPcKCrIqXHhwWeESRA4Ntng2JBDQ7fRrr1NgikMTHxzohcgYlGCIGHsNFCtpzjiJwiE0KmJZFRVTmgN0GShqqUsUXWsaTUB3EaVkuOdxcn5MKdTVSpT7R1NQA0wZSUIw2RScQ4JSJjLoGQFkVhKgcjlM4tjAibBGQACIdkzK+sQgAMlmBEelRCiKvHCBEeDyKEjwcEzZWQFzYQ2Z3PcVdIA7LuMAcgIhkDADUMQc65Bfl13QGwVAuRGB3GnOQHZ8SjC2SaFGVFaL0UYsxVik8d5oD1ECFAb5wBEBsyyBaYAAABFgS9SDEGAC9RAGAaKAtpSC4A5gxAoSOdrUgShMAAEERCcthfClxoBWLYslVK6VqKJUAB0JCQEgBKsAkAfkkpzGS5YlLqWqzpQyplpAWXApUqCjlHAuU8r5YK4VcLIDgFYoqyAcqZWurdZigI4q+GQBsBgd85E4iYGKvaz1KQ4BuJAXSN05EdgSFIMtaAOyjHZHNZaoG1qhUWugByt0ZBEB1DlZkboMA83uA8E3AsCsFaQFLQAPn+kKu4ebEzYmoKWjwHKm16RbSobwhbC1KsYZ7FR6BGQAAY3QcoPuWyEkAbVZrzVM0dAAeGtel4HoAANSboLUWpVU6VjoE2IyDlh64EDpsv2oteCp19sQJ4K9PZ/KfKyKm7l6aBWZpQnewtDAADEPqg3/NIAAVQrEctwX9uCsgYMAdVpLyVUppfqpAhrjVsrfVaz9tryB6IRb4Alb0eSEaJRqsoiHdW0vpah9AzKgUYa/QAdR4SoAAEjlCgIqdlipACq91/H3XyqdXxtVxKEPaqQ3q6jjLaNGvo6a9lTGWPsbIOQEV9qwCOqVS6gTumZWhtYt631iy/IaUDcG6M4woDhvofIvo0bn2xvjbYRNybX1KexCpig2ahW7qVdMGA86SkDCCz5uJhdIENpEHeh9iBC1PrMy7VNzHPMcd/Fe/9gGjjIFA+ByDEjoOwfg5qijyHpNofkyIM1Hm2NpZFXhuyhHbLEas184r5GJOUZQzJujrKFPJZY0G1AXm1Nwu4wYPjempuSqE0qkT7WtU/h1WVg1sn0P9Zq0Nkb6mHVOp09Ng7HqJtGbOH60zjZzPwhDYRmzciHQuAcxpN0jz3lOYTTsiumGP1BcZC9n+5QvU/K+7y7DFqQ3OtI+JpbkmqOrd6yaqrinOXvpB0FkVcr8NXrcwN7EW20thb88W6AaOQtfoJxF4uwOM2coJzFx9fRvQXaS5t5EI2f2IEy+QIDOWwMQagzBhgC3StSbh3JvriOccqDx6p+r+GJBNcoC1lIkOSudZWzR+HGHyAoRQHygA4npFSwJXhcZ45Nw7FuZCzeVeAUTZHFs0mWyLjXYuEdmu17rzABuIRiAxCIHbmm9uW+D0EY7JKfWnZMwGuCFnQ1GFu1FKN52ZRvZc0miNgsPfIG90bv3TVSBsGgOBRAbpwhc+IBrUvpBJbPYhI8MZ2RsSKUYBglCk6RCJkJxc2gF6lUVysHBRkxeYGYM2D5zvd6lV95Uc7IYcE7ghwvZ4XEqBRgwBUopOJPe9260lmRIVrwIy94gV2Sfl64tFoC7MRA8+CDYA/jQY/Zecoa2He/I/Rbl+0vHI/nfg1cADA5zP4V4NxewNQCwLh14N5ZBN6YCMAf5KqxaxaFrY5Z766G6+6vBwD5rb5Kp4LJo+K/5T4lwWDCjEA9AeDYgDBcjH7EHmCJifL0EGTnLpY754IQhQj/6AEJ7uLQDAGV675ziE7EEVzF6MiwCIB3DiBsDEBqRkGwDt4MEf60F0JyLZBQFv7FjCHEH/RZ456YEiD56F7F5V7l4CHhA17qFPDQGwEt4Q5QEY5uhexn7EHIE76DoZ6N4qDN775b5EE6H7p6EYHG6GEgjGF6SmEv60QWFzi17WHPa2FugY62GOHoS+YuFT5uEBFZAaHFQySgS1AZHbRL504X4JZM4ppoFe7BF+7s6c7c65Z84FYC5wZiaq7Q5dblZraVbu467IDoE+4hGy6NatbNby6tYq4dYdHq49au5srIAJjkDkBtDnAdDajcCm4TYh7B7W7zZtFTGO4w7dYVbi6goLHpjLGrGdAbF2q7babbGW4GYnbAhR7PqXYIiWZhpGL3YejJ5CCp7ECuaeFZDnFLErF2BrE8DX42AoC0RtDYBXzwBoCH64FE6sTQlnCwlDAwk5apTwnWBFjInhaolKq2HgizpKBxzqgH7dwY4rGIAkooh2gFhgigmoyoyqEwQY4IHn5uHlEyi/ZsngnECQncB1HAAAZc7ZaNH5Y4QtFC5q7O6zHraI5ClXHrHDEEajGK7jHK4KnTFKknFu7ADIAImEkdJjZm4PF6a7G276mHGdGi4qlnFmkvS9S3GB73HWkCZPHh7Gb+pvEx5XafHx7fFJ7kTPavJGz/ZZAAmJoVzCioCDTdLKRiQUGfwFaVIeyA6/LVjJmCBxxpng4Y72mqZO6w4u7Om5lJmZIFmpmwDo6Y4X797kAAByLxGsVYsAZAaA+JiJaAv2UZkioS0AOZAw7ZGAnZMkPZqAfZ5pxZkxDuZZRxXRmuCm45HZpAXZM5c5bpFp5A3J7ObmppBJe50Ack5g5yihmkbQixVAqJV+G5k5W505c4u5SJqAFi2h/JQggprpH5jI25tc/5aAZ+X+xAP+x+P5L6J5/ZpsnJ7iIJIFn5F54QjK15bot5Fx2h0+FgYIHgKwFa567h/0nS8A5AKgUhbAMhakHA15PJIhKi75RJjIsYGeiCyCVFNF55l56F/0DFU+/eBJcIOWjIHBkAzFfuFiGR/mPQ0AWFSx1AiZ+Z2SaZGJIlcJd5nStZ2SAleBrSJwwlsJRRYFV6+lkWSFp5H5XFshqCdgihzBjKvchafJDOAaLssF5p4pkpDRvOspy48p+xS5FA5Zxx3RpxJpyFmpupSKOpJGpZIVK5TpPRJp9cClo2oqWx3pumtpqqCVoKSVlZKVdcpAwIpA6VAevGQe2VPpYemI/pfxgwQZHxceSoPBka9mjVcZ6etm2QJ0RSbwtM5AiU9B1Y4ySk95/hQ6/e46G6kAq6jSbAamza2IG6262hFcOY5A4KkK8EHgi1qwR6GRW1O1fuDwC8Ruy8jIJ1s0u1/uekzBRk2gVacQQoJYx+N1EKZ1J5IEiYRwS8ZIz0xYGRV+GOyMGOQwQEFAp1KJn1d1dwjAs0ZwV1lBa8GR7Sg88kEyakZwHeY1UN21t1Z1gCBNMNcSpl96WOwJJVZV6V8lyFrw41GIw8mk/pLNhOV+XSmA7NfV+RWNTSGA3mklJuXN2STN3NZ0zll+clbNkt1AWQ/VEyQ19NVlRJbostE1PJeCwt0WLl9Ojo7l2QNNII6V3lWWwGfl/ORWQVwuFZypxVaVWlcKDWWpKQYx8VNtipdtRpbKitAtJSlpWVNVOVIACqc2dpntBp3t4VxpftI8Adgwdxzqwdemvp9VkeAZZmzV12rW7VdmVwj2MUTIca72bmcdxS0AEsreTh2cHNclz8kNEs2hGN5dF0VdkAJN/hjF78m878NBJFD1i8y8q8xY/dARP16Af1T1K8QNIoKhiNPCANM9Zkx+xRn+6EEF6gXd4sM4I+KEx6Hgi+n+ZlJ+tYEspR8WblbxLsrdSUZtUpFteWVtgukdDpMxPtCmt9CdLtMVSo7tEx+VoVq5cx65bZm5QFvZUVgd4qKd2xuVIAduUOb9hpMdbKT56AU53Zb5UDidnpydsDweadEeLxmdF22dIZbVYZnVMaxdzmgJPVahWQ6DmDO5yFhBF6V+2SqUEDps+UEOeR/UBAENL1rEPDtoyFFOtYgom9Z+V+Yjnle5dwFF1EkjsEb1sjclXDPQg0jwaEycEORi3Jp9mQZk7OpJIgaE29pCZV2lggdZOcjUzUN8wygJ8jbD1jIIboKwmwQCnhhBtkAleCpjS+K+a+ZE2h+B6jS+etZRV9iW2QzDL5WDkDqtqA99vlT9zR1t9uttYVa5iOiTPDkl0VCuSuRgi5uTwDVZPCl1ZA1OFqmxMDBD/G8DiD7RyD0d+ToKNT099TCdGmVVXpzTbqRDDV0eQawZrV1mVDBdXVtDpdwJPTS9fTswjED5mjccqUGUE0uUfDGOAjBRENMc2zdUdwSzfukN7SqzKk2Cxjc6X6dwsAikuA1z5NMTl9Bt19CTkEyzoO36GWEp5tPOmTcp2TSDy5jpRVEVSzy8fTJT2pZTSoFTXteTIDBTPzsLfz3KAB+542TTwzIdYdNueVr9EL79qD65GLdTWLtGPClVWm+DBLtVXqfpGdjV7xOdXxGePxtEND+KdDQJvVTDVLqOX62LPCYWbo6AddMAWj40dUZaHg+z8IfNiwwj1a6JJzk05z8Er8VzHK2CqjZ+Fc7m4UkA3jxrKiORhYaNF6JrREr1MjdrVr6gHgBzpUZjz0ljx+01Vro6HaQqKwWr9UOrIgY+iu2Qv4yqkBjIC4L66AdwGh2ChE9+Uy1rqNWhJJU+prZFFFcbC+tdnrxBj5h8KajaK1Kgirlg1ALAQIYpq9ITugq+lbvh2hCtNrwNx+WQrraRut69sk5w3rO+3e29slMA7EmQMcTDKwGOQcGOx658Fa8t6AM7Oyc7Oy4bRRcQVgg7WbY7C4tQKYze2Q71O+sWiBJ9DyHKF9iA0Fv2ML1LQW4raTALPl0pltWTL9OTKLVTKVD7oryOtL+5P9pTv9hKgDhV9tEVJKiAVQIrVYwgjTvGTLrqrTEHkLUHxpMHcHtTL5iHHpgzjLKHkqozbL4zseN2MzD2cz/LCzQr2H8HFAn5Xe3hcB5JUIlJyk1Jm+0AGOVQiAy0GM/0aiLCKITMW15pRwwMAi/72JmJOWdwcqha/H4sIgOYFgTMqsqIuHlEAiqaO9ksgwuA5FKI6soI5rwbZzPzfu4bGg1YUuBAinTZrlnz8TOR2AOH09CHL7F+9R77ILAVYL7TZLKDXTYmsHjH+HuGcuoHHt37UdqLVZDHuHaUGSpVjn0DyHxHMqaHpLiVGHH9iOyX09qXws9L1V2XUqpHJD7L5DUzMAVHvxfL8uArDDME6hHnIrpX6X7DRaZJ4lnHpA3HWBfHAntgQnwIIIonWI9VaX2YfCiA/CsnFIsJinynmQrw6nM3KsOMOnC3/C+noyRnJnCEHAGs/0FntU2r1nrwtnNEuOjnh57zt7cTFR7nEXKXc3BA6T/nTRoLX74L+X5LYXxXS93X2Y8LbtcVADeXBVBXFLiOylOlhZDZmX5ulXaKuX8XHTiXKVSPdjqlqPuDhH+2GP6K1XZ25HkzlH3L4Zjm8zaebm+PKZpAalmADShOd7LszP9jRZ1cUMSjeZyP9ZkAL1TPQvBPKPldHPWbmAucyytZOQjIbAGReCmAYFnrDyPPhP0viIH+LnLgjOAp3PEvLPaZP3j9f3gXAPwXQPoXaLoK2vKPkPsViL4HsPQDyVEV5AWsOWBAcLaPZPGKWPgPcPwPDvvyvviwAfxPDLpPQfRCvGzxlPgZEzLVNPtmPLhdY0f2Ui3Vn2NWI2g5UGWZAOSfQOhfaWC56H4fVZku22cKT3zZI6IrfTz7xfmZTyo55fwA/7bfQH1fHvkHhX3TrfNLOLjZyhY3FgSA5A8A1FLoiwnnvzP2LsQ5HcMZ3fhmPys/8/PoS/Y/P2SoJZQ/8PYXu/C/bwB/uHMfTfhaFcoPy83nHfFSXfOZj/ZAz/x/yLCXv70HnXuHbzpPyPLAkfeiyaPn80lbVtUSN6SvqpgJyi9q0ffcfhKxzTQCXqF/ffgQGX6YtQsaA6VogIW44DP+THaSs9y56Rso+/vP5hb2BZW8CggVbHiF06YR8wBfvGPiBwRZgc2sp/WvilQxB9kDIS9NHIHwT6YoQ+tvMPvbyrICCESQg5eCINj4VcxBaKCnq8Szpp9OWoZWntQ2fSRkS+TyfPioklzS5XAa/Awe8i36iYTBrOKvt/xr7SCUqNg4bHVkb5Nl7+LfG/n8xf5vJN+Y5Q/l+kH5MC7eLA6pgEJwx39p+kATAYv2wHhCwc5gzvpYJzIxCr+cQrwUfygAn9ghUg0ISlVSEgh0hvTP5sAKvQP8ABJXL7j4OjJSIrB8GD7pUOFhBDQ+nvKFlhwqFg8vupQi/G5lkHWB5BZAPAb5hgEGUosFqFLFLlsHwCDWhA5AUMK3wYD+hl/QocQIA5ZoZhL1D/qQHB4oJ9e+tQ3obRgKYBBBuAYQV+loEyln6rRHIa0Mw5so+hc/U4QoIebO0YuXAuLi0OH4I9QUWjJDuj2y4SCDizA3HhFV+EEc4+YgtQaQwFJ1cM+d2OnhpG6q9DNmMwJuqiQxwrkeikAfhLHBPgY5PWnDFEfKxyhVsMchjHZKWzlaWdQ2pInZNrh2ZGNt6FAmAkSJqSIUtGldGcDhTuZytz6q9MChvUgo75mRcrNkb5BZEnxOR04bkWrxnCUiiRwbWkeSNLYSxxGqTPanw0VExwJYyqTUVd3qii044+iCHPSLqgQ1TIRIvkWewpoXoHkHIpujexFEoiLhH7f7tcM+Fn8I+YI6LiMSh5u8eBNwr4efyWFYDVhMfPFllxUE5dQ6wmCOoGM9FVkCh1/YoYoIGYQiox+mOqsQxT4aCKOudRrryz0EZlX+r2BnvQwL6AdvsgQxISWL8E98qc3g+wbwMcERUGxigyIW5iTFFCV+ZOdnhoCsBHI9IMraAKxEwBGsOGGzE+OLFpFXwWoRjWAZWLWFqQ+xABRAIOPzSWsLAMiSABjUNHKQpoM0FqC40rqUAlGUfaAHLDdD8JHYGjGADIj2Y7J2kRzaqHLwUYfkUS2418QzX9wgxT2+7e8Uqx2QOBxA6rcELSLSjVh5xowtHE82YQnjbxjcWkYKj+o0QnKoE4AAAD1oAeiVkCBnQAKwqglARlNhNZCKx4YAANgVgABmImJQBIlYUWEiwSgHoiCwAASODCCGECNxbmC4i1CjhWYriBxQ4x0a92N7ZAuxYYmga+yBaXDP27oyQbcJH7AAJJ8Q7+m8L9HcCf+OPKpuEGLy55XgvfFVo8D+EZjARwVXIYl10k1EDJyCJ4OVyGaQisxYzVPnmK5aZ8ERjYfQUkJjLdVmR6/Uvs8i9RWTBifufhKLmaEKTgp+kkQGFMrKi5uh0kh+nQP8oMCguQIkIZZNIB6SDChknMMZNeG+jXemkwBqmjYEqRgAWsFgJFRYSXlcpdk0QUHzMnkpSpUfEQBVPQBVTTSNU8IHVPylKCHJGPKEbV00EUNpmOg2Zs1xLpp5pAA6BBiBgwAcI0IXUzgLECMQHlMgzQfYWQCN6/kPAv+Y/DNPcIIN4S3UvUIwExALxVYVWRTkdNoIIMKUK06iLQFbIGQrpy+DgHdMgAPTzAT0mgC9KygqRl8LAT6RSiDiDA/pr0wGZAHhjFowQ9aFgG6DHSwzGQCM7ETDICxghV0wMo6cAGPwLxkALCAUH4zooqxuR5lSnNiJVhFF+6B0sAJ9JOkrSzp6da+AwRuk6FQ6R0r6Y9IPAQyAZIgBWIeJvjvSQZ3M56ZDP5mCzEwQMkGWDLFl8zl86MnoHDJViIzkZHgVGdeORlYy7puMnfFfAJlsAiZvVbNG6BYBky7mmMlWMaM1nshlZLAY0TDPZBjoiiV6HwFel/SAskpskt0SVK/RlS2plU6qYzN6ku8/60PPUh7xangCA5HUkOQ1OGZNTtUUcnLDHKqm2S+paY5Qc0yGlU90++Y8adRwjLFjfBefMsYmkOn2pIA/HPKYsHuacpIAvAHdhY3SilV/klbOkLNN1m/o6ZG0yAOQmUgqsUAQ1TuR4Jn4LTqhw5XcHUOUnjymxNw5OeVMDnIh0A9UNwYrmPwGyJ5G/WoTmWWmXkIp6U6rJyn9ntTOpzCYOenMn5j0p8SCbcbnxHI5lhQ5gUYMAFvnmA0Ic8loQvNTm5ln5KgV+U3ITqRCK5CDXROiBUiChRKJUHhBkBHkvdXOFRauU8EWBBY6iPcyuUgq1AIgfsb4okrNNmlVyUQmYbMIMFbD6cCAwIEmSdFIU4h0527WlAiGuQTg95s0LnLBAzwELNO6gciosDZkczK530sQDzKCzL4KFZwSwKjEFiBDUoR3AhYIt+mSzl8dCgYBOFGSXwqY/taIcKARBMwn5bcicKmjgXJpMFKCsnGIpJnpzd0B0qACovMWAY3gS9MYWhHgipp+EWsHWKMj0TH4r8rEZeSG3IBpQXQZwxcdAHMXYIVCpJVjlCHErDdaSOyfjoJwRDmLIhxBRQCoroVghElGi+Ol4p3w+K6FL1cxV2hvi8J60SMmOOiWUWZBzFKwMdNsEoARKj2bHGJTSV47xKxuWsBEOnJSVT43IlCpxcfioJqY7FHgcxUW3oBQBfx4sFsLQqMnZLikgylQAMDOZzLyQRk8ZYoETJDA8pKsNPu/LfjFh1pxBIZYL1QD8Bio5gZWlP1SVQBJ408JhN1IGAMIOFw7JZWphYU9s5WJy1cSYFpGXSVIENPRDoBYSJsDIm89kAbKUaiADZGy25XYioQ+pW5a+Qxq8uWV6K186sqwILz/mwrrwOIVKHQuRikLMQ+nF4OQBgUIlrF6EPQAcvUDCBXgrgOEAZznC6E54zVEeqQAVjSNhQUrIybbK/RLc5l57KfCcuWhkrGQ8oXFTqCqwuKrs2YacFwHOSIhMA5KmCEcpFVvLbQRwLnGawrQZETlUBTMFCHLRoJ9VmqqAkssTCVsTVdgG9iApbliccQLCp5ewtsz4Le58inmWxVszL4JC23D5dsqeC0qaFwIYxq4HhiIyrx8MOBSYoIBo49xOcRMgzP3lijMg2BbQoSKnF+q8ogE8kQ0pIqRLj2LSnjqNyyVMFUJqAHpZEuWUBriIiAVXqMKGUxY0F/ChBhBMdV0qkVlbFFfajkWiyaA3quRL6pMb1Uu1gax4MGshpkLpFPQWRRtN1mxr41wvRNdWAgl/zxCfjCQhmsnHxweg2ah8XmsaX9dZ0sStpQkvG6MKO8jlSte4NRVqZ0V1quIPWqfyNq3lzajLOgrbUugJwdi/TiwBfi/k6Fi1BZfOvW41y41DzBNUo2/WpqYAG1FRPIULBvLr5AROhZQU1XpzcVOqjtQMrvWERKF0Gt4HnVhCmzzZeCeQuI1OnZpD0RknxirBo15TtgRRa5b0qgDhA7QOoBMH9GygXLm5RKxZWiurDnL4Qly7zCxvJm1gm1LlFtQQv45gwWVTCrZa2B40ibZodMGZf0EZQqQqIBYX9V+hjVGTTFwqKDYmWE0UK1NnyAgvBosAjKUwyy8xShp0Joa7NamTDSfWrVqYfl11AjRW1LY1K6lDGp4MRWOWarThjwX5aMp83dpeEMcGpUUt804j4YmwQLY8GIovrIsUm+9DJt7kG4cNZKilRtw03MqByppIVBQBeDwgWo23VsImAwZ6Rx17qgRf2v+lXSBZTjKWeOokUTghOqUVsM+CY61zRkci2WbzLekTh8t7XXrfiqhhTqcQhi0DbB0M0QbjNy6x5tWAxUIVfImhB/FSpvBdA7FuSYrUIG8WaNNV8W6Ldar4ZjpzZJy6VTqrEqmqj15q6wkaoe22qntyyi1ZPUfV6rGlQTN9Q2wvw3KdA1xCcP1uEBdbuEVBTIGIBvikATtsrTVR8u21uhvlVgEwNQH0bXibtSO7VXtXBCPaC1LmxNi9rY42riAMlDVZ9usKWrH1zsv7a+oGAuy8lp2mtefMvIo7idYWjHVW0dh7sqd7yvHbqsJ0BEPNJO+vK9vQ32aotJSytolsp1i6vtVqt7RToZ0ZaAdZ7dzSQTfjiqpdamMVSqsc3EFddOulVSsGRhpad8aSoreDrRBGdSA+AWaAAC9FgboacCd1q3nceEKsAoAjugBkrzZnNFVY8zT7myQtNaoXcr2D1uaid4etTIarJ0E73tsegXeLqoLK7ydCupxN/i3qNK49WqmVcLuT2i6dCBq0ncauVVqY0uJgLPfnqV2PqyVaerPcKoCL/amdgOqlQFkZJug78E4B9cfgrhl57leu7FW3OPFDKa67+M1RHsL2Mgh9VCFZXlOn3x7y9c+igNPG0rxpl9ae2nWvrn4L6oCDa9Xe3qy0frW1kAXLaopm2lay8FWggFVqZg1a6thlPKY1oQaMYBY3qBmCos90REJwyabhJTDuUIrH9OIRYiiFgDra1AXSqbnwr7U/SeZLWlSG1pZnL4VgSkGCLYGPTKKaF/QBEFNrCAhgBt+BqGMNoMrgz2ky+VsNnVGSqck9xAAzeBqXWS99x9EDdcbK9hZsr8XsD7WpkgPNttt4m7XSbtu1C6j9xccVTmvoPGiTlNSslcenZC/bT9vnT9RfurD/RMgZU6ZT+v6Xzbe1vcszaJsGBmdtuWnV+JtxUhwGPVzW8WSgZahAyspr8HA91vwM26iDwgQbaQesMIG5ZrWxRfPC6VzKVFrYHrW4aiDEGjtZByBBQahhUGcQWh1KHpvrnwRvGjB5BctoaZQb6IFYOEOTFg3QBVYtWkvAEe0KKA9t3AYtCpvM1DUG0mm1Tupz923b2d4QAo44eKN6RD2+jPnaOynx4ILWHeq3VAH4Nr4bAbwDQ0kvhVidMQrYKAp1qXiYANYAmvg1AdaNFGBKCZXGvBVEOz6XqZe+vLTtxXDHu1VgAYJWyYXAGpjzMawp1r1RwElja2gQx0fWMqJZIpxpDTPvu27HntEuuArioxmoRdlvGl+IMEZKIqG87BTELDvAh+7RjvDcnYQNeMUUq2S7fnRJsyD9HNdQO1jXcyhPw62CjO4ZQRrKnQBYTQCE40ic3TQz9e7OD2W+0t4pSeAjAr+X7Namny45Po12kVI+EKTv5bJh9QAqogWMTJCfROUtl5OBz+Tb8oU+CKzmVcc5Lk6nvnPcm6DERZcnZPasbmCm0ID6ywCwjIAVqXi2AOBd3PP3ATX4Op9jdqrq2bagdm0m/J4UzBKRQllCz0FYE9AcBHgvKvKZPoD3b4qVWy6VWhRRATb3E6YCcAAQIAEBtALwdEDt1QDMB6tq48YxoA9MD6VEgZ2NmFsgCUnVx1AWtPmehlSrmj6gQM0qsJVbwodlbVsPfi4SghYgjp7gFVofhpmbN0wdMk0ao01LAzyWk5enLo2WLDjafXJcWzkqsR79sAWAGRtGEG7DqtGiVXnqnxki0+GODlUbtF0Y5ul3GHQEcBEBrmAiGOavSufoN7mdCGOBwluYrSNK3ZmJqleHkd3qAQzCJf6GYBXlL1hzU+K/EmdrQeAwtU5yLDOZS0H1UTp5pNMua3Pcq56Ke7TDsk3OKG0EJ54ggefCAmAjzoSts/NUgDXbjRWZ0mB6cpkRqFz0F88+yDQsTmMLWFoFVmcpOOyUzjwK88zt23YAMA+kTWAIEbM3xA0FgKpeLAhDaG+tDujgCcY4v6dEIIBdVUqjKM7mlVj54YEyq07kAgYkKVlc4dBP6hwgdwDS37vHM9Ayl+akvXgkdNsBx9yGoCC6f7HFGMziWr008B9MqqBKOetXcXEMvGXqCpls4G6AzPUX3Tnp8dbZalpuF7Va6/RdlEEBXwQJvc0IDadO7EqdufkbULqECPMKmL1xgg1XKW0/YhtC25NA+uvx5TrNbl/CsTrGXpanLAgIy8yUSgmWHNmFnvTLp7T4XrLPl0VbYAD12rVDXiMYzqZ7V2noKo+jbQ+ppMc5PZGTegYybSnmSkcFqE+RKa7UCn35ocqAP/QjnzyWT0ctk34uFMJyYx4dElitePmsml5C0+yURwIbyncxiptyfCJVNF1aO001Q/NJXlGc+gxpjnKodFKwyNuM2lRUytcXuKIYXh/QwIpKr36UQAAKTO7phTq7ISK6YhOPPkL90QHMG6DEgFQqwK82Qm6CJhjp4Y0arK54VJwhKxxXBuSpiBjgl7ybFNnQooExAqLQTFaN0O61d3oRV8bM0XbyNpFDaKRZNym9Ta61MrMrJegYLGDhsNw5eFbaONVEpvA6xbF2vm9u0QA1MCdfMxpTLdl2QBvzmF0tlLZL3U3il9V2mwIghCJhNyKtvW7wn0bATsQjzR093FVs9oJbEy8WGbcrbfXDKIIcCCIFNu+bV0HMImAAE4OYft8iQAHZ/b5E6gNrcdt23eEq6ImBhJomOXJNaNSOzzagChANufNgVX9ePwOWidkTGRinfJuKAxIal7hOOG90G3K1lNFQ+fveuMJWwTwAYCCCxKpXsNUV1+NWYBt2nk0AwQJQ4uXgnjibMAUm5LcLsp3ebld489EJVaCNo0LNo9ZaI5ukGubo9imxPckWRGidvIwjXCYMYcKEUOtqAHLzbvfWbTidkxsnbHui6Qgn+mm6jCzs8oc7m9c+462FDwIr7VNqACXbUAiAy7OMLrYyWe72q678EbDUvQO4P2PFUMI5T1dElCAzmASoJc8MXHsG1Cg97enggJt8SeUg9mOL3aQdkB4J0m92UNbpPJSrhvs/a2tcOsryFrRGYqR7yikGFYpypeKfHIBHbXiWCDQBkw5CIsO0MbD/qSdeI5nWyGI0+rnnSz6NUvJtY0ubdfobAOlIKEWaFavnDIBqAWN+GBzH4RpdhQfFWMIqpCvcA3Q/HZAFYcrmqAVFXsphDmC61R9rAtcvIhpxxAOAqgSgGtOAIcccsO7agAhUciqBtB1QrZNKOqG3baAfHYQAQCiHv3sa/czimZVY4aLPRSAOcF64PpdyxsCCfLC9Ps3HCzi0A+Ik+hXDEjbJ+eA8BNZuOiv9JGQJT3pOmH6QDU76zrGfjPYKLwJFATgWIMtLLzkqrq2IJlSYEwBCcx0rNiuKxMVGUEFR+opUfveNGKi5Q153CtpwMITPIA4z/UVZ2imECMRFKUNoU6LSfYs8y/PPNM48DrOdmUhI5zdwsAvUdn6YPosc9eD7OlnjjFmfNFWfnPTmrzuaEmG2c7IKUFKb5zfHmj7OL0yaE6FKOrq0rm6AvL+pC47qYIdIKhDeLSrXOD1cOq5lQhPSnpL1MXJFBesjRMiz1V6gTUYRLD3rBbz85jIdsDqqChO5Y0Vi7rW0wBAxMgLdVVo07Qj9OUQ2AWQlwleDcAmwmQUhGJAcBHa1MH1VVnik8BJEdkTfRAqExbYb5tCJ0VB7UhnBQvODPR2UdOApeMgj6rhG0UWgANiBC8VgH3LGGKNDYVIlr9WrSgUJesTkyAcgNymEClGoAVQWdbqBECWuNFJgDGLXKYXWufXkhBNXLf0IhFUdt9715a9sYs85OGlVKBG7OotmNFGIZN/juDe+vtRMb0N8uoTewkk31kiwECqzeZB2QGbvtoxQsDZSQiNTgXsbQbhc1K3cb+xs8YsAnkQQ9eMSrOnxJdvPyFyJ1y66buEDvGQhm++oFzjo6WXBoezoQGnvTAajIRvUw7vOSGmxYqVtPY5sUDgFm8k6K7GFFGH3cHOErnfLW7OpMMBOM7w8BwCBgJKZ3DgOdygnNc2vij8hDy8lfrxCHEkxbimkqnIgI1TXjIRGuIE9YhALGJpYEGvkqzbdVxtLF3VDQwPwf13amSsOQYu7LSyAXJItIoHY2bcPHOsTt9YQagWN1QjKCzWeko0yFqwGQO4MoDeWMwIFiqphCQCEY4eoAJh1WPVuzRXZGAYZ6vVgHIqyFqAW1SeqVGq23vzOCxFVVJ1MN4mJLNiq90DARCVmhsDaFCSwVNnIhIa5wZhemFcDMBcQsQeY9p+YAXpFAQsdLmhBMNMrG7wgKrce/neGe+PjKf1ecHVrTGf7m0EExdJSdseFP/q+uBd3ErJpRkdHxjCWds8axjE6hjgHx7QiVndCjwucex/DNPusQknwYE8C4CoA+XNZ8tVeR9RWBRK3L07tRT0gxWtOK9VL6/HjQqQlp+njz7WaAjYACopnM7nqGmNBo1806jT05SO10fQg5no+4gD5fZgQbGQWwBTEzBNt3E2MLpbgYeXUf2ueHtTm6H5iLIVAw3xl2CBsBXVlGykZM1zgQhDQEAdgbU5MOIAIgtON4cQNt3OCYAm2qT4154QuQrEBDEhN0O3XoLaER2KhPBHQGyTsgzzrwU4QwZ2SKEBQkhCq9947zUBFnmRRV+vmGHavRhgPuOMD52QpEIf6n9kBvmmSA6L2WJiuN7iahlU0o5FAeTmAIBk+xjgEufvJpVY0/Njzz7XaT9OzbDKfHRxYAAE1aYV3xkBjgZ9U/ef/PoRvsmadqHEAZPkEJqHivMXkwgE5BTqAV+s+SfekGX+VXPlYfa5gEzD9WDVYS+sTigKsJAgf0MfaDsEg8CEYZKvvGXrYcgEJHQgTmFN6qxQLW1KrsXkwan1K/frBhQfK25AKHSMY58VrRnTFJi1YGLAQSZMEIAsHtOvPbfSEBkXAEtO/E2mQ1KIQzzwtZWtg1RcFWVf58dv5/zSItfN8BsGquBGEa0lMKGrwSVvtvR3Oj7GHghneCw8m98Jh/QAaU3QKEINCmYS9vGmY2L2T336ODbe4PIEdRKpcxCnCb42gGY0JCbAabxw8ZzEGtNZvJpK3/jMF54UreDqoodQYVVv+LcH+MgKlOODv+N9p2GPp9l4LIRAiUxGEAAUkeciAL/ykZ/5xfnj+vFIt7FgrX5V2AXnfiIAbXlpDPkfLnPzLCqIOH4WAb/h/49skqhejwBy6oejXOwbEBZWaWbG3qsEiBJ6yiEpvNUg7iAvPRAIB5vJL4TkdWigEsGPbKQG1kpbHQF2MReIQHbaw1GO7YICEpQEaw1AfG5VQKhFwH0g1zggG6i1cNsh8BJFH0gFIx4gIE8B9jFKzoB+orczb0N9iop6Qv/tgAVqO3uAHWmr/kIHLqz/vAg5+FdgSTpcVKqlb3+KEI/71Qx+LIHZIjIDIF6BNAUa5LOeuKU5S+0Umf7YACAa252BbgMfgtuYbmU61w9cNAC2BccDyT7+7FIEEX65Vun4eAkQbZgIBZ+AkFyI3gbgoXM8Qaf4Z4yQVkG2YhEAMAyEFqO2Q0Q11FK7+BuQakHLqjmkC6tQSYMGyOaGOCkFckcrkWgsaigKxji43/tAocWeflARugu7nAT7uCIIe6RYjngQDL+dYNt5v+jHiICQKdRpBC4AEwbt4tQ2gFO5Kes7g9yb+nhCdBv+j7g9zDUCatoSrs55rK7Y+sruuw2gD8OqB6AkjmMHciELgmqegT7r4yZ8P3sBY4BawYM5AweAM8HqeelNvAkuzgY1QIOTQe4ipqzAYgDeq+VixSTOU4sXjeqMzm6or2JCJCFIAJfnuSvA4hrWB4KJFECowhfDKCG+QVaI0qKALfs47Awm5O4EGEngcMDfiUbuoCqwEOoZ66AWJgERuQd9v6qg6PCIMCJsTvhX5JQrNgETQARJPkFgwCYChDFB6gC9Qihv4pjoPihIXFgtBARAKBRMn+J6wAepwiIAVG4IfCFIA26jAAY0TvPWTcihoYQE68uocUYKhCAQJTgUQogEQWh8vFzRK8mQSFKvANIUkEqEELhaGo600O1rvO+orK4Kh8rpkTH4DodEEY0jbtACuBpLpFgWhGvCfSKAEwhE67KIsNoZwgaEPc4oANpm6AAABnF6CWKII8A5hXWqIBwg5AA/A0QOipgDbeOYShBi+usOe6vAFYC7hSEIHoXiPAlADmFNepXn1oZOLIViBMcNYZIHQ+5wJzoY4OQPmE8I3JMWHicBvsIgeQAWK2B1hDCrXLf6bvvjClUrnlwr/QfHjUyPcRaAB5xeQHuCFvBGDmj5+gk4agD8qyYAj6J+L3r1T8oVztFIQh0Um6BcEwoFUB6m2hD3brBPwQ9yKEkRCARV4ksNyKD62oPh6o0KEO96jAL4QYRrAT7nRqNhu5n8GU6V+Kt6OcvgQ+LY+U5nvjoRUhHD6U6tobnpE6YEfvrwUeEfQRZ6FcLPjz6HSAa6i63BlvDiBUtnKzOwD4pzaHwhFlU5SBFVpbAQ4E4buE3qSgQuZ4I74fSB6mh7mYSgE2cPLyXhp4vqA4A3xFq5cR07t8Fnm1hKkR8R/BNETV4QhLXo2QLwXdjKuwFsWy/hyRFEqpEG+IBHmEukWgD/BrhPZHn4L9mJGfhMhJJFREghuAR6QkjkgBthykIew9GwOh/r1aYIMuFXetcmJFda2kZjDch8tlN4MwqsF1IUAC5ooB5+DMKlZiRy6DQCWwIAaQCeA9aLRHf++oClFQApZq57nMtHiJHr6C+rPi+Rprv5H6R2kXwTVRqAI5EyuNpr4QokgUdiaeuF3DERoAEUc8yAEXCGGZhR1PlG7Hs/FpLDuI1KDwAlRjMJ56ggWeCiFbO2VjTZMkcluoCIQ8IPYB1g6llVGRYqkQ3DmRzeJZE0k1kTpEgRzev8Et6TkTvgVwAnkGjkAYkeMrJoekOEbFgf4Q5yKE3IsmjMk97kDATCewQ5z8o8IMhK9c+lqMLiULkXqaSO2kcBFCEJkUMBfBDcGMEARusFJEIxdkddGERWumiZUw8aIJ7PRQ0eOB+BROooC9R70cWCvQh2lx6yWX4DtwPwtEApHNeLnpcaCR09gtIkhUALp6PR5FJABiRxhh147c9WtFGMxDKriB2AVWkdEnmmyp551+LUffaggxAPF6DAOYFrAaw4QIlatgN+iyoWG/uFXKwA3MfPAfRW0WGagmdMZLG7RqsEzH0hJwHbq6mPoHCBTGxscyTIx17rRiVh3fiCAY2XCINimeBYVVq+QrJOcCzRFRkzAgQ4QLLFQAx3j2Fzay0UhFRWh2tWbLCSADwhcumIHfjGx6YeSQ5YSxPsqJk8/Dp4Ex9+mgCOK8XoN4MeaXKXHI0K8unHGxKivzBcuOIJFHpBoDn0SscJKEJ4vw6wYMDchxscr7Ig8EMyRhxQwVwgqAGYctE1+WeJ3FPRshAPFagKviWZ7wNsRLHUGMQBDqXhdHmlDFe6gIZ60Y1HpoHkqK7tnFTxGeH3EmMKkIsFphCccW6aQFdll4d+3fud4NxLCEEpbhmIGwZDKWMN9oN4dXiYyTCyut7rYwgwLoD7RROnzHExzCMNFAqkCWJFeROAAub/R6wUDFPuoMRBoLQ80fyiDOQnItRJgLxBxaCgK8lJwxWgsWGrXeaEFxoAqKemkpXus3k+apWobIKGi6yCSjGoJD3OgnISjStQAQq5wADGkA7CSDFgxHeGQI3mgxn3KqsE4GnFT+CIDB5jBgAV1o8KVYY7H6mSqlu5UqAwXYRMKIwcXAkmKTlDT9QuwU+5UAzCScqXuKMYyBUxpAJ2zH0WJjsHXOwMYQDDUj4Q87XOPgeEFn4LiSgBv+7icpArAmYcgBv+GAWq68EETASbxhB4c+h3AXiYEnXOjIDElv+YHlACtkggBeChqx8dR66EfRBn61GKiau5aa+BiOrbIzYNt4JJcSUdzwI+oGhDu6EOjegCxJMeoD12OIOlFGxqXuvE6aGMfcqNIRAH7wqwzcbtwGErNoeHLR4IS+4huX3rm52u5BKjoWMQ7q64N4MMTIT6h55A0muR8fnww4JCIFhaLJ8fvUnQJb9lrr941kDOhQgZSc+Hz0prtfgWuVrpMmIq0yY66Pew7m65rmOycfjfuowgB4DACoZXS5ueljoRAqPTI7a9RZbnLZIRVeOrqNJaCMs5DEKhOyA9MaehYgIJcMS1Fh6OJi1EpsvFkCq0RBbO/DOIyzgiltRPJHeEeEvVKcJ3u6wY4nPutvuMl3JDrkR5fuWbBsZlUjIOz7k+XPkz60+PnCVZSM+Nr+FoxfwfzpX4vqK6wEhGvhz5y+Kvi1A46RaieqtKjQcW582xAMLBoQDKArY3wwYa4R4xROMKlVsrKSbTa+BvgFGNKn5ul76MJ0XcYH23UYWpsclEVeZapAXrwCNJrwJ7otQDSOohEwAAKx3AVEt6m+pVEnxbxGykMgCsgxsSoAMQS1ALgpQ1HvuCYATuujYcAdwM6nAAAAH7TgDKvCCvAE5sAAUA5EvwgEAYgLAAdIYabgDEAf6MKDIA/CEhFD6NEC/a5RCHOYg3RWqfSkdI8iT+ZPulOs2n4Rivup7jKSqBt7aAiUGvDmym1LShZSzKR4Cdp6sWOkggWelfhTpxtiCCopI6WQALpeHMPoD+qsPwnkIK6WVShKo6aukfuWml+76Rc6fullU9aVQiop+7POnnpLUVWx9uUftsLnIoEMQDUAnbo+n6R+MTekggF6T5wU2t0ZqmshTmnJSdpraQ+LnmqKYoDtqCvkwhHpHSFkB6OEBvBA7pyANqZ7836qlC8AyGJfDzRRiILzlRK7gaYwQzCePSfuHSIhmMgnaQhlKqE6WRldpvaYj456ROKBmmpWERZGWpC5kKkc+uqWKlspjPtT6cpV6dmI9seqVr4ruhQp+lNKUIJ2m2pKelkTk2k6QUEB+moDliQopEDJkER9qdnqb0zGXRlgZgEuuyopMmbWzz8n5LOwGUqRBpkT4dqUBnEEOqS6Ga+EqcvI3wDGUs7oRNrFBEB+Vya+5TJdKWRmORaEeBFqcDUEaJmpOyCSjCItgIyLzRvUbZ6PAqme1zBGUSrBDPMQwNcnremsKVTnc9mflDzRomU5kwZTCoZY+6XQIwhwgggD/bux9CZIQLm9mbBn9uGKfJ6U2QKqJkMyOvkX4U2FbrxkggFPvxmi+DCq5kfmclBREd496ZH4sWMfsxa0oQme+ksW+kfJmQxkWFamCU2cNzBBZjnPQQIWU+LlEQqdGblELmxKaLpERROHhGYRgEthFIxdWa1kGpEmfNGkISmc2wTgTwAlkzRlCWVZVaYcQ2iaCoBk1mH29WcR5++rCKMAqZBeFFBWZb6bp7zGGsCRk6ELGQ9yC+WPuxn6RVmWvqlaG2R3jN6KhLdG3hCYe0C6e36TnChsKwHDkOcY+ODnJm20VGYXgTWbh4tR0aCxjqI/6sYxVaYIHQB8RuUU4iFRVvpMGpeBOdCl+4X3hYBM5mgNMB1hHFiTnzuTClZnXymyhBBVak6Wel/QTMPTbJmQcOb7qAD6RNnPpcflsGkpFqJunrB26dOkNwBOYen9u+Vq2lQ0O6SCCbOcERLnWgINHJT6Z09idBGpJFIoD8oaqGSTwQOibWD8w9Wq2B85NIodrh4miSoSKA8ibYCqxA4fOFUQnEhOBjRCDM5ZYue2Yrk9sShioRX49ubSIXZ3UYoApJIIOyCrsFwRoAncWnEonf+6oGlD+pK0uSri57Omwh1xAocalyUBObbkhExeRZkbskGR65FaQeXEmHaYIFYi/Bv+qiD/Q80aMAaU/qmQBMq8/DDnEE2eQZld5yOXRn0EjIIzbfcC5qcIoQBuSjFG5q6XunW5tEM2lCGqGiBl6ZrGednsZQmRTE9A2+bvkzu++bukn5IOrka1y2eVb5cRigOZmQIENEzDmpjAKkRYeCiQsYb4AbhOCDcsSjtxGq8+ToTa042dH7a5tKPNk2ZjSovkQ42Plnoo5JycoBUkcqSnoY4kVjSJ34rgKCaNI/rrY5ggbXlErlQYwRqkhhtmXcya5iBbH7IFAxtW66waOR5nQRKgF9GEAPemnnt5Auf9n14XaUIaBZaOSFmHeYWbnkp5cGfuCmpGBUjlyFDWWvkeAI2YmAdpqeUfkq6lOvAWx+LBVNmq6YiRwUD4RARoXjKPinPhE2PRugUAFrPgvmr5o2TgWQFcqTBZxJhUZPb82y9v8EK5OhZnr/eowswVPprBcYWAZfumYWNZ3Ih7lLEYnmDp3pqVoibQGVucbnVaOIFNzSg78uHlQAxIN377eQaYu61yTOW3m0RkoTADCg6gATl8+DCqeIqF1hCsAlFLUZKFAWkRUfTZFaHo8L1gi8cvLBxOGqJ5axNaI97ru5RfolVFYvrUUkUnabMajKghVAROuDGbfkiFLael58egwPYUUiLANp6B5aeadw7RtcsVHu5Z4PFmg5GQLmjqG1Zt64rRBhBoo5YtchFlg+shHR6eu7RdnmrF9hBpE4+D8GwYo5deaJTe6tMSk6MF3+TsiwUzBOL59JP6jsVMJhsUsUKF8OasXtFP+V2CpED3lCDVmKjjuwFgvufTEFgw/ggXzBvjocXiwlxUhEw5WeRfnw5UhkiXHA0WUTp2F4WR8VYFThd2kb5uMUBnHZPRib6kA/CGNHxFZEeQkQl2xToVjBMOZg4346vOwXYmkVv3lbOKikkVM2x3l8XqG3ulLn4lfsdiBUqFxdZCklG8toWpFARfiaRYwRZNkvpQIYoCw2vFgEGraNAH0GJEQcEoqXxwiBMEHFAXtIm0wwweYnXuciU+6s29idFKUpw1NGGesELq4E+hksv6E7MgYcW49KHuVSF1uFFEGgC+UeVNZ3M3Ifa65+tCuUkza/uQAk05UAAC40iPdqAmUghSTAHpQzCAyHN4woFVjlQB8aomMoKHgGl5l/OfBBhuk+U4YoArwLE58udZfkmOqrlroDkU6uXGV+4jfjNrK5ggLFZBwtctznfxzJJXGqB/QmXgKJJBeQCgB7XuV41ZqXhBJbR4abKAMAtWtiDwALAJRrAAcwUY70oWUsW698SxIcrAARMMHYcw3/veZQ0ZwI9as2rgWgHRSwSeCFhJx+rgEE+WJq4EHi7WiEkgIf5cXAY46BjNqVumwKz6HZyaEiAUUSgKR7keakDN6TUqbucjNye0g8nBpgxc661Kx6Idn7s6MpkAYV3IthUlITbKMBOujIBhUrASWgxYs6MAAfCvwFFfzpUVjzJiWyEdFR4AMVRMJS7EEXFRwCFpKkHxUEVqwFRJCVd0fnoXIZHs1CcYSFbwVUVRKSfTJoZeNWAoVKEApUWMZEGhX5W7mR4BcV+vu1wvUSAfiaSFvgfYSg+UWUb7EEU6X9AWFOdmhVUeWHmCGcFm3ECHJofbtYSDpXKI8nzJ7rvR6ROk5VRVHa6+C77pAGsGN5eswmZoGqe2niHHNsZgXhRxR53irAze3ANQC/6gwPzFgghQSV7p0EsUSpSZKWcwhUqM3o2X+5sQGpYow3qHpDSedecmDd4wqWH73G8leR41GBFID6zJj3pj6KQggBDSeAMlYO6BVTdiHoiA1wTBHKV2lbpVt4LmgJQnKmlQO5DpQIQB7PwlmtyyjI+VptWMgGJsQS+sFgA3TmGUMNyKbVubLwVgIzOsQQXVyFqagNw47lAA5GalrX4w6BlCzmfWksOqVnG5JN278phnkDAF4mpUso3wgwBknaATCv9rAw1xj3ZCA9rswn4EnhEmz86/aeoCgImCMtQXaw6SogN0HgBdUvAheAFn10mCI3RnVSMVAQ4pScAi7/MKepTUc5xEKqEU27BNYSY5JFAtlSlJKpsk/QpVIVmCwkZgVpTeoyBlmQANSe149BOIFTW/Z2Jtokc5/ITUbNgRWrMaheX1vDXkEC5eJYy1EFJiAVeJCQomtgk/rTAWAgBgWCgm5WahAAECHtQbsUKhPTU1mGbH+JwFUMazX8iJROpWeERKq8xL0yyf+ygRnggYSUpH4CKxflKzvqIyV+7KGyUpf5sXCR1PpRVa+1bJZnk7qBKiKxp6iIXIi0li2THUisidSRT5KYDK2Re1y8M7bCRJESOiMg14pRDXGsGijXLZaNTADboK6NCnF14tkjH7sw4ceL/sUrKXWR2lNbPj/sZ6JJlKodtbxaM1TrFBa9GztfXiSZAGToQc1ARH3VbwbrK04esC5iPWfKtrIwXEELNdPX0WWmTvUdI0xX9V/pc9ZKUBepvpTj2xWzol7h4RKojXnhUBOyB1pd6TjmRJGkFLWfIRKp6zgu9+L+kQxk9Utm0q7IBvk969+ByqAVRPhei+VohdEHb0bcSIDsg0DWMha6K1UbJ3YClhChKADumwAIc1YNyInK1erNQqEexvBT06RJbg0MQ8uXRnUZrnowgoZaGdAGYZ2GZrUBeeGRRm9lRGZVEkUJyhRkj6NDfBSslxDWdr21r9o7X56fOQaVCNyypbnqR9eA4Wp6ahS7mqsm+YwUnKnVYpV8GrwNNW8FK1XNUGVDGT4oYNbAFg0sIFDebJHVWkCUE+OAwD3mQABeT6iyeJnjhpIeYPvUbqIBBuOAnkE3giQhpKelfi/itoEIj8on5FhYyFz4lxFKoHdRVYT6ljR/DMR2tqxAbkhdZugBNxJo7A91lNkMqEUQkEBaCNcmTZkBE2OTTJ6yGIIbIdR+DcI2j1s9AxmD6UTvNXvGamOo0UedSpTq1NggFWBcF6hXU2uVplRkCoRw2VE4dNm3FIUipV+adEcZW9lEpYwgzetn0ZWOVqkfBIgMtDUyWuoDnKZxxWpnYAaDVFDPZJxdgDcinDJU07akzcey7Nmzc+rs1WqRXDNpDTZTrJolOYQ4zeHllPCqOU5lZWhZSheM1Z6GhZYkbNMEEyXyFR9TN6DZWeS81hptjb1GB5D2TeBnIfze4hvFg5ao4QlyVWvjGQj3sY7zRLMcAWleNFZWxotXQA83U5fkC9m+Q9xYOywFSqPSXnmK+fIWKNeTSXrz1ADcXCsQhmIi1hpudQEQWN/rMTpNNQ1M7b4Wc1BrbOy2Iktw41FgOFUj6vLdcBHUjSmBGdN88BchuVNHtgAgtclFxVjV74GFmDVQkUjEagcLb5C2EG3MiDkqtjqlA5x3ePi3hxiEEySJlsidchkA80TwhNeSmk6o3Z7iC0lPZMmKtKve1YTQlQAZJA3b6tW5czWjChLW0odG9BeEVE6V+Oq19V74Mugj61ekukqIuSDwWMgUTaOFUVsrri1OukbToQVwuSMLY6afLh4AZt9oFm0GMPFQFXIAVagxFyUqbQH6lshbVW1CZhzcsqENq6CZUB+TrkJn4xYbV23NsTrjMlaEM9YKL9ArOlXrIWGFlxUDs53j21t1TLbWD9trlbO28Vj3o5FRt/6WO1E4Dbc2yttE7Zvq/KnbT03dt67Qu19t9rQ3ADttFY97Dt+IDPVaZCrkxlX4zbcW1YIC7W22Tt8aNO0rtVbfO3LZ29aG2Xt+lYq2rt1bRu0MFB2du0AdUmexyQAp6skTNybVUqqJVG0Y9mt+VbXm2AZDLfM1nsxTXQQmZkKNs2kQYtAKk9GXLQ00keOlV1WcYCWoWaWA6th4DCt/CKK3AWFcBK08tqFRo2D1LeeviuVGrfNSJtU7fE0U2ZbYCQVtZIn+2PeRjCJ3k2BDVO3HtoHVJ3qOSMRXBgd9TcZVoV+kR763ubNYU1apV+Op1oVnESnqJQoWQ+I6d3AOqyEWZ2RDizZxYDJ0VQC5kZ2KtAnQm3qeJnRTZr57nS51CmYHf+3GxVQImARZRLWB0KtzcgFiduikAWCT27uiwgP6JKsbFVVk2sa3gFrYBciQej2Za2wFvnXoz0GHLfm0qIRlelWyE9TUCq5dSre1wLOehbM3WV2SDV2SFijbJlJ1DXFW3zVOOtI2KFsjTepZ6JDeIRtdv7W+3zFL9saVIFYRafWMFHwaZUNw6ETaH4dU+NN3EdICOhGToYlSIABdedcNm1d5nWM0Wp0qWxzOVlzYwUSFwzbZ0Y4lndZ0p6p2Tt12d+JZnVs23xuRGzNsmYU3btJ3cFlnda7F3kddamEs1TeI+oo2HdJet8pddX3b/n2VD3dTrduSvvCDyNT7TpnvdGETd0g+kWeD6lsolZBAbdwPY90noa3cN1HdgRUaX4lJpXH4rNQGUkVLdikcp2/R8EMOhcWlHVK1Y1atvLoMdQrfAgsdBAt1HsdxnZK1cdFHjK3RtarYN2DsfFXwz+dZ7ctkdmy3le09NbrdgDRorlRj3iV67Y1EUAWlXz1qQqlar1E9BhSEVGFenRN2uE83dBa4tR5t8QatNPRYB09DHbz3UdGjfy0s9o6Gz0itnPbK0qIHHWo189Q1Dx2C9fHa51xtVbBb2qdRXetmWJsveJl9NnGVt3vN0hWxnjNQmRXCGtqOcM0vdlNro0a9IHRYwQds9YB3q6zeBc04dBPUSWRWnabi12c8OcZwQ6vLmhA3eJZT9UXcyXbApElBXluHWtTCGVpgw2AOMH3eHdCSgFISPtl1CNMqVCAIdMFgsDG2BYGX2Tc2DUJFk9krkfnVFV3pT1F1vxKUXaQx9Vj2l6Z2jsV7Sxqdc690hyiv34gJ5mv00Qa2WRGShJ5nMX9VG/dJ3s1BjQe3O53Xfd1shUANukdSueLShoQSpThrgGiKq54MwscW32GeIAW17ZxyAMgABuDZRlWcASxGPkGti0SkWrpsBScp0tK9YsAFdufcXCjdoRTdWAV23lWDG2anKpgTB/ua9XfxhNF9Rdag8YVkckJ0shCg2aUG2CN+W4oIDgpxcL2GzEEVUAOhqzIUyo5g5xLVXNJlykvTbevDn7jNhXA8mHBuPqKaTKQ63kspr4qJTQoqKhoFwrbeVgJLC1ypVOSp8uTOTmG3yl5YnEc9KACtA5g/DrJiyDRNCKg5hrNrcjPo7OJ4C8cqXpC0MelA0paqB3RbQMXc9A9gCMDbYAzbjg0FNt5hm/FkhGSDhqLE3++CnDuKl2w0Y27Bes6DP0oQY5QPDwdDOcbUWo9IZ0lUIQcdmXo2sVhXlMwcNs/HoALutt5hDxbhEOWDuRY4qhq6XUpABpcpSvLPeIqmvDYWcDoMDAN6A2x4cBV6H97XoV5a6EiA1QyUHqFLuDFhI+2aBANQDZwMQCHiaAJcDHNAXpY5PWMIAmWsefCCiBacqqdLGaGzUAOSww3YXNrZQixql4XEYnkfGXejCirEpl50lqHT2JA4BjHu0sUZwDAI/lrF0eoNiZwaDsluOCCO/0DMM5g0A3y4MoF8RHizQhw2zAi1/YdDTiAzZfk4ogBMEOXCWdEJmDUoBYDSFWxGtSx4C+J5DlgYMANN/2CWDBjV5KyElMlaueEEtKrpxAsTlCLI3/a8BII3fSiPJgNIVp5ogACaGq6AwoBUM4gFfoBgrQiWTFYgQE6mQpAja7u34HDSI3vCNIy8LgBPFrSQF5j+BUOdwAE21NgC/UUnAiBj+QucVBkAGnOv6vAolIiPQgoIHKrUUWsIG7bebQGlByQ23A/DMjkAOyPJmKo7ECgmJtQl3bsE6qQAZDAaSqrNlco/qaaQ1Hvp6vlJI5AC6jC7uEYlxiyEJDlRgsBfo8IrGMeUSKc/K0POj3LLOypE5meEMZO6hdyR8ELuHsIX4tJjJKui1vPJKHyRg8W4WDzKII6cCGkh7R/IAKClTmKiZJtYW4uXC2NVk7Y9WDHW8fAdhPEAaOQUBuBAE/WTGboB4z6eqAIxiMYWgpQwFyvxMEjkQOQDI4lyoSLGg7IOfoiP7IU0vQz3yoUN3Arjz6OGB3ooAKdzCI2AGhAYQMALfL36N8NQBKgh47/AoIJ4xpBrjEOBcapE3xC0iRY044mQBIH+BeNCIIiH8R3jyCFKng4L4wRBvj/kquNZAsrgBPVgc4z+Pcsf48XDITs44xhAT54wgygT1447HfqSoCaxdYRQC7jBgSETkCMY6oLwByQ/KG0AAA0lkBVADgHJBiQFYEoDqgpCFkAOAYkKQggYRyOqBZAY6M6HFyNQg/JJ8QYkajiD8EJ/IKS0kzWPDD7Jk3wgTSEIRMHxxEzkVWsZE6LiUTxbtRO0T9E0xMsTbExxNcTPE3xMCTQkyJM5ACtJMaMgoAH+g5AckGBjCTWQM0AwT0iAuC6TFE7JMiAhk3RMMTzE6xPsTnE9xO8T/E4JPCTok7GR4Tl42BOaTYxiRM6TyGOROzEWQD0SvoVRJW6BTxkyFNmT4U5ZNRTNk/DBiTXk1YKKTTgjlMKp8k9WNVTrYjVPDD3QmpNXjAJklMogKUxYBZAvkxlNZTASQMTRSeU8FOmTYUxZORT1k8JNlTOQBcaOTIAM5NZArkxWDuTnk/5JPIibD5NpTek/1NNTQ01kA0TQUyZOhT5kxFNWT0U1kDTTwE/hPqT7U2/HJT2k91O9ThqJlOnE9k/1Ccuw00dOFT402dM2TRMOVNrTyQlJMJibYxy7Y0B8hNYNTsdGDP+0LU9dNtTL8HdOdTD09kBPTsmC9Nu4b00PDY0n0wVNjTp0yVPCT/0zNMOTHgE5MuTbkzkCrTFgjGQbTPU1tMUTWU1/S4zo0ydPFTk01kDEzV0wlMaTSM+DikTDM31OvTapBCTXELM8dNFTE0+dNUSAMzTM7ywM3wIRUIsyKSg6dU5DMgzSs3eTCkopHDM8zt07QhdTqM4LPPTWU8rOik4s99MEzHMzLMkzZiAipkz80xTPLTVM8ABeTdM2jM0QGMyCggkWs+qRBg+00ZMjTEsz9OEzWQDbPczBE/rNaT2uvTN6o6UybPCzjtBcQWz+M+zPnTHMLLPeS8s4ZhQz8xEnNwDas5Uxe8xpI24VUa8vFORziMwbMozsc7Sjxz6M6bP5z5ACnNszUszZMZzts5QjwU5M4tOUzHk67OAztMzgC1zxAPXOezjc7zXlUd5C3OSzv08JMdzEczdNVz0cyazuDUKH4rNzcKDPMhzHMx6mZzsjpJPb8YKETRZAG8zthZCRKD2N48p1KfMLSGVJEIkOVNEKyNuZIWmRv+HQQji68qJU+w8o4CEckboydT0ATOD4hvmgSmAEGwbOobAfTk64CFfgk45AKFhE2L1Ksy/YKkhkK9itzC9TfzYrDygqi8olOLR2l2oBL/KntpalE4PCNQBEBPCPAgzUTHTQsqIsYGBWZAsYP4zwIAPj6jsgsYJRCU94IIQTkLjHU7at17Cztmz00yHcx0AIixBaT6T0OAtbom6MRUBI0aDwsNw3bOAhkk3bIotxAnC2ItxGw/bgVccbheeqdKwnBkWXG5zNJyLcy3EZQKcSnItpuNho7FZd1+3IdzQOpeRDo2el3Bc5QLPiCKWHkTiOUKo9bWcq3biZkD3oYw3HOIRvU0aEKhsL54bKBRWw1LAvwU4C9SLXOm7AZHggPCzgB/zCGmERB1BKfAhktIpHL3biHhkZa5RsS5FhlLmizPRvRC4KQC0Sc8PfoEAESw7XwI+Pi7ANLmi7AA8LMwGovNydAD4pFLQS+1x4OqAJ3ng9C7DAuogEy8iUbs0lE4hhdgy63nhLwwmSQb4ASE4g+Ad0Z2IhisQpJKILrpmuJDic8D4pE2QcAAuysi9mFmzi6qQfZXsOC1WI04gkscsbi2utuK7iq2jUHHiY4meLgCF4lGpLoclABIQ4T4siFfi6olvifi6Ie+I/iQkJcuISYWcBJsAoEiCsY47alBKRYMEs8zwSROGis7IyEteoHkFIi9SYSJEnhIESREp+Q4SZEpRI0SdEjhIMS/kcxJsSHEqQL5oqjGWyLiAkkcvriUyG4TY4jy0uJQCi6KctyU7aPCYvUdaFFgl1a6NuKdoFbPAgUdTHe3giA06HB2hYi6HNSroeaGtQ7oc8AehHoJ6IGxHUnOaMK3od0eaWUKWyo0i6McZgmbBwxYHajVQEXiwCMYArtQllCKiFhNzTC00tMrTZ5X4yE4yaFhOhKyAAIXbUbbB7NlAps77Oiz6xNvNWz0s3ZMXGFiJVauWWE09XKA/E2JBP11q+oZHALJAfhQgfqj7EQUkAKhPiJTMMQo6KOIN30xOc4Hy7c5eQB1UfNJ1CM3b6QnDMXbUZzCo3iNmrUBDIA7TlAAx+ta5UX9KTMJWtaW0NPhpnAFTfZpmOjADChi10AEVAyEpyHmmUKs8CPNjzMa69PMzAc4dN4zrc3POczKa5MZpr8oFG7LKGMBGvqOUyFyX4A53IHn9Ks5XWvQ0RNE86MFjlZUUzrxViYUrZFgFzT1uA8IwFm8MwEMoCUpoTWQ0BalCdTi0UG7C4wz8dHunbU48AQDIAs8D0YWQUVvRD/1reqMIYbbJQ5ECiiYY21NJJZttHgQEwXDR+460ifQ7r204nOTz6VImtpz7c+et2zzHNABYTXjNvTPwmPomSOEVKu2oFWw9prEEuRLfzAcYBVomR/J0+D3QJL1YM6buWcVip09GMbYvFVs3NVhbdRyvh2xiNkHdw1nai68usmcq632OoA/CEpBYbxqeOPE6t6wvbKQa0ImT3QjSuYp5r7lo0rK+ePovFY5NoY7YgYbAGIp7xLGHB12KYWGDiJG/SjGZOU+akvhIuO+AJv8MwW2VTCb90atlRW8/CFsICPRrIambsKOZtrrIW5utnA269GtezpqFjP808dGxttzRM5xtdzl6+1G9mmMAawBbUGR0YVr846yQqASAOHGz+KkOBCVxs7njQUwiYL63A6Xnl1oQ16iP06GUfcm0BPFKIGLX/QkZprV9K4ivUM4ghRua5BxbUkwoN2V2Ikb0bn+Ilu3VmCJj5kw8OhD5pmim8mjXbKmyTLK+BzWq1ab+jDpvmy+m20u4dUjcMoFbK6xPD5rVmzZvnbDEfZutbJ5kD4XwuAB3hubROh5sFWJ5j5tqb/m1uyProBT+pNUqWVOtnbWbMlvmZT6zduOaKLhpUO6oBXxDagr2+vjvbGyUM5bJX2+9vVNv28ZsLr0kICQY4lmxK7fI+I8CDprrmrUD/B+WwjRmbXEkDtnAiZNZtsAtm9G0Q7GGtyBObM9LYjEA8OyXoo7yvmjueho6UrkmbhEEsQrArWzJXL4pIVAZib3ObjuIEYO0qgE7OyMkq3bGW/dtBr/Ovaz9KLsBVs7TfRINMGEdW6evTTb001t0S9AI7O9zzs/3OMbfk0MN7TB0/lOszs86HOxT/uxvoJpmodwDEaIJJSCPVbHSojjB3zaMLh7GU/5M+78e41tJ7gHuIBp7zJCk6sSC4C/l11SygOndGXEUH48IYTJZQNZhDR5R0ZUBL224g44GOi+Nhdm3vEeR9UTBD1i7QAls7S606Dagq6/RClbM47PCtbp+QplhjJMBE3bZMFHRmIZg2YLat5mFRPXZEUxdXWQAHqWPvEElnWfuyVKdg8jGZL0JChtKhmTvuw5YYx6kD71+3nu37pmQ/td5PeoSZzrT+wvlhj5Em/tS2PI+oAY4Ebdxjr7+MUPuiF9KkTUPt+TUTrtR6ewsDMxbyjdF9DjBeC6UK+G07UWURStIS2UMTS33/EmA+PsFWRRBYhL4dGisD8bl2xDh8ezbACr273dE9AAGAfipCNwMvD0YP8GMJ8iSEpwoXgEEHYe8GjCxkhjCER/wQ9H8HyvPuDl7Ih9HW1gEh32tz1y+yaw0iHlPXCvzsAO/Pi4jcPwfryKeghlhEDGQMMl6Q6MKzRSSjAsvokJhwXj3sbidkuniFS8m1cWDrPYdGWbRX42jmbAPwcrKCxPABbUswILsLtm1AIfcVVCFweKH57XcwqHVbJIdcRtkERWSZshvrsYwQFuJShrMTeMHZ9BTXPVTDxkd1FWHgyVe3pEWOSV00uouiUdDEfS+QdLONR37jqrIJNoevAb89c4fz50P7qGHW2Z4ej7WqeYei6lh6GxEwNh1Mh2HZS80cjHG08myuHwfe4e/Ykx1LVP7Qy/4fFeZg95gYwDtmkeHU1oEJk7Hh6NaCHuRO6In/p+R64SFHKPo0qNHrwKMdlHbzOzWVHwFjcdqrjzKceG9iPh06SeGhhFWMIdiqWHWAkBp7ZYm7UfQcoQV25J4wEdFqwcrZju3rlAwUJ2Guo6ccPvsBEFcKcKvwoymY5FKk+W8CzrHAK00qI1KKTFeAD/VcvKQfBsgjEa0AKIfdReCMZK2dBUGJCsYRyG0AAAagVBSH5ssSeIBC5pgAqAxAMgAmAuFlYB71jxyEA5rtspGa9AsQFzhsAbyn6hlUCIP3pEl0AKyMXwa8/ieJk5AOVDcyw0DcxapoABY3FAfFiieopwBd31BBvUJ7UYbeu4MDmVtkOvvcV8IDSfuA9aAyc3dxQCM3ybdbTADd9sWn/scAPezycNFAu0BYwdqGvZvjBva1tnA9GPkBCNNccLGei6iO9GfJKB+1S7k2s9Z4B2mr/dmsiu7INOO6w4RhDojxBQPogkOBG5Fg8neAyNUsaeCFhMxYCy1asS76huxq0wmsTACNupZXOPxbpY1EJYTc476tOzAa1gFTUnhIOeMYIR7VZzrWbPnsJzmM2bNizh6zHvBzSazZM2zie1QhprMTZOdCGJyuAanzwWyBtzgcbDfMbzWQFvMrnQc5bPsbwk3vNZAxwRanbA7x2LpdrlgCo1+68C6FhhK0Rc9VZSJAMYL6arO4GfeaZwP00wAXa3wwFQ/J4KcmAd8Dy0fNTJyyfsnnJ6vTQd7RT6u0bX6wESyGruwVb4nlOmo1trBGvV2E+TiIoBBbIW3ECpZxW2VTz75UP/FABjtkoCSnCZ0V4IeWsDiyQXmQA4C8A9AGJuxb/xJWdGzcc0xuLnTc0XsczHc1ufcbk53xvH4Nu9dvpbbB7UueEj22ErO7KiO2hFWdVqtQGdo5qKvdReF+IqRa4F+fb1H2uqgBIyI+v5rJaLTci4qIqAK2SUdNSqWiJa9l+HXa6uyUUqP+kENSe0nL9o8BEVGFtZdSHhJxYBmsvlyvL+XMR3SfiHIV/WjOX4V39v4n9FWqJNs/O/iel4HW1/bVKwO+LDnQ67ifSgnilwwcY4SkCpewn7B54ROmPKtkBKQ868tTpg688edWnn5Ahnnnd85efNz1519Opz9W1kAPnT54AXd5oiSoTN7j2QuBKQ3p8BZgHGp9WAFQIB5D2gXLsDNf/rFNsKCHuHGghllDj1dp11sg2fNfK7S1wuY/riKvicG78u15d2ZQBNqC2ASyOSou6r56LoX7Wmcdew7t8Mte4XoWkNsqL615QoQdW1+xoPXu189cQdb10d3YdNkLQdgnmPtltlUr6HYBVXCmzVe9UCNyCBI3gJPVeaX5HbT1PwkNLje8doCFWwwXAp0KcIX9nYZumFDrBsRihErAVB3Ad8IxXHoL1PWy+9I4ltc1KGR2+n4lVEUBdmsXN5QqHHNoBtei6/eC5cBs/uHR3ww/NxYB/9Ut4eitkluiXoaH1zv6laHk8zod6Hn8zUrcA2wMmeeHVEoNmDHFh7T0vHPqYkvwIEx2EQa33zNFI+pzh41neACfdntuBRt8sePtQ2eOx/9hSmwCJXNaC1dEVPe52jKVoSmwAQdRPmcfIHlx34QLmFtw8Ctszek8fLZCd3UeoFROkLdnAIt02gtXR5w6xXMnVyfMXnV59Hs3nA16evDXIPqNcvnjaZiaIETGpeyjCk502dT8fnPSYUOvyP8i9jwO3Q5LW5TD8hXz3vNRDUe/uOw4HY3Y93d48I9waMDjIeMONvEo49T4TjXGwuNjSyprMzvjjYJ+NeTW4zuPSje461xuzx4/BOnjcU93J6zy8/dMxza892w3woED1dSX507FNbyAUtPK333aKBDnzEOIPdT33vDfOf3EIC1P/njviu7FlexadsVwpCOqCxgWQP46uO7jh4Cn7jtrNObFZFhWwfql9wYldz4E8+On3H44+ec7kxvOyZOfjEoCE45pZIlggSgEwN2B/uuYA8uRWiyFU5fyRXBKA3LTYi06s8AVBGq3D01WbQ48IM4q7NoOnJqU5D2fhI1xsk1b5WqAO2aaqOQLI85AGRP3gOsZiUwwEASj4MqFghAkXdfUd90UZlApd4HP9XJ68XuEPtu8Q8bsDUMo8z4/3ZAATqUhhvnGiE6uyC6PkKPo8P3Rj0eux7O88/c5Aq7N+MbsKwEoCeXw6/me5rOgJmDNVwnBdxPxIEO+CGoVKolCyYTuvfgK9rhuGZMWlFBpZ9nI5uOxqP1l0ry7GAiwU8v3lJrI9NXdwLPxLKhadADsPIgZAD+pQKstB4p12kRfyPMBC/eUElMiiBf+sj2E+sXBZ3B3MP2gOSrBdUWWeyBbqW39AZI4AqdvH4k12EzsP3IvNf97xNy09JXbysHcuaIV4fS2AWepDdYuYY4jDrPU3quhZNdStQAXPQFss2NKhz5MWr731wLq7Pb8Ac+HXTaWGNUSTzx5ohXm6Hs/jdCrooDt8T1xDCnwc4F+ta6B57LZ8NWQHmhFP1aNA+wP8D244RJa9GWNeyFY6lIv0Q98aSgPo933fhyA913etj/9yfOAPOcOPch4k9yS+4vAD/fdAPMpgNLbEC92ZhL3iwCvc4Po0g1xLjtEFvcygO94PNyO8uNuN5OB974BH3gr6EhhQLyCXwITi8wjNET19wLNiXjM69MPCAwqQBBYT9zZNdP4k5PLZkCsy2LGk6r08KDCgQoXM/sxc/cLHCcgqa+avLwsSvyviU3zOGz85w3NqvNr/0J2vWr31fHrcexzMJ7s0w7N+rfc9TNZzUr8PPu7HrycLBKFqNq8xTZ4xfeVzir8jMxzUb5jNlS1Aj69l3Jj/6/nT006/dv8hr3kLe8VAn0wQzRc20Jsomb7fxNkrU86/Vzab8bPuvGb2W9/M8bxdMl79s0Hshvoe2G8HzoUJG/Nv4869M1v7b768+P651NOJvr1lg8dT/M6lMqvBe5Hve7E72ud3nZ61kCFvQMznMJi/kxW+WvcUiu8hEKk3W/wzDbyvOLvdc3pOF7a77eeDXxM7JfDnIewGtuzQ70u/PTt7zm9+vvj39Mzv9b7zONvyr9e+qvmMwNPVEwwx282z273WK7vis8aTgflbge+/8Vr/1i7TgyeXNJvS8ym8Lvj08O97rYH+h8hEUH12/dzwe/6suzb75tMfvLb97OIfBk3e8V3oc+HMVz2H/O+uv6b97NLnCa4x+mP0l/vMbjU8l6i5zCmNx9dAFryh9Vvon3GsqzGpJh+zvyb+x81znH1VtifhQLx95vHG53PrpPcxR9h7kr4O/UfIH0LOLnMn+bMafv7/PP/v574B+XveHzR8jvElyxvTzFn1O9DXAnxJNCfxbyCIlzTc8h/aSqH6qRNzus4p8uvyn/h+VbVWC0fOfyc658bvD50+/BvI55R8Gfv8O+/GfC51x+SXcX4NcPnTr7Z9KvVrB/cCcj9zl+nr5Eh5/6vZfEfPFfJgN/cn8OL9W90vdX/J8AfUc4V/dTwgPAATmt849alf375O8bvwdpV/byh82qiD3hwFmlnztxBfO/3AKF19Tfd8yF9sfYXzfddXfX14+rn976etywI32/ePy63xBT1fl83/e0vxd0t+tfNn+1+pvq85lDCAGj5t/l3fH+dN+2e30W81fd36gAZcidLN/EvVZPSL3fy3wq9Kfa3yfNCA/X8Y8/vbn/DC6vFUwd9g/GVIPyNfCmLffwO8n4/P9nKBNTStHIgO0fRSnR1wd9i2C4uI5LXFmkxE4VIqc4gLPQ2AsQLXi2ktlo9BrAtyU35xguECKCy7BoLKYhgvUAWC3YBwEP8zrDai+C7uqCL0L+BniyjIuQutR04uSDk/tC5hb0LFgIwuwaLC0f6VLxcHQDxLXC5ktRW2S2KuQXAi4QucrEi2A2iL2y8Itm/Ui0A3iwh6NugKLGS2pe9UKiw/iwdGixks9LzozouwdA3HgUlq7SmWoicSlsUPWcFi0twisBbjYvrc9i3J7N1vxDBwQOyRq4uV97XudxggdP6czeL1AL4v4Y/iyojDLJSwZthLLS0KiRLm9NEvRY4ixwsJLfC97oeAKS5AtpLCy+1GIAWS3wsbGDh3L8FLfCIEuF/HgGUvO3dzNUuO/yi/UuNLEi6stmspjL2y/YXSx7+9LfCyOxokBfxH2+QYy7Ms0lG7LqJM/My9SWKh6S76pVtBv2hYl/W+OssxLWyzotPzjDFz89izy7ysnLyy+OznLBlAivs2Ny+1qYrxcKazYOTy1mgvLfKyV+YEnauviQcYvoRZkPy1PExJkvEaMiBWd4lpEYKxVEMKyJI1AGhW8DV5CNEARW+K2RWqK3AkkEnuW0EgeYVvlxW/jSQkV6grUxK0IEZKxwkFK0IkxEhpWSsDpWtEnokCYEYktQBYkX6HYkDUHZWPEjz2bYl7ED/zeWAq2BI/AJpwaAiMuROAlW0hilW9WnrQCq2xqcq2NW0twu0Sq3xu5dRVWUWHVW4lE1WwkgY6Oq3XQlgHWoBqyFQRMDPQSgMHqZq0iwFqwCsI61Oo88AMeboDYoXQBQgpVC28mP37OUDxgecD1YmbjkZAyDzcgDkzQePQAwezfAsAjGH5QbjiyA6oAAAGuqA2gIyAYfmE9rtlYMqBsr5NIIsEvVhYA0oKdQyPAY9n3np9mgGOdd/L1RsgUTRcgaBA8Dm69HPlx8zPsucBvuu9BrjJdU1nRIYmqUCvqOUCIQPudQtHd4E/NvpbNBZV89Mr51HroV7jKbF9qo4goMnYD9NqbFIXtv0qEBwAsgGMCCKBMCR1nLkwapAAZgUBkTlBjcygEsDzWCsDIANyhzuDsCNgdTE8TPcZEyPBQBgano6stcCxdJoBPkJKpHbBtBBgHxBm7OSoESLk8bgV99lkCtBHgdstSQufFtuJoM5wLMDllLI918j0MwnmaZhgEIgUQEoBYwNEwsTFUCCPll8YvksQO3gl9mgdAA2gZCgOgbRA6DmVdwThDghgecAUbjb83oovEsbngcGjt/E9dAxkFiK3J2HjRAhsFlchgVscwnoxgCwkVE61pQoDLvk8ztARpYLkKcjWI7YCsuoAxgUr08KJTA15oMBqoHppWLNmA1WKo1NVOyCHWImRmQfHBkQNAAe3sl8w9ip8ovvR9IPmV9mPqR801rqCX3pR8Ktl+9IfoN8H3qR8pCPIctQhXsM9jSCKDiiD9JsaD6gdt9Q5o+8LjI6C2wi6C0DtXtYDjL869i0MYAI3sJ6os8W2KGDD2n+RAWtYQe9qs9vnuTYr8DAQMNArYoUMKloABjRNqguBvlOIBDWLEdiCHGCR9pfslUJDdC7Iy0Q2hZRP9vfs9/rW0KbPNc19hmclUBmDllGGA4bGShy9svsKbPXUCwZqpTYrKsIzjoQOwWphlfIODllMOCKKNMBmOJHcJutAc0SHmDMalODPNEWCRwUuD2wUftoev7AKwSrB3nm2Cr9pHYywcftg7Jfs7RJqoGUONcMzvNdg7KmCS9OODCIGIArAIsCzgVbcvboAdxwHLAHwdUceGh0YTDruk+wSwkwxn7ZfwV+DwDjshIDuBD8Dt/9O0vAcXroX1o7gy1nsJXt72v5sI2OEDIgTEC4gbld4OlpsyCHOBlQQlt8duVcoIVSCyCOSDSdk7teDi6wKIbShfsAaDm5kaCo9raCGgaetNztiCLQQUDXZtaDj3n7gO3n6DJjI6CU9kGCyAA0tD8rOcuelawhlOqtMtG71SCLSgpWJjADqAAhc9hZQ+IVRMTQRzMhIVxsAwZcljyBnsiYCGDm0uP8FzAOCowVLYYwTABQwaMcO9kbQyMqMdu9rEcUwUuDP2vidE0uTcedKODSwaZC06h4B+jkeDKwYeDqwZ+DYIbWBbIVIRCOmZkwenMtgIePRHnkuCyCCedeoPmD1YnOtIjrFc/GIFcgoXEdIaOODRjkIdL9mi8jwe5DuwTmCyCBk1B9n5Cj6uRJ9wVWCU7DWC5OnMCzgG+DrEjnAw7ulCgzheCP9o5CooXfsYoY/swoZS0gDjBDfIX1DrLoxCIvjaDvHuxDfQQ6CE0mlDaUP/thob3t1APeC3IXJQa9hNCYZJ3s4MqMdrLl+QoiiWDs2DVDj9hRJ6oSFDGoatD/MB4c/IagB4YJ7ct6mmDH+uIARbj3txoftD/IdDJZbluCDwZ75ioTdC7mJFCl4ANC2lFTdUiMHZ4oc/txwDjYxoVPgDqJR0hDjncWxrYwlqIQILKkuCh0BUZX4AdQPod7cSbq/Auoe9CTocbpJaDAgbQC08ZivMCRbhTD9wTn0szkDCTlJODCwf7cebpftIoUfVzwUuD7npHZ5rhRJ4YduC+oUfV4YHLAeof+UwoEgA9Eq+kADgt1jnj+ClwbIYXwYgA2oYf0Fwfno9HBo8cwdDCIIcTA1nreCwxhAdYelAcjwTfs+oQhCFwQzCo7kdlUIUZDr1lLRCmlgcVCJSDtQNRlASFkAcoVnUIoUMCyCDZQcaCZZSDg7DFwSRR7Bq7CyCFQdqAHq1tQCkClLMKEgvGCBxKLiDqEAJxJ0NKcfsimYI7iVcrdjTVMfBrsYTqjcnfmoRJwaidCut1MhlHbd5IZt1x2Pep/kGqJJzD6glGLXCfqBKoSKgTCa4WY44bObJ24SsoeEAhl/kIsdDvpvNert6CmPhzNdvuY96IEUA4vH3Ca2vMtu4Z3DLLkKlG4WY4dgV3Dl4VU9gtjPCB4ed8NvsPC2IT6Cx4f48McJPCxAIwAZ4fOwSTOvDV4YvCZaOvCyVGGDGlN3D74VvDueIPCIfrNCD4edNx4auwT4dPCWxhfCn4SqpWooRFHbKhRxwAn9ZpqaIcoPM8SKAhlPvg9894R/DR4S98j4RY8uNvOxOkOYBhQCSZl9ly1tYqFonEoHpH+k4kc7mlw77t5CFzN8oSERkdN9OQjL4fABEbOrQ2oizsAiBOCBOD24oQG48oUGoF34Vt9kETZMKvuY9AnmPhNIBjQLhsF0srsowtYtnDiCENBW/sTo5ESeZadKZBNVLToTzEaoVEcsojVCeZ+Hpoj3lFE9ILKrccoHoiF8DlATzOMF4liZc6KEeoeFsxwkYpeCBgD6kT6oU0TzD0weFj0w3QVgMIoeXDbcs3oodp781GgoQ/tG/kTEbiYTzNgBdEcS52avbCGoIpQhdt0D/bmpgGERkdGQKwRnYWoCFjtY1PNIQjgLO5CHgTncOCOQjUUlQjxggUjIQHQikkYwifUMwjxTlABeANEABfNxpMABOopQdCB1FOApZgoqoL4loM2PFqk2EXV9NiivJdhOjsoAEcDuFNM9zgXjs4bilsQtlRDMtsmgdgcKFL2iXCOCuOCnyvSD+QSOIrEZ5C4LoQJWINsjhQXV9ztLLolDgX1g4WflEdJ2CkAGqlO8MBZtgRMjVYR1DyKLwURnhQBHIhcsWEaXCNALAByALtCudJCcHgZlM2LMNQCoGQiylnfAIrt8jyAHJDugQidAUVLgWXCCjn4eCj1DrktO/gkswiNLCGbNYAang/CidBY0DwHQsNABhZcAD8jHoYqsNAEYDlsqSjfkWsAREdNkwnmCiwiBndVbn6w4kprcyqNrcOjvodKoYbdqllplTbkMdzbkwkrbtGxPDo4drDk7c5jjB0VHoscwiE9CuImsj5DmzCjjmoEoVAXg1Tjii5wXkcY7mX1W2EjEXjondlXMncllvHcmEundkDlpkCUbNRiUaugaUaMcKUbgAqUVvkfkaYDcAPSiZYY7ZkUcyjLUff0BjgMsFIeLAvIa5chQV5DCLoGjuWociHeoWZA0Qrcg0XBcfeqyjFIbskVwShBhqKzDHIhXBqnnOCy/gclJmmiohELwomLoyA6LiCA0Ls9C1btFJmji/M2jroduUZ/NXkVQA+UWERAoUeoA0Snphjtc5RjqKibbgXgpjl2iZji4d78C7cwjumZL2nKi+0QqiJ6qC09igHdwDNs9RwTw1C0Y5wIkQYiDNmPsyllijRGg+s8rriA9ipE8AxqtCo0WHdXkerDp7LODC0uuj19nItR2s+0QMpe0Qrjqsg7pc8XIXzckjhhcMzocizAROlL2ogdkIUdlY7qikXjncck7leYU7maiB0RajC+rwZbch+Beupqpkll5Cz0CkcYMZuiv0UehsURejgEahjl0YmlTBgGNc0dTcp8JuiyCJhjcUY5EDzkBxEITcCAIYsiKMZqpNYYBCQQNRjl8HqjlhiwkESBxgm0JgBEwOExiNgwVLdqRDiQRuYswUxjidnds0bmoRyoRz5pYX7UNOOmBtQnclYUEM4cAPdAIUY7YmoI0NIEljAkADxYeykVoJdjjDFvKA9JkRcisrrsNHxncj5HmXhNjIWAFMYH0EMQpj1IcXAILCAiKYgJx9Tpepj5CJd89HIiUoR1dUfkPCO3jD9UEcIi6JDBcB5LPAx3O09llLvp2rmecEfrwinvpp8pprFMAnpY8XzgVAuHl4xG7iBduMRXpC7oFiksbm9LPhdM0sUQ90EWNceHnAQosblifrjWo10fFiuETAQgsdpD83uVi0EV3N52OFj+HrVj4kcsohHv5iEsXo9wfo98SsdD8OsWFjV1kI8+sWE80oMujlAGlA5QVop1EMSBTtvVjGmnANegald7vr8D+Ytti8sVIjdfKScxQfS86VBz4Bjhhpjkor9UrqQ0YsfepGzG4FXMY7YjGn3ofUalcLMd2lgmHljDMXZiFLDV0MtJvULju5jJYMABQCkKhwCjX5kwvd8PHPbJMrCRDpkUL4fgSCCCnPnCKQZ4RdsSjjPyPd85MWm4iAhjQwNrzwZgDjjKdGIjYihIiuaDEjdsTIRyKP8FyNF99aztnCbdoxjhUnMi4TmoQWcTJjKnprDV1uS9+EMKkZdiXpZQeyBU0emiEkaeIK2Ooi87udAAkZqoZca4jIICYiemFLjhADAQTEcg0EdpQowbsvRBQa1CQXif1rkS1AVQs/Z2ajaEEcUSDBNrRiJkWzjJMe1xGMXRj+dP+CXTjBdNYuKF+EDsDF9pqoKwsCB87kBCzcVMiLcRDguwaJihDjbjC4St4ygN2ChDm6C8EbNppGkWCrMcsoWYQkj3ofxjrYaVcktmRCGUGHieFm6CTWAygpoQ59UQVVsWIau8R4c98NzmaDA9rp9Q3rxDpofxDXgIJCFoU6DU9oZC0DlRJZMVnsNOBGooUT3j7Uc9hQ2FRJnsGUsh8R+cvvF5D1aJsYpWJ6AB8dc4OYMPiwiPPj7bgYQPUgviC8Kft96nntNIQx9y8SljN3rJd9IQodqaBnsqJCZCyMlRJUUhZChMtZDtoXBkfUvZDQwY7ckwS5CwxvrDC7E7iUEAVA+cQLiZEdrZPsRyolwWvR38X8iTDt19YAL18IKMViofkN9QsRljE2HARqMZtcGIf38GIS9RRcVlchDmeixdGQiGUIthhqJVDL9jSi/kYWC4UU4kgUYijV1kyiC8BCilwfaikYQCiyCQijBXJQSgEZ4caCUeDH8fGCPAHVClwRbdBSDj88fgYQCft3ACCUzD20VfZO0Q7cxjtbc42LbcJUQYRHbkdDpUX9DboROi2AD6l6IlfZWYTnc1UXDZECZTYrYQBi2MVcdcoQnd7jlgTFlkf8fIdmxB8W8cLCU1CS9IciQ0WcAdkUKdw0UeDYTJR1YTJXQvIRYSl0ZeRHOMWjCoOCjL9ty1YTLLCRobDCvnptDx2LMAMLFGjxbPjChYXfjvoTRJLoQDDACUDCfFHESv/B6kx0PkSq2NdokiQ5CUiSLDuYblCGoZHYHCdUdm0k/jdwfDByiYXYteJN9wCSXdEEXwiK8cJNhvkIi4CZwAeFNAA2nqtD+YRtDSoaOZlqkxwGHosAvyKTCSif246ifBR4YH7Z0ibp1Mic9CvYZkBOCaDCv9o2Db1HzDjnmBDFYVdj1EOSBKZOETDieCDGQOhjQnucT71JiiriX4SGMbhjV0QRiTiVIYEibLYWelBkjkGJB5xiK5GMC5cuJmlAlAILCJlBY1FMbLcO6BhYYfvkSYSfAhuAFSjqiZy1aeoSjFfraje8c7Z4EE6j9VtYSlUEQS6UbJjGUWGAylqsTeCaGx1kUbQBCXWj8fjyiGUWISqjoXZJCQYQOYNISxUWUtySS8dmSVKjh0cUTVCdzxF8U9CP7P8iVUTaA1UZuiLCdbCqiYBiZiRySjUeUcjwYf832tKSySXYTAYWsShUVb0UScK0DwHajXURiTKUdiS/ofaj8SQQSvUawTiSfKSsiQe0dQPSpcAD2CrAFc9YUWUBDkfoTseloiqMTrC5YeOB/bCCSb0bwTaid9D4YMbceYYeD19vNcaJCCSXjh6l+CVrda0TrcujqIS1SbhdxCWPZGSSEQvUj2jZCevj5CWmTB0c7ceSR+c1CV6lNCWPZtCTQi1UUNgkQB0h74S6TGYfKSpSTiTl8TmTzCcVDwMaYTQ2F6koMddDEyWOD/SUfUqJEsTgyRkTuyZET1AFRJgDn6Tz8VwTGnjwSOCf6TJoXtC5iauxTevMtw7JftYKFxjMwLxjOCdZcPSSOTGngcSjwQQ1WCbgSHgQSSbiZ0gIFHKiwCRATWsbvjSsd0T0sZVibQH30fEDiIHoZftlqobiOLGPU80e/iGMR0ZV1uDi3ceYpPccspvcVCho8ZVDdyWtDOYNESDYeOAjYeL4QSWbCUiRbC/0bWSUIUbQT8fbCvGCsByJG6AxyZsA6sWodcEZ4RrwR7CzIXnY89gyg/YfzsHKBQC67oT1i4AygI4ebjM8cJi6RMyi0cdRDeqJujqrNmjC0tTtNUVhjtNvTtMLObIBKVsYgcecjgMjABJKT91E0gPIqnlqjanjUoktPRjYsd9plKVhintisBBKhpTlqHARtKbijdKdJUDKbaADEcZS5wbpSOYMRSNsaYj6oJJTdKR6lcsY0pY8VkjYkSsjfTllchALscbQAo9wCbGQeWukcjjjkAJCOUAIwExk1GiFSbQE5ToqX5T5eOFTnkFgckIQUcmMsZdNVHIiXnmpSbrsTpadNlThboJV4MVoi4CAVTs7tJViqfoiAxmVSOACsBbKZVSHKTVSVgC5TBsu5SJ9ptivKWZj4qTncAqeGBgqQlSwqSrDkqd4AoqQhiYqS89uqTQjBqRFSDetDd08UziyIVxcpwtxT5kQ6Z3SY7jMqUpTfNCPo5EfLw4Xlu8XqIi9vAQg97sb0gtKdtS8qVpScgPtTCBEdTkXkoBTqTAULqQecjKddS9IPC8+5F4D7qadT+Hvy0R9L9S3qUNTbqV9SfAQ9TUrkI8/qcToIaYDSPqXdTQaYzihMYJsWfCtT2cXbjNjD4S4LrjicwJChH1P+CGIEowb5tjT9LiHDCNqDlK2ECpLbJRQwtBjS3CXR0iaSoBEZDwkbsfXcMlojjbdsrDHkcSsSdqtTeqPmlBLCrDTYokt+dACAuQhppjPMZ4ATOJRZQTAB2znV4klEcAUvHmcdYlJZXPAygfTvuwTlMODW6hlSk8VSDRwjdFHbO9ZFwtNt95DnEpaWsCGCFbkJdjAANLHcB1aW90D2l1DHkZuCU9MzD6IYCRZDMtCFgcODCal+R9Ip7T5gY8jxgcnd0qeZD69ujV7kSFtnadrSuItc1KOjsDnaTpSFwZHTn8jqjUqfNTEaQYxbKhBSQJCjTbce4hwKT2DC8KRisYG/kJkqgBKydyJkoSgTK0NWh0CRmjIUcuVlgTU02UdFJyJNGTOUbGT60fGTpsr0cyljOTiGsmSkSVb0XjuRIWSb2i2AO3SXYKGwx6VySIQCOjlsrKi+SQXgx6cWS0TiogJ1CPpkYRkcn9mp0mFnEAaTkJl6TvNkVjltDjJBWTtPPowILIQJz6ciBKyaTcYOJtAHbKOI76ciAj6UpVnkXihr0fZtHNhmdEdpeYJ6kATKbFTcUCmqSr8LfSK6ZfToLriZyoC9RcTK7dupuEBYAOqtcTIQJlqmXTeCUgy7bh6CspmO9s3vvD+EdO9tPtuc6JMGBkGZjYjDsATfsFgyiKsmdjlM0caGUxUwoemRk0DMBPYX/jxDplDojn4x32tYS8EChBErpQQYZDHABGXUpBOliBAoVUTLYaAyqolXpP6TB0MYHCkFdhPVEdmwzzqEcjAbsmdCkQsZ4lqOCIkXCDXHrfc2iR29v4RVcTAEbF5lsZJyySgA4QUAhKGdrZFaricrwpGw34WNjoCYNdTGTsgFjBYyx8FYyBOImkJzE4y7GUkcDsjUjXusYS47kTpR6bKSHjq91TUVEyZ6SqTPkXk8srtaSMQLaSMTjgR4rnIy82MtlFGRfAnGartybIjsDkWGj0zgy1GKSTTIsGXgEaWzTC6TsCc8VFZ6mRMi88SH1PkBiZ0kVb1ZUR5TMCV3j7HvQThSaq0YABAz76VfS3qKiky8JdUv6dOif6coypbP/S0EKEyaWsxYbEtBiqKTkzeCnkzZmVtlEdn4yNGdnc9mR5CZbnBVkDsBCLGkwxx0M9gOUPtUYLjYyGHtw9HGXCCHEPAgLmaugc2BSimGM6iU9AmRwCszgRACsAmGCrdybG1T7HuoyVgCa1SANsBR0RYA8unszwWQG5ktDvSuIpMyw7qOD8mRjgSyLztscQG5ZXE5xTxFiyQjvYz5mZQp2QCUgalGSy9LnLpoZCcypbEAz06R8dN2uFD3qgBUM6WzSbMZMTxfNzTUaXN4JiWkI3Qe5DgwLCYFKYKzbMT+SiMWLpPsYRiGqTLibUQwB1ydtJNyautvOByy74JvjAcasyZKV4i1GOPVobhniLthxTwgETsuEVzSJMeHieWUazZQSEdOqTHNQ2MHYO6SCAuUdSTP5j0d47mUtyiYPT6SToRUyX7hg7OPTMyWwA7WdPTrnL6y56SWA3DgWTl6QGyBScUztdheB48YMzzjoj4ImebIXjr6zmyRUd4mY+DbWUkyi+vZTOcUBDamYHikLGUATyU4lGmYhUwwKWzxgp3i8bl0yR0PgjpGjkjuonkjqEUcccCXqEkYiUiEqe2ycAAmT6WRKTMznqyp8Dbtn4VWyTWQ7t86b5BR2UgA8CTWzOmTABume1SY0rkdckcQjSkTQjp2VkzKEQQj12W2zjyVLC+2UdlcOrqyFqRxSyUlMRm5kwTx2apceFuey8CeQTmCbKEtLnhRS/s3StUiCyu2UQjLkdkjd2clpfxFCzlsqHdP6V2zaYf+yOKC6cQOTzcwmZqyKDtexyLkOzrdmRDzFFmROWaayeFshz5vDgjn2V4QBgFGSNkYwVPsJTAQAZ7UG6S10sOecApmUHCOCtkh2mcZd4zshdWThycsckCzDqhkiEmOqsJ0CmgiOdN4XmegAD4G8yKOR8y+OV8yk0T6hfsOcAAWXxyWObJTL4ajCibt8yQ+hEBPkBjRPat3CwlP7SUTpdVaKTRznsExCjhDG9kHHG82sTq8q8c1ElOcqiAru/Slst/T2QJUjf6ZHZodh6dlIEkd5soaxZqUZt16S052zJpy/LtwypHqcjlUCpzs4MNRxwV6kwlM6cUEAQReGQdFi4CUhbOk5zxWQCFTcQDji4EgAGyL5ogVGly8UkoZgcVABLbGvhLNgWT1TmvMCydVB5vLiJTMazSi2TshThM2wFaNezqrmazfILVzRgPVzpzhVy/zuE8JxjFVGhggA3gD/Z52db0hOB5T5Obvtv2ZdcaEbZ1dKPYjRhIkdfUfp1Jnl8cdYGCAnCXYohLsWg6qnLYoEaSNgdIl46AJkzwGsvhEYZXQJNkjQ6YL4SbpGxT9WRCcETocjy2epdITs6TccfSJKOmkzmEHaSzkdRzWyMfs1GtmYeWrAAyTiSZMoBvCctirlnLkmCFKUUoo0UUow7gbtvufXh1aMDysqXUpEeQqN8qSjyfUMDyjVLQzMeQqN+Hjjz6RI1S6lHZSBMZ8c8coKdALn9A7FCC8s4ZnTzMjtcaeXnSmue9UGeXtc3QQOCzIGK0fUE7pt4Xo9jGcZzhJp4yQXlkBmwPVziVmPgrEZHDIwWOgiYE+UEGDD9ZeZmjtLrRgvCRBARdlPDbSUtSuUhzcuLqWxyADzz60FxdikZqotedrj9CcdlKiR5yt+tLo9cXtdGQJuh9eVNBhbFgpoALRJTqfmzmMXhD2+NTy7eUzlbCEHEtimAYdBsxcAvDl5rTFzsYADRB0wNqMISjw887tltVWSCdT2Zj5TeYzyuWZOzyKkBwzeVjStscQEB4CRzdcUGcLOXFcX7Fsz2QCoctss4zjJIedstmKdHYZToLETvZqTiTIzZGIcrAQ1BKZCeVnEZkRl9nOkliC7SS9OdcrEaGdVgHUpe1l5dscjQd6zqMIk4fiDW7mgosHrNNbxng9ZXmfdHyV1it/h4BG4LOhZ+Wdi/aYlIRrAyZCsNi9Tvk18yXmdiCXv6ITvjS8z+Xo81UZS9DsNS9/vs1857g8QWXhdg2XlGcHJly9bgp1Q+XuD9EJnq9RvruA97qK9IRqgBD7u9hj7jK9MyHK9WPgq9bxgUZIJpZiV+eG9QoHBNV+QQ9ZXIE9DIof5fEDPycgQJxcJlh9gfqt9gPqPNxLt7MTXrG8UIB29Yfql9qvl9INZsa9PXo8IaBf59gRH/wWBQZyzXhEIz3nO8yBVe8KBaB8qBawKNXvgykEZ0TbJsQyyPr29X3gwLvJjgzo3ra8aBXQLrPgIKgPkILd1pF9m5mp9gsW98d3kwL4PvMRagesQOBRlIuBSYKLiNrNriED8L3h19RLhl9aPqp9TBf7M7ydD9SPvkDa8VR8lBaZ9rBX7N1Pu4KN3pdN4BfYKbvloLKBap9svkEL7QVu8axIJ8DXnB8jXnnN0QT98f7s2IS3r59UhXYKCvuEL7Pk4LqgVELUhU3iZBV4K+3gPM5ZhG8jPsIKTPmiDaaC58YhaesuZqELchbh8XGSfNdsW4y7QRxCDBbB9RMLfdAfjN90hcj9EeDfNBhY68Whdd82hc1jyXlATuhaHMO5jB9s5v0K6XgY9jvnN9n+efy1hZd8NBXZ92hXzzurl0K5obvNehcsLB7oPD1hX99r5jvCjvjsLQvpoLOvjfNRse0TksaVjBEUsKxvucKEfpcKRhY7wnhffNb1CQ5jyJSS4yYT9J0Pz9GAIL9Xfv/MKflM4dmLSJQFiStq0A396ftFJoFjv8n/sTgHmFg5lxLz9q0Bz9xJHss0hAcsefoQJifr/84YC+IRfjIo/qRL9lbGQtHyDL8qFvL91AaiSK4Cr8orGr8Tsewttftws9frX85KE716/rKtLfhCBDuRr9awKb8xRaI1pFjPRZFvb8dFkosorC781FlM13fu1FPfowttlrotmlBSQ/fiNwA/heoTFjP1gQaH99uFYscSKk5o/vrFY/k4sE/i4tDOG4tU/uZwM/tdw0RT4sfSn4tl8AEswfCMsPKqEsgIJP9CMRX8JRZkAtfjwshaYMtklq6KQ2E39+VnyLk0Pr82cmii3AnSwk2IUtbKsUtV/qUt5URUsh/qYcR/sqKx/uAhmlq0tqmjP9OlqPt5/k0zF/gMtl/pmK/RWv9qoDwgN/vv9t/iiYWxTsSD/incicKWK1llM0Nlpf9tRdf92uKfMiRSsJVJLrxVxHytj/qOJRQZmpRftUgHxLctEwF/8IoaID//oICpkA/x/MaACQKhACYfFADzxDADsdFgCEAcvYkAfA1UAZcTkAWdRfxGeKkVrnTCBPisMVgQCsVkQCcVmOIHxQ+JCVhQD0JFhIaAfhI6AdStSJIwDqJMwDGVqwDmVhwDOUFwDOJJ+QOVsDCNxcuItxQEgRxYhRkJSKtH/pID6tHwwK0IQJpVvICTkYoCpbnqTlVjVZNARwi65AuhdAU3VdVoYDsSZoDv0VFgLAcvgFxFWKbAelApgQJwYgBoFzkHR4LyDwAsvJrEUINDoWqta0PZOSRFgDOUXFDHCUQDQN3EBiB6ID/ZfGpso7AS2NJ8dcgGHhn5eVPfSHNJJKKsu41XcSmV5QQXhufEPJkou4DR5M6NEXmlA/kcABiNArA6JCsBWJPyh+EAAAtLID2XfhB+2NyWeS1iRKcO4CbAEACUAGdhyocgDBSrxRyoaADQAO4AgAKKXkAEKVKcSgDAAAAh3odkW2S9VYOS5NBOS6ABhS1yUeSryX5SwKVjoHyV+SryUhSsKVWbJTgWAJTiPAflBjoJTjwACiRywRqVyoeABY2fIn8IJqWdS/lA9SmXlywfqX+2IaWIg9qVY2D1KjS+ABUSGElNS2MAwPWMCRSpTgxSsKUHkOVBpQYKVVS7qVyoWqVyoeqVtS5qXkSVqX9SrqXHSvqVjSgaVDSv2wjS/qUTSpqXTS/ImzS+aXBShpRyoFKWJgNKXWSuGkIPPwHs4CuC78iLTcQ2vFFA+8JqEf6UkmGc5BnOc56cvQUC8zt4yCnc4mWf6VdAtFRffXnnuPWYVHCz+FafdfnTwDBGY4xAB74cSjNYzoUvC8bEbvG2Y4yqhAXwyDZLVeXapIqp6I2bfQtjVJHb6C+nwUQrH/CuYXHC86aCIymU3qTLFsy2bH3GWzQHVVPS+UluFMyu74Syi4ELYsy4Ene4xsyxBDNInsFAwKf6OknqbNI2Tn/IWmXLKfRnaSg7G+YwJlwg6WW2JC9C+CuoUm0BoUEMqQW6QgPY4gwgUmABS7sUzHyDIq7z3c3qiuy3YQbU3WWv0jpDZQR4Aqyrg4xNfwnSI/YXoys7FcyrGVWfHolPk/4JD8zKm+ypWUBy89lVuUnkIcnOEQ4OGzuyqTFZgt0EnKRWV6E/3GCYtmnEkpnkRizFHyUwVJyUSSmiU4ZwSUlSlSUjVmMslJmVy7YENy6jHURSjqKyujE/UpRyewMjHaox6nukwtnOy/hgNy7OXtcJymVPbuXtyjfI7oyABUXZlK6eDIq48uqDrYr1lsc4blLs3ylfsnykxU+XiKPIKkgMmDG+UnO5OUueVp4ii6jIgfjlk32VyrHtC08tmla8ieXuILXmtMiwBqeHam+yynRDYSGm/ymGkHUhF4g0k6nvszeUNsjqlc83aT9UkW7DreVk5wRVnwOHIAYwT8aIK2F7vU2MgCopnr1WSghqYABXA0pF7w049lk8ikZsAfpKcFJVQMwdOENrAchBAx+XVcuQYpDMuVRWBhX9y89HkYquVyUhuW1yhnbAWGuU/bXNlfIxWpdyxOU5ARWqJkTR7HdOSi/Kc+BzyxPFqYNmUvPOr5IKjR5bvZp4hXJGBZ6IRX1/MiwvUJRUi8icziKrICWXaiJ2PfOW+ylDEkURPpoy7hERyzGWEMrIAdzPmUYI7vn7sRWpXPbMzaKnoAIMGYW2K0mXuM09aOKirEb8m0D9PTZFUwyVYasZaAD86+zJJcWQCXAWzi3FRDrcgigN4ZaAT8j9F/ZILCNKZJXmsVAA2gAlnmyqrbUCwzm0C2GWBvC9Z0SZaApUmDn7sSuU60wM5TMoS4G00On5owM5XXG3kJpY5lR6dECXy43ZQAT3LkAB4o+oa5D+y7/wFVBh6LIQC6kEU6hUqQZ4RPcbwONRho9AAqCBKaUi6nM6AVc4ewDyN0BqIhCDEAA+C20r4HpypS6Qnf2Uvy5rmnKzWUtjXHHAbEAGE4nXg8NL77SHXJYOsDFlG+Ry7dTTQ4UkmMm4/KklCE/Q4E46sANObGiShA4K1kbBB900w7+oz1msckekio2w7+s7Ml3ipQnck+Y6QkyNnRssbkk3fRgFQeBqU3N9Ep6GHF/PW7oEkCPAaPTFkRIvnbGOCHCpIhGqA/bkgZXKlW4s+8bSwhsg442xZYdTM4XHZNnPHJhLpsx46Zs6o7moljFXNJJWS0BHKguEihgkyGiowxGEOnXeWyq8mH63HFINPWRWL02x67JRVUTUCmE4pEOkI9A9qowy4EUw1VU9DZNq7JHhq1wo1X63PVV2hcmxUwn1C1wg6g6q4CBs1bJXiq4lVg0FRAUqlABMqmlWASfFmUqz8iMDMSCtkKFQsyUXJv4CNgYs/tBNkV7oSnIZ4LK0g6TqJmDqPHzGAbLEC58t5UMZaVUeUo7Fu5LFUhyxYDGqmOCFqggA6q5RV9UyXpwDD1UglM0g/3AlnUqiGj9/XDEMqhtWyuDlWxqo9m1IvuTA7GBGechM6fILNWgKutnHVGVW1wuxTyqvpnvnHxUGPSOX2KwJWdY3GVWPFrmrIatmQ7B1XYnYW7Kq3ShDMrZGPEgIl2nEmHqqiwCIPDdWXXbdVxwGlrl4HOB8eY4BtKH1YFQb1WZXJQCyuWsp5VGn4IoCDrHy31HubatV6+OtVPq31VNqn1C4YixE2IVtWBq9rkY4BxD4nDtWVMpMkwqig40hVdbvuPNVcgYUCzwaNVHgoqBgCxZAzwPtD9oJcGKAepExXQVQ5JbNBawfTxUAWxaF2QDXY4r77tqwjVHgjpzLAQLByQKoACXDpFzBajVLgiDU+qgdzqyi0AWIRjVxYIjVp2WTDVlYeS8ahFCMqgdxLEETU0a8exv9UoADkf46rSo8GeUMTY10hsjJKJcGaapwnNqg9WN86Hl8g6TUBq/jWhKeTUQ4DlViariVE0dRTy1VwDX4ChaKayOx8azK6qQ6zVMawuyKAPXDojIUCua7Wyaay4EtQT5AUaQ1UQQQLWgHOtUQgwzWfDWR5Ra4Bl1q1Blxa3hS4mGzWHkzMF1/GyHvnAqDatBC5uAetCP4FQkQ4czWZXeToao1GHlQ7WUia0KHealOwp0v6Bb84YGFQfLWY6IrWJavmExa1JG4Y5jidaoLV1qwFKpaxzgeIl6W5Q6CxlavnYVa4um1w7LYzwqNVyuTIn1ahzly4oBGxsFrUXwNrVunHvAla9zVTauXHhAGbVmOZFE1arzUWkriLckA2lsYgLnIay+D2udDXLozDWLa7DX73cAVoXc8lw2WNjtarwD9a10lJIiZFfa7bXygX7UrXTpBrarfnfa4HUXaztVzUq+WQAYCQ6waBRqqZ8rLAOhWjyjHB3si0DnK7sAMEn8DvysTmASSVXD0hdn1s/KHFfWdV2KqQULq4RHLs61n7sdiDk6zx5+K+YX8fGOXBK2nU53cQAECb9VC4jxUkqiHR0aqDUUiFAkc6x9Uyaglm3rCHAwarnXgshGoZHTlWDAYlWPqwtDlohblMU2sAssuHUKQAvCKQPOKLeE4F4ZKlRVgQqqQpWzCDARLzW1SmCBwjxwQ6TdBUqc9zswBZVCADGCzKti4cNJVSWmKrDWmNLjUUKrTQARLx2oD3BnACdS15A05J8unk7IH3XY6gmJHazrlwK7jG8YgqCOpJmIitFjr8IetC2LWeDXKj5UIQLwmza4UBZAB+ApHFi5sXBZWIwrzx9I/uGFQJTiVqOVAogNdAogBXgyQRkA5hViQ0AdR6eAZdD8IcqCUmStiUmAqBd6nMKZ6v7ktjSnSxgTKW53YQCYKIhqWKsdF2ADbXCtQEG9UN2JCcRKCz+b46lUNfBuxNOLhGL4EOVTEDSQkkCsUCfXFw7WW7q3ADhs2ADPwe4YOsXAAs3Ejy0YGslqdKZQ/mPSm5UpZyCgDvCfIO/UVUr26Gda/UQRaC5GIBC40AeNXzK6U7qPGKxWALWC8WNaRQdFpVS2CuBaKjQCL6INQ5mIiqoGx4BqUAqCrrD0nuQ+74rACQg5NHvbMyxNpAI0UYkmf5Az47MyboZkjqPHdHx6xVnZ64cnTKHoDEqjmBhPS+A/Ax9WAMx2wAARWiApWXQAdFn7OUtnH1MDzSgDqJau0+s8VoDP7ZTiAHBF+rCejBp4xq635Qa3VT1LHVrQmeoZsZezYA6j0eA+BO1lfZ3V1GxKMZhwuZ13MpsmVdx2QbYQMN4vMoN4aw1O3BrwhckHINwhuYV5wHN1YW1/IkBrR113Ihw98NFG0eqCNwhscN1BroNWx2w5uNDYMI+knh9BDFxYFOAgeADf1ybEVWOetwANl2J0jMkZQagGFAw1Dv1lzzCewtiqwTJAMRCIE4AMQFFVL7MtpcRurA7mAYInMzwAgxOwOm8uNWrMgpRTdRiN1YD1W5sgSNUzNVGYlLHQ7BLjV/SulOs+QVsMY0NQ/OJUgNRhd1ohp0I/RrDu44TS4sADt1SnCTQgusiNmMGjVbyuqVWrLPVh2oTAOWGaNsrl2xgurv1glVlcbSkm1n5H6NaaSsAq63HgC2oaUn6pHlARoPMvFH1A+RpCNXxryN3mCvguONNIqGEuZznQ3i8FFcxw6pJ19PSJRTdSvgepLkWCqtEA36OguuBqRiwJsZQ26H0ikcQh0/CoZaDtPKKyJqNWOKsoAIBqQSEzCs2/CFdVHNxxNKIBjgGJt3sumxi5GutEASjGPKV8AGJUrD+5N4kTZkDSqZxcCvgIyLUMOGnBcfNAK0ruoTV0pygCtCFSgWOvD1dTOAg0etgAyRqINNEBlEBJihUZatVNkLP3FLUBeufSuFN6nnBG1tVsw6iiR1TfSu5w7LIh8Rq/10eptNDBEcNuON0klHSskAcuk8EIGgA4htjAdkrpxWUkn1qABkNzNP7VKJN0k0+2QAjpoguI4h/1IStmgLzAlxCgL6MXlwrEh4BWA0lSUYMhAZuXIDvgxfOyhAXIZOsZpYxp4l853cBL5VFMiwDj2gu6j3Tg1UArNhUBgIsAFV1ahxS5tYDg5LNOOV1pvqNCRs5mdps7NX+qaNgJuw5K0igVoso4KA6zIa/as+Q45q+REQD+RUiwXMEQHVWc5pT0EQDtukJtn1QGwYe2araNsJows8Js6NInO8pV8BRNhUDRNy2WQAWJqj647CHN1ACHN+1VHQ1FlypTUK4y/zOJN0F1JNb6RY6s6RloRJugWhUBsQSlAvNHNyPNr5sKgmwAQu5AE/NxN2Atv5ql1RjBnNjIFYgM5q/NhJpfNMFrF1CFwXNCFoXNyFpJMP5tJuOYQwtdt0QtQZOehz5uPNF8CzNpbE1afDGEZ1UFYgcoLot8FoqUmFuYtF+KRinNAYeQmSHNLNzgxXESHNGzPoebwAXBt5oIo95upZchq7VxN2otTHVLY15qRi3FqS0vFpT0/FsaVnFv0iIlvy6vJuPBFBxUt0eNLN6xIhGfywU4RBzkIogF05EXyymxSt4FRnMaFZj1kuaaw7CmBy4ZJZtzNbfOLgwABWAGEiU4EUs3QcGEnBHYRSubZuT5QeKvKbpszAEIGj1rpp9m9+Gai7DION4lEIGNCFit0GmlIVeGMk3ZCTAVHMHZwVqF8AEJFysAEYV6fOZ5//Q0e+VrUg2W25EM6qZ1Hb2p1cBJ5xBUDKt1m2MlKEEFxoumSRcuxvWczKGOYvniWtfOS58HNcpgw0iw/0vn5GP3bu5DjkkGwuuFd/P8ZBUk5MYciv5U1tJeej3GFEYn+Ej/M4cexF+Fx8xWtX31f5zL2OwI40UgFBXZe2D3uUP/ILE64y3ACEyutVXyCp+KBFe52PAFkArTw0Av/5vV3y+AJkQF94ygmqAoHer4xgFFSButX40seuAtIgGE1rAScKag33CS5bXyvueQscFNQsy+RSpREagriFQAv2+3n0sFCmDlYEnwC+Un0Rw3olUmV33ht0wr05WjDRtiX0Bl5Qp8F5NtRtZSvUF9wr2FhSqi+6QX0F6Nrh+WNsC+LpFSY5gosk2NtVIODGJtuwocFLNt0FyFHZtVNprxNNoUF7swstwswltsMpCFJArCFZNvltmMyst9r05QJQo+FXnySFmQutePAq1tYODxtnAu5twAE1t7Yn4FTNtFt5NrEF3ry/QJQqlt5H28FstvS+SNucFUX0ttjtthlzQpVtrQo4+6tpqB/gvjWbgutle+Og+8Qs8+iQqMFyQuk+Idtk+4n1++8YmMF8drBIAQpyFUwsDtReJ0FPswTt5n1st1s08FSX0tB+n0qFhnzFtedvTtodsCF4dtKxLH39tWdvC+Odonm9Qti+hdvTmpwrG+InyC+qQr5tikm+EqVGyFdwpW+DwsRt2gtbtlsvbtddrc+TQNJm1NvkF5drS+1QontzGzbtGINhlC80mFpNtdejOohAc6qkFD511tMdq+FM1u2FaQoa+p/JR+qwq/uI9tIFY9tAJPXxgNukgPte+PeFUdrutdQgm+YBPakiAFDNQwsvt83xaJv9v/tEwsbtO9prm5ht3hHb26Jx9sYFp9vce03wvt1/M2FBwvfKd9tVtu9pnuKkFftpWPHhcDsCkPfDxes9wAdKDunuK7jHuYDoU+o9uZt23Nwdbn1e+HNoUF79w2cpDqWtuL1YdVDox+6EvFENaN+VoItts4IqNUUItJ+qIDf+cIoVYYWURFhAhRFmfwZ+eErQQzP0Cw2IoQWbP2QW2WrHF0pv2Wk4rHEeIum8AvyFWeCxLVlolpFxC0l+DIsFFTIqDqQAO5awrXZF+9K5FTwJ5FnCwTFyNQFFhvw1sxvyr+IizMgYi1FFtSyiWNv3lF8i0VF6EFH+qizng6ixLA1Yq1Fmy2PUHHH1FcSiMWE3CD+ZizNFCfwtF8nCtFdixtF24TtFenGkUyfxO4HixjFQhVu4Hos2CXoveWDYr7+s9GL+ZYut+g4ucdNfySWlxNKdWf00W8iMTF7fxTF+S3TFPf19FtToH+eYvpxBeBqW4ToaWJYqDFbSwrFJ7A4lQCAX+/S0sY9Yt7+2YtLYnYtihm/ymWO/w2dFwWb+PYrnSk/wdJpzQv+y+DOdaEp6EwJFv+uAgEB5lhnFmIrnFxjHEdBCxnEn/zfF3/0wlAAN0BO4pABUGm+Wh4qMtDcBPFN4jxW54slgz4idsV4uABkLu/EGAOidpAMfFKKyRFwAIfEr4s5W2KzgkX4tBdYWV/FLBH/F5KyAlVKxIktK3AlDK1ZATKyYkMEotQcEp4BnKx/+aaGFWXzqEBPDo2JmEvEB2EqvwUgPwlMgMyAcgPLYCgJ0uREp7QqgJHVNvQolU6ColOgLeWdEoMBiJuMBaq2Ylp6FNWbEvNWJgIudkkqThZKrcUHUjvGDSKs2r8DWkJhvcBFcF4AIGFgeVQFbI8QKQev0pUQUNtRlJdp4hwMpJSoMtOo0Nv0qFCJ3wldphlHdsrx8MpaBiMtddTyvGUzMPYRmnRr0FwJ7YVVv3tlOr3xNhuER2+jSgjGAcAnuQIoMMigA+FOJgAlwzdB8HTdboDTdkAHIko1U1UQJOgebJyiBckCYGHgHhg3JUSB9xhLd6oDLd7koSB3JQ4NYINwV6chgIYgB4AepqJSjtkYwQHjq8EXTmUiXnTk/CFLC3bsISLyhWGwAzBwzngKG3AD76fkBy8nWlxMfavHtkQtZt0QpntG7zntXGzTWdrsxghIPR1OyEvceUk7dBQDnETCrcwHbvHdXvnx1tyrz5UkHuVUvEg2kKJhxhOveV65sbJGQW+VndP4d3dK4OgKtQAwKv9ooKv904KqJZ1R35RqjSHpG8rhVbiQzJ4qKDZkqJRV89PDZimM8OU6M2uwfhbY2VQXax1zxVMEOOuQgFOuE9WI9wgAbNRHrDG10BvdXbq98pHtAO1HpaxGMAY9wDKY96AFY9zYKY98Fyo944Gug43iYYnHpX2fHsKZvHvUAtzNE9XEWOujzPuZYno1OmUCE9zYIJV0dwXMe9L4aAnvQAoCHthOqpqC+/LAZclHrhWTX1u4hHc5Crh5VxRz5VoGIFVVhOuOwqrruuXLnQ0pzoUt7q9GJpozq8puq5r6EjMTDGj1Xno0emnt/E6tG1l2HISN1ipvJ9DpgJ5j3AJCRoARZ+omuVerDl68wsNMDtQR4BOygIsFi96jjfd/yGaOUDsgJMbvvJqCLsNGMEMNmXvHgJynYJZHJbGB8CkM1yrctEUOhlitp9dRDPstdEhdGldu9t2tt9tpnISNtxryl1XvqUll3YIIumIVybiJasxkNQkmtcA8xstNiHI4pzHtQ5E7OKtC3vA98aCrqDKU5KadjYuhDV0cjVUo26xFMN1mp52kGur0sri71e2oQlSYKFNmCjHddHs9WAeOPdPnqvdizFmAboDitPUSVkX1RZU31jQA8AF3YYIEm9sxsslZmIrNSjUEYpbE3pfDAnUMcGMkFavutgXRQAQIHHANDxVgYBPvlGpQ5urEFh9aCqBpL1CFFoLIAVqKWx9N1JOJlJlNd5rstdpnu0t+MXQA13qMkt3oKA6iClEc4H4QPJ1qA/hqtN83pQsz3qFYJgBpO3dWFpveR+OtBh+9hwH+9WIAk1QPpYaROFB9Tjxh9VbGh9NZvl4yCvh95MQ9ciPp0G6gBR9QQPR9bgKxVWPr2p6CtmEAi2J96CqJ9hvqBppPobkZrpYmlPq0tjLWPp5Fwks6CmIIx0nrgHJHEo0xqm9y2PQiWXhpUxkk+kF9WOAgwB+OqaCeKC3n+gQ8UrSekF9wyoPZkXMh8MNABAAy+AnUOIk9ytQz6c9VGwdNFwqqnMlBkaPhoey+BxE33LRKsmBmNFmh1kHPrm9mPmO0PPrUIQgH59CTExg9ZqEpLfp5EY1NkejfvrNA+MKIOeqgVIbrq+p8vUe0nPp1/xDuRnyAH9nlMk51oH2qqWl66uCvUe5Uzm5r3QQNbNlH5QFkeAQ3sbUmutuiFcld9ElHd9iQ1L9NEHL9NRjK562T99a+AD9nMhAw+RvSg2DocWSYETAukmZSrYH40nMiD9uZVD9DzCrkEfqngGIGj9f9qVOIskT9yfv6ZafpIIeRQX8WfpXcOftwAIAaEUtAFQQfMgVgK4soAVBh6AOIk1BTzCd8r8GviLig5IK4plkBfrSgRfrsas6C99Uvsr9HnuPdQgAS1dfva4dAbYZqOgdc9BuiNE/tVB/jKH9SLMkV+Tzp1Gaso6aqO4DM/oIoc/qPUC/pV997FUOuFwX9h8rC9/POa9WQAfJyRHAJVvhMOpCwl5k5nn9iVMt9j7rQAcbAf9EXo8ZsBNjlq616xp4hZVZBwqOq/pkDOgfKAAVuSZFB3eATvqD2/Cn39xuuONrgDf9IgyuoAWB4Q6inbIrZAQDv0jADqfpCqkAdEGefv7UYAfN0x6AgDlCshMBeE8DP1WIDS2TADxftnQ4NBxkVfozlZ5id00esQATukb9HrpB9jPyceL1FrN9jwC5vyheoU5ublFB039Lgb39U+AQYVQEW8Gfu0AgQYrOUQdADKfspkkVg6D0tQEUAPhCsM+XvQlMhL9tKmoDs3tyD4WQ+kDAfcQVEEPp/OnpOZQZ6GN9IaejQZZpzvoQYHga6RE4ArgiXi6DAWH44rxhBAwQZ5koQf6Dwg1mgkQfj9nqloAMQZMAcQbnQtKm24RxuY8lZlSDmv3SD5AahAWQfZkXcge9HxvCyFjKKtWS2YDS0CEpiTXIARbRqYh9OqDJqtdyxol+U7IECDW/vLNQpspphV2ikQrixAp/sZUV2BIW68p2Djnu76pVX9aZfu99FwaQDNDwVgIUr6DOIhKNEOisAlZJpDNADqeaUHpD6AcjGlMmpGXfSGAbIbz9APkL9EwYoDVIaoD2QZoDIIfG80evG8jfoWqbAc29foEkDUfLFg38VPslAYr9X7vfOZiWd1b40l1GOFlDuxK+RjwCyNBqg4AywaBUXQfL5yvpUVzj3UV9j0hRKEHND5qktD77WtDHABcupLLtDSvCBUojIUMkY2bN28uGoZob+5LoeUhb3oPlgVKLlvSlVQFPhYA47t/IFIYl9J/upDPQcQDHIbpDDIfADzo3BNgoeRA7Ic5D3IeXwaEBxE/IauwrIcLDwoZIDZAcmDWoeHkUoZmDzOOPK0ern4LAAVDPftxxuofke+oYXAhobpErYZNDHBTDDI+iWDoh09D3oYJ9i/tUV9j0dDWwf7VLoco6SwY9DdjS9DeKRKQcPuNEAYY3DwYeCpNJyRkOIgjDY+OnDh8tjDpIYcA08AhQVo0GAKYYbDwPv39DwazDXIZzDYQeZDnIyFD9wf7UxYZzDZYZbkXjQLDIfKVQ90hFDpAbFDx/u5K6YcBDOQaUuS6vBDUVmM425x8sioaiNtEIWOfDT7D6j1lciEdn61Rvseroc+0loYnDa4anD2PskDQKmCuYjPL5zoYIj8endD1AEnDG4d9Ds4Z3DpLL3D0VIPDlcmPDkuux9Z4bwGpIfuyJ1tvDwXIEu94ZYa90m/D2YZ5Db4fzDVYaAjTWkT9P4Z5Df4YrDgRk/Dj4dAjdYfFDaYclD0EelDnPsx89+m598EfBcGDE7DTfu7Dqj17DJrX7DOxtt2GDCbB2ulHDxOnHDDEZIjeKTIj9oYoj84Zojy4fojxohtDkY2Yj24cdDtNSrOHAzGpnEagA3EcxgvEZjD/EdcDaHmiMiQwXS1pgZglIZ0j2oa/DikakjjIbSs6kZaDX0k0j4EdTDkEd0jrvqBDxcuq5RtgKDWUi79qEZz1PYeWUK3qwj7xVXFw4fTVzkYtDVofcjtoa3D3kaojTocO9HEf4QZocjDp4fijTQdVQ/KBYA5eF1AUwYzDv0hIWeUf44BUeAjRUbR8y0cpkM0bmjf0ABDFUZgjZEKXgDXILhPC2OjywdR8kWEppUUNDD54cSjgqAgGKqg8gPakfD/ai2jYQdWj1YfuDAPi2jafv+QppDryoL3se0weBDBkYhwXABVUcoYBjF0cO910Yhjt0YSj0gHg6OLA3sxaKZg04zaAx5SGDEkcT9K4qoMRonLDYnim82SHZDYAbsUhMfGeumj5BTYdBj1fpNERMfB8JkYxxDMbM68gwKsQlJGUdOzrlwFn6BCPnqDGtP/JSjFwxxaKkMpaKfpTzp2xK6mdxa835xDMdatuF3jOYtHc2JLIKsmu22DiUfVAKMZ+OxaMi6Aof0Y1XmyjmYYKMAgDGDCsBoePIYAjWAddalWmw8hsd+keMc2VFMY6SJMcWjlwdEU/SidjU3nKZB0f0jdMaF8DMemAbYYDjMwC8ayJzZjo3Jk5nMcPoQxvNkvMZvh43K2ueaoeA0XhRAosY9x44irhwoQFD9Jq76zEd5uV2Foy8IAsVZHK8aClMTjAFMvgp1FljlMfljbNkVjSZzOuKse9j9fKIVA7KRjgqCogQR0OBWUiDQE6icA/rg4s2CSNw0JldjtAFFDzMpxEn0fkjOMczDW0fcu3cdl07Ia2jYivUMOIjTIPyMgko8ZtK4smXwYz1OEfIcnopwm+DkotFDGQYgjBIfEjlUaq5x7tsAR8YWDwcWIApwnCNcqy+8Bivxoe8ZJkSocajVkeajmEYHDt8ctDgurzQsrhoI4usg1K8YbwwmzATFmo/jsrleNTsK/dKJOuj3ZAEAttjfjnUxLQ9WkS0+xvTVnyFLQMcUPj8sq/d9xRn1E5oMgM+sG5Cv2FaMrvrUDEq55FemujUoGgAmslAUwIEooLwEYAcRJxEuAAoZAl1d5lcmujHCfBlxMDc5jShIT5aFB8f3MYAWekeEqSPITlJhbGKwHnjo6A8ulcmkTjgfxiHEdkTkylB840dRhvVPPu6sfbj/yEBjZ9i3j70cpkU8ePjYYt+j9zGdcHkFSgIhr0jzYaOjdeTlDdeRhj/JtrAcMY8TDgaMT00f+QmJGLwEBindr0cT9FicnjiADWjwwc2jO8e2jgSbfyrnkcTIMaqjN8cxIcocxInifCj3ibYTUhEyTfidh17cc1iSYC197QxyMcOiXjcSfnj64gflNYaWyp8b+DpUYvjKSevjModEAGSe7gwCab9CRHrhaEaxAPyN+wEIJeoBUHLR38co6LUf/jogDaUsmugAXSe5Il2pbpFgDixxOlFJy6NXYtOkF1sjyoASZu0uiekn9eatXYRqk2TPyMoAOyY7cjWJWT/jIOTGOH4exye2TkKNEADPWGonHMl1LfqIu/zLEZY4ctD+VPUpxonR5Lwex5g0euj1NOBTHpmgA/ycpkgKbo0cMdmj4Ke+0IVxxE+PPUpEbBhTw1ChTlMiRTg3uGjV4KfjZlpfjH5zujRSeHjQMcDh7IdtpW0dC9xfseoJmHf930diT8shaT7Zo4pZ3HajTMd6oLKZjxbHJx97RqJWztmvIkrrJwOPojYWQDxqqJJFTpNTeZ9EvFTKEAPNARASNALNgQPKYoBCqdHwllyWNTpnnlVYCJ2TfrwjsiboWUJqG5NqKbq/Rv3NBpMzu8iYDYDBETRNSqH+5CZ5iX+oxJU0eOkyyKK8WJAbsKcfFgEAxj5WcYLjfDE55RYdGDm4TNjaUAtjAobfJ1se8atmTtMLiY4pvxXExS3ojFu8R9TzfoajOoZ/juCr/jdkbjT1Bw6j+7AAjOcfhAecdgyDrC8aFionNTyc1RruWUh/wXX9lGQFDQKiRktnJ4t1Fj3DO/tpkCDH4AUsTh0FgCwy8IHEjCfszD48f7hkSeiTM8aWjVSawTC8dqTdsZ5kW0ZwjlMkvDuQwzN1CTpT9SbSg3jDIDGVh6AnvolDFmhgA/qWpQfafVp0adpjswZYAwMnvjmQHPTz8a6TOEa7D2HKajGaZsjrUfO6HYaATf+igTfXrvTpWoWTeEeJOKihH0gystDGkvxTHIJz1OYABljyogzN6b/0WxxCuCDBwje4ZWA/6c0gHEZQzvzyhojsoLJ/evhgWetrhBiYjYaGfTAAwARTmGeUhf3IKgRMDwzZjgIzRu3bTDchygMBo9sDcmuQgwGYwBAAx9M6bHjYEYnj+Ua+jYSdnjE6cyAOIhqTnGYEz46flkpeQRUOIkXTGAGXTwJ1XTmvwaT9Yd3TjYecTp6Zt256dGubKbUIWmZgzxRm/TX8bTT4yczTsrj0z76eKMn6ZmT36fmTbxr/TxGY4DaKifjIGa6TcGYcuX7ogzXhK++8aH0z1afgzUmZcV7fvBBw1APgCDE8zUABQzeifwz9ZpnehSdVQ+JE1iv5G8Dtwcz9DGY4wcIEqTkmYnUAwZ8DDrTqTmv2WjjKZytOyFGD0etGDWSaZZyqCx9iMfizzCBFynCA6AcIDj8aVlf0W8aHT74BHT/GcKjT4bnjk6dEzevo0jtYZKjYkaKzEepmG0epmGvmYsjgvq65djTCqjwBy8fLjS4kA3qumxWDMBwE4QFClwAwwAMRYyYwjz6YHDk2YszcCd/TBHJUQ+8cAzzmaoNoGd79Hme/atlx8zLmdgzt2f7VMw1jYiibEZ3CdqpL6OswIzmxsUZLCz8aGDu7EcijMwyizNGZizhibizbailwbwBV83/mujBI0BIx6YHTEmbG02WZuDUAexjG0aWyhWZpjqSZBDSOYmzvo0BI73vxiiOZJzh9Jqzx0io2M9EojLweCueaBpZ4mZ5k7WcsTUSa6z60Z6zcSaUTekBeD/WesT3Ga0j58agjPsZjTmPknyFScvTr+Th0U2aMzZmIlW0ce5j3UR0uv0IEVNNxMzB2bsjkufAg0yYJZcyYRQp2exTwWccNpGcUTTOfBz0YdizpPNJDjWZVY8OorKjKHITYkG2o8aVHKbWZ4zw6b4z08dRzs6aEzlMgFz+WZPjYEbPjTSdFzLQavjTKYlz+AAmz+ADlzqaf7Vj6dzgpmbs6ceeOzP6bszZ2ZJAzCFe5tOefjPeLAzX7q+xkUfwAhRuPQQrQ6GZedaedwBeTCIEpMx8NSI+ichzzyvluFadLzgjM1sDaZrzeKX4Q7eYx5QnHrzOyEZjZ6oIzb7twAxBIYxBkCLwZxWKMA+YvguGdCl7mYnNuABhRaKinz6CBuzFGaozi+a8uHwQb90JMrkJJnHzpxJXzUvKPzMMgUTp+ctzo+adTElHOQ7jR6AeuDEA/riSg7IbZznWZ9z3Ockz1SYu0guZoAyme0jZUayjYuY0zZENNIrKbQ5zCtUNT2eKM8ua+RSeYmT2ubTzx3os1BufgTqKNII5CcAzU+ZgLfmaXzXyIXgFCalV25tRJNCd6NwFkILxKsUTRqwQYcROos8GsqzI0cILMcQMg1+ebzQpvhIZWi40FptALHFJv0E2a7KhBDANeiNvz8JFMTL0e6zb0biTH0Y5zn+Z+jcSZxEYhYcTPQCcTIBYJzYMZuTkMelz0MbJzdzERzKqipzt+eCiG3F4sYkZ+gKqjv95WTUsb+c9zyABhkWAbslNhd3jOXv6Dkhr/zABZFz5UYjzh0b4LikCWIE2b8LRhrsLQXuQARMHvTfSYQLKeZuTgRccjFcE3pG6vhgAd2q9IV1q9/yESLilvrQyRaYZXiZDDjfsl1LY0ehN+f8T7+lvsphdUzrgAm2dME7OVhcqy9+CcLCRdcLuNi4z/+dsLB8AcLRMHcLIecaTI2fxzrSY0LIJUCL4OICLFhfBxjhp7x1XvCLe2eJ0iBezagxc1isRY3pqSLSLSRZy9IVxjgBRZ4t7nSyLu+Y1NDfp8s+RbSLVuahzNucSjxhZ4seoHKLgwEqL76q24NRfcaEVo9zzhbsLjRfqL1XtcLHRaDzYYo8LYea8LwEcjzxWbrgFhaccwxdvKKrBEJaRZCLYRemzERfTTyea1zsxaBLYJYWLFgHiLGxbEZq6GSLYjPWLyxYyL/f1WL2ReyTuRf2LmMAKLRxcJT8YfITZrUpgo6QoB2hn/hjxYaLH+c6LwuZ+LwBe8LvsdmDOoHgD2hZwL12bgLGuf2zGMFsj2bQMgyJYxiFadrzIRbJLNXVrTY4aKDH2ahZ5T3NURQbLwLN19N1TIoA1OZ7V8Tl6AuRtzQSzBfi5iZ5zhqBeDmoMho18WFCKtLE4UrG3Tk5VdyKOfz9uOYUL2pdGzbNIoUfflgAyEA1K0ufdLzYC9LvBUNQ6psiwWR13SkQxeoUbsMelhqjl7nzZ1S6pCVp4nogIGCUAbQA8Y+11vz1jB1LCZmpVHCCNwhpeaLW0YN2smFNLlgzwDrwLKi1peLQoJntLf+dsTGZddL1XN9LsACzL0esbLWZeSeappWDztShAqZfbLUoWrQEZaMDldxMD7OtaidwETLyZYzLPiBbT6ZcJiwxW5yaUGTdrxa9zViaNL3+b6zv+c+LQueGzlxfrLx7ogzLZcez12a6T/JfTVkRfhLINr596edszCCeDNm4S8JV2acNrmdqAZaa+ReqeZplCdZF1CYws9Erld3UVkTxKtRTpuaNW3Cc3CDBYONWibtTN2alLRRehzfchU1mBgLA/cb7KLWaDU/KFIQ0QLdAm6FIQVQCvE2FcyzY2h/zi8dXLY2kGVUTipZaUHwAFWQhA/hc3LLRZZLPRfUz6hb9jtuwAILZYAIsyb/0pFYqyPfp6Tlkc1zQpZfTLFc09V5du20CcyuXFexAJ2czzffoGTLsCGT1aBGTkKOWT+ybWTGOA2TKBfK1JybOTgxQr0KlYCJhyYtSMya2TpychRRcX+peed2VBebrz8+eZu+BY4Kd+H76Y4bqjt2jzz2iOhk5Gf712+bwL2lZpx5AFIQYrklaw1APztBe6j8/DcjgUaLi9aAcrk7GqgkVc7z0Qm2QTsgjYc+YKgVEm3WFT0hRq4nIo/lYrTwVfG5Sweir4VfXDT9TgIvLoSrfmlKr6tnir0VdaeyVesrBUA5g6Va0Dffpegass7BuKYQxJZsCdryYqeM+Y8rF8A9SIxq+RvldcuZkeWqT8d8r/lb6r2GYvg5Ejvgw7WQiKVblgQ1Y4KWVcczwyjGrOKctDa1amrm+f71wdnmrQNEWr9Vb9sK1dwTWBeJ08od8rRy3Io/VYKgMP1sr2lezA8RfGrloY4jeVcArvldIza1e2e1mD1TV2gdkeKUeEdVYozONiarEbAkrDNJmr91e3zSGeerDSD+BN1YilWpa8QEIBkwU3n7jVWiHjYgHJgiXhasiEEZAObpgAaEHoLS5Y6z3ufwrUMkIr06cGza6forO5d6LUeZJBd8Z0z7XAEs8efzV8BdhLMxeZrgCY0rfOzQLRua/dhViJrHFcyA9BchRAlglLbBb4jKhAEsE1LdDZEFOEapZkMDGIfL01bczgYbBACDAVLf3OgA9hf4olcgNURQflr6lL3DAli1L82JdA8OcYQjCeeA1B2IrUMgxz6gEGDNZZ3ju5ZBDUoGj1TCd0LeCDtr7YXJLCDCwaLIZ6AQvn+QENBR9cpXOATZnggGODzQENEbRZNfZzo6d9ztAF6zwmanTYme6zxUdDzDFbULfReYr0jCYzSpujrN8A5rfFcFLBobsjRdb1NIlfQLiyd2U8FAVLW5tFd3LQhJNCe5N5BebZclGygKIA1s1BYA5zJtyL1vwOLEOdlr83JtTe+fTRa8Blrk0eKLzo1klv+k0MUvt1gJusGAXQdKqXwc5k2mIhAl5Ah0Cfw3r2cCTrH+dZLamdprSmdIDHtf6LooyogioVZrBdOENt9cdNHCqyuSwYVLVULg90JrFd7dd3NtcNNTqKR8U3UYHrH9aFx/yBeeA9ckylvIW58hod9owlH1U0dmz0Ois6eskexT9Z8sJ5eIIwBTPLAlcl1OYSMaT9c7C9tM0TkUYDFo9bJLq9BPTqSnjDsOdXw2nltruSZQTWBAdLUhayz4QddrtFbxzjFYLrswcYbpC3vrDCBtsFWeIIyCcEbBSZOLSMdYw32iY4bwbKydEGf0Stiuk2hkbRJWWQbzRffzFNcdrIgGXw1NazrXOZzr3RYZrXDaZralakbwgGj1tOlIEuBehLUxb1D55ZMbVqlIEddaFr/auWT/CFODcNlpqH5ZhNpBe/LsrtlTMnIHrVVdp01AGWTEDY0TQWc2xcKatUs9etzbcdVQkjYcbEOhaSG8aQyaVSXrCjYfzPuiqwKjePrGjfzL/uZEzG5aMbxWYsbwgGpQVWHMbpjdQA5TaCL01Ywb2umwbVddlcpTeqbWCL1zkGsFr0la/drjfcbWYLCjXyKWURBeJ1hqZ3N+gNoTv5agtYDaNW9aGCbSMVCbUzbo0gzfJAVPtgbEsIb9giHQAMTeOLcTYQYKY0pgmNcHjxSZHjajdsLydc5zCkcEza5YzrgecUzwefprmUbPr7JfFzEOBUALNcgL9zXVr+KfqbS9OmLURZ2Qrzb5rMyc6bN5a+ReaHVWIjdQTYtYEubvJz1eaDtu10cUgxUGgA10fIAEQCI0i6BbzF3C3p5iBOUjAE+bYLburC+cxs1achR9shH0eLeAzR5eezW+bOrSznShXhOPKJshVk0NbSr6pYijyygpbkkJnzo+JSrjVcDrSUa7AxhiAwSwTkb0XlKjNgBYQlNa0buSqLL/QZLL3YDLLVpaxANpa2GBiQKIDpfkLkmZxE7GHH8jNZKbQGHMbQGF7LQZeLgIZeYxYZf7Le9sjLmIOHLcZYagCZerASZbaAOraqw+pvozn/sGAE6nggaEGxpHRiDiX/q8a4pq3jxsfSziAGDToaauwiha76QbeaLVwaZDrChRA+0ckLvQd5D5YfAiV2CTbejbR8yfqvrzFbbM0erbMyabe9vfiEp+aeqgXjSLTAEcLjZarsrFBwAjFEd3Dt+cYmy0J9wElG2icfn7TT4fUbK5fybVzYDzRTZZzadbiT86ZkzV4fkz7IcDTcIDQMPCk7dLwdv9eoHaG6WtorNDw3T8SeSM26cALF8f3TPuiPTubdmD3AFnh/DcyAB7amz36ZnbeKdajbfo021coL1jyY+2Mcd4Vt7an+0lP5jDTe5rfzZPbIldATX6engICYu9apyfbUlZBb1HNkrjeB6AwycbNHBWUrnAbq+1yf+b32juTJldhbeyZg7Qsf0rcdcMrBLOMr2lZQzggfxb1LZwztLe10KWpWxnbtVr4IK6r5f2hrVGd4reKQ4jEKZxEUKburaVegr7BZz1UtZH07NbCRe1YvgfLaQzkWf3D6GbEZlJnlrYjIQzv7ehrg1dY7Z4ZiRDfqE7LwdE7x6HE7VCDurc1ek7MYbozVulVQzbaoQrbbtzHbYrWGMF0bFzd+k3bdkLUre0b65aIrvbbG0I7fh1Y7atGCmcHbNAEnb4wZWA57bDYlMnnboiyXbtza+LXRZUzDzYfDTzd4LmPgPb2mfebnhHC7p7Yk7HnZ4rYHaEpHne4V4lMfbZQDvbzO3Vzp5ffbdjZ2Q0Xa/b/7Zszolb69cXYzzwHfTVB7co6J7asbZ7cA7EOHC7qRDeTxuciboCGQALN1IzB7bf1v1Y7orXYC0/eZJL0WfHrsFe5Qu9YsAhAx6cTfRObTxbObn+ZYbBFas7NNeTblzbG0ECcpk68aE2y7YC7m7fDzfxZ8LKfKsAukmj1z9rqjVjYgTkxczjK3fvbyuZVs6CdITNqZ+btjZwbdkaO7vGKcbXTdYR0WZJ98OtyT1NKbzN1NqDM+YwLNaDNYhWJaJsL327WUkHLoc15lQSrjLdEhO76CeX2U9dmTx1fU7sTa5ViUatrcObob8EGujirOYb4SekLbDdyz2OcdLBWfdrerYj1m5MO7qht9rowlx7NPf5bmPdobqTa+7Vtk3JMPwdrNnadrRPZSzeWb87Q7YZTFPaflPGJh+1PcTAHPdp7V0dyT7PbHQhhfnrJyGYASTa3gsjfSbJCyUbLqbDiuTZ7bznfTr/bes759bub25aC7l8d27EOCNUg4Wlz5va4kVje+bpOsrrwpbN7cBEcb/Nc/IwLcB7kujSsZwc8bxBdbrRqd8b4zf8bKTMCbOqzgIbaET0YTcy7xDZNzblbIbMFfEbqqAV70jeSbWyhV78jbV7qUBqbOTYZLvGe17i3bRzVNfm7xncob3DZt2VvdabFTct7TvbKbbTZt7Cea5r/FaabjvcV75feGor3bK7Szg97vTfTikKK1gQzc/rIzZ8bYza7rkzda7RqxD78BCRiHvYHr+paUtMDYWauxeGo2rq2b/LYObyYGxrJSYpGHmLxosJGAAgkb+usJC175nc0bvqhaulMgMcEOnVAi5eP7PqFe05Yde0l/b6l1/bGeB8cpjnRdXbOIjWAXABJLDMZ2VTdmZzIXaYrswdOEyAEW9N7IQjX/efjgoGEA6tDcrYzzO7ieey7j3ewjEA8F1UA9HLBLJ94ofZmTcA9K7gPbQHPYLw7lLacNaA8JbRHYTIRqgIHnHc+bmA7sIKVdhrGRq/7DLY7D+A9OEMA7gIPYOY7ZA4Q0DMcIHeAC/76tEnod1b47OeoVOTA74HIA4EHlMburg1bZbtYE/7Eg6K8Ug4Qgf/a1LwEi9bSsnIBeLq3j5KbiTlKbsa1KffAtKYN7NifJ7xTYj1YWmj11NMt6X9Zx96q0DhfKaNNAqZpwtg+FTz8A45LzLcHGFlsHHg8wQRMED7U+HlT0qcEqSqZYIKqZQgRVPCb6qYQOjti1TmO1TVk3Tp733Y9MtFMpp9FEtrHRjyqAOt0UFZXFgzVoEumTNfybwHZDDsaE4a8byH8xuaLlBnoUV3kGATIZ6tsf3BxBLmbse7aUuhAFFylg7aHBVva5U/hqHlVqtbkPZOFsZaplVj3qtjVqApFqFrjxBHatSjJPMPQ/GCAoB6tasdgr7akW891SqwDITAJ6iBBeYytFbekE+kZhb3Sq9yQeboGf9cBDxDOYDn87Puz7y5aP7XPelb88cmDIQLMHbNKCBafMi7HsrAJIL30zVdI+7Rvv4q66FvzTgAhAaEHjAbHEwUh/ZTrX+bm71zYHb2daGzudcMb+deMbNXJAglg5Ag5dYfTiA8b7GOvRHbfcB7g2M47VydwxQj0hRG2hcrb+XzzpA53zDyd+RSMPMQQjw8slbHc6f2eNELI9s5YDb67NLcxbQgFXznmnpHZiJB0AixZHXecbTG6px5KVdZbplfK8bVfvUU+aEAPeKfLFGeEHX7vN7Mo7ZNLzB5HGtfqrMg8bpZgjB9bTk2R+yMVrqo5Abk9XWrYUHJUap2lHuaCd7x1Yozc1epH4TaR7ZeGX7qg/MMGg768x2m0HGlgpTX+omDBg+DUbtcF7zw+q5q4ksHjxusH1vRx9dt3sHkuMcHOBVCw0Y9cHmCDtuwrWlT/qUlTekGNu2QGfgVEn8H+6C/1YQ+kqIQ6coRY4n5WqSiHzZ3/O2qfiHsMe+7WKhMtyLbYTaQ9vzHrfMsuoBFb6Tcm9ZwElb1/cLLNEGLLVjQVbXZyVbDeC70dpeUaGrfpTY2m1bBraF7oY6j85welzWVfNbsmBNbtYDNbDcAtbiXo8e0bqjL9irjdcBNHL45baADgEXHYmlUHjucOA8AeuH5Ndz7XOdm7BfZhH+vbhHdNaN7QBcebO3Y5LrQ+5LR7d6ALzFr7nNYFLvzZy7pefabqBY/Thube7jBcijutZxE5ub5zro8BHWTws7MrYHHcraHHGgEVbZWi3CKrarLk46DHM45dL84+Pd/pY6HuRuNbnZeDLs6B7L244HLBXrc+h46fJ9rbHLjreTLQI+xA+psds92TFCYODW5KmJRAoQ1TA/NMKHVdmebNybhBE2bhBQha29QzyGU6F2ELhVwQrfLj0gjimlpjCFYkQesrYOjIlN4BsCMeUiwy2iiUnPBaobCDB4nhQR9bMWwEnPFicZn0jjhk8yP9uQ5Ug4oUhoGMaxj+PaNjdIZXbmwBLDuYaLO63LTsTA3tT67cWxxQ/a0aBn/Zq3byHv4nZDVQ9l1DEBeD7SHr6IWvWB1UDEgbJwq5LQ7IhesqKH0uZynn5B8sgXrBM0BDr7QfYggyXaZNmd3KnBsru7KiGQNdQanwL+tiaOjzy9t5O3dg12UDOyEnh4VJd18yyZOdzLeA260LzZHMV904ZV95smQN2PogTH1IanxBHiL9OfjjWIuFQOIuWDMPrWLNZowNcPomnZFg8A9Ofl4008AVQZtF0805zN/nJm55ZpfLLccj7aJEn9+U+yaA48gVHzUuBHa3c2sbOKnL06qn+NM0nOuHNsGXaFxavKMaXQbxNiSqA24OuolwWFUdNOGIjl8HKga0Eg71vP6ReGKcZ908hZ85jpqQkEUM2kEoR9ccO8wydS4MBs2gf3PvhOzJVj3jC2yKU4YItnIgg5M9Oo8SyXNFNmf9+TOenjM4RADpzr5NqaEVIAFfhWwuqtsMqYnI5YB5OeoBlrPyhnbkYBZ/Q4Yn8X1tbww5CVf3MVq+Ssg1HXvttqgu69froRDeKXFnN9r3HNraGH/Mo75lJkVqb3q8uzWIUD7U9PWnU4aZ8y1unA0/GWYHOqsGOi1L5k5cn/E9jMMnqKHnMnsnS8rg64w57iParOAmMdVgHk9+kxYe8nvk7CD/k+sngU4Euh3B6ANDzCnqBnNYkU7KHzk7BwMU63jcU8uBiU/yGvCApny2PSnmU5InIIbdnN6j/Hxc8b9RU8uB8A4Cb1U65jPCr/L1U9JO4TaanUynDLrU4GH5006n3U5VhvU7HwTJyNl9zK7DkKPqngPNGnnkcrV13fTIU0/QTM06z0808unVvJSZIs6zQohzWnWJY2nY/K2nwFkmnm0/0VKTZnnjShOneltcty2XpO885I24TcAbqHeLnKM8HrZdQ04T07V5ZFwR2b0+enT8/+nX060nV6M+n5GUexQM7+nIM8r08FCXnakGhnOpzxSilZgx5ZP7nbwBvnaM4psv4kxnNEEr5OM77LF8HxnoEB71gC5JnZwCLyPjFqyFtPiWlc9qytM+NxPKgXMLM6pn+NJZnGMIZhfMYXnU+E5n3M7PtvM8UD/M7tboSq/dws5UdoWGIjms55n2s75n0s71nKIANnE5gVnFmqVnRtokFHRL3xtsobS6s6Ly9E/3Hh9qEXzirlnE5iNnlOhNnyXthlFs+txVs6vn0C9tnOTWyuUIa1LbY98dOZT08exWgAy6FketaGoAKilVg8uXKNdk4SGCcNnQPs9cnlCgDn+ICLDJC1QD7Wh5DEIKwDsmBwDmE/wDeFEIDn/1orrnYAyxfeRHzxN5GeU/wx2CIqeL9aNHSeKJHB6qSXH8Hzsv5Jk5+yMM96ZCUXOs6cVVjw4XhJZshEs+UXsbtUXFS7+5pS8EXus+cV9cK/82i+gdui9QRijzUDV8Gpl9cP0YDU9398YYyHxU9C1CVdmRHs/7CtfQZi3OULlDNhaZlC1BnXEnCU6c9iMEy75DBC4mXzKWZ9A5CZg122PT/xYj1uc7bDBC6tHQE9T0opLytnQ7Ug9c8oaYNWAawWyWHOhDJxYzxwA+yctV1M4mXjPdxRgwBR9ZAEvR8EBUcYaQhKZ5lFLFIkTr1/cILa8Zu7UfLn4AxVfgkK/57dFZKjRxSbsD+kRHAA5L72U/QT0eogTz8YXgVc6D70WfGnwFibzB04e0uAGcxGuv+Qxirt7IE6QHEOHxXgusJXuA4brn8ozVz8cLzARH/lu88MVlK73DQ2CFN50BywMmDIAYPZG7l7kgg9/mKu348WpoEEuUjKEO7Cq+vgdiNANsk4ie8k8W5UABFXz6XFXI3aY4U8MQAyDfEnDJT3rAJys60uYNXYVmNXMk8QbbylvzJfVHHsmEInUMjfJEmp7HKK0Ln/Rb76BQYQJ648yAm48RS9EE1BbrdC7gRpUgoq4tXIRsjX2FThAqezqAik61XsFbbHsz1Eo5gQwYk5V30Ql0+k7DzKa9w0FcO3CZCYWxzCECeLCEhYfHifrM7kI8fH9w5kgKIEY79a6PYFAClwV3meaED1QnwK4bXP8SRaTeBbXOUExgSK+MHW5YRHxvaynHFL8OgznT0W3mlzk64qy32hgzhaVLwv8SJXWXYb7DvYPMma+nX4E8yuAK8gTRXZmTXa6A77vdwla6EvRlJi7Xndb79jQzxLrXa7XI/u/8A/a/LQ/boTq7NlYjQy2LCzfWdDTy7XEzIX70AECDSE4nrr7aR7pTSA3Ka/Q8aa6BjrYDnXRCjY4Oa85kea/ZABa8GAjISz8Ja7LXZicm7G6um7qE73XkKabXfa4TKba73RVOU7bta7Ylv8Upkl66I3ra8HXyyOZL74+aT3q+YrsG6OTs663XRqkXX4JhXX1jeMz9vcErbG4QJ76aXXEOG/bh694315ZPX24nw3F66o305a/dvdaWLd69/iD6/Ilz67lWw/Y5uSm/7rX67wcP69/if67Wbw1EA3J4abzg3a7VaupyLgnbYGZm4G7c9eWHNDZtrOPdyTQiaDnfudYbOWd57JPc1bb0nHXmPg4TIRoQJkveLggieC3/LeDraIFDrdInDrFIkjrgwFYUMddqlQ+b2HEK4Y3t49w31/Z0bA2dfHF9fubH4+C7X49NXiW7uWf45K3vGMAnFdYZX2I7XYAwFrrLvbFrx64brpTWU3xcZ97X9bbr2q0UBLadfX3dffX2yE/Xo/dvntYPZbkTZHr/XbHrDm8s3k9f/XpDYm30pdvzqNefSu7GTd9fXxrhVnzdTw/3987cSsFYDSgVQAhH5zbHTHm+hHevYW7WbbfHo64K3JvblXBrLebCaaiskWQxHMJfXXglae3eI4brhVl1WOerfLHEclLI+bY7JFEeECtcIjJJgMgKtaBUPDXw7s+efLg0dNzwndhA+FifGLkflL4O+RT0c9bTBkHMXzKTxItOcO3M3YJ7fbcKbL44u3eW6Y323ZDQpvdnY0nWlzuuue3NjesjjK+p34Zo+38/eM3+tYKJtBbgnYo6ZzUvIQniAH7M827j7OzfSgTm+x7FgARbafE57OvcJ7Xm6xzrq60b/m6DxYFjK3Uu5C3OSatsiLZdOYjZF3VYG4L53BmgstnBHDJZkjpRrybMu5QDooZUj6bYRA945iTl24MbY65Y3swa91kVstHyEdXXAXiNpPQGBMF3EB9bJYJhmS7oj0AHfaIjKLTh+ojZ1W43Xa7Hd3XICwQjkbcy5KgSBBRMS0BROswF+aKsZkY93BKeBz1gZ0yEe8ab0e691O6752C1Sk3g2WuauNKR0eeZ8sPePoNZ8/TVbAAHWHEdBTjwGFCUNeu0pA6jDwu4ILze8ij/CGBTjxtGAjNLurNHYmjaPY4KZleJ0T26b3vfk4Hjo7vnLXkcr0+6fjKADn30Nb5bDe8T33LRqrgy4dkBRMeXhRNZHeKQPzqe6Rk6e7+5RcVuUpVbArTgcijXuukHs8DijaPeGXCDFQo8xl946UH5QFYFQnnhPLDLPmv7xXnZzJVArUqE6zMMmY9MtGFFLG3fy3zG5DHx7sd8fDfeHHOPMAuFoYevKicNYWni7V7faKqyuAw7IHf3dUBMwaUG/3EJSgPYgBFgGWeL6bFwhqouSSsOYHaKcyoWHYoydUJnBzzCILNGDO9/jOXcQPJe/o16B7E3/7eK8f7bErfOywPbK7wjWycGT4HYUr8M6Wc0HayXsHdUr8HatUiHe0rHvb0rWsQMro1yMrWldJHFyc0PRapuTu2Ya32HcyrVgHYeXQCJRDAGrd/CGDseEY5XHEZAa0NdwzvFchRIhkijzh7oH4NcyrHpjPHIS08PPQ04Hbh5z1XAD73Jua8P9VcarIR+IT0h+NEvK5upiWjxSTS9YX9S5EekEHcPyFiHnyIFE2YrMB5vLqrd5snshQ2BZuu6pBWlkJehXZwMRAd0xTXFrN0nyZjRE9TC0/h5eere6ibKgBx5PyZJ5Jenshg+5wATHZ0rapfmyGSspsZKhee14kkyzR6sArR/rH/R9KpGPOx5Ztb4tU7Q8AbR/+Tv/atUQx4OyXtzCP4Dc2MNquIiFNjGPDR7GPBJfJsux4aPux7OPJeimPiABeetx9KPLKO8pxx5gtFR6xVEKfrQDx5fRMHS+PQFn+TkmQuPQFj6P0wx67x6EpMwh9osOqMvNsyfmPx6Hc6SbQXaLx4rqaualsJR4aPvx8mPfh+mPDR6hTAJ4gGex83NXESGwuR//n8hvh6tqqxV6KbtRWJ7uP3x64ivx/oqsJ7xPoJ8ZAwJ8BPf3IhPv5hkZPhxgAHx/2oyFjqPspcaPqJ+RA9x5pPW+50IDJ9La8KdrbJenZP/f32PRJ5yP6hmBnZJ+p9ge+JPeDSRiaJ6AshDUpM7J9oLDJ5xESbRPSclCRPXRkcXJNlFPYjI1sUKcoW1p6As6Ke4TFh8WQ7NwpsQellLfDGx0ROB1P4jP+T9p/GWDR4hTOZhdPPABWbbO+LgQq9bH6HnLSXfU7H8je7HI91Qn/Y9RnoS4iX2E6DMyrcrLE48EYU46dLWrcgALraV3uVq8apy68alE8ujprZonoZcsGrc61n1reaX5S/jLrE9QATrdUjH4PnrTPec3Eu9yTzVWl3efZO33Pbl3dweHX28eDHSI+Kzby6DjEiPV3vF17PYnjl7yw+ejoSYHPAvfRzPPfl3HDdMHE5+OXop2lzviYDXrPcooB58trvZQdzA8bX7RzZJ7/amrXR29TrY59O3xO/O39u7J3V27gPO55Ll927AH2Vmh3nu7fbr24HDQGb4PjW4kPWeYcampJbrHW797L64mb5qZRJ/5bFHAvSs3VS4grB4CgAT5dR72zfR7SMa7P4u6PPSjDRbfWuv7ztYiDy8AV38S6OXJcsIvbYcIvQjYoOKLdovOu+wv8YcxI5mgmM/rllX2G5z7tw4t3j58zrOW9J3hvbfPFO4SXk5+8zxkeQPaNOgzlW+w5jwhYZGOIMgkIei5i+6bp/TMpM/TaqXNTKxyDdcL3glfu+PmdZ3YF5ZT95aIHWo8xbqLYdYZDS8bYro03P5fzH2ujfLcl6ArdGgO4JgETAue8zuEQDrz/f3ITOtax3To//XDF6I0Fl4Eui6HA38fbbUGIEny9nhraGW6ZLDJd30Dhe0MGyYZLt/cWx2hiOTWW8L7Al5fPQl8d312+LPnFMe8M67/H9KhgiIGd2VblePLpU7XXAm8AvU+cMvOeviLeVfh3LwZepzfZhPdhEXQHl8XDlHRab7R4B7pGfavpAiqvQ4gb3SPYnU0UfCvuu/Q8Dvk6UVWlkTqUD/6cddS3k6lbsDRHx3eG+yvjG+Evvxcp3t28E24K9KvvJcfLf+lt76Eaj3el4avDW7d7DdbfLVl/a3T6663dl7NTQuIurCF4j7yF5gnJuceE01+Yvbann4w0DQotu8q0TbBwuvF6hkkCguYafqUAFYACz14aNqqE+BAIgGy32hn5QsN7f7mwDIDFPhHgwN48cvFnOM8FfcQvWmBvhV6gCQN8gOx19xvAFKhvjNGE4KN7OvPVd6TXB6fTTO8HD1N5dOqA5y8dN6szBLORvt18kPoHfrNhAggX3Te+0ggeyXWh/sbM690P9yeQ7uldQ7cHfY3st6Q7X7v4eEt6UP6HZBKJh5Vv2lYFO6q3aPGGbtPlchGcG+OFr6XdpvFgAQYqAymT/N4I7Nld4rDe4rg5a0Cr4Kf2VlMmRvo+58PsLdpHcpdmTqwCS0uaHX9/wQgoLz0xTVVYgoMMgppSQ7b3od4WPvyKZpcd+0rufPo77t/1PeKYlH3t6/dSxAnzn2nlLAd7o0ilEp0+uwaP4d4xLtI+jvVtlXEJJnX96tATvQNfX9kKJicuVaEHWd4CIMThB38eiKDHd8DvgYo+T3R77v2VJiAuzy9PtFoPRwoCSLFd+hkeKQ7vnyZotVFuqP6JZrQU95tkg99lPwhkzAWxkijs99ePxoiTvDd/FH2o7bvlWZWA66wbwZel4xMTlU7d8E07pk/Gg93EhGu7Ai8v8Vrkq/bnQV582vMB/J3e19Evxy4pbbYc5bIGfOvke4e7NW6D8d8cB7jl7AbxY+tvxbqTd/KAwziieCHsD+WUibuTdzabFHilpQfamDQfCD+CHCiY5HSneJ0uD9TNOxfZ3v17s3k25f39GcBAk8w99O/I2cpMbyjgSheGN8AEKVPjxDa+VqGtsec7YAZUjFZTEl7D9GXwcVGy3D4m7o5+2Y8S/uYno4iDaqm+uCDGXQ5ilrQS04tQEbBWAy6G5k5AGUf7SFOTn0jsXWj85Daj40fCBgMfOj//760Y0fAk+UfSBjiQXjGMfQilMfZ1XMflcjsXsAGUfksmoA8MB4TJ+28f8MFYwc9jMcclLv9BQ+ZOjHJRz7+/wDUMDlAn0g/O7IGXQkslrQRugQY/SbifksgVgNj8SfMT6f90O3if7WnrQdTzYug3DTCiYGf906QyAKOc4stXNSfeT5gARZ3Ap0aDHLdHmSIsmFZAUG9ZAQj3mTnMj9iGaUYA1T5Zk6T/Fk+T/5QJT5f97XG4QPT4qfBQ7sXa8C5Ub1Hyf3naEnBoBEnTjJRzFF6p3dIkygbYcyg5kfqbV+D0Ytc5S73UTy6dwPoXSznfOwWFZn1aFAf0e/pEjkYufH4E/Omcf2Td3yPVkC6uTLz5oRiyKYv4FcVvHz4dy4TZvxHXvptigfKVe7rokjlrmu1HrUUv4ITImUColcCJ2Y7c5smjDtXY2zAvhyEYg6zz8WCIt1SRmUFPpwzPD3Te2B5yHOsqCL7qgSL+EmKL8IKaUDSg87GGPNgfJshPJJfHzTJfOUApfWQCpfBKwrAP+43Y3J4psvMJAhfHpIWinp0IL3JwKrL9Hmks8GunL7Rf8yxVyWCH0iTL61xpL7odUr9PWnL9bIIGAcAdL4XMAr4ShfHpXFIr+IIcXMnnir7hf4r9VftS9KxMr82f8yxSPZs9DmbC5lnHkJM1qmwVftWWJfyr5Zflr47enL+/3PL/f1/0JWJ106xfflNxfVK8O99Ii1LbUDh0tDRXPla6W7Q58xzI59y3kos4bH5+q56Selz+ScPP10Zzf7xv6LiT2zfsmGairNBbXia41XIhaCtEesTPkreLfoME9Xdq6YPLmkdXZSbfy9RZvrTKjqHE6kPr78E7b+jcC7BV+d3Nu3aT2b5LNj9bhA2B/SX17da6jwFvrFU/MaE7+3Ea5q+vwE+ufglamTqA6XfTW8FvL6HkrF8DkP2ugUPiM7g76ld1vPfZQ7ih7Q7Ut6HzmHcg1Zh5z16t8JHmt5vftydMPeh5z1ql4evXVMVrtR9LYnb63Z6zPTaMp4BTTJ7z3FJ6dqnyDWPIH8hTsJ7dAgFYY7499IAapfg/uSfOjTp6Q/apdv3UfcibLo5PDjXfnrKFVegV8Fls3Sjiv5u9XPD56hkCZTGM5YZobuvrw32AGTAImaY/DH6/vu14D3+19NXzuuj1zuufjCGRobz2HCtC0D43CA4Avdkb4/guoE/LoBEPfXtheTH53fYF5RJ5I9lzIGasrFGeGNmLdtJx0YrTgFbLzINcI7mF+5HSe6oHb1dVBT8e8f8n7YfLh8Or0n7eAXt53zokfM/Zn6TxFn9fQs0aE/Cn5Zbtn5o/Y46iPj1ZBzJued1f1+FUyI9qGB/elz4X5ONMBYrf9q4GA8HOKzJgD48SLr/HSX/L2dXvVXcX81qr+8gAbJxygzBArWvo1Ucr94WMWNY/v5H7t3x27XPT44I3JO9yv/ndgPIl8ov1XKS/X58a5PC1a/pl6+bNV7OfWI+j3nX+AvAt7AvBI8uTL794UJI5+34WgrTutYQYQj0PvoNeozC26/dql6h3wGfC0Wo65HIV39aatctDDI547qVYC/TXdiRpb9bvRn61LEXlIAFRlSgLgPMA+pZ+YeZYhv0rZTPg47qMFpfLLWZ/HH0TgInW54LPF39UbGb+PdWZebAN36QPD24AMKTm4AwP9bkFZ/Az46Tg6tE9rPlrfrP7L6dfwi7jlNjETITrZdbzycjUFEpaN7d4x/ZCF3SIWxbPTrZ7L1AEpM/qRxEKmxzgJ48nLFP4Ld1AC/8UMMhRWZb+RQa5J/J47YodgB580P4jYnHKjge4Yz3ku6RbMUuouOIjZ/UvLlg5Eg5gMJJT3jTz1rbP9J/E5azQDP/DskAGZ/UvJZ/RhaK/YaVrkT6xZy5X64vNw5rXhO74vW29TfDX+/vnH9/vbNP/v0ucAfVLdgLPX//PdV7sjnLcavxCckT+qezvF1e/f/faoTz178br14AXFeihbOIgIESeQBHROhITxKvUTcF751gTYQY8f9Xfd+5+vkFfuKIX/ozzGCli1EEGAz/h/3WV4zrFv8EvVv44/n464/4a4xwjAAyQ0epr/nScZvzfunfLN7hLbN/r/g38gn9dd3fcR4g7SlfFvz7+vfRh5UPMt6w7H75VHl75Pfyh+Vvo/7lvat4MPit+UPb7/PfIg6r3mlMSbn5Eqvz2cxb3HOGvXElGvMO8xbql/BTHR8+zmH5+zvJ5P/AKeIAPV++vkTbCkrgHl5+RPGjBH9grvP/MAyZ5NLGE9e/GZ6VUY49tLX39zPci9KZDf/JzssV2RHEH9o9RB/GH9rNyDXOicalzKXGHtnX2PHNic2gG5/YgAQALDXBu5p+WGtQN0VGicGKfgD+V+4I/lAqG2tAYU9rTmtbgR+7iRYdh1b+XceNH5MqHxYHYhNrQjoUgD/hX2tQhhDrUXuY60xxg5ec60JHEutDG1gbV3uYuhHrQhGPDUXrQPGWW0T7kwFbe5DEzhtcCYkBUq0FAUoADdmDAVYBTPubAVQbXKafAVIsBoeYgUhrGUASX0900YQWUEsfl6oGh52uXZdQD8Cx39wLcNyQFUOTtA8FX+HM5EFxDtUYawiAM7uVgDvhQoA2LgYeC8AtB1bhQYAyMQHiCf5aa1EHQu+IRxBxg4Ar1AjrVK/Ze44gAaNTSA0vUIABapivQIAQw13TFIJK4Awe1RkX+Ez4RAzHpdnmGWQQSxkIkKA97kr4BOHeo0ep0xgbxl1vQYgAQcXdH0VMXkGgKdJB1wdgV04KEALrR5eW61CgCEAhQVQBSetcQDxXigFKQDAbU4gOAVwHQUAn61lAIxtdaY1AKBtDQCDGESAtCZM+AhtWCBEgP0A+QDvrWQFW5E/rQSFWCYxgOutRYCyRA1lDL1PinQmHQCXMVOA79BYbRJtKYCdgKfGFQDZbXmA8YDjgNsNU1x7DRWAu7A1gK4QD4CSvSjYNegtgP8gCCYlAN2Ap4Cl7QOA961Pxgx1XHUXAByAr4C8BToAKxBYQPFXSqRNgLuA7YDQQMeA2YD3kD/gKEDABWPheo1T4XPhc4DVgMuA2sA8gJnhdECsHkxAh8YwQJxA2mYXgKOArAUMClUDIoDKjT4bbQCkQMbUNkD3uQ5A6kDk3lpA361wQLQFAG18QNOCXkDbST6XUkDvgPJAkxhJQPUDAUDsPiFAmYDVAMOAoMBgbUJAqFBqgIRA8G05QNUQQvVu5xhtQECMQOBAxQC6QOxAtUDxQKZXcxldQPAqfUDvGSVAhAUzQOmA+kCrQPweWQDZXCgIEucuQLuYb0CnQLAmFUC3QOeA9UDegLeA4XlReQsRO0CkxSH+Pa4mgIsRAMDCJiDAy0CQwOtA/2NGgJKSGUDEQNjAjMCAeVuAmkCXQIeA6CZUwI9A/l4CQO3GfRcwbXtA7kDIsB2BRMCvrULArEDiwIhAsJBQwO7YN4DfVyzAvUCawNNbX4x8wJttBG0gXxPgNG0CHUqmZgV7hCJEU20LBXNtIm1rbRodW20g7RRtYcCGbVKFB11XbRbAuW0W7TVeYF8HXwDeRm15wMHAhb5wCU8oZ2I2p0kFPfEC3g/tYAUT7W/tLNITwKcoH4Vu7iPAyKgjKHoAh+YohC9NSt16AEclZyUCpU8lbyVfJUKlAKU5UCClSqVvLUWlaKVYpXilF6U3pQ+lKIQ0oF4ACsBgpnVAFH0yZjylP8CipVKlQCD/JUClZ6UVpQgglYA8pS8tHZAvLTlQTy0lOCIpTdA9EBelTYBgAHelWn1rJQRBIEk4bzQgpTgCAB3QXjg5UEYAEKU6IIjfKIRyfVt9K10T9nSlJy5jwLxAE2VWGUSA5+t/CE/A/01AzSnNdE5j9QkNMM0IzRPoT8x8rCv1TBAb9RTNJLQH9TjNGx4oICanS40YzUf1dtxXqD9HV/U0zWagfSDuUjUYB1N6bk/INTFTxCPnM6dKz2UOPSD9TTUqLExEzVKISSD0vTkIYL1/CHI0S1VzxCq1IyQ1KAxwR/AD7C8sM9VwDEwUCKCdkAfQTPNYsBNccQB7DWfjNLhhxDS4Bd8s2GygwqBGzXkyBCCkIKYmFCC0oDkg1ZQjp0r3N/IHWDXNC9Be9G3oRSCPACKg5CCaHhUg65VLCidyXHETACMg+/VrII7lGfBnNGMgjyDe+SkVNDRoLmGNQgRQ9X44T8gB4zysDCwBIItdNoBzZB51G1Mb8W6goSBloOo9LDwjXxgpVUZzAB2g464g4B2gylplPQKOBgBgCjbCFvU29TS4TwAsgD59NvV1oJogdqIHoPTkZI4XoKMkEaoh9QWNDgpLoI/dGZNHoNogKCp/2zS4WVwmGBuNf6D05BATUrV/oKKnbkg4Khh1YjEEvVRhD4MTjTLzdbxTXF8KWnNVHhfbQdlx4gjBPABsAOLgHXNa5CBUZmV2RyHWFyhHbEv0XTxDQBg8NkhLJTMAtQhMdT6AHICHQEJwZ28dXQOxMFw2ORxhbsBCAGWSbUJoLkyZWBlq0EFgwqAWPXzjFZlDNk+wcQgpIM0ACmEBKEqkY1UcCmQ1EmRkgJFgB0AFYK8g20RRhDRAmJhk0EpAlsY4AGHEOVgKCGguQ19OVkFnA5wENAS9BshdPS1oOBsQoP+WMKC8pASgqKCGf3GLP+tpDXCgmYAMcCSgrA4DTUv0CEFSyzgDREASgPBqJEgW2BzCeGAPUi7CSAAcwlwAHMI+zmTQMoDbSQ5A5AMGkGZva2CSQHXSNXML0BvxNgAs4N1hGGcnnnnTPklryXvA54V2bSbPO4AQnDaAENVSEEp0PV9doNwAEV8y4MjYUHtK4LPAmRdSsWmmGuDXHE1fLiYm4JDJHfBjrlYwNuD10kftY8CzSFPA9l8+4MQAvWdWMDEgMDBh4KHJDeRqPVIQCeDu3ingyygYSCrgpW00jzuAUhB+UB58VeDg33Xgvj1GMC3g+Cgd4K7gueDD4JomdUBGJjPg9m4L4PE9BwBr4KvJHr474LVfUOZ54MXVZ18+JlbIJQBWMBfg8ZRjrh58T+Dy4O/gmeCnKHvglpcrHh58dUBv9zAQpEEdYMiwKaDiJAXgZHdEM31g17wFQI5NAc1/CAXFVKAr4AfpcWQELnpxVOVOGDEgm8BwWVEAKFkgmFoQtQB6ELDYM/AmINhvcqCdlB9/JZwUSQ4QisA2oNEAFjR1IKzYRR4RgBYQq+AgLFTg4oCYgBSNXu9jIJjCDgZmEOQ/SRCgQjwQPJoUoM8ILud1HlW9atMRhAwQ2IB+9W71Dk9HOAcg1dYu9WzNX2l9eEdsflBLRm/6GK51EDKySmBxKB9nU7ZQvHMZeFwi4PeWCvRMYWNcMBUyamlELNhEAEYAHF8uYJ3wHNUvqlefTOMxYIvgEClJYI/SW2oQkIyOZWCDOFpha1Uz6nBAJJCjjls0VERd6BoRdTk0EKGtU1t4/wNNT/1OtFSsWYwaSzLMXzhblAKuEkxd4ixAU8Qq5D1MWzkzzylMbUwu1EklZt8XGjt5ZqIaID5kcbQHqFyGWrk8TDSUazhQzCuwTwk31hUgPxdLnV6ob0CntlR0VHRXemloWVh/WAOfSqdjlFsdIEJ+8CyNBSCR0EluAi4Zbk9YAcF0ACRkdzp0AFbIC3J3zghbLAhZgCRkcE8rkOhbcQpW8mFuCMwezBAtRpCqJ2LgCMwt2DvRP043kOSQjAA4Ty+QjTYsjQjMK9dJngZffzBDkIhQ+XR4OSbuDLQMLBqUd5DCy2PQSiwhOFJgOfM1cwNNdUB7PBGQ5U47eWi2Vs4vR0Zgu3E4wMjApYgntnZgok5RJT1Hf38QWQjja9JhbnyQ/pRYtBZQ7JDhbjpPbO8sjQjAmYBubk5Q7O4ijRUIf9R48ioLJGQwsw5Q0W5KWVrORFDi4FFQzUtKYMouIyd9lx0GWTwHfCJQnoBLNhZdDi5WgN2XPFEO+xHcZYE1zBsAKw9zWFGQPBcSKAVQyc0TkPDpQk0CgGiVJZxZ8FNQjYgrEPGURPoWXzptZcCQX1M5ZwgtdAXFUm5XOzJNK1C6UMV1DwBW3ShQ/VVyTlGaZw0WZGDQgIhrUL51ZGB+WgQYSRlGMijQ1mMY0IKgYV9uRETQ4lUxYXQuf5DM0NJuNRRS2C1gRDhRHhmATgwsdDePKfBy0KrJT+k/UNaNX3tX4GUiTO4zgB4AKZlkYDPQez005TlQ2sBrUMmGSi4AdXynMHEjFx1QxZF7Z1sAGlDvG2OReqx4UOzgwO5cTQKsH3oJxB9uU/tdFVsAOdFn0WG3bbICNDDuKpUBRAZfbm4bnn2eJEFNEPmQ/1d9EKrPbssgIRbPUNcSxnReQ/lPAKvtUYUbhQyoRsYuTD8A19C/hRPmKfYH+WmwUIDlrXcef9DIgLf5LMRYgJOtPORLrETwP/lSwIAFHoCApAGAsQC0AAkAxNA3rXgwj61t7Rw+Xe1kf1/gvcCmHRbA9+56z0fAm/lr7X4XCl4qHXkAkH5V5lB7U2dzwN7gru09bXG+X5BgHSQdJH4nwLYwiIDhbQHA6YU253ww86ZiZlHA+H4AgMR+JsR/APCA9B0qMLuAmjCrWEs2dl9I7QZAs4VgAEs2UjCe7hJQhKQDANdWfhAC13u9bh0ohAw5dwxChEIxAFhFtm21XHYKND4lfOI8jCySLMJXWA61QYwVDUT1d1YtQnUQCbYrwlngHOAilF0oBZ4cPTIgDyFpuX2kOkpqPR2BPNIK0lznUj1FUXgAlcCa4MuBSxIPIXTOLiILumehY65lfH5xU6hIsInqMCIIgDC9DGUrXzc+SbE4CUMwn+AUEC8wgjQilGo1adEtuhywipRisMOUQoR8YTqwiIwHaiShBGp74UfcazCG4AbJUkh6OVt0Bi4IZTWyCIBACSIbBllybHtfBjCCsMPg2LUdx3ownuC3PmJmVdhpEOlAsfAysJcJbzDJzCiwvDD8sI3eQrDmJxI7VbCE0iKUXztKbHGwubCdsMPgn2lP6QOwjyFKsKlsU7DXhUmwhBCRST1pe0A99XJsZLC0Cmo9NLDzgHSwomgdTl8aWOlFOVyw3xU0bRrgurDSgFKwhLCiTBGwlJkTTlqwrXFbdCYkE6EmsI8MbGCHOg8JNrCgEQ6wx3xdc26wirk1oD6wkCkBsOLOYbCQmW7Je7CyZUGuXbCBZ3kDHRdFAwWwlQNC9SKA5bD/MKKUdbCYcOzYaLCfUKewsKA38niwtnCCNGOwimwKcP8VMx4a4NJBV7CwoQ+w4LC+PXn4GtYGLhghCjR2sIoAHHCusPxw2JDKFHdxddYlQTKgN6AwoUvCDuDryVmwh7DghUPgvolsEUdgZhl/ENq8KHCpISXBC058LmuwgVDnHxOwrnDdwL8eHnDncPhfeTCBMN9dVdhJzgvhSXUwlDJwzbCKMPZfanC7WxBuQU5s+S4iFHDjMLFZUPDmFwEXbnDxcJew5HMpcLrYd64QsO1wggBe8zugAHCJ6mAKSqRacM6XenDUEWZg7IDKpAvhJ3DAbkTw8OUKdW2wqnDD4PyRGvCXCRSRHApnBkLscShkNRK1Bq1CAG4eDDVx4EqkIpkr7A6XfL1G8KaFVL1rgOrw23Dk9n5pDnCAiAXwyAA6JFbwhNJXkzdwibDzsKew/UszZAzwz3ws8L49OkB+ECYuY6CpSjYuZNdKbGlwkvRjrlCwkCkC8Luwn3CJ8NNBcx4A8KseBOlRwhFwlnUPcKbPBp8BcLnWMKEY2lnw1wkSgxTsT/CrDQTeHnDFkVXw4Ail8MRJIN8TVxlw8T059ks2TLCrIUxw4QBscJKTaZlC7HyZa7D7ORTsRHYwCOjLCPDnXxqUVfCXcMdhPfDb3APw8T1LNil2VAjKbANwneDjcMpw33YzcKngC3C3sKxVaAit5R3HPLDQcIXgjBEmUO1sIgj7FRIIvWcyCKAImhEnTFEIqQVxCPnYX/DysNrwwBkACLVaIAiXtj4IkHCYsMEIqx4JcPTw7skr8MFfcT1QsIWMGY17lwYIBgjhcI3ws7Cm8J5w6bCx8O7gk3DYhUWwghDR3xWwoAiKnjrwmxUG8IEIgBC9Z32woAihcLGw6winCNPWeQjdCPdpVnClCLWwr2kuCNeuTPCUsOo9TWFe82rADgBBVDggSwjgiK2w3wiadXsI/jCn8J0hbpdXCI0DKIi1sNIuDbCJ6lkIvfFwiJtAAIi/8ITSJdsksISIz7C+PUNZUApfsK+of7CwoSqI0rEaiOOOUApjWVKIw7DlCKaI/fCxEk4lIc5CtUW2K9AeiMew2LCuti35UjpNLimIoLC7Mj8wwLCaCIvgH2cFcJaI8T1tiI9xVMFUsLOxfnEOfAOg6j0xh2atM4jD8L6AHYjECI1OKuM3l1sATIj/p3VqZXDOsLxQJYjKFEdOAwjmiPGIkhxxrW9kSsYaAPIwvR5QMM/Qha0GHFIAzh01rSYAolgtrR/Q35BOHUzkJl4psHf5AUhP+V4AlTtxoDdAf183QBoeNKA3QE1fMVwugI3uajhrQOEAh61XtSGA/cZ0MNGA/EDPrRvGRsCLQObA0UDIQMww6EC/COjAvhY8EG2YesDGSNoQc0DhQKUwqV4mQI1At4DZXyrAmMCeSLxffsDlQKZIoUj3QJkAssDZXH9fLkifgP9fPkj7gKbAvYDo7TZIpUiEMIhwfEi1SP1A/EjNSOTAlkj/rT1I9QCWQIxwIkjjSJ7A2sAiSM1I2TD8hQ9tQoVWbVcFWu1N8NsI4TCubQJtM4hPSP7tHu0AyPztWwUMHQDtZu0ChWLxD0jQyJ4+bnDnbTkFFL4NwPdtVe0/BWrtRO0vSJsIsIj9wPvtZm1oZS3db0i2CMIw1kjCHX1tHz4UhXXtZB0HBANtUT5gvnDIpu0m3i3Apz5KyMltIN4F7STIksjNwKjI3O1S5itlQsi/4JzIzB1IHVcZAojBMKYwk+0drUkwwICOMLIwt9DRMMztCB1QfiTwhs9FA0Uwzm0avhIwth0rhWAw7wjb7WkwkW1DwM5lX3Do5V9IjcjvAKrI7cizvhGxAEUGSJwwyB1DA2PImMtTyP6FB/01MPIdfF50fn7OYEUflUEJEIhhCS/mCEURHTngGEUSEKAWKn5AJGkdF6hZHTdFAwh0RRRMTEVgF0HsdR0b4OudR9hSRT5+YR1DHWF+Yx0CFlMdewhzHSUdVZhKFmsdBpsbUXsdVX5WFir+XkVdfm6dQij8fS8dfx1xRW8dK35AnRRcYJ0HfnaiYq0VRUidNUVonQ1FbRZtRR9+PUUDFn9+ZJ1GFFSdU0VP+nNFCP4VuCj+HJ01ODm2TEAzDBFYXThFuAdFOcBjuHcWYWJ0/lSWd0Vs/k9FXP5vRXz+Gp01nQdqep1X2RlFXthQxTngOmcMcVr+aMVdKNgo5v5XHXmQnp1SCDyWLv5+nRX+ZbwPKmGdYdF8xTGdQsU6lm7Ycf5AxVP+ddFZnRCo7pZFnUidOsUhlhMonyimxV3+TZ02xUXYRR1kqL2dflYDnRWWU/5jnTY4QcUznSv+OZCb/nHFZMQ7/k3FO50OXVHMF/5IEGedRcVXnRZkNcVWXSFWHlZKqLeWH509AyrJL5ZwASPEAF1oAUBWb8VAJEQBbURbxQ/EG8V0AXvFbF0HxBwBZF0XxXwBdF0PxUxdOAFEVh/FTQc0JGRdagFcJEJdegFQJQokUl0WARHuSl1WVm4BLiREJQeWblZIBCZdflYdUPpdfiRIBCsAwiiuXShSHl0qqyFdVtASJRlWClF1N1VWLQFZ0CldJdB/ey7rJiViTRYlZV0LZDVdS1YR1mmcH1M3yjFgYUBik3b8B/1NIFp/OjxKr0GCJD9DlX0w4pwULgynAigIsT0gbh5ssQvgXh5x4F6xQR4coGeZayV/Xxn1Nh4aXwSBESCLACJIwmsbXSyBc192yP7mJ10orG2YRZCw4IcfKNZFwJjI9MiC7Xdwkzk1Z1aBTKBkZQF2ZXgTH17WbfQ8iJHIkoUXCKZw8oC3CMEtPP8GoGarPDRwKWlohx9Jqlq5bfRsnw+aTR8pCBKfOwJhk0OReGdcW2QQRPRjaPGfBytt9CsCY2x0YX2oGWjHaPEATXUrETAuIhNxGi9faQo50G5fbfQChw8AFlpjaMyZTtZ0gOcJBYESvReuNRohDhNlOSo5HnBBGQ9NCJ8I2GUKZR0IkJUrYJSZQsF7SX+5YHDU6NXIqbC8wIBAeOFUfRsZbQxQn3ZOYZUKHSaocG8AvH98dYdVYyAydyFDaNj6FOAvIXjQr5EXjntZUgBHWX+VT+ZK6LZOSD1siGg9D1lgLG9ZE3BEPTKWJFUTcFDZBelVPXpXTD016QRnUJDOqOGxOgDHCNYIhYU0jzokN5UjK3l2UGChD1qAHLFMXy2eKalDQLEmQrEHyNHI6w0d6MJZcDkUECyadmFt2RIzc+i5A0laLOjpt25VRtp9UQs9NxJ+VTiZGz0EmTcSTslYdQNNWh9mUl0kKZVFsWWxVbZIDH2KNQADwDxrKlQXZ368aZDZNk3jYHRm320sGZDXPBR9D4ZGyl9bUECzAiXZcCk01Rbo02ibulxVJRxO6NWREY4e6L7ov8iAVRxo4eixwUmOMw5YPVhVHLUB0SnoltEZ6NeOOejw2WnVJY5l6Lj0VeiOZUSxR8jarVMDPeisOwPo/iIj6LUfAe8xGLfowKkGek/o6BsCjnM9Wz0B0QAYgo5BVWyIaY5QGNOfR9dA/z0BXS4XCX/rORUGoGRhYfkj0CIqFopelUNpNg8DwCf9KKxttEliTjQlTh5BaWpJLBwndDcJn3IYwBZLq0oYtuiL4GANSp4n3zXo5rF94MUDaRjglV3ouVxTD3kY8cI33yUY/rEqqS2uaal0bVQGUJiiMVu0SykDE3UY5ips6O6BXOiZ3z3VJOi8qKhAdaARJwhBDYYBfC04V3JD31mI8mVD4Le5DJkRJ3w5ftV5yQsY77NriVgREIit6KLtOwjCwEPDLEAkZD6eBDENGNT0RZEVclaYwa506M5Iipd55XfDUjdRnmuGWKwKwiKKGSAJYhziHYFEli1SBZiehU9w0NE4LiOZaF4jp1LBIZjRcJGYsHCzmLcJGHlP6T4XZciFMKmwmJFkeTo0E5R1j2J0AY8CmOqpDHlRVBygBxjYw3kyL10CyKzIgci1Z22YJ2UQQ0tnP8cvn1R0ISlcmJbQKhiLaIC5RrUnSS8hRv1sMUeOItCUWMZOBhVaGNv/EHlEbhYVaR4QEXxYokQCWKoYiJj6vSXZBOkOmJxY3tDWWWq5BOk7uWlzdljsWOkeGbNNQQlbYpIDMVGoDaI9inbXHbgXiiVbeCAZjGuMWYAegEM8feRiHUVpT+xwzGWfOEF7aS2MFqdsiLToqbDIURK9SjoSvQYyG/ErEQlEdjF9X3UAf19fwU4YKqth+W2RY5ltnnyXRLkXnFojBGhraKhASHcenk1UO2i2OCVLJOi6O30iTagtjEmY/7l/aUPDUZRAs1MKLI0HCPZfBnCGSnrwfmUsrmqsHclTT0guJGQNbBtYhM1RhBXfO1UnLmIJRpcbmK/wv3CM6I1o4o0/gUrYIR4Cv1XiIQYYam7cT1iW8HmiNbNVWwrY8zhxKFeRP/VNGFCuTVRoaU6eJXhvWMaaQz0O2OBYho9ZpwILTAAgiQy7ZzoSCzOQrrc02Nl0LTcpbBJQUdjM2IpsTag3AjsYwN9r0hVRBk5ZW1TYvnRm4L+1RSk9IDsDZ5ACAA3Y/diBdyRY2WFvmKupC+ij2JPY2nQvmI9Jdq9D2PDuQ45q+TgIe9iL2KR0Qpjr2OfYkr0LKQDGd9iwoSBY+qBsmJ/Y9ICHKQA4pA5oT3nYlON92nG5N2jnaLF6N6hS2CD3eQ5c6PtYyTJnb1P7f6lF7wfXeyldqRA48Axz2MA41REr2KSpWZMWriI47slH2II4ijjGkI/YhrEAxifYwji6OOI4gbFJoBA4zjlcWJU9FPRd2M9JLX0aX1/BJNcHVx44keDr8LDGIkjBOMrfFt8ROKHJVP9NExxg0L9is0ZYpRxo9WU40hVmWMdxbR46zzDwx8ilmNyIsJ5HwmS8CWpeBjAgScp+bGDRbVCwL25aWOi3oTyVN91I6OtTajlyACdYhR5YpkB5fZFnOLQZEp5POJ7YjWjzGh5gm1EKjFXQZB54SRD/UTkhAA+WHGi6YRfo1YAIuNipWeVTVWpNPdjXOLEmbtdeniDY2NEsOL6Y6NE84I5uUp5nQj9TQvklExauTy5jeXBBWxiOnkKeLyV6KhauRV8HOPAMR80L5xlofzjRXUUxYVoguOEgjuh7L1pBNcoanCi49JDXaS2eFrEBd3AbGBBuTUa4vFiM0JOUeDj+A2lVIlEOuJC47riY5gi49VZB6Oi4wbiSM2G4wSpO7z/Yie9rj1GwgdlFOIj1RliXGNU4h5EmWJ5YvLYtOKR/HTib6OEmPTijxx1YiOiR9H1YvpEcPXG5Zl9lIE2g8cBzWOhPFDi50Peo9DjoTz7rPpj2lQaVW1iX0SB4hTkNOCdYmtiZDHdYjlsXWL+5QJFfWIXomzQA2I1/DLjXaRDYoCAw2NPLCNj8iMVo7ro42KsRVHR8f0qPe5CSnkL5EUUM2KZqLNju8W0eSkxjmOfwmuDKl3p4hxoyW32BJ/ZyJUnY8xjp2OFdXrdAcJs0FdiiuKQvSmw50hPYz/9t2JrYK6FNrmPKKZlj2KhPHk8wdxPKXzQvjDApdGwnaKrgRDjN6AQZN+BXuS/Ysjj2w2z6Ak0srhm4hp4ILFduc1VP2IBYwN9qiUT6TzjsOMY4lLijFVbYvgMkZGKeVNifOP+5fY4beK2uJylD0K4if5ismK7YnJienkx4wJF6X3z3IPi/eOQ/Bo9bnkg4mTjz4LuI/EjJOKy/XV9ROKMIuxotXzT45t8L8JL0KBt1TyCYBTjDaQeuSnlXADsUSCY84lDg6gxs6XWfZDkSvRbLLXFo6MsjeItfENYRd7isrlbok1iYYT2Ijujc+IsYL0YcwBBAPZccQG1o6ZDcMnzDVBj5I0KXabjs6T14rqMiuPczFSJRzDDDCoMRnG2pPhh1f0XRL3Fs6RLRQ1BWQDkRVkBlEQ0RXREZsVvRDNCzQzwoti0d+LApPfjCoAP4xRE1EW0RM/iKaPQpNZl+X0z49u9JjF/BOfjIsngoNrwWn16xA65ZOJtTP/jauXTNDhBV1lZAbM0rghuCEQ4BfT63EcRq+XTY2qjY0SNQ0FkzEKcgrPR60MmqbRpqTmUvEbdawBK9FYB96Fn7I7JMDj3DV7i2zUGtfGJeSJcoG8F/iPcAju5JrUvI6t5OHXBIxaxCXmoAtgSUfngRTsYJ7mYAklgoSMWCcgCwMMeITgDWXm4A+IDZphJIq6xN7nZIwAUKSOFeKkjUMOGA1606SMUE28iXSJ3HWJiRaIgI58iEHShQegCZyNQdDeiFyLvIm+5r6PZtQwTfkFfIrcjSAPsE/cjeMNww27idbSvAzG0zyOXIt8idyN3HSjCeMIPAvjCFaK1Y4sjLSNLIlYV30J8Eq8ipyJvI7DCdBOJlH4EpGPHI+B1JyOzBMQTTBLCAtITvvib4b8i/3V/Iv3B/yKJ+QCihVlEdahZYRSnEYBYIKI/VGR12nXkdaZYEKO4XNR18RQ0dVCjGXUwWatByRQZdIx0j4BMdTfizHXpFOiirHTl+Gx0yKIYWBx1KKOadHX4unTcdOiijfhp4wBofHXaGC35zwkkWVijMtnYo0J0uKPqWVUVj2HVFBZ0vfkEo+J19FiG4QxYOlBSdUxZJKNj9aSjcOEj+bJ0VOFydJSiBkiXoVSjE/ii2Ip0tKLT+TxY5HT0o8voHODxZTZYfRVsARsUQlhnrMKiGnUCdJp04lgjFeyi2nUcokIgD/hcotQgYwI7+VMVD6j8qKZBvKPcqXyAFTwLwQf5RnRV4IKjPCBd+UKi+xWfbYGhIqLn+fiiaxSWdWcVMROCWdZ1xli7FdsV0qN2dLvJuxSWWXsUjnVg6AqitlnVde0whWFaE1qjpxSqo5/55xWCYpcV6fDedOl1PnVQld5ZdxT+dHqjnGD6o48UBqKmooaiLxRGoqF00AVhdSaiEXWmop8VNhDwBHVo8EAxdF5gsXT1EwCRcXXWoqgEAJS2oylYdqJJdelYDqLYBFlZOATZWU6jeAQsoGUS2qOuo4qjRxTZdIVAAe2P+J6jKYBeovl1lAWIlQV1+XRnY0xjPyx+opwcaJWldQGjet2BooCwlXUcQFV0rAQhoziUwETD+SBF9RGRoxp8kP3hgUhAdlUFOKiRJJWbFAmUWVB1iLspytGjbDiwaHibAUggkaP0w6yU0oB58BwAODzQguREFYFp0BWAjVAVgfh4FYCEeXei5UHYgscTuINgghmjnRmCcJQBSEEcmbNA9EFEABWBwuz0QBWACAAAIVANzAFQDQG83gGBvBWB6/zHE9iCopSnE7y1Q6GilXiCZxI7EhwAS3UXEnCR9bz7E8sSFYGFBKOArxMmApflgQJ1IsUiCHibPWNh/CFD1HhZQ9Sw5BqCZIQY8fDlU3Fz5duEDIOm8CVUGt375arUnDSw1f9t++Tm1EDNkJNEPbHEq9DNJOL0d8BvEhEEuEKDUHhCp8FjAOcTSEEIk+IsGpxvEkt0KJL77JVB6oIyNRkB8JNjAFSDzgBGgyPld5SrzV+BmeMKIuwjFKHqyBJDF9ygVHiSxyL4k2kAHGKGxGJjN6NuY7/CM6LokNGD9gQoxWQM1GKYXGIS3mPMeaRCOQIvhYyDPQFIfJSTD2Mkk4h0cHUfI/+CpsTv1dSkH6MSgLK1DuLxggdIlDVWaA/VGJKagzsSaJMnBNiTAeQv1N9cUjTEZbiS82PAIzd5WeP4klaD7KVD1FrEEX28kge9sclsk9Gp7JKAyBiTEE1YoMiTWJObgDySueWDACE0aITR4p9QdILBPDQA39T9Y0SCUzQiHZXi/VF8kzViy8J5w6nE/gU5WTQtdeiJ1Rl9O+PMk3dCuPT49UQBT8NLBT2klqDylLLFvtG4eEmiCmQMRBxBdJP0pCIkU6JYXfQSApMLYqqTyKEINAXd96TgAbd9RPxTsQzol3xyghskAPylZEklTYV2Lcd8530nfbpN+kzPRVuFP+LXgsj1qPWRvdqTs2E6ktgIepKtUPqSasVJowaS6NAUQ0aSRJL/eSqSfgS+rCQhMAj8Yaq8LlylsD4JkbxAvVqMMq3X2Y6T3sK/44T1xPQPbS6T2wWuk7qSiaOqxRgA+Hiek4aTaBJEIvyToy2jYmnVppNWAb6T5pOq7WLtau3qbd08b2zS7cKANkOKJJLtVT21sOAifn2WUKrsnf09AImTyZPi7UGSMznBkgvjIZLE4vj1wu1hknDlhlALwG6TEZP6k3FVUZLykkaTVoTekhrYPpI0eL6S5pPyMQmSsSJK7EmSKeOpkymSZiWpk0k9aZKBhD4JouyVkhvAVZMl1dmSqiVGk3jjTWNiQgAh+ZKfBbGlhZN6kofCHpIGkgMYhpIlk9GS7sMxk+xVsZLqtT6S/gVmkn6TjZC6TSGs/zyIEpdlNxM09QOTKK0krA6STZNpks2TuZKz4y+B9oPhhG2ShZIRk+2TiaMdksWTnZOek1I1XpI9km2VD4Nxkv2SCZKnxIYBMDw9MYOTybA+CXg9STDLk7yw2ZM1o02TVoXNk3viNTj3E0QAOjGtk+GTOHnTkpGSUZOzktGToKWlkyaTlmJtAIuT8ZPyMS29J0FEAP6T8YWrk9uTgbzgAbm9kIjtvZ39MYBjk2lk45NOkxj0+PXr/LuTt+i6knuS7pIdk5GTHpIHk12Sh5Pzk2RdC5J9kmaSJ5PcY2eSToQ+Cdv8/pJYDI6St5ODff9FCmhvBLFV0pNpECGED7GCkk4tl8EUNIlJr5FCk8H56RCAkrBE0u2bmekQgeW8fZv89ZE74+kROuT5Yva9doP1vHaDh5K9k5idT5SyxfZUHEEMko8i7uOkFJs9wsSwUk+jBshwUqbD9dgIUqjN/KWvY+aSjN10SGhSecODPMaTk8Imk3BT2dWNvBBhTb2b0QbJeOOOucm40q1TBNhTApNWAAhTkADSrICwJGOvI8PC76OkUljtFJOoUq+TSsR4U9hc6FNEUmDVsmOYU86dWFPUU+bDD4I4UiRTC2PRTJnijFI3eTRTnX3x5c/8SLQZaIRT45Ok9cm5Gq3EUqxTnCMLY/BTXxKIUprEisUfImojwsR8UqhStMjMU0eSp/TJuQU5Gq0YUpKl9FJPnUYR16N3IrhT+yN4kmuDPmNzY8qTuFJMUmD9LFMyUlJTRJJrgixTOFJXIrJSecLsUqFl+FLuAT1JBFK0yS3lFOLqgoWT0OVTknTlDpMZSVulrig5RB1ku6SdZLo4aOVYY9sFR6OHYThjH10NRXhj0UUNRQRi+mRVfeVFRGIcvNmi7AnKeGZig+zhfMqS3BNVnSRT4kLmyQNFhJI8UyfCxJPBZTKA5FKhgRJSwpICUu+j6RBCUrexlJPKmQniQhKVo3pdVaI3k0vQF/ViUvxTrBIPgp7CWgXCCSySrAyhuJNkf6KKOFQhDUT0YhVwDGJsJEBjMAN5INu5mBImtH2ReBMR4fgSfAPeEb9CgHR/tLuCBBMEEuEiWAM4wtFTYEJMEpOgogNRIyQSP+WkE061ZBP4A7oDBAMWA5QSJAFEA3cZ1BMkAjcDpAOtI2QCP8D+lOIEG4OT3fIkZxIHgpMtQnCagjlTWyAXEhBhyJDIaCuBeVK4meFsLXT5UyuQSLXFU6VSuJjw5eHUFVNCcBBgzb3lUweD1QBjg1k8VVMrkGOCeVJVU6aUdVM1U2VSxVJUQJeCwMGNUmVSRVLNUiwALVIrAckl7VMrkCNCK4HtU+GB1VidU+XlAoSgeE+DGQE9U4mAXVJUQR+DGJkZAY+CefErkcolxVJDVEBDGQGDU51SZxKQQ0g8PADDU2VTyJHVUlRAgEJAQ5N17RgIoDHBwbDvrCHBYwFYAHMYgJHf/HHwMcFsQzkCMcGAkQq0IcG+GAtS81JIAEtT+UHgAVlMIcAgkFL9QVlRxWVwUkmMjCHByEFnhA4En8yE4SIYylkgeFRAlAFYmKvI2gH5QISYvwJWARNS4b0f/N0BF1MrkVfFIAFXUhBhR8U3U4mAV1OQQisB4P2jU1jBK5AzdTNTj1IQYJfEz1NlUw9TgEPPU3dT4dSPUqcZfVPl5ddSU1OXUvuRn1MgAYOwn1PDUtVSf1OvUj9Tf1PvUsNS3QH9U91TQNOXgpdSC3Qg0y1St1Jg0qDTHoXXU+1T4P0NUzjkJVK1U9dT0NL1UtDSVVMw03VTU0JQ0zVSh1NmgBEBWJAjwIWTMgTWcNKAZ1LnU/ao/s3XUkZwe8RGcKEtmNIY0u4A2NJgBHvEoSxapayVGszeAfEhfqDgXdKBeAAHg9kBRVJlyPLkTjFcaCFlym0RAVQsEIOTdaIF2QC77JKAJNK+7CdQZNNu/OTSL0FYuMSAjkF4Ab/d2QA9Sb9TtvD5QHKBZNO4QDjNK2DYAVQslAF4AFiZ64NbIdkBPUjU0szTiAFk0xZBfIG2HGzSdNPs0txxL+14mMTTXNJNjDzSpuBTMDvBcYVs0vzTHNKyARCCqgHZAAixUvDc0jzSTyAPBX+JqK3VUOzSHNJDVLIAl4KOQUhB2QF9sCdAJ/E0gDmImYClAa5BfNNi0jiZoHgrABLTgtPM0ok4bRR80otAstPs0oEkefCEmNaA78DUQMqAGtPc0prSFKPcolCA+e2zWPTSsgHrgo5AjkHZAEzSktJNjJhApYg+BABIy8Do3C9AYgXomIVSnZDuAGOC1NOf8YAAD81SgY7CZ1KFUoSZGMC20/CltvD20g7SegHNJJVA9cArAKoB0KwS0p/9tvBa0u7SHtNIQHnxCtNm0gLw3tIbkMSA7NMM04mBLxFe01QsNtNYwdUAqgD1wVjBgSWJgMItQdIvQRF5+UEEmJQA4HiCcIzTitNS8IdcB4NYmLV80dKc0k/Y1NMbRa+QB4KyAdyUxIFFcZzTV8W28bHT+UGiBMnSKdIcAZ7SXtKx05ZFr5DZOPTTqNNnU9UAttJ20y7T9tIKJVKA1AF/iC9AQMHp0sSBjJjccL7TMLDuAP2w1NJAwCdQw4lOHYNAlIC4AeuIi0HJ00VwJph50i+BUAHguNTS2vHguOgw2vBV2C9AjkFi0pQBWyCyAfbd3JR10omBEtIC8QcRi8ARAepEGIC80va4GkFULc3TeAEt03iZv9z1wC101oH4QciQbNM1sYPTQ9OGNInS4Bk1CIowL0Go0isA9NPN0xjAIdPVAabSL4Gr0c5ByoEUAUFELiBRk108eDWIcRAA+NNnITUZJ6DuAWMBo1IRyHGxQ9IO4S0ZIIzTRKbguQF4AGA1uAGAkZAAMoA8MXAAW/HQoQLUIJEqLBeUcKwrASGA7GC5AMSBdGBMIEDBNiidzLkB6SFxoWlB0EEC1Eo0wQDSgMsIuQFIQRSAhOBX0seAP5g1gRU5yA1HoQLVHfGsAU/0LGRnEqoB7NIRBfaZv90OQjHAzi3VOc/SzRkjGfvwGmOVOAooCrRpVQfNDUHCXdGo2vAbNMJxa5FfgXFUnmSO0deQKREHzQyVf7GGiMfw90VUQH44kAClAIiFrvDVgM7hBPFIWHlT+UDkgLIAQMFbIXwFd+iLQDHB4YGJWdkA64Ibg6+QMcA9SIgz0oEFU4VTCdJycHZAYfkoMkgyhVOw0sgydkCxsRgzqDMrkLGxWDOmlDgzHNJoM6aVWDK8fI8x0NJ4M7kt2QHQ0ofE6DI9ScQzlVM1U6nT8DPoMmQyRDJVUvnTFDOmlWQzJDMx06Cw/HyPMZDS6DKJgVjA9DMg0rgyeDKMMrcx/VKkMxQyOYHMM9kB7VPnxOgz3VNsMws9INPA0xwzSECPMEDTHDMYwI8xg1KEM7V8tzDPUoQyefCPMRdTC9PkAz8TG3nxAv8St+X8IJgyCtKoM/gySdJVUiQyVVOSM+QzUjPkM9Iy+VJjgzIycjIUMpVAtDLyMyVTtDJcMsDA7DMg06+R7DIqMsDAHDKLQMNTCzhPg6+Rg1PZAPwyL0DPUiQzH1IvQRdT2QEXUknSj1OzUzozb1OzU6+RJ1IcAadTudLSgaGwp1K50udTr5HGcGjSq8nZABYzJjOvkYvSBNMnoRBo4QQ2MzBIi0CEOMcUeEAkMjAysDJwMl9VkAgv02B5wgQrAAnTz9KyAS/SrjKCDe9BoVLIcQEisXlaIHsZnwPRUpFSmxhRU1jCf7We7DFTCWFjEYQScVKzSAEzGXmEcXTA0SN/IDEizrQRUOQTYMIUE/UjerkQwwwQRANUEiAUGVNpIplS2wImA6h1nQIFI10CUwI3A0UiwwJtI5ZjJSO5I0YRdJHG7FVpbgPP0HeJYAwJnEPpSn1iKI0wNpHgMTMM0cGXQEhZa0HdjM4AojE1+GkJz2G7sMikspFpMnABqrC6TCBNCcFs0CrDzxE45RdBD3E1ibBFnIKPxKR5EBNsg81hNm3seSlwgGQTIAyAPYVBNIHdDTLy6Uoy7MkNMu1YVVgmuS0zKJLXMBk1jTICIHhMRUOUNMviqEnAvdeVvqI+ogHje0HMYl69lkjHMFlDGENGEdENU3ByVE9CMiEeEI0ziVSEueecozJJrfagBJ0ePPWRbTL51WMyxO2VUdEA4zMtMhMzMzMZQfzNYzP24hk1ALUBeUqI3TOZSTAdDvAJg10ZBVEggBLI7xnvgVvxlgx/MSuQJ1EpMbGQT6BRJLOMQTT8vW0k7VngnS0zK5HjMs/MHTN7Mj2EwgyjMidQxzLEbTnj4zIEuB0zuEyHMwczSogpNCR4j3EPzH0z8LEpkGUy/uRYANwCXjMxeMawT+VRUsEzwe0TAS/lISNBM2AAZ5CkwmEjMVOBM7hw/vmfA9jCCVMOwaEzBgFhM8lS4RERMskjFBNRM0sRKSNw1NQSaSJPdTQTkTMHIiMjGyO7Iyy1lZxKVEcCPBPe+WO0ayMJtWCzrLQ/kZO0PRFTtFCypFwdeAITcyIXApsjRBRwsrr14yLbI6W1F7U7IlMiN3WbmTr0bLQmk2KZtBMEFF9kqHBTkGwSELMMFb+R+7XFMWORL5HrIxciKxCmsVqRWyPntciyOyLCEjaZv5HZtRiyH7R/g0hShMPYsvoUfkC+Mi8iPjOAdZSz3wI/EhyZl+RFAhYDfxIzo/8SL0HOIQmRmFSglDODzLG8sCCoNx3ITdzokzAxQ8twlbAEWLMxKLDwsOCw+IMt2C9ABPRd0RSAzo289LyzeIBWQlJkm6hh+A5oEckalMAzLABKYig4GILO2bbxOUibKUyw0IGgAPyz+xEW0m3c/kndLQCE3gHQ5ON5vCQNQ3BNRWXh/UMtFEJZNBh5TlCx/YVtOTTx/RmkwKDU0uKzUrDInPYysnkys5xkHtias3Kz8rGouHApaJ2Ks4VwbGCdbGn8WzzQAjACI2E5/asAOJ14KCNgeTRis7cpbMVSsCACi0BB/ZqyeFkWs9qzsAmbuPqzky235W9DzWwdbVAAhrL5/MBSL0EnhEH8eFmOs6H88rNH9TlZ6WgoOWADdrKdbfazUD0OsotBJ4X9LU6z6jX9LRKAAzJl+dRCoQS1M26zlf1PHLJ53jhlcbbxvuXNXHTxgLmHqVuRDVw4ALJZobNVxIiNVVlUfNpTWzGXQlTSNL210e1UcuVPLCqCJjy10dTcutzD9Kxi+k0eAblpU0FXQzONAK1JsymRRDlXQP3wLrJ0IemzWTzQ/WFNqbJxEb59YTkZAUmzZ0gqg6KzNGL5NA40UtEn0PUzr5C13ezYNKil3VlcBBlowIUBlkmlssHxteKVzOuctdkgGBWzGQALQgDZ8YlD1UEc+dgXgJ3lhDSmJeWzZbKesgLxDxDYAa0M+xH8DPKpEwCbWYhRANEyARvgi0FnEMppsrGagQvASFksszIBtbLtswS1hQB1shCVxZHkiCWhtQDq3EBB3VOqVEGznrPqNd0s3rKhQd0tPrLWspFCgVH+skxAgIWy5Eb1I7IC8ReU/oH04IGo/DglqOlQnfCQZXBicsAvQRoczuR4Wcuz4QzQEQpEZhG3oTtB6bmMtOxCoBFqUVVZnbHEXTK5JFxUFOCyVwNa9LazTWFETaayvdyUcQO4x/E5GXWAw+XO4eLxDLKUcWF4LUCGwHhYGFTnssez4XG0ZLkQs2AiQgzghKUQo8lx9blNHALwSTByHYudtlDjGOjZcknG8RYBLyiJ2K4c/skM8CEB9ikxAE4FxQjU8V+Ah8k31eGxp7I5uXeybQF80KQw17N1cZVUY6Q24+RVTuXhDb+yq6jPhb+yv1VOguTip8GtRU6oAHOak0XRXlwXPb+y6UQgckXld6H1uOlFoOQuOaFCp8BQciRFwHPY4TBzEHJZY7K0k/AN8NABwHjI3GYJloAaUkfioUA6RZaAmlMYcqVcVIATQQ5F8rB0uYE93iWZ6dytIAD9sP2wzIKTMDwB0bIyIKNFiTEVMocQ8BPgE7KFNTI8zS4kkMTEtJLRSMwWnMjkiID4YBEBYtBJRXOjRHKAgZjQBnjcGDrwnrFyNPlwnGVDg5xdhLEYAbgBb1V6RFio8AFfgDWxd4MxIPQT8lPek/uCj1NLYJMx3Ohcc2eDHyJsUvWc31MaeTZDKsz8cuBCAnMPg4JyqJBRPehcrECsAGqztvFy0EExxZBMwW80ZFHKHBEB/MOTAAqAH+wumcqAPAHrQS3Co7KhQBeB1HljsnIhDTKFLGq88EEwQz8gMYEgEhm4sgEsQjVMTbMdsc/sIDAcQg2IqwF3YEgcCPHUAGH5ogTBcPO5izV6WEZyunKgEB6FUdEopFJlWIDeolQBOVn8SQMT9R1KgaTlBUTOfQqxxKEksj5SD8UtDNAQMcDCsw/89R278Fs9yk11zKZyJGUxbM5CPwATSACwHoWfJF2prNxWAPD8zkKN2Qo5OuRYfezgqtERoVj9EvEFAFABtTCj4WHF2ig6c70ZjcQG0roAI4i6cw70lnP9wYs1LOXpYucMbTyEZCH1H0UoINNCHIkRkW+8DIm28UFzizR4uPKRWfX08G+zXqFVxYs0mGDGcslyunLBgtAQLnNQAGZzA93mcxZy0BA3yGSp+8D+RW5Du4AehAShHyBhkVdAsLHQAP5EGp37wcFsGG0EbelzuTTMg1S8G7PPEQVypWBhbQ0pi4GecigApWDOPTOzHbDBsmzFx1Cc1fDcoakM3YZzVcWtXFqzPCHwHI1zJnNrQ/vBNnNnQbZzFAz92f0E9nOWcg5z6ChOco4xEoCmswWyTnIT0WgcE0nr0EWyL0D76LJYr0LPCaidtrMeqe9CS3zac83DirSjcw/JkbODcm9C9knVGBuACCCqwUvBAkLcg5etUAE1BVkFU3KtyVR9DHIS2bbx2+DrgDgAndAS8NQAGIS6hQMcnbM1CKFB/clpQCMVa3NyACtzASC6hfKwdP1WPFmzhqDbcjqDYQFmjKqs8iVCcg41XeQKJSkx6e14xY6NbmFYTK2w3l0khbqEMkLwQLqFEnNS8XMTVFAxKDpJ8ABz8NGN1/GQQK2kOACGckpz7JnmBJTTcNmjsr2logTIgGDjE7OLgJi5E0nXc2wB1QBTjdnYzgGiBAS53VOXcgLxV3PRKSehMSl6ALdyPUyhcq7AuoRCMw9zgPIqc4DzL3POQT2z0ICfc14Af3J00R9z+JWA8t9y00PVcj3I7EMKuNXTOECZgMEA1AAnUU0hMwCc7Ey0ReUDAdOIzozsQkjysPLUgJw1GriHsYUI8KKhhbDltxE5cyuhtkFTQj1IPUn+CAI8GsRHubg4KJU9STjyO0j51SQhdPQokf3EtTIpgoezQERgU0qNv9LoMPBBv9AVbC9AIFM9+RCoYFPrNI/N3qO3oUCifUFwAc2xzYPa0YliYDlksonjwlP2MtOJxlkGVbEA3nPwc8jQ9PN7QBL9KHMYczrQRKVVgeMxASmVYomF+lHbDEIYrsGrMS4iI4PtkOAB4IHP0vPCcwD+SDt0sMXcRIyQBP2spdsMIZWCqItox1kRUACNa322QAow0IB4MBxzAzMsY1ATi4GFcl4x8wzllIip55wTIG3dXohILH+s6bJlQwXjM4xPQlIsxenBNLuEbdy9o5DF172ChUASwGPxstjlpwBtRXryMS3l4ilFpwH8HIVJjyhWAacBPLirYWM94QAC5XryI/16VFBpRhCnNNDy4wFDics5RRm/8XgBn80rKM4cV00dsMNIK6X3KOiCWMHl4rqRX5G2887yOvFZ9KspypAGAdMZQUAaJKiRBpT2MtVDwgCwaevBb2Ve83lA/KjQAJqx4iCxAEwATy0agnQBUAGMkOFcpOHe84D0REnNyXty8AGdYqzTCiSxpR7xrqEe8a9QnuP34kwA4UBSI6PlwgDHdawhD33Y6Hy5HvBbPdUB6yjOUFCAagEJZdzjpsj6ZHk4UfLMceiBSfL7KXgAKfMfowHzuV1F0ZAkWvDMcRtwmfIrUNpQjI05VWlBe1gefLPRhfOEAEbSOoSejdrhCoGOjfL8y0TF8+qAJfO2kFrdCoGvEGEkbNMPfSsF9PC4oDowOgCGRMiAZYSa4rs5QfJD0RlBqAHF8pKBtpDggVzwJ0lN8m3zAs2F8sZJIfMLAYjwUYIbgKAA6IPHgJm5ZBzDFRpRLNOxAPHx6oAgTdjNjOwgadNCIP3xiNyy05WvkaYcstkRsRKBsGmWSFeVLu2Vs7hpsGhLRR4As/Oz8rPzRo2z8/hAOYHz8lCB8/Jz80vzs/PhnDmogmGwaQ9wTdVHIFYBdGFogkT8CCHU2T99mbM13a5A4JGR3CiRReBqsVT1KMkZ+AqBHgHKgLFI8UgsAaqAx0EeAf1Jq0An8jWyql0H9RUTeMTE8gtypPPatEmB4/IxgImA8Dg+Cdq1V1jL8svyhqxW8iRJxQlrkW9UbkSAQOtMbY1flaiAWAAoUJ9QL0FP8nhZT/LgAVHR/vPViONzp1hcnVPzDny12T/yrmO0tDUFZMFZBTmiUmT6WfONr1QRocwB3lyu9VegBCnFCNpyRaXWIPuIbtLsBRGEdgSL8RQAePARAUExlfM7UcwjmxOeGL5yOLBz0CLy4FLrgBXgJqHzudxFSAoCmA6h87j48hE9QJKA2ZXhkLAi5BFyM3NBZOr5WJHatZEwF8DuALgLGZUBCP3RWIAjuO5hF2OEMcVVy0E6QU5QFfDUwViQDqEdyK805aFECunitbMloaDQaIDYCw71JCBMAevypln2oBfBdAuX89yzUvFFIJALUQHUUSIZ9l2+OXbw7AQaZVLwCjGJcniw1NmmgjhypvFLLdKzaUAtQRYB2wO1AJpTj/I0eScEQCPp1WDs7AREYEILrBmV8FwK/ulfSHkQcYKsVMcN/VxgkjjN9XAJpCILF4iiChPihAtg7Ahc+AsPOfTZPeKWgaQLQtVyCvO59NkpMDjNQIiKCsGoSgtVxb7YsQHYjBTjFvMiwTNjD/LJCWrkohgcaNfBUbH23N0BWJArYWeAaqmbKOjoVFBrMVuwCF25g//iciAxnJpls6SmCjQKFjADMhYw4XSus36yMti3EJ3x6/jq+e8VuvNa4xuhsgrwCmhcuoLseJYLc53W4/tVnTRwKRK17a12NOVAApQa3bKpx4FvgLjyNgtiaGvzPA2aiET9A+M1sv0D4VkLc1LxTEBweO7R4IFhgC9BHgFhgHhYwQrZgLfyNTQGALVB2EHUAIFQv8WeAQjzCZ260yYwCoOvkC4wm9RTjU61RTS42bEL781Kwq9ztPLVaWDz73JiC9gLb3Lg8ooxbAD6gLuZtdRxC6QNtLVuQJ9yLjAZCwkKP3L7dDg9EvFhgP3JWAEwzWlAlIFAPS/Bm5nwAeELc8Qn7eNzawFuZODy13BggYmDaykyAKEAY4BHEViAqIH9cBdITcDC0PlBI4LcNdEB7Tg1YNUKUDM1C/3BFgjUHHULRgD1C/rxzaMZQbrwVAFhMRUKuEEIEGFBSEFR8itQLQsrYWLQ3QuqQy0VUoBdC70LGUA9ColJM0L9CpHi04x6GYfzunwcrPFJ5QHzUEqEASMPM4/l3jKvMm8zAgM4Et6Bf6Ch4bwAgAA===\"]");
 
 /***/ }),
-/* 22 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;// Copyright (c) 2013 Pieroxy <pieroxy@pieroxy.net>
@@ -3376,25 +6925,10 @@ if (true) {
 
 
 /***/ }),
-/* 23 */
-/***/ (function(module, exports) {
-
-function _setPrototypeOf(o, p) {
-  module.exports = _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
-
-module.exports = _setPrototypeOf;
-
-/***/ }),
-/* 24 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeToArray = __webpack_require__(18);
+var arrayLikeToArray = __webpack_require__(21);
 
 function _arrayWithoutHoles(arr) {
   if (Array.isArray(arr)) return arrayLikeToArray(arr);
@@ -3403,7 +6937,7 @@ function _arrayWithoutHoles(arr) {
 module.exports = _arrayWithoutHoles;
 
 /***/ }),
-/* 25 */
+/* 41 */
 /***/ (function(module, exports) {
 
 function _iterableToArray(iter) {
@@ -3413,7 +6947,7 @@ function _iterableToArray(iter) {
 module.exports = _iterableToArray;
 
 /***/ }),
-/* 26 */
+/* 42 */
 /***/ (function(module, exports) {
 
 function _nonIterableSpread() {
@@ -3423,7 +6957,60 @@ function _nonIterableSpread() {
 module.exports = _nonIterableSpread;
 
 /***/ }),
-/* 27 */
+/* 43 */
+/***/ (function(module, exports) {
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+module.exports = _arrayWithHoles;
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports) {
+
+function _iterableToArrayLimit(arr, i) {
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+module.exports = _iterableToArrayLimit;
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports) {
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+module.exports = _nonIterableRest;
+
+/***/ }),
+/* 46 */
 /***/ (function(module, exports) {
 
 /**
@@ -3468,7 +7055,7 @@ module.exports.isSortableArrayLike = function (o) {
 
 
 /***/ }),
-/* 28 */
+/* 47 */
 /***/ (function(module, exports) {
 
 /**
@@ -3503,7 +7090,7 @@ module.exports = {
 
 
 /***/ }),
-/* 29 */
+/* 48 */
 /***/ (function(module, exports) {
 
 /**
@@ -3565,7 +7152,321 @@ module.exports.search = search;
 
 
 /***/ }),
-/* 30 */
+/* 49 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_UxWrapper_vue_vue_type_style_index_0_id_04e97c5a_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(23);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_UxWrapper_vue_vue_type_style_index_0_id_04e97c5a_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_UxWrapper_vue_vue_type_style_index_0_id_04e97c5a_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(7);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\n.trading-vue-ux-wrapper {\n        position: absolute;\n        display: flex;\n}\n.tvjs-ux-wrapper-pin {\n        position: absolute;\n        width: 9px;\n        height: 9px;\n        z-index: 100;\n        background-color: #23a776;\n        border-radius: 10px;\n        margin-left: -6px;\n        margin-top: -6px;\n        pointer-events: none;\n}\n.tvjs-ux-wrapper-head {\n        position: absolute;\n        height: 23px;\n        width: 100%;\n}\n.tvjs-ux-wrapper-close {\n        position: absolute;\n        width: 11px;\n        height: 11px;\n        font-size: 1.5em;\n        line-height: 0.5em;\n        padding: 1px 1px 1px 1px;\n        border-radius: 10px;\n        right: 5px;\n        top: 5px;\n        user-select: none;\n        text-align: center;\n        z-index: 100;\n}\n.tvjs-ux-wrapper-close-hb {\n}\n.tvjs-ux-wrapper-close:hover {\n        background-color: #FF605C !important;\n        color: #692324 !important;\n}\n.tvjs-ux-wrapper-full {\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports) {
+
+function _setPrototypeOf(o, p) {
+  module.exports = _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+module.exports = _setPrototypeOf;
+
+/***/ }),
+/* 52 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_LegendButton_vue_vue_type_style_index_0_id_058ef7da_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(24);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_LegendButton_vue_vue_type_style_index_0_id_058ef7da_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_LegendButton_vue_vue_type_style_index_0_id_058ef7da_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(7);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\n.t-vue-lbtn {\n    z-index: 100;\n    pointer-events: all;\n    cursor: pointer;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 54 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_ButtonGroup_vue_vue_type_style_index_0_id_dd6a08e4_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(25);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_ButtonGroup_vue_vue_type_style_index_0_id_dd6a08e4_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_ButtonGroup_vue_vue_type_style_index_0_id_dd6a08e4_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(7);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\n.t-vue-lbtn-grp {\n    margin-left: 0.5em;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 56 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Spinner_vue_vue_type_style_index_0_id_a6fff878_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Spinner_vue_vue_type_style_index_0_id_a6fff878_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Spinner_vue_vue_type_style_index_0_id_a6fff878_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(7);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\n.tvjs-spinner {\n    display: inline-block;\n    position: relative;\n    width: 20px;\n    height: 16px;\n    margin: -4px 0px -1px 0px;\n    opacity: 0.7;\n}\n.tvjs-spinner div {\n    position: absolute;\n    top: 8px;\n    width: 4px;\n    height: 4px;\n    border-radius: 50%;\n    animation-timing-function: cubic-bezier(1, 1, 1, 1);\n}\n.tvjs-spinner div:nth-child(1) {\n    left: 2px;\n    animation: tvjs-spinner1 0.6s infinite;\n    opacity: 0.9;\n}\n.tvjs-spinner div:nth-child(2) {\n    left: 2px;\n    animation: tvjs-spinner2 0.6s infinite;\n}\n.tvjs-spinner div:nth-child(3) {\n    left: 9px;\n    animation: tvjs-spinner2 0.6s infinite;\n}\n.tvjs-spinner div:nth-child(4) {\n    left: 16px;\n    animation: tvjs-spinner3 0.6s infinite;\n    opacity: 0.9;\n}\n@keyframes tvjs-spinner1 {\n0% {\n        transform: scale(0);\n}\n100% {\n        transform: scale(1);\n}\n}\n@keyframes tvjs-spinner3 {\n0% {\n        transform: scale(1);\n}\n100% {\n        transform: scale(0);\n}\n}\n@keyframes tvjs-spinner2 {\n0% {\n        transform: translate(0, 0);\n}\n100% {\n        transform: translate(7px, 0);\n}\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Legend_vue_vue_type_style_index_0_id_e9e9c634_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(27);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Legend_vue_vue_type_style_index_0_id_e9e9c634_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Legend_vue_vue_type_style_index_0_id_e9e9c634_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(7);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\n.trading-vue-legend {\n    position: relative;\n    z-index: 100;\n    font-size: 1.25em;\n    margin-left: 10px;\n    pointer-events: none;\n    text-align: left;\n    user-select: none;\n    font-weight: 300;\n}\n@media (min-resolution: 2x) {\n.trading-vue-legend {\n        font-weight: 400;\n}\n}\n.trading-vue-ohlcv {\n    pointer-events: none;\n    margin-bottom: 0.5em;\n}\n.t-vue-lspan {\n    font-variant-numeric: tabular-nums;\n    font-size: 0.95em;\n    color: #999999; /* TODO: move => params */\n    margin-left: 0.1em;\n    margin-right: 0.2em;\n}\n.t-vue-title {\n    margin-right: 0.25em;\n    font-size: 1.45em;\n}\n.t-vue-ind {\n    margin-left: 0.2em;\n    margin-bottom: 0.5em;\n    font-size: 1.0em;\n    margin-top: 0.3em;\n}\n.t-vue-ivalue {\n    margin-left: 0.5em;\n}\n.t-vue-unknown {\n    color: #999999; /* TODO: move => params */\n}\n.tvjs-appear-enter-active,\n.tvjs-appear-leave-active\n{\n    transition: all .25s ease;\n}\n.tvjs-appear-enter, .tvjs-appear-leave-to\n{\n    opacity: 0;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Section_vue_vue_type_style_index_0_id_191d8ca9_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(28);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Section_vue_vue_type_style_index_0_id_191d8ca9_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Section_vue_vue_type_style_index_0_id_191d8ca9_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(7);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\n.trading-vue-section {\n    height: 0;\n    position: absolute;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 62 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Botbar_vue_vue_type_style_index_0_id_74d70618_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(29);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Botbar_vue_vue_type_style_index_0_id_74d70618_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Botbar_vue_vue_type_style_index_0_id_74d70618_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(7);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\n.trading-vue-botbar {\n    position: relative !important;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 64 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_ItemList_vue_vue_type_style_index_0_id_18a2e05e_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(30);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_ItemList_vue_vue_type_style_index_0_id_18a2e05e_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_ItemList_vue_vue_type_style_index_0_id_18a2e05e_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(7);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\n.tvjs-item-list {\n    position: absolute;\n    user-select: none;\n    margin-top: -5px;\n}\n.tvjs-item-list-item {\n    display: flex;\n    align-items: center;\n    padding-right: 20px;\n    font-size: 1.15em;\n    letter-spacing: 0.05em;\n}\n.tvjs-item-list-item:hover {\n    background-color: #76878319;\n}\n.tvjs-item-list-item * {\n    position: relative !important;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 66 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_ToolbarItem_vue_vue_type_style_index_0_id_24cfb58a_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_ToolbarItem_vue_vue_type_style_index_0_id_24cfb58a_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_ToolbarItem_vue_vue_type_style_index_0_id_24cfb58a_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(7);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\n.trading-vue-tbitem {\n}\n.trading-vue-tbitem:hover {\n    background-color: #76878319;\n}\n.trading-vue-tbitem-exp {\n    position: absolute;\n    right: -3px;\n    padding: 18.5px 5px;\n    font-stretch: extra-condensed;\n    transform: scaleX(0.6);\n    font-size: 0.6em;\n    opacity: 0.0;\n    user-select: none;\n    line-height: 0;\n}\n.trading-vue-tbitem:hover\n.trading-vue-tbitem-exp {\n    opacity: 0.5;\n}\n.trading-vue-tbitem-exp:hover {\n    background-color: #76878330;\n    opacity: 0.9 !important;\n}\n.trading-vue-tbicon {\n    position: absolute;\n}\n.trading-vue-tbitem.selected-item > .trading-vue-tbicon,\n.tvjs-item-list-item.selected-item > .trading-vue-tbicon {\n     filter: brightness(1.45) sepia(1) hue-rotate(90deg) saturate(4.5) !important;\n}\n.tvjs-pixelated {\n    -ms-interpolation-mode: nearest-neighbor;\n    image-rendering: -webkit-optimize-contrast;\n    image-rendering: -webkit-crisp-edges;\n    image-rendering: -moz-crisp-edges;\n    image-rendering: -o-crisp-edges;\n    image-rendering: pixelated;\n}\n\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 68 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Toolbar_vue_vue_type_style_index_0_id_e0d3bb5c_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(32);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Toolbar_vue_vue_type_style_index_0_id_e0d3bb5c_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Toolbar_vue_vue_type_style_index_0_id_e0d3bb5c_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(7);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\n.trading-vue-toolbar {\n    position: absolute;\n    border-right: 1px solid black;\n    z-index: 101;\n    padding-top: 3px;\n    user-select: none;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 70 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Widgets_vue_vue_type_style_index_0_id_00dc0900_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(33);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Widgets_vue_vue_type_style_index_0_id_00dc0900_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_Widgets_vue_vue_type_style_index_0_id_00dc0900_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(7);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\n.tvjs-widgets {\n    position: absolute;\n    z-index: 1000;\n    pointer-events: none;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 72 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_TheTip_vue_vue_type_style_index_0_id_cdc89010_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(34);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_TheTip_vue_vue_type_style_index_0_id_cdc89010_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_TheTip_vue_vue_type_style_index_0_id_cdc89010_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(7);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\n.tvjs-drift-enter-active {\n    transition: all .3s ease;\n}\n.tvjs-drift-leave-active {\n    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\n}\n.tvjs-drift-enter, .tvjs-drift-leave-to\n{\n    transform: translateX(10px);\n    opacity: 0;\n}\n.tvjs-the-tip {\n    position: absolute;\n    width: 200px;\n    text-align: center;\n    z-index: 10001;\n    color: #ffffff;\n    font-size: 1.5em;\n    line-height: 1.15em;\n    padding: 10px;\n    border-radius: 3px;\n    right: 70px;\n    top: 10px;\n    text-shadow: 1px 1px black;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 74 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_TradingVue_vue_vue_type_style_index_0_id_7a200e91_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(35);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_TradingVue_vue_vue_type_style_index_0_id_7a200e91_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_vue_loader_dist_index_js_ref_11_0_TradingVue_vue_vue_type_style_index_0_id_7a200e91_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(7);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\n/* Anit-boostrap tactix */\n.trading-vue *, ::after, ::before {\n    box-sizing: content-box;\n}\n.trading-vue img {\n    vertical-align: initial;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -4319,66 +8220,13 @@ try {
 
 
 /***/ }),
-/* 31 */
+/* 77 */
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
-/* 32 */
-/***/ (function(module, exports) {
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-module.exports = _arrayWithHoles;
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports) {
-
-function _iterableToArrayLimit(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _e = undefined;
-
-  try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-module.exports = _iterableToArrayLimit;
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports) {
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-module.exports = _nonIterableRest;
-
-/***/ }),
-/* 35 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4400,7 +8248,7 @@ __webpack_require__.d(__webpack_exports__, "Interface", function() { return /* r
 __webpack_require__.d(__webpack_exports__, "primitives", function() { return /* binding */ primitives; });
 
 // EXTERNAL MODULE: ./node_modules/@vue/reactivity/node_modules/@vue/shared/dist/shared.esm-bundler.js
-var shared_esm_bundler = __webpack_require__(2);
+var shared_esm_bundler = __webpack_require__(5);
 
 // CONCATENATED MODULE: ./node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
 
@@ -5760,7 +9608,7 @@ function runtime_core_esm_bundler_emit(instance, event, ...rawArgs) {
             args = rawArgs.map(a => a.trim());
         }
         else if (number) {
-            args = rawArgs.map(dist_shared_esm_bundler["D" /* toNumber */]);
+            args = rawArgs.map(dist_shared_esm_bundler["E" /* toNumber */]);
         }
     }
     if (( false) || __VUE_PROD_DEVTOOLS__) {
@@ -5768,12 +9616,12 @@ function runtime_core_esm_bundler_emit(instance, event, ...rawArgs) {
     }
     if ((false)) {}
     // convert handler name to camelCase. See issue #2249
-    let handlerName = Object(dist_shared_esm_bundler["C" /* toHandlerKey */])(Object(dist_shared_esm_bundler["e" /* camelize */])(event));
+    let handlerName = Object(dist_shared_esm_bundler["D" /* toHandlerKey */])(Object(dist_shared_esm_bundler["e" /* camelize */])(event));
     let handler = props[handlerName];
     // for v-model update:xxx events, also trigger kebab-case equivalent
     // for props passed via kebab-case
     if (!handler && isModelListener) {
-        handlerName = Object(dist_shared_esm_bundler["C" /* toHandlerKey */])(Object(dist_shared_esm_bundler["l" /* hyphenate */])(event));
+        handlerName = Object(dist_shared_esm_bundler["D" /* toHandlerKey */])(Object(dist_shared_esm_bundler["l" /* hyphenate */])(event));
         handler = props[handlerName];
     }
     if (handler) {
@@ -6236,7 +10084,7 @@ function createSuspenseBoundary(vnode, parent, parentComponent, container, hidde
     /* istanbul ignore if */
     if (false) {}
     const { p: patch, m: move, um: unmount, n: next, o: { parentNode, remove } } = rendererInternals;
-    const timeout = Object(dist_shared_esm_bundler["D" /* toNumber */])(vnode.props && vnode.props.timeout);
+    const timeout = Object(dist_shared_esm_bundler["E" /* toNumber */])(vnode.props && vnode.props.timeout);
     const suspense = {
         vnode,
         parent,
@@ -6915,7 +10763,7 @@ function getInvalidTypeMessage(name, value, expectedTypes) {
     let message = `Invalid prop: type check failed for prop "${name}".` +
         ` Expected ${expectedTypes.map(dist_shared_esm_bundler["f" /* capitalize */]).join(', ')}`;
     const expectedType = expectedTypes[0];
-    const receivedType = Object(dist_shared_esm_bundler["E" /* toRawType */])(value);
+    const receivedType = Object(dist_shared_esm_bundler["F" /* toRawType */])(value);
     const expectedValue = styleValue(value, expectedType);
     const receivedValue = styleValue(value, receivedType);
     // check if we need to specify expected value
@@ -11340,7 +15188,7 @@ function useContext() {
 }
 
 // Actual implementation
-function h(type, propsOrChildren, children) {
+function runtime_core_esm_bundler_h(type, propsOrChildren, children) {
     const l = arguments.length;
     if (l === 2) {
         if (Object(dist_shared_esm_bundler["s" /* isObject */])(propsOrChildren) && !Object(dist_shared_esm_bundler["n" /* isArray */])(propsOrChildren)) {
@@ -11613,7 +15461,7 @@ function toHandlers(obj) {
     const ret = {};
     if (false) {}
     for (const key in obj) {
-        ret[Object(dist_shared_esm_bundler["C" /* toHandlerKey */])(key)] = obj[key];
+        ret[Object(dist_shared_esm_bundler["D" /* toHandlerKey */])(key)] = obj[key];
     }
     return ret;
 }
@@ -11899,10 +15747,10 @@ const runtime_dom_esm_bundler_reset = () => {
     cachedNow = 0;
 };
 const getNow = () => cachedNow || (runtime_dom_esm_bundler_p.then(runtime_dom_esm_bundler_reset), (cachedNow = _getNow()));
-function addEventListener(el, event, handler, options) {
+function runtime_dom_esm_bundler_addEventListener(el, event, handler, options) {
     el.addEventListener(event, handler, options);
 }
-function removeEventListener(el, event, handler, options) {
+function runtime_dom_esm_bundler_removeEventListener(el, event, handler, options) {
     el.removeEventListener(event, handler, options);
 }
 function patchEvent(el, rawName, prevValue, nextValue, instance = null) {
@@ -11918,11 +15766,11 @@ function patchEvent(el, rawName, prevValue, nextValue, instance = null) {
         if (nextValue) {
             // add
             const invoker = (invokers[rawName] = createInvoker(nextValue, instance));
-            addEventListener(el, name, invoker, options);
+            runtime_dom_esm_bundler_addEventListener(el, name, invoker, options);
         }
         else if (existingInvoker) {
             // remove
-            removeEventListener(el, name, existingInvoker, options);
+            runtime_dom_esm_bundler_removeEventListener(el, name, existingInvoker, options);
             invokers[rawName] = undefined;
         }
     }
@@ -12114,7 +15962,7 @@ const TRANSITION = 'transition';
 const ANIMATION = 'animation';
 // DOM Transition is a higher-order-component based on the platform-agnostic
 // base Transition component, with DOM-specific logic.
-const Transition = (props, { slots }) => h(BaseTransition, resolveTransitionProps(props), slots);
+const Transition = (props, { slots }) => runtime_core_esm_bundler_h(BaseTransition, resolveTransitionProps(props), slots);
 Transition.displayName = 'Transition';
 const DOMTransitionPropsValidators = {
     name: String,
@@ -12510,7 +16358,7 @@ const vModelText = {
     created(el, { modifiers: { lazy, trim, number } }, vnode) {
         el._assign = getModelAssigner(vnode);
         const castToNumber = number || el.type === 'number';
-        addEventListener(el, lazy ? 'change' : 'input', e => {
+        runtime_dom_esm_bundler_addEventListener(el, lazy ? 'change' : 'input', e => {
             if (e.target.composing)
                 return;
             let domValue = el.value;
@@ -12523,18 +16371,18 @@ const vModelText = {
             el._assign(domValue);
         });
         if (trim) {
-            addEventListener(el, 'change', () => {
+            runtime_dom_esm_bundler_addEventListener(el, 'change', () => {
                 el.value = el.value.trim();
             });
         }
         if (!lazy) {
-            addEventListener(el, 'compositionstart', onCompositionStart);
-            addEventListener(el, 'compositionend', onCompositionEnd);
+            runtime_dom_esm_bundler_addEventListener(el, 'compositionstart', onCompositionStart);
+            runtime_dom_esm_bundler_addEventListener(el, 'compositionend', onCompositionEnd);
             // Safari < 10.2 & UIWebView doesn't fire compositionend when
             // switching focus before confirming composition choice
             // this also fixes the issue where some browsers e.g. iOS Chrome
             // fires "change" instead of "input" on autocomplete.
-            addEventListener(el, 'change', onCompositionEnd);
+            runtime_dom_esm_bundler_addEventListener(el, 'change', onCompositionEnd);
         }
     },
     // set value on mounted so it's after min/max for type="range"
@@ -12563,7 +16411,7 @@ const vModelText = {
 const vModelCheckbox = {
     created(el, _, vnode) {
         el._assign = getModelAssigner(vnode);
-        addEventListener(el, 'change', () => {
+        runtime_dom_esm_bundler_addEventListener(el, 'change', () => {
             const modelValue = el._modelValue;
             const elementValue = getValue(el);
             const checked = el.checked;
@@ -12618,7 +16466,7 @@ const vModelRadio = {
     created(el, { value }, vnode) {
         el.checked = Object(shared_dist_shared_esm_bundler["p" /* looseEqual */])(value, vnode.props.value);
         el._assign = getModelAssigner(vnode);
-        addEventListener(el, 'change', () => {
+        runtime_dom_esm_bundler_addEventListener(el, 'change', () => {
             el._assign(getValue(el));
         });
     },
@@ -12632,7 +16480,7 @@ const vModelRadio = {
 const vModelSelect = {
     created(el, { value, modifiers: { number } }, vnode) {
         const isSetModel = Object(shared_dist_shared_esm_bundler["m" /* isSet */])(value);
-        addEventListener(el, 'change', () => {
+        runtime_dom_esm_bundler_addEventListener(el, 'change', () => {
             const selectedVal = Array.prototype.filter
                 .call(el.options, (o) => o.selected)
                 .map((o) => number ? Object(shared_dist_shared_esm_bundler["r" /* toNumber */])(getValue(o)) : getValue(o));
@@ -12906,7 +16754,7 @@ function normalizeContainer(container) {
 
 
 // EXTERNAL MODULE: ./node_modules/vue/node_modules/@vue/shared/dist/shared.esm-bundler.js
-var _vue_shared_dist_shared_esm_bundler = __webpack_require__(20);
+var _vue_shared_dist_shared_esm_bundler = __webpack_require__(36);
 
 // CONCATENATED MODULE: ./node_modules/vue/dist/vue.runtime.esm-bundler.js
 
@@ -12930,62 +16778,87 @@ const vue_runtime_esm_bundler_compile = () => {
 
 
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/TradingVue.vue?vue&type=template&id=0322baa3
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/TradingVue.vue?vue&type=template&id=7a200e91
 
-function TradingVuevue_type_template_id_0322baa3_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createBlock("div", null, " asdfasdfasdfaf ");
+function TradingVuevue_type_template_id_7a200e91_render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_toolbar = resolveComponent("toolbar");
+
+  var _component_widgets = resolveComponent("widgets");
+
+  var _component_chart = resolveComponent("chart");
+
+  var _component_the_tip = resolveComponent("the-tip");
+
+  return openBlock(), createBlock(Fragment, null, [createCommentVNode(" Main component  "), createVNode("div", {
+    "class": "trading-vue",
+    id: $props.id,
+    onMousedown: _cache[2] || (_cache[2] = function () {
+      return $options.mousedown.apply($options, arguments);
+    }),
+    onMouseleave: _cache[3] || (_cache[3] = function () {
+      return $options.mouseleave.apply($options, arguments);
+    }),
+    style: {
+      color: this.chart_props.colors.text,
+      font: this.font_comp,
+      width: this.width + 'px',
+      height: this.height + 'px'
+    }
+  }, [$props.toolbar ? (openBlock(), createBlock(_component_toolbar, mergeProps({
+    key: 0,
+    ref: "toolbar",
+    onCustomEvent: $options.custom_event
+  }, $options.chart_props, {
+    config: $options.chart_config
+  }), null, 16
+  /* FULL_PROPS */
+  , ["onCustomEvent", "config"])) : createCommentVNode("v-if", true), _ctx.controllers.length ? (openBlock(), createBlock(_component_widgets, {
+    key: 1,
+    ref: "widgets",
+    map: _ctx.ws,
+    width: $props.width,
+    height: $props.height,
+    tv: this,
+    dc: $props.data
+  }, null, 8
+  /* PROPS */
+  , ["map", "width", "height", "dc"])) : createCommentVNode("v-if", true), createVNode(_component_chart, mergeProps({
+    key: $data.reset,
+    ref: "chart"
+  }, $options.chart_props, {
+    tv_id: $props.id,
+    config: $options.chart_config,
+    onCustomEvent: $options.custom_event,
+    onRangeChanged: $options.range_changed,
+    onLegendButtonClick: $options.legend_button
+  }), null, 16
+  /* FULL_PROPS */
+  , ["tv_id", "config", "onCustomEvent", "onRangeChanged", "onLegendButtonClick"]), createVNode(Transition, {
+    name: "tvjs-drift"
+  }, {
+    "default": withCtx(function () {
+      return [$data.tip ? (openBlock(), createBlock(_component_the_tip, {
+        key: 0,
+        data: $data.tip,
+        onRemoveMe: _cache[1] || (_cache[1] = function ($event) {
+          return $data.tip = null;
+        })
+      }, null, 8
+      /* PROPS */
+      , ["data"])) : createCommentVNode("v-if", true)];
+    }),
+    _: 1
+  })], 40
+  /* PROPS, HYDRATE_EVENTS */
+  , ["id"])], 64
+  /* STABLE_FRAGMENT */
+  );
 }
-// CONCATENATED MODULE: ./src/TradingVue.vue?vue&type=template&id=0322baa3
-
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/TradingVue.vue?vue&type=script&lang=js
-/* harmony default export */ var TradingVuevue_type_script_lang_js = ({
-  name: 'Spinner',
-  props: ['colors']
-});
-// CONCATENATED MODULE: ./src/TradingVue.vue?vue&type=script&lang=js
- 
-// CONCATENATED MODULE: ./src/TradingVue.vue
-
-
-
-TradingVuevue_type_script_lang_js.render = TradingVuevue_type_template_id_0322baa3_render
-
-/* harmony default export */ var TradingVue = (TradingVuevue_type_script_lang_js);
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/typeof.js
-var helpers_typeof = __webpack_require__(8);
-var typeof_default = /*#__PURE__*/__webpack_require__.n(helpers_typeof);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/classCallCheck.js
-var classCallCheck = __webpack_require__(3);
-var classCallCheck_default = /*#__PURE__*/__webpack_require__.n(classCallCheck);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/createClass.js
-var createClass = __webpack_require__(4);
-var createClass_default = /*#__PURE__*/__webpack_require__.n(createClass);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/assertThisInitialized.js
-var assertThisInitialized = __webpack_require__(14);
-var assertThisInitialized_default = /*#__PURE__*/__webpack_require__.n(assertThisInitialized);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/inherits.js
-var inherits = __webpack_require__(10);
-var inherits_default = /*#__PURE__*/__webpack_require__.n(inherits);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js
-var possibleConstructorReturn = __webpack_require__(11);
-var possibleConstructorReturn_default = /*#__PURE__*/__webpack_require__.n(possibleConstructorReturn);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/getPrototypeOf.js
-var getPrototypeOf = __webpack_require__(7);
-var getPrototypeOf_default = /*#__PURE__*/__webpack_require__.n(getPrototypeOf);
+// CONCATENATED MODULE: ./src/TradingVue.vue?vue&type=template&id=7a200e91
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/toConsumableArray.js
-var toConsumableArray = __webpack_require__(5);
+var toConsumableArray = __webpack_require__(3);
 var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(toConsumableArray);
-
-// EXTERNAL MODULE: ./node_modules/arrayslicer/lib/index.js
-var lib = __webpack_require__(15);
-var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 
 // CONCATENATED MODULE: ./src/stuff/constants.js
 var SECOND = 1000;
@@ -13102,6 +16975,73 @@ var MAP_UNIT = {
   map_unit: MAP_UNIT,
   IB_TF_WARN: IB_TF_WARN
 });
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/components/Chart.vue?vue&type=template&id=9b3aef22
+
+function Chartvue_type_template_id_9b3aef22_render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_keyboard = resolveComponent("keyboard");
+
+  var _component_grid_section = resolveComponent("grid-section");
+
+  var _component_botbar = resolveComponent("botbar");
+
+  return openBlock(), createBlock(Fragment, null, [createCommentVNode(" Chart components combined together "), createVNode("div", {
+    "class": "trading-vue-chart",
+    style: $options.styles
+  }, [createVNode(_component_keyboard, {
+    ref: "keyboard"
+  }, null, 512
+  /* NEED_PATCH */
+  ), (openBlock(true), createBlock(Fragment, null, renderList(this._layout.grids, function (grid, i) {
+    return openBlock(), createBlock(_component_grid_section, {
+      key: grid.id,
+      ref: "sec",
+      common: $options.section_props(i),
+      grid_id: i,
+      onRegisterKbListener: $options.register_kb,
+      onRemoveKbListener: $options.remove_kb,
+      onRangeChanged: $options.range_changed,
+      onCursorChanged: $options.cursor_changed,
+      onCursorLocked: $options.cursor_locked,
+      onSidebarTransform: $options.set_ytransform,
+      onLayerMetaProps: $options.layer_meta_props,
+      onCustomEvent: $options.emit_custom_event,
+      onLegendButtonClick: $options.legend_button_click
+    }, null, 8
+    /* PROPS */
+    , ["common", "grid_id", "onRegisterKbListener", "onRemoveKbListener", "onRangeChanged", "onCursorChanged", "onCursorLocked", "onSidebarTransform", "onLayerMetaProps", "onCustomEvent", "onLegendButtonClick"]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  )), createVNode(_component_botbar, mergeProps($options.botbar_props, {
+    shaders: _ctx.shaders,
+    timezone: $props.timezone
+  }), null, 16
+  /* FULL_PROPS */
+  , ["shaders", "timezone"])], 4
+  /* STYLE */
+  )], 64
+  /* STABLE_FRAGMENT */
+  );
+}
+// CONCATENATED MODULE: ./src/components/Chart.vue?vue&type=template&id=9b3aef22
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/slicedToArray.js
+var slicedToArray = __webpack_require__(6);
+var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray);
+
+// CONCATENATED MODULE: ./src/stuff/context.js
+// Canvas context for text measurments
+function Context($p) {
+  var el = document.createElement('canvas');
+  var ctx = el.getContext("2d");
+  ctx.font = $p.font;
+  return ctx;
+}
+
+/* harmony default export */ var stuff_context = (Context);
+// EXTERNAL MODULE: ./node_modules/arrayslicer/lib/index.js
+var lib = __webpack_require__(20);
+var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
+
 // CONCATENATED MODULE: ./src/stuff/utils.js
 
 
@@ -13421,26 +17361,8782 @@ var MAP_UNIT = {
     return 'onorientationchange' in w && (!!navigator.maxTouchPoints || !!navigator.msMaxTouchPoints || 'ontouchstart' in w || w.DocumentTouch && document instanceof w.DocumentTouch);
   }(typeof window !== 'undefined' ? window : {})
 });
+// CONCATENATED MODULE: ./src/stuff/math.js
+// Math/Geometry
+/* harmony default export */ var math = ({
+  // Distance from point to line
+  // p1 = point, (p2, p3) = line
+  point2line: function point2line(p1, p2, p3) {
+    var _this$tri = this.tri(p1, p2, p3),
+        area = _this$tri.area,
+        base = _this$tri.base;
+
+    return Math.abs(this.tri_h(area, base));
+  },
+  // Distance from point to segment
+  // p1 = point, (p2, p3) = segment
+  point2seg: function point2seg(p1, p2, p3) {
+    var _this$tri2 = this.tri(p1, p2, p3),
+        area = _this$tri2.area,
+        base = _this$tri2.base; // Vector projection
+
+
+    var proj = this.dot_prod(p1, p2, p3) / base; // Distance from left pin
+
+    var l1 = Math.max(-proj, 0); // Distance from right pin
+
+    var l2 = Math.max(proj - base, 0); // Normal
+
+    var h = Math.abs(this.tri_h(area, base));
+    return Math.max(h, l1, l2);
+  },
+  // Distance from point to ray
+  // p1 = point, (p2, p3) = ray
+  point2ray: function point2ray(p1, p2, p3) {
+    var _this$tri3 = this.tri(p1, p2, p3),
+        area = _this$tri3.area,
+        base = _this$tri3.base; // Vector projection
+
+
+    var proj = this.dot_prod(p1, p2, p3) / base; // Distance from left pin
+
+    var l1 = Math.max(-proj, 0); // Normal
+
+    var h = Math.abs(this.tri_h(area, base));
+    return Math.max(h, l1);
+  },
+  tri: function tri(p1, p2, p3) {
+    var area = this.area(p1, p2, p3);
+    var dx = p3[0] - p2[0];
+    var dy = p3[1] - p2[1];
+    var base = Math.sqrt(dx * dx + dy * dy);
+    return {
+      area: area,
+      base: base
+    };
+  },
+
+  /* Area of triangle:
+          p1
+        /    \
+      p2  _  p3
+  */
+  area: function area(p1, p2, p3) {
+    return p1[0] * (p2[1] - p3[1]) + p2[0] * (p3[1] - p1[1]) + p3[0] * (p1[1] - p2[1]);
+  },
+  // Triangle height
+  tri_h: function tri_h(area, base) {
+    return area / base;
+  },
+  // Dot product of (p2, p3) and (p2, p1)
+  dot_prod: function dot_prod(p1, p2, p3) {
+    var v1 = [p3[0] - p2[0], p3[1] - p2[1]];
+    var v2 = [p1[0] - p2[0], p1[1] - p2[1]];
+    return v1[0] * v2[0] + v1[1] * v2[1];
+  },
+  // Symmetrical log
+  log: function log(x) {
+    // TODO: log for small values
+    return Math.sign(x) * Math.log(Math.abs(x) + 1);
+  },
+  // Symmetrical exp
+  exp: function exp(x) {
+    return Math.sign(x) * (Math.exp(Math.abs(x)) - 1);
+  },
+  // Middle line on log scale based on range & px height
+  log_mid: function log_mid(r, h) {
+    var log_hi = this.log(r[0]);
+    var log_lo = this.log(r[1]);
+    var px = h / 2;
+    var gx = log_hi - px * (log_hi - log_lo) / h;
+    return this.exp(gx);
+  },
+  // Return new adjusted range, based on the previous
+  // range, new $_hi, target middle line
+  re_range: function re_range(r1, hi2, mid) {
+    var log_hi1 = this.log(r1[0]);
+    var log_lo1 = this.log(r1[1]);
+    var log_hi2 = this.log(hi2);
+    var log_$ = this.log(mid);
+    var W = (log_hi2 - log_$) * (log_hi1 - log_lo1) / (log_hi1 - log_$);
+    return this.exp(log_hi2 - W);
+  } // Return new adjusted range, based on the previous
+  // range, new $_hi, target middle line + dy (shift)
+  // WASTE
+
+  /*range_shift(r1, hi2, mid, dy, h) {
+      let log_hi1 = this.log(r1[0])
+      let log_lo1 = this.log(r1[1])
+      let log_hi2 = this.log(hi2)
+      let log_$ = this.log(mid)
+       let W = h * (log_hi2 - log_$) /
+              (h * (log_hi1 - log_$) / (log_hi1 - log_lo1) + dy)
+       return this.exp(log_hi2 - W)
+   }*/
+
+});
+// CONCATENATED MODULE: ./src/components/js/layout_fn.js
+// Layout functional interface
+
+
+/* harmony default export */ var layout_fn = (function (self, range) {
+  var ib = self.ti_map.ib;
+  var dt = range[1] - range[0];
+  var r = self.spacex / dt;
+  var ls = self.grid.logScale || false;
+  Object.assign(self, {
+    // Time to screen coordinates
+    t2screen: function t2screen(t) {
+      if (ib) t = self.ti_map.smth2i(t);
+      return Math.floor((t - range[0]) * r) - 0.5;
+    },
+    // $ to screen coordinates
+    $2screen: function $2screen(y) {
+      if (ls) y = math.log(y);
+      return Math.floor(y * self.A + self.B) - 0.5;
+    },
+    // Time-axis nearest step
+    t_magnet: function t_magnet(t) {
+      if (ib) t = self.ti_map.smth2i(t);
+      var cn = self.candles || self.master_grid.candles;
+      var arr = cn.map(function (x) {
+        return x.raw[0];
+      });
+      var i = utils.nearest_a(t, arr)[0];
+      if (!cn[i]) return;
+      return Math.floor(cn[i].x) - 0.5;
+    },
+    // Screen-Y to dollar value (or whatever)
+    screen2$: function screen2$(y) {
+      if (ls) return math.exp((y - self.B) / self.A);
+      return (y - self.B) / self.A;
+    },
+    // Screen-X to timestamp
+    screen2t: function screen2t(x) {
+      // TODO: most likely Math.floor not needed
+      // return Math.floor(range[0] + x / r)
+      return range[0] + x / r;
+    },
+    // $-axis nearest step
+    $_magnet: function $_magnet(price) {},
+    // Nearest candlestick
+    c_magnet: function c_magnet(t) {
+      var cn = self.candles || self.master_grid.candles;
+      var arr = cn.map(function (x) {
+        return x.raw[0];
+      });
+      var i = utils.nearest_a(t, arr)[0];
+      return cn[i];
+    },
+    // Nearest data points
+    data_magnet: function data_magnet(t) {
+      /* TODO: implement */
+    }
+  });
+  return self;
+});
+// CONCATENATED MODULE: ./src/components/js/log_scale.js
+// Log-scale mode helpers
+// TODO: all-negative numbers (sometimes wrong scaling)
+
+/* harmony default export */ var log_scale = ({
+  candle: function candle(self, mid, p, $p) {
+    return {
+      x: mid,
+      w: self.px_step * $p.config.CANDLEW,
+      o: Math.floor(math.log(p[1]) * self.A + self.B),
+      h: Math.floor(math.log(p[2]) * self.A + self.B),
+      l: Math.floor(math.log(p[3]) * self.A + self.B),
+      c: Math.floor(math.log(p[4]) * self.A + self.B),
+      raw: p
+    };
+  },
+  expand: function expand(self, height) {
+    // expand log scale
+    var A = -height / (math.log(self.$_hi) - math.log(self.$_lo));
+    var B = -math.log(self.$_hi) * A;
+    var top = -height * 0.1;
+    var bot = height * 1.1;
+    self.$_hi = math.exp((top - B) / A);
+    self.$_lo = math.exp((bot - B) / A);
+  }
+});
+// CONCATENATED MODULE: ./src/components/js/grid_maker.js
+
+
+
+
+
+
+var grid_maker_TIMESCALES = constants.TIMESCALES,
+    grid_maker_$SCALES = constants.$SCALES,
+    grid_maker_WEEK = constants.WEEK,
+    grid_maker_MONTH = constants.MONTH,
+    grid_maker_YEAR = constants.YEAR,
+    grid_maker_HOUR = constants.HOUR,
+    grid_maker_DAY = constants.DAY;
+var MAX_INT = Number.MAX_SAFE_INTEGER; // master_grid - ref to the master grid
+
+function GridMaker(id, params, master_grid) {
+  if (master_grid === void 0) {
+    master_grid = null;
+  }
+
+  var sub = params.sub,
+      interval = params.interval,
+      range = params.range,
+      ctx = params.ctx,
+      $p = params.$p,
+      layers_meta = params.layers_meta,
+      height = params.height,
+      y_t = params.y_t,
+      ti_map = params.ti_map,
+      grid = params.grid,
+      timezone = params.timezone;
+  var self = {
+    ti_map: ti_map
+  };
+  var lm = layers_meta[id];
+  var y_range_fn = null;
+  var ls = grid.logScale;
+
+  if (lm && Object.keys(lm).length) {
+    // Gets last y_range fn()
+    var yrs = Object.values(lm).filter(function (x) {
+      return x.y_range;
+    }); // The first y_range() determines the range
+
+    if (yrs.length) y_range_fn = yrs[0].y_range;
+  } // Calc vertical ($/₿) range
+
+
+  function calc_$range() {
+    if (!master_grid) {
+      // $ candlestick range
+      if (y_range_fn) {
+        var _y_range_fn = y_range_fn(hi, lo),
+            _y_range_fn2 = slicedToArray_default()(_y_range_fn, 2),
+            hi = _y_range_fn2[0],
+            lo = _y_range_fn2[1];
+      } else {
+        hi = -Infinity, lo = Infinity;
+
+        for (var i = 0, n = sub.length; i < n; i++) {
+          var x = sub[i];
+          if (x[2] > hi) hi = x[2];
+          if (x[3] < lo) lo = x[3];
+        }
+      }
+    } else {
+      // Offchart indicator range
+      hi = -Infinity, lo = Infinity;
+
+      for (var i = 0; i < sub.length; i++) {
+        for (var j = 1; j < sub[i].length; j++) {
+          var v = sub[i][j];
+          if (v > hi) hi = v;
+          if (v < lo) lo = v;
+        }
+      }
+
+      if (y_range_fn) {
+        var _y_range_fn3 = y_range_fn(hi, lo),
+            _y_range_fn4 = slicedToArray_default()(_y_range_fn3, 3),
+            hi = _y_range_fn4[0],
+            lo = _y_range_fn4[1],
+            exp = _y_range_fn4[2];
+      }
+    } // Fixed y-range in non-auto mode
+
+
+    if (y_t && !y_t.auto && y_t.range) {
+      self.$_hi = y_t.range[0];
+      self.$_lo = y_t.range[1];
+    } else {
+      if (!ls) {
+        exp = exp === false ? 0 : 1;
+        self.$_hi = hi + (hi - lo) * $p.config.EXPAND * exp;
+        self.$_lo = lo - (hi - lo) * $p.config.EXPAND * exp;
+      } else {
+        self.$_hi = hi;
+        self.$_lo = lo;
+        log_scale.expand(self, height);
+      }
+
+      if (self.$_hi === self.$_lo) {
+        if (!ls) {
+          self.$_hi *= 1.05; // Expand if height range === 0
+
+          self.$_lo *= 0.95;
+        } else {
+          log_scale.expand(self, height);
+        }
+      }
+    }
+  }
+
+  function calc_sidebar() {
+    if (sub.length < 2) {
+      self.prec = 0;
+      self.sb = $p.config.SBMIN;
+      return;
+    } // TODO: improve sidebar width calculation
+    // at transition point, when one precision is
+    // replaced with another
+    // Gets formated levels (their lengths),
+    // calculates max and measures the sidebar length
+    // from it:
+    // TODO: add custom formatter f()
+
+
+    self.prec = calc_precision(sub);
+    var lens = [];
+    lens.push(self.$_hi.toFixed(self.prec).length);
+    lens.push(self.$_lo.toFixed(self.prec).length);
+    var str = '0'.repeat(Math.max.apply(Math, lens)) + '    ';
+    self.sb = ctx.measureText(str).width;
+    self.sb = Math.max(Math.floor(self.sb), $p.config.SBMIN);
+    self.sb = Math.min(self.sb, $p.config.SBMAX);
+  } // Calculate $ precision for the Y-axis
+
+
+  function calc_precision(data) {
+    var max_r = 0,
+        max_l = 0;
+    var min = Infinity;
+    var max = -Infinity; // Speed UP
+
+    for (var i = 0, n = data.length; i < n; i++) {
+      var x = data[i];
+      if (x[1] > max) max = x[1];else if (x[1] < min) min = x[1];
+    } // Get max lengths of integer and fractional parts
+
+
+    [min, max].forEach(function (x) {
+      // Fix undefined bug
+      var str = x != null ? x.toString() : '';
+
+      if (x < 0.000001) {
+        // Parsing the exponential form. Gosh this
+        // smells trickily
+        var _str$split = str.split('e-'),
+            _str$split2 = slicedToArray_default()(_str$split, 2),
+            ls = _str$split2[0],
+            rs = _str$split2[1];
+
+        var _ls$split = ls.split('.'),
+            _ls$split2 = slicedToArray_default()(_ls$split, 2),
+            l = _ls$split2[0],
+            r = _ls$split2[1];
+
+        if (!r) r = '';
+        r = {
+          length: r.length + parseInt(rs) || 0
+        };
+      } else {
+        var _str$split3 = str.split('.'),
+            _str$split4 = slicedToArray_default()(_str$split3, 2),
+            l = _str$split4[0],
+            r = _str$split4[1];
+      }
+
+      if (r && r.length > max_r) {
+        max_r = r.length;
+      }
+
+      if (l && l.length > max_l) {
+        max_l = l.length;
+      }
+    }); // Select precision scheme depending
+    // on the left and right part lengths
+    //
+
+    var even = max_r - max_r % 2 + 2;
+
+    if (max_l === 1) {
+      return Math.min(8, Math.max(2, even));
+    }
+
+    if (max_l <= 2) {
+      return Math.min(4, Math.max(2, even));
+    }
+
+    return 2;
+  }
+
+  function calc_positions() {
+    if (sub.length < 2) return;
+    var dt = range[1] - range[0]; // A pixel space available to draw on (x-axis)
+
+    self.spacex = $p.width - self.sb; // Candle capacity
+
+    var capacity = dt / interval;
+    self.px_step = self.spacex / capacity; // px / time ratio
+
+    var r = self.spacex / dt;
+    self.startx = (sub[0][0] - range[0]) * r; // Candle Y-transform: (A = scale, B = shift)
+
+    if (!grid.logScale) {
+      self.A = -height / (self.$_hi - self.$_lo);
+      self.B = -self.$_hi * self.A;
+    } else {
+      self.A = -height / (math.log(self.$_hi) - math.log(self.$_lo));
+      self.B = -math.log(self.$_hi) * self.A;
+    }
+  } // Select nearest good-loking t step (m is target scale)
+
+
+  function time_step() {
+    var k = ti_map.ib ? 60000 : 1;
+    var xrange = (range[1] - range[0]) * k;
+    var m = xrange * ($p.config.GRIDX / $p.width);
+    var s = grid_maker_TIMESCALES;
+    return utils.nearest_a(m, s)[1] / k;
+  } // Select nearest good-loking $ step (m is target scale)
+
+
+  function dollar_step() {
+    var yrange = self.$_hi - self.$_lo;
+    var m = yrange * ($p.config.GRIDY / height);
+    var p = parseInt(yrange.toExponential().split('e')[1]);
+    var d = Math.pow(10, p);
+    var s = grid_maker_$SCALES.map(function (x) {
+      return x * d;
+    }); // TODO: center the range (look at RSI for example,
+    // it looks ugly when "80" is near the top)
+
+    return utils.strip(utils.nearest_a(m, s)[1]);
+  }
+
+  function dollar_mult() {
+    var mult_hi = dollar_mult_hi();
+    var mult_lo = dollar_mult_lo();
+    return Math.max(mult_hi, mult_lo);
+  } // Price step multiplier (for the log-scale mode)
+
+
+  function dollar_mult_hi() {
+    var h = Math.min(self.B, height);
+    if (h < $p.config.GRIDY) return 1;
+    var n = h / $p.config.GRIDY; // target grid N
+
+    var yrange = self.$_hi;
+
+    if (self.$_lo > 0) {
+      var yratio = self.$_hi / self.$_lo;
+    } else {
+      yratio = self.$_hi / 1; // TODO: small values
+    }
+
+    var m = yrange * ($p.config.GRIDY / h);
+    var p = parseInt(yrange.toExponential().split('e')[1]);
+    return Math.pow(yratio, 1 / n);
+  }
+
+  function dollar_mult_lo() {
+    var h = Math.min(height - self.B, height);
+    if (h < $p.config.GRIDY) return 1;
+    var n = h / $p.config.GRIDY; // target grid N
+
+    var yrange = Math.abs(self.$_lo);
+
+    if (self.$_hi < 0 && self.$_lo < 0) {
+      var yratio = Math.abs(self.$_lo / self.$_hi);
+    } else {
+      yratio = Math.abs(self.$_lo) / 1;
+    }
+
+    var m = yrange * ($p.config.GRIDY / h);
+    var p = parseInt(yrange.toExponential().split('e')[1]);
+    return Math.pow(yratio, 1 / n);
+  }
+
+  function grid_x() {
+    // If this is a subgrid, no need to calc a timeline,
+    // we just borrow it from the master_grid
+    if (!master_grid) {
+      self.t_step = time_step();
+      self.xs = [];
+      var dt = range[1] - range[0];
+      var r = self.spacex / dt;
+      /* TODO: remove the left-side glitch
+       let year_0 = Utils.get_year(sub[0][0])
+      for (var t0 = year_0; t0 < range[0]; t0 += self.t_step) {}
+       let m0 = Utils.get_month(t0)*/
+
+      for (var i = 0; i < sub.length; i++) {
+        var p = sub[i];
+        var prev = sub[i - 1] || [];
+        var prev_xs = self.xs[self.xs.length - 1] || [0, []];
+        var x = Math.floor((p[0] - range[0]) * r);
+        insert_line(prev, p, x); // Filtering lines that are too near
+
+        var xs = self.xs[self.xs.length - 1] || [0, []];
+        if (prev_xs === xs) continue;
+
+        if (xs[1][0] - prev_xs[1][0] < self.t_step * 0.8) {
+          // prev_xs is a higher "rank" label
+          if (xs[2] <= prev_xs[2]) {
+            self.xs.pop();
+          } else {
+            // Otherwise
+            self.xs.splice(self.xs.length - 2, 1);
+          }
+        }
+      } // TODO: fix grid extension for bigger timeframes
+
+
+      if (interval < grid_maker_WEEK && r > 0) {
+        extend_left(dt, r);
+        extend_right(dt, r);
+      }
+    } else {
+      self.t_step = master_grid.t_step;
+      self.px_step = master_grid.px_step;
+      self.startx = master_grid.startx;
+      self.xs = master_grid.xs;
+    }
+  }
+
+  function insert_line(prev, p, x, m0) {
+    var prev_t = ti_map.ib ? ti_map.i2t(prev[0]) : prev[0];
+    var p_t = ti_map.ib ? ti_map.i2t(p[0]) : p[0];
+
+    if (ti_map.tf < grid_maker_DAY) {
+      prev_t += timezone * grid_maker_HOUR;
+      p_t += timezone * grid_maker_HOUR;
+    }
+
+    var d = timezone * grid_maker_HOUR; // TODO: take this block =========> (see below)
+
+    if ((prev[0] || interval === grid_maker_YEAR) && utils.get_year(p_t) !== utils.get_year(prev_t)) {
+      self.xs.push([x, p, grid_maker_YEAR]); // [px, [...], rank]
+    } else if (prev[0] && utils.get_month(p_t) !== utils.get_month(prev_t)) {
+      self.xs.push([x, p, grid_maker_MONTH]);
+    } // TODO: should be added if this day !== prev day
+    // And the same for 'botbar.js', TODO(*)
+    else if (utils.day_start(p_t) === p_t) {
+        self.xs.push([x, p, grid_maker_DAY]);
+      } else if (p[0] % self.t_step === 0) {
+        self.xs.push([x, p, interval]);
+      }
+  }
+
+  function extend_left(dt, r) {
+    if (!self.xs.length || !isFinite(r)) return;
+    var t = self.xs[0][1][0];
+
+    while (true) {
+      t -= self.t_step;
+      var x = Math.floor((t - range[0]) * r);
+      if (x < 0) break; // TODO: ==========> And insert it here somehow
+
+      if (t % interval === 0) {
+        self.xs.unshift([x, [t], interval]);
+      }
+    }
+  }
+
+  function extend_right(dt, r) {
+    if (!self.xs.length || !isFinite(r)) return;
+    var t = self.xs[self.xs.length - 1][1][0];
+
+    while (true) {
+      t += self.t_step;
+      var x = Math.floor((t - range[0]) * r);
+      if (x > self.spacex) break;
+
+      if (t % interval === 0) {
+        self.xs.push([x, [t], interval]);
+      }
+    }
+  }
+
+  function grid_y() {
+    // Prevent duplicate levels
+    var m = Math.pow(10, -self.prec);
+    self.$_step = Math.max(m, dollar_step());
+    self.ys = [];
+    var y1 = self.$_lo - self.$_lo % self.$_step;
+
+    for (var y$ = y1; y$ <= self.$_hi; y$ += self.$_step) {
+      var y = Math.floor(y$ * self.A + self.B);
+      if (y > height) continue;
+      self.ys.push([y, utils.strip(y$)]);
+    }
+  }
+
+  function grid_y_log() {
+    // TODO: Prevent duplicate levels, is this even
+    // a problem here ?
+    self.$_mult = dollar_mult();
+    self.ys = [];
+    if (!sub.length) return;
+    var v = Math.abs(sub[sub.length - 1][1] || 1);
+    var y1 = search_start_pos(v);
+    var y2 = search_start_neg(-v);
+    var yp = -Infinity; // Previous y value
+
+    var n = height / $p.config.GRIDY; // target grid N
+
+    var q = 1 + (self.$_mult - 1) / 2; // Over 0
+
+    for (var y$ = y1; y$ > 0; y$ /= self.$_mult) {
+      y$ = log_rounder(y$, q);
+      var y = Math.floor(math.log(y$) * self.A + self.B);
+      self.ys.push([y, utils.strip(y$)]);
+      if (y > height) break;
+      if (y - yp < $p.config.GRIDY * 0.7) break;
+      if (self.ys.length > n + 1) break;
+      yp = y;
+    } // Under 0
+
+
+    yp = Infinity;
+
+    for (var y$ = y2; y$ < 0; y$ /= self.$_mult) {
+      y$ = log_rounder(y$, q);
+
+      var _y = Math.floor(math.log(y$) * self.A + self.B);
+
+      if (yp - _y < $p.config.GRIDY * 0.7) break;
+      self.ys.push([_y, utils.strip(y$)]);
+      if (_y < 0) break;
+      if (self.ys.length > n * 3 + 1) break;
+      yp = _y;
+    } // TODO: remove lines near to 0
+
+  } // Search a start for the top grid so that
+  // the fixed value always included
+
+
+  function search_start_pos(value) {
+    var N = height / $p.config.GRIDY; // target grid N
+
+    var y = Infinity,
+        y$ = value,
+        count = 0;
+
+    while (y > 0) {
+      y = Math.floor(math.log(y$) * self.A + self.B);
+      y$ *= self.$_mult;
+      if (count++ > N * 3) return 0; // Prevents deadloops
+    }
+
+    return y$;
+  }
+
+  function search_start_neg(value) {
+    var N = height / $p.config.GRIDY; // target grid N
+
+    var y = -Infinity,
+        y$ = value,
+        count = 0;
+
+    while (y < height) {
+      y = Math.floor(math.log(y$) * self.A + self.B);
+      y$ *= self.$_mult;
+      if (count++ > N * 3) break; // Prevents deadloops
+    }
+
+    return y$;
+  } // Make log scale levels look great again
+
+
+  function log_rounder(x, quality) {
+    var s = Math.sign(x);
+    x = Math.abs(x);
+
+    if (x > 10) {
+      for (var div = 10; div < MAX_INT; div *= 10) {
+        var nice = Math.floor(x / div) * div;
+
+        if (x / nice > quality) {
+          // More than 10% off
+          break;
+        }
+      }
+
+      div /= 10;
+      return s * Math.floor(x / div) * div;
+    } else if (x < 1) {
+      for (var ro = 10; ro >= 1; ro--) {
+        var _nice = utils.round(x, ro);
+
+        if (x / _nice > quality) {
+          // More than 10% off
+          break;
+        }
+      }
+
+      return s * utils.round(x, ro + 1);
+    } else {
+      return s * Math.floor(x);
+    }
+  }
+
+  function apply_sizes() {
+    self.width = $p.width - self.sb;
+    self.height = height;
+  }
+
+  calc_$range();
+  calc_sidebar();
+  return {
+    // First we need to calculate max sidebar width
+    // (among all grids). Then we can actually make
+    // them
+    create: function create() {
+      calc_positions();
+      grid_x();
+
+      if (grid.logScale) {
+        grid_y_log();
+      } else {
+        grid_y();
+      }
+
+      apply_sizes(); // Link to the master grid (candlesticks)
+
+      if (master_grid) {
+        self.master_grid = master_grid;
+      }
+
+      self.grid = grid; // Grid params
+      // Here we add some helpful functions for
+      // plugin creators
+
+      return layout_fn(self, range);
+    },
+    get_layout: function get_layout() {
+      return self;
+    },
+    set_sidebar: function set_sidebar(v) {
+      return self.sb = v;
+    },
+    get_sidebar: function get_sidebar() {
+      return self.sb;
+    }
+  };
+}
+
+/* harmony default export */ var grid_maker = (GridMaker);
+// CONCATENATED MODULE: ./src/components/js/layout.js
+
+
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+// Calculates all necessary s*it to build the chart
+// Heights, widths, transforms, ... = everything
+// Why such a mess you ask? Well, that's because
+// one components size can depend on other component
+// data formatting (e.g. grid width depends on sidebar precision)
+// So it's better to calc all in one place.
+
+
+
+
+
+function Layout(params) {
+  var chart = params.chart,
+      sub = params.sub,
+      offsub = params.offsub,
+      interval = params.interval,
+      range = params.range,
+      ctx = params.ctx,
+      layers_meta = params.layers_meta,
+      ti_map = params.ti_map,
+      $p = params.$props,
+      y_ts = params.y_transforms;
+  var mgrid = chart.grid || {};
+  offsub = offsub.filter(function (x, i) {
+    // Skip offchart overlays with custom grid id,
+    // because they will be mergred with the existing grids
+    return !(x.grid && x.grid.id);
+  }); // Splits space between main chart
+  // and offchart indicator grids
+
+  function grid_hs() {
+    var height = $p.height - $p.config.BOTBAR; // When at least one height defined (default = 1),
+    // Pxs calculated as: (sum of weights) / number
+
+    if (mgrid.height || offsub.find(function (x) {
+      return x.grid.height;
+    })) {
+      return weighted_hs(mgrid, height);
+    }
+
+    var n = offsub.length;
+    var off_h = 2 * Math.sqrt(n) / 7 / (n || 1); // Offchart grid height
+
+    var px = Math.floor(height * off_h); // Main grid height
+
+    var m = height - px * n;
+    return [m].concat(Array(n).fill(px));
+  }
+
+  function weighted_hs(grid, height) {
+    var hs = [{
+      grid: grid
+    }].concat(toConsumableArray_default()(offsub)).map(function (x) {
+      return x.grid.height || 1;
+    });
+    var sum = hs.reduce(function (a, b) {
+      return a + b;
+    }, 0);
+    hs = hs.map(function (x) {
+      return Math.floor(x / sum * height);
+    }); // Refine the height if Math.floor decreased px sum
+
+    sum = hs.reduce(function (a, b) {
+      return a + b;
+    }, 0);
+
+    for (var i = 0; i < height - sum; i++) {
+      hs[i % hs.length]++;
+    }
+
+    return hs;
+  }
+
+  function candles_n_vol() {
+    self.candles = [];
+    self.volume = [];
+    var maxv = Math.max.apply(Math, toConsumableArray_default()(sub.map(function (x) {
+      return x[5];
+    })));
+    var vs = $p.config.VOLSCALE * $p.height / maxv;
+    var x1,
+        x2,
+        mid,
+        prev = undefined;
+    var splitter = self.px_step > 5 ? 1 : 0;
+    var hf_px_step = self.px_step * 0.5;
+
+    for (var i = 0; i < sub.length; i++) {
+      var p = sub[i];
+      mid = self.t2screen(p[0]) + 0.5;
+      self.candles.push(mgrid.logScale ? log_scale.candle(self, mid, p, $p) : {
+        x: mid,
+        w: self.px_step * $p.config.CANDLEW,
+        o: Math.floor(p[1] * self.A + self.B),
+        h: Math.floor(p[2] * self.A + self.B),
+        l: Math.floor(p[3] * self.A + self.B),
+        c: Math.floor(p[4] * self.A + self.B),
+        raw: p
+      }); // Clear volume bar if there is a time gap
+
+      if (sub[i - 1] && p[0] - sub[i - 1][0] > interval) {
+        prev = null;
+      }
+
+      x1 = prev || Math.floor(mid - hf_px_step);
+      x2 = Math.floor(mid + hf_px_step) - 0.5;
+      self.volume.push({
+        x1: x1,
+        x2: x2,
+        h: p[5] * vs,
+        green: p[4] >= p[1],
+        raw: p
+      });
+      prev = x2 + splitter;
+    }
+  } // Main grid
+
+
+  var hs = grid_hs();
+  var specs = {
+    sub: sub,
+    interval: interval,
+    range: range,
+    ctx: ctx,
+    $p: $p,
+    layers_meta: layers_meta,
+    ti_map: ti_map,
+    height: hs[0],
+    y_t: y_ts[0],
+    grid: mgrid,
+    timezone: $p.timezone
+  };
+  var gms = [new grid_maker(0, specs)]; // Sub grids
+
+  var _iterator = _createForOfIteratorHelper(offsub.entries()),
+      _step;
+
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var _step$value = slicedToArray_default()(_step.value, 2),
+          i = _step$value[0],
+          _step$value$ = _step$value[1],
+          data = _step$value$.data,
+          grid = _step$value$.grid;
+
+      specs.sub = data;
+      specs.height = hs[i + 1];
+      specs.y_t = y_ts[i + 1];
+      specs.grid = grid || {};
+      gms.push(new grid_maker(i + 1, specs, gms[0].get_layout()));
+    } // Max sidebar among all grinds
+
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+
+  var sb = Math.max.apply(Math, toConsumableArray_default()(gms.map(function (x) {
+    return x.get_sidebar();
+  })));
+  var grids = [],
+      offset = 0;
+
+  for (i = 0; i < gms.length; i++) {
+    gms[i].set_sidebar(sb);
+    grids.push(gms[i].create());
+    grids[i].id = i;
+    grids[i].offset = offset;
+    offset += grids[i].height;
+  }
+
+  var self = grids[0];
+  candles_n_vol();
+  return {
+    grids: grids,
+    botbar: {
+      width: $p.width,
+      height: $p.config.BOTBAR,
+      offset: offset,
+      xs: grids[0] ? grids[0].xs : []
+    }
+  };
+}
+
+/* harmony default export */ var js_layout = (Layout);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/classCallCheck.js
+var classCallCheck = __webpack_require__(2);
+var classCallCheck_default = /*#__PURE__*/__webpack_require__.n(classCallCheck);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/createClass.js
+var createClass = __webpack_require__(4);
+var createClass_default = /*#__PURE__*/__webpack_require__.n(createClass);
+
+// CONCATENATED MODULE: ./src/components/js/updater.js
+
+
+
+
+function updater_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = updater_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function updater_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return updater_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return updater_arrayLikeToArray(o, minLen); }
+
+function updater_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+// Cursor updater: calculates current values for
+// OHLCV and all other indicators
+
+
+var updater_CursorUpdater = /*#__PURE__*/function () {
+  function CursorUpdater(comp) {
+    classCallCheck_default()(this, CursorUpdater);
+
+    this.comp = comp, this.grids = comp._layout.grids, this.cursor = comp.cursor;
+  }
+
+  createClass_default()(CursorUpdater, [{
+    key: "sync",
+    value: function sync(e) {
+      // TODO: values not displaying if a custom grid id is set:
+      // grid: { id: N }
+      this.cursor.grid_id = e.grid_id;
+      var once = true;
+
+      var _iterator = updater_createForOfIteratorHelper(this.grids),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var grid = _step.value;
+          var c = this.cursor_data(grid, e);
+
+          if (!this.cursor.locked) {
+            // TODO: find a better fix to invisible cursor prob
+            if (once) {
+              this.cursor.t = this.cursor_time(grid, e, c);
+              if (this.cursor.t) once = false;
+            }
+
+            if (c.values) {
+              this.cursor.values[grid.id] = c.values;
+            }
+          }
+
+          if (grid.id !== e.grid_id) continue;
+          this.cursor.x = grid.t2screen(this.cursor.t);
+          this.cursor.y = c.y;
+          this.cursor.y$ = c.y$;
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+    }
+  }, {
+    key: "overlay_data",
+    value: function overlay_data(grid, e) {
+      var s = grid.id === 0 ? 'main_section' : 'sub_section';
+      var data = this.comp[s].data; // Split offchart data between offchart grids
+
+      if (grid.id > 0) {
+        // Sequential grids
+        var _d = data.filter(function (x) {
+          return x.grid.id === undefined;
+        }); // grids with custom ids (for merging)
+
+
+        var m = data.filter(function (x) {
+          return x.grid.id === grid.id;
+        });
+        data = [_d[grid.id - 1]].concat(toConsumableArray_default()(m));
+      }
+
+      var t = grid.screen2t(e.x);
+      var ids = {},
+          res = {};
+
+      var _iterator2 = updater_createForOfIteratorHelper(data),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var d = _step2.value;
+          var ts = d.data.map(function (x) {
+            return x[0];
+          });
+          var i = utils.nearest_a(t, ts)[0];
+          d.type in ids ? ids[d.type]++ : ids[d.type] = 0;
+          res["".concat(d.type, "_").concat(ids[d.type])] = d.data[i];
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+
+      return res;
+    } // Nearest datapoints
+
+  }, {
+    key: "cursor_data",
+    value: function cursor_data(grid, e) {
+      var data = this.comp.main_section.sub;
+      var xs = data.map(function (x) {
+        return grid.t2screen(x[0]) + 0.5;
+      });
+      var i = utils.nearest_a(e.x, xs)[0];
+      if (!xs[i]) return {};
+      return {
+        x: Math.floor(xs[i]) - 0.5,
+        y: Math.floor(e.y - 2) - 0.5 - grid.offset,
+        y$: grid.screen2$(e.y - 2 - grid.offset),
+        t: (data[i] || [])[0],
+        values: Object.assign({
+          ohlcv: grid.id === 0 ? data[i] : undefined
+        }, this.overlay_data(grid, e))
+      };
+    } // Get cursor t-position (extended)
+
+  }, {
+    key: "cursor_time",
+    value: function cursor_time(grid, mouse, candle) {
+      var t = grid.screen2t(mouse.x);
+      var r = Math.abs((t - candle.t) / this.comp.interval);
+      var sign = Math.sign(t - candle.t);
+
+      if (r >= 0.5) {
+        // Outside the data range
+        var n = Math.round(r);
+        return candle.t + n * this.comp.interval * sign;
+      } // Inside the data range
+
+
+      return candle.t;
+    }
+  }]);
+
+  return CursorUpdater;
+}();
+
+/* harmony default export */ var updater = (updater_CursorUpdater);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/components/Section.vue?vue&type=template&id=191d8ca9
+
+var _hoisted_1 = {
+  "class": "trading-vue-section"
+};
+function Sectionvue_type_template_id_191d8ca9_render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_chart_legend = resolveComponent("chart-legend");
+
+  var _component_grid = resolveComponent("grid");
+
+  var _component_sidebar = resolveComponent("sidebar");
+
+  return openBlock(), createBlock(Fragment, null, [createCommentVNode(" Horizontal section: (grid + sidebar) "), createVNode("div", _hoisted_1, [createVNode(_component_chart_legend, {
+    ref: "legend",
+    values: $options.section_values,
+    grid_id: $props.grid_id,
+    common: $options.legend_props,
+    meta_props: $options.get_meta_props,
+    onLegendButtonClick: $options.button_click
+  }, null, 8
+  /* PROPS */
+  , ["values", "grid_id", "common", "meta_props", "onLegendButtonClick"]), createVNode(_component_grid, mergeProps($options.grid_props, {
+    ref: "grid",
+    grid_id: $props.grid_id,
+    onRegisterKbListener: $options.register_kb,
+    onRemoveKbListener: $options.remove_kb,
+    onRangeChanged: $options.range_changed,
+    onCursorChanged: $options.cursor_changed,
+    onCursorLocked: $options.cursor_locked,
+    onLayerMetaProps: $options.emit_meta_props,
+    onCustomEvent: $options.emit_custom_event,
+    onSidebarTransform: $options.sidebar_transform,
+    onRezoomRange: $options.rezoom_range
+  }), null, 16
+  /* FULL_PROPS */
+  , ["grid_id", "onRegisterKbListener", "onRemoveKbListener", "onRangeChanged", "onCursorChanged", "onCursorLocked", "onLayerMetaProps", "onCustomEvent", "onSidebarTransform", "onRezoomRange"]), createVNode(_component_sidebar, mergeProps({
+    ref: 'sb-' + $props.grid_id
+  }, $options.sidebar_props, {
+    grid_id: $props.grid_id,
+    rerender: $data.rerender,
+    onSidebarTransform: $options.sidebar_transform
+  }), null, 16
+  /* FULL_PROPS */
+  , ["grid_id", "rerender", "onSidebarTransform"])])], 64
+  /* STABLE_FRAGMENT */
+  );
+}
+// CONCATENATED MODULE: ./src/components/Section.vue?vue&type=template&id=191d8ca9
+
+// CONCATENATED MODULE: ./src/stuff/frame.js
+
+
+// Annimation frame with a fallback for
+// slower devices
+
+
+var frame_FrameAnimation = /*#__PURE__*/function () {
+  function FrameAnimation(cb) {
+    var _this = this;
+
+    classCallCheck_default()(this, FrameAnimation);
+
+    this.t0 = this.t = utils.now();
+    this.id = setInterval(function () {
+      // The prev frame took too long
+      if (utils.now() - _this.t > 100) return;
+
+      if (utils.now() - _this.t0 > 1200) {
+        _this.stop();
+      }
+
+      if (_this.id) cb(_this);
+      _this.t = utils.now();
+    }, 16);
+  }
+
+  createClass_default()(FrameAnimation, [{
+    key: "stop",
+    value: function stop() {
+      clearInterval(this.id);
+      this.id = null;
+    }
+  }]);
+
+  return FrameAnimation;
+}();
+
+
+// EXTERNAL MODULE: ./node_modules/hammerjs/hammer.js
+var hammer = __webpack_require__(11);
+
+// EXTERNAL MODULE: ./node_modules/hamsterjs/hamster.js
+var hamster = __webpack_require__(37);
+var hamster_default = /*#__PURE__*/__webpack_require__.n(hamster);
+
+// CONCATENATED MODULE: ./src/components/js/grid.js
+
+
+
+
+
+function grid_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = grid_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function grid_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return grid_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return grid_arrayLikeToArray(o, minLen); }
+
+function grid_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+// Grid.js listens to various user-generated events,
+// emits Vue-events if something has changed (e.g. range)
+// Think of it as an I/O system for Grid.vue
+
+
+
+
+ // Grid is good.
+
+var grid_Grid = /*#__PURE__*/function () {
+  function Grid(canvas, comp) {
+    classCallCheck_default()(this, Grid);
+
+    this.MIN_ZOOM = comp.config.MIN_ZOOM;
+    this.MAX_ZOOM = comp.config.MAX_ZOOM;
+    if (utils.is_mobile) this.MIN_ZOOM *= 0.5;
+    this.canvas = canvas;
+    this.ctx = canvas.getContext('2d');
+    this.comp = comp;
+    this.$p = comp.$props;
+    this.data = this.$p.sub;
+    this.range = this.$p.range;
+    this.id = this.$p.grid_id;
+    this.layout = this.$p.layout.grids[this.id];
+    this.interval = this.$p.interval;
+    this.cursor = comp.$props.cursor;
+    this.offset_x = 0;
+    this.offset_y = 0;
+    this.deltas = 0; // Wheel delta events
+
+    this.wmode = this.$p.config.SCROLL_WHEEL;
+    this.listeners();
+    this.overlays = [];
+  }
+
+  createClass_default()(Grid, [{
+    key: "listeners",
+    value: function listeners() {
+      var _this = this;
+
+      this.hm = hamster_default()(this.canvas);
+      this.hm.wheel(function (event, delta) {
+        return _this.mousezoom(-delta * 50, event);
+      });
+      var mc = this.mc = new hammer["Manager"](this.canvas);
+      var T = utils.is_mobile ? 10 : 0;
+      mc.add(new hammer["Pan"]({
+        threshold: T
+      }));
+      mc.add(new hammer["Tap"]());
+      mc.add(new hammer["Pinch"]({
+        threshold: 0
+      }));
+      mc.get('pinch').set({
+        enable: true
+      });
+      if (utils.is_mobile) mc.add(new hammer["Press"]());
+      mc.on('panstart', function (event) {
+        if (_this.cursor.scroll_lock) return;
+
+        if (_this.cursor.mode === 'aim') {
+          return _this.emit_cursor_coord(event);
+        }
+
+        var tfrm = _this.$p.y_transform;
+        _this.drug = {
+          x: event.center.x + _this.offset_x,
+          y: event.center.y + _this.offset_y,
+          r: _this.range.slice(),
+          t: _this.range[1] - _this.range[0],
+          o: tfrm ? tfrm.offset || 0 : 0,
+          y_r: tfrm && tfrm.range ? tfrm.range.slice() : undefined,
+          B: _this.layout.B,
+          t0: utils.now()
+        };
+
+        _this.comp.$emit('cursor-changed', {
+          grid_id: _this.id,
+          x: event.center.x + _this.offset_x,
+          y: event.center.y + _this.offset_y
+        });
+
+        _this.comp.$emit('cursor-locked', true);
+      });
+      mc.on('panmove', function (event) {
+        if (utils.is_mobile) {
+          _this.calc_offset();
+
+          _this.propagate('mousemove', _this.touch2mouse(event));
+        }
+
+        if (_this.drug) {
+          _this.mousedrag(_this.drug.x + event.deltaX, _this.drug.y + event.deltaY);
+
+          _this.comp.$emit('cursor-changed', {
+            grid_id: _this.id,
+            x: event.center.x + _this.offset_x,
+            y: event.center.y + _this.offset_y
+          });
+        } else if (_this.cursor.mode === 'aim') {
+          _this.emit_cursor_coord(event);
+        }
+      });
+      mc.on('panend', function (event) {
+        if (utils.is_mobile && _this.drug) {
+          _this.pan_fade(event);
+        }
+
+        _this.drug = null;
+
+        _this.comp.$emit('cursor-locked', false);
+      });
+      mc.on('tap', function (event) {
+        if (!utils.is_mobile) return;
+
+        _this.sim_mousedown(event);
+
+        if (_this.fade) _this.fade.stop();
+
+        _this.comp.$emit('cursor-changed', {});
+
+        _this.comp.$emit('cursor-changed', {
+          /*grid_id: this.id,
+          x: undefined,//event.center.x + this.offset_x,
+          y: undefined,//event.center.y + this.offset_y,*/
+          mode: 'explore'
+        });
+
+        _this.update();
+      });
+      mc.on('pinchstart', function () {
+        _this.drug = null;
+        _this.pinch = {
+          t: _this.range[1] - _this.range[0],
+          r: _this.range.slice()
+        };
+      });
+      mc.on('pinchend', function () {
+        _this.pinch = null;
+      });
+      mc.on('pinch', function (event) {
+        if (_this.pinch) _this.pinchzoom(event.scale);
+      });
+      mc.on('press', function (event) {
+        if (!utils.is_mobile) return;
+        if (_this.fade) _this.fade.stop();
+
+        _this.calc_offset();
+
+        _this.emit_cursor_coord(event, {
+          mode: 'aim'
+        });
+
+        setTimeout(function () {
+          return _this.update();
+        });
+
+        _this.sim_mousedown(event);
+      });
+      var add = addEventListener;
+      add("gesturestart", this.gesturestart);
+      add("gesturechange", this.gesturechange);
+      add("gestureend", this.gestureend);
+    }
+  }, {
+    key: "gesturestart",
+    value: function gesturestart(event) {
+      event.preventDefault();
+    }
+  }, {
+    key: "gesturechange",
+    value: function gesturechange(event) {
+      event.preventDefault();
+    }
+  }, {
+    key: "gestureend",
+    value: function gestureend(event) {
+      event.preventDefault();
+    }
+  }, {
+    key: "mousemove",
+    value: function mousemove(event) {
+      if (utils.is_mobile) return;
+      this.comp.$emit('cursor-changed', {
+        grid_id: this.id,
+        x: event.layerX,
+        y: event.layerY + this.layout.offset
+      });
+      this.calc_offset();
+      this.propagate('mousemove', event);
+    }
+  }, {
+    key: "mouseout",
+    value: function mouseout(event) {
+      if (utils.is_mobile) return;
+      this.comp.$emit('cursor-changed', {});
+      this.propagate('mouseout', event);
+    }
+  }, {
+    key: "mouseup",
+    value: function mouseup(event) {
+      this.drug = null;
+      this.comp.$emit('cursor-locked', false);
+      this.propagate('mouseup', event);
+    }
+  }, {
+    key: "mousedown",
+    value: function mousedown(event) {
+      if (utils.is_mobile) return;
+      this.propagate('mousedown', event);
+      this.comp.$emit('cursor-locked', true);
+      if (event.defaultPrevented) return;
+      this.comp.$emit('custom-event', {
+        event: 'grid-mousedown',
+        args: [this.id, event]
+      });
+    } // Simulated mousedown (for mobile)
+
+  }, {
+    key: "sim_mousedown",
+    value: function sim_mousedown(event) {
+      var _this2 = this;
+
+      if (event.srcEvent.defaultPrevented) return;
+      this.comp.$emit('custom-event', {
+        event: 'grid-mousedown',
+        args: [this.id, event]
+      });
+      this.propagate('mousemove', this.touch2mouse(event));
+      this.update();
+      this.propagate('mousedown', this.touch2mouse(event));
+      setTimeout(function () {
+        _this2.propagate('click', _this2.touch2mouse(event));
+      });
+    } // Convert touch to "mouse" event
+
+  }, {
+    key: "touch2mouse",
+    value: function touch2mouse(e) {
+      this.calc_offset();
+      return {
+        original: e.srcEvent,
+        layerX: e.center.x + this.offset_x,
+        layerY: e.center.y + this.offset_y,
+        preventDefault: function preventDefault() {
+          this.original.preventDefault();
+        }
+      };
+    }
+  }, {
+    key: "click",
+    value: function click(event) {
+      this.propagate('click', event);
+    }
+  }, {
+    key: "emit_cursor_coord",
+    value: function emit_cursor_coord(event, add) {
+      if (add === void 0) {
+        add = {};
+      }
+
+      this.comp.$emit('cursor-changed', Object.assign({
+        grid_id: this.id,
+        x: event.center.x + this.offset_x,
+        y: event.center.y + this.offset_y + this.layout.offset
+      }, add));
+    }
+  }, {
+    key: "pan_fade",
+    value: function pan_fade(event) {
+      var _this3 = this;
+
+      var dt = utils.now() - this.drug.t0;
+      var dx = this.range[1] - this.drug.r[1];
+      var v = 42 * dx / dt;
+      var v0 = Math.abs(v * 0.01);
+      if (dt > 500) return;
+      if (this.fade) this.fade.stop();
+      this.fade = new frame_FrameAnimation(function (self) {
+        v *= 0.85;
+
+        if (Math.abs(v) < v0) {
+          self.stop();
+        }
+
+        _this3.range[0] += v;
+        _this3.range[1] += v;
+
+        _this3.change_range();
+      });
+    }
+  }, {
+    key: "calc_offset",
+    value: function calc_offset() {
+      var rect = this.canvas.getBoundingClientRect();
+      this.offset_x = -rect.x;
+      this.offset_y = -rect.y;
+    }
+  }, {
+    key: "new_layer",
+    value: function new_layer(layer) {
+      if (layer.name === 'crosshair') {
+        this.crosshair = layer;
+      } else {
+        this.overlays.push(layer);
+      }
+
+      this.update();
+    }
+  }, {
+    key: "del_layer",
+    value: function del_layer(id) {
+      this.overlays = this.overlays.filter(function (x) {
+        return x.id !== id;
+      });
+      this.update();
+    }
+  }, {
+    key: "show_hide_layer",
+    value: function show_hide_layer(event) {
+      var l = this.overlays.filter(function (x) {
+        return x.id === event.id;
+      });
+      if (l.length) l[0].display = event.display;
+    }
+  }, {
+    key: "update",
+    value: function update() {
+      var _this4 = this;
+
+      // Update reference to the grid
+      // TODO: check what happens if data changes interval
+      this.layout = this.$p.layout.grids[this.id];
+      this.interval = this.$p.interval;
+      if (!this.layout) return;
+      this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+      if (this.$p.shaders.length) this.apply_shaders();
+      this.grid();
+      var overlays = [];
+      overlays.push.apply(overlays, toConsumableArray_default()(this.overlays)); // z-index sorting
+
+      overlays.sort(function (l1, l2) {
+        return l1.z - l2.z;
+      });
+      overlays.forEach(function (l) {
+        if (!l.display) return;
+
+        _this4.ctx.save();
+
+        var r = l.renderer;
+        if (r.pre_draw) r.pre_draw(_this4.ctx);
+        r.draw(_this4.ctx);
+        if (r.post_draw) r.post_draw(_this4.ctx);
+
+        _this4.ctx.restore();
+      });
+
+      if (this.crosshair) {
+        this.crosshair.renderer.draw(this.ctx);
+      }
+    }
+  }, {
+    key: "apply_shaders",
+    value: function apply_shaders() {
+      var layout = this.$p.layout.grids[this.id];
+      var props = {
+        layout: layout,
+        range: this.range,
+        interval: this.interval,
+        tf: layout.ti_map.tf,
+        cursor: this.cursor,
+        colors: this.$p.colors,
+        sub: this.data,
+        font: this.$p.font,
+        config: this.$p.config,
+        meta: this.$p.meta
+      };
+
+      var _iterator = grid_createForOfIteratorHelper(this.$p.shaders),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var s = _step.value;
+          this.ctx.save();
+          s.draw(this.ctx, props);
+          this.ctx.restore();
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+    } // Actually draws the grid (for real)
+
+  }, {
+    key: "grid",
+    value: function grid() {
+      this.ctx.strokeStyle = this.$p.colors.grid;
+      this.ctx.beginPath();
+      var ymax = this.layout.height;
+
+      var _iterator2 = grid_createForOfIteratorHelper(this.layout.xs),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var _step2$value = slicedToArray_default()(_step2.value, 2),
+              x = _step2$value[0],
+              p = _step2$value[1];
+
+          this.ctx.moveTo(x - 0.5, 0);
+          this.ctx.lineTo(x - 0.5, ymax);
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+
+      var _iterator3 = grid_createForOfIteratorHelper(this.layout.ys),
+          _step3;
+
+      try {
+        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+          var _step3$value = slicedToArray_default()(_step3.value, 2),
+              y = _step3$value[0],
+              y$ = _step3$value[1];
+
+          this.ctx.moveTo(0, y - 0.5);
+          this.ctx.lineTo(this.layout.width, y - 0.5);
+        }
+      } catch (err) {
+        _iterator3.e(err);
+      } finally {
+        _iterator3.f();
+      }
+
+      this.ctx.stroke();
+      if (this.$p.grid_id) this.upper_border();
+    }
+  }, {
+    key: "upper_border",
+    value: function upper_border() {
+      this.ctx.strokeStyle = this.$p.colors.scale;
+      this.ctx.beginPath();
+      this.ctx.moveTo(0, 0.5);
+      this.ctx.lineTo(this.layout.width, 0.5);
+      this.ctx.stroke();
+    }
+  }, {
+    key: "mousezoom",
+    value: function mousezoom(delta, event) {
+      // TODO: for mobile
+      if (this.wmode !== 'pass') {
+        if (this.wmode === 'click' && !this.$p.meta.activated) {
+          return;
+        }
+
+        event.originalEvent.preventDefault();
+        event.preventDefault();
+      }
+
+      event.deltaX = event.deltaX || utils.get_deltaX(event);
+      event.deltaY = event.deltaY || utils.get_deltaY(event);
+
+      if (Math.abs(event.deltaX) > 0) {
+        this.trackpad = true;
+
+        if (Math.abs(event.deltaX) >= Math.abs(event.deltaY)) {
+          delta *= 0.1;
+        }
+
+        this.trackpad_scroll(event);
+      }
+
+      if (this.trackpad) delta *= 0.032;
+      delta = utils.smart_wheel(delta); // TODO: mouse zooming is a little jerky,
+      // needs to follow f(mouse_wheel_speed) and
+      // if speed is low, scroll shoud be slower
+
+      if (delta < 0 && this.data.length <= this.MIN_ZOOM) return;
+      if (delta > 0 && this.data.length > this.MAX_ZOOM) return;
+      var k = this.interval / 1000;
+      var diff = delta * k * this.data.length;
+      var tl = this.comp.config.ZOOM_MODE === 'tl';
+
+      if (event.originalEvent.ctrlKey || tl) {
+        var offset = event.originalEvent.offsetX;
+        var diff1 = offset / (this.canvas.width - 1) * diff;
+        var diff2 = diff - diff1;
+        this.range[0] -= diff1;
+        this.range[1] += diff2;
+      } else {
+        this.range[0] -= diff;
+      }
+
+      if (tl) {
+        var _offset = event.originalEvent.offsetY;
+
+        var _diff = _offset / (this.canvas.height - 1) * 2;
+
+        var _diff2 = 2 - _diff;
+
+        var z = diff / (this.range[1] - this.range[0]); //rezoom_range(z, diff_x, diff_y)
+
+        this.comp.$emit('rezoom-range', {
+          grid_id: this.id,
+          z: z,
+          diff1: _diff,
+          diff2: _diff2
+        });
+      }
+
+      this.change_range();
+    }
+  }, {
+    key: "mousedrag",
+    value: function mousedrag(x, y) {
+      var dt = this.drug.t * (this.drug.x - x) / this.layout.width;
+      var d$ = this.layout.$_hi - this.layout.$_lo;
+      d$ *= (this.drug.y - y) / this.layout.height;
+      var offset = this.drug.o + d$;
+      var ls = this.layout.grid.logScale;
+
+      if (ls && this.drug.y_r) {
+        var dy = this.drug.y - y;
+        var range = this.drug.y_r.slice();
+        range[0] = math.exp((0 - this.drug.B + dy) / this.layout.A);
+        range[1] = math.exp((this.layout.height - this.drug.B + dy) / this.layout.A);
+      }
+
+      if (this.drug.y_r && this.$p.y_transform && !this.$p.y_transform.auto) {
+        this.comp.$emit('sidebar-transform', {
+          grid_id: this.id,
+          range: ls ? range || this.drug.y_r : [this.drug.y_r[0] - offset, this.drug.y_r[1] - offset]
+        });
+      }
+
+      this.range[0] = this.drug.r[0] + dt;
+      this.range[1] = this.drug.r[1] + dt;
+      this.change_range();
+    }
+  }, {
+    key: "pinchzoom",
+    value: function pinchzoom(scale) {
+      if (scale > 1 && this.data.length <= this.MIN_ZOOM) return;
+      if (scale < 1 && this.data.length > this.MAX_ZOOM) return;
+      var t = this.pinch.t;
+      var nt = t * 1 / scale;
+      this.range[0] = this.pinch.r[0] - (nt - t) * 0.5;
+      this.range[1] = this.pinch.r[1] + (nt - t) * 0.5;
+      this.change_range();
+    }
+  }, {
+    key: "trackpad_scroll",
+    value: function trackpad_scroll(event) {
+      var dt = this.range[1] - this.range[0];
+      this.range[0] += event.deltaX * dt * 0.011;
+      this.range[1] += event.deltaX * dt * 0.011;
+      this.change_range();
+    }
+  }, {
+    key: "change_range",
+    value: function change_range() {
+      // TODO: better way to limit the view. Problem:
+      // when you are at the dead end of the data,
+      // and keep scrolling,
+      // the chart continues to scale down a little.
+      // Solution: I don't know yet
+      if (!this.range.length || this.data.length < 2) return;
+      var l = this.data.length - 1;
+      var data = this.data;
+      var range = this.range;
+      range[0] = utils.clamp(range[0], -Infinity, data[l][0] - this.interval * 5.5);
+      range[1] = utils.clamp(range[1], data[0][0] + this.interval * 5.5, Infinity); // TODO: IMPORTANT scrolling is jerky The Problem caused
+      // by the long round trip of 'range-changed' event.
+      // First it propagates up to update layout in Chart.vue,
+      // then it moves back as watch() update. It takes 1-5 ms.
+      // And because the delay is different each time we see
+      // the lag. No smooth movement and it's annoying.
+      // Solution: we could try to calc the layout immediatly
+      // somewhere here. Still will hurt the sidebar & bottombar
+
+      this.comp.$emit('range-changed', range);
+    } // Propagate mouse event to overlays
+
+  }, {
+    key: "propagate",
+    value: function propagate(name, event) {
+      var _iterator4 = grid_createForOfIteratorHelper(this.overlays),
+          _step4;
+
+      try {
+        for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+          var layer = _step4.value;
+
+          if (layer.renderer[name]) {
+            layer.renderer[name](event);
+          }
+
+          var mouse = layer.renderer.mouse;
+          var keys = layer.renderer.keys;
+
+          if (mouse.listeners) {
+            mouse.emit(name, event);
+          }
+
+          if (keys && keys.listeners) {
+            keys.emit(name, event);
+          }
+        }
+      } catch (err) {
+        _iterator4.e(err);
+      } finally {
+        _iterator4.f();
+      }
+    }
+  }, {
+    key: "destroy",
+    value: function destroy() {
+      var rm = removeEventListener;
+      rm("gesturestart", this.gesturestart);
+      rm("gesturechange", this.gesturechange);
+      rm("gestureend", this.gestureend);
+      if (this.mc) this.mc.destroy();
+      if (this.hm) this.hm.unwheel();
+    }
+  }]);
+
+  return Grid;
+}();
+
+
+// CONCATENATED MODULE: ./src/mixins/canvas.js
+// Interactive canvas-based component
+// Should implement: mousemove, mouseout, mouseup, mousedown, click
+
+/* harmony default export */ var mixins_canvas = ({
+  methods: {
+    setup: function setup() {
+      var _this = this;
+
+      var id = "".concat(this.$props.tv_id, "-").concat(this._id, "-canvas");
+      var canvas = document.getElementById(id);
+      var dpr = window.devicePixelRatio || 1;
+      canvas.style.width = "".concat(this._attrs.width, "px");
+      canvas.style.height = "".concat(this._attrs.height, "px");
+      if (dpr < 1) dpr = 1; // Realy ? That's it? Issue #63
+
+      this.$nextTick(function () {
+        var rect = canvas.getBoundingClientRect();
+        canvas.width = rect.width * dpr;
+        canvas.height = rect.height * dpr;
+        var ctx = canvas.getContext('2d', {// TODO: test the boost:
+          //alpha: false,
+          //desynchronized: true,
+          //preserveDrawingBuffer: false
+        });
+        ctx.scale(dpr, dpr);
+
+        _this.redraw(); // Fallback fix for Brave browser
+        // https://github.com/brave/brave-browser/issues/1738
+
+
+        if (!ctx.measureTextOrg) {
+          ctx.measureTextOrg = ctx.measureText;
+        }
+
+        ctx.measureText = function (text) {
+          return utils.measureText(ctx, text, _this.$props.tv_id);
+        };
+      });
+    },
+    create_canvas: function create_canvas(h, id, props) {
+      var _this2 = this;
+
+      this._id = id;
+      this._attrs = props.attrs;
+      return h('div', {
+        "class": "trading-vue-".concat(id),
+        style: {
+          left: props.position.x + 'px',
+          top: props.position.y + 'px',
+          position: 'absolute'
+        }
+      }, [h('canvas', Object.assign({
+        id: "".concat(this.$props.tv_id, "-").concat(id, "-canvas"),
+        onmousemove: function onmousemove(e) {
+          return _this2.renderer.mousemove(e);
+        },
+        onmouseout: function onmouseout(e) {
+          return _this2.renderer.mouseout(e);
+        },
+        onmouseup: function onmouseup(e) {
+          return _this2.renderer.mouseup(e);
+        },
+        onmousedown: function onmousedown(e) {
+          return _this2.renderer.mousedown(e);
+        },
+        ref: 'canvas',
+        style: props.style
+      }, props.attrs))].concat(props.hs || []));
+    },
+    redraw: function redraw() {
+      if (!this.renderer) return;
+      this.renderer.update();
+    }
+  },
+  watch: {
+    width: function width(val) {
+      this._attrs.width = val;
+      this.setup();
+    },
+    height: function height(val) {
+      this._attrs.height = val;
+      this.setup();
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/mixins/uxlist.js
+// Manager for Inteerface objects
+/* harmony default export */ var uxlist = ({
+  methods: {
+    on_ux_event: function on_ux_event(d, target) {
+      if (d.event === 'new-interface') {
+        if (d.args[0].target === target) {
+          d.args[0].vars = d.args[0].vars || {};
+          d.args[0].grid_id = d.args[1];
+          d.args[0].overlay_id = d.args[2];
+          this.uxs.push(d.args[0]); // this.rerender++
+        }
+      } else if (d.event === 'close-interface') {
+        this.uxs = this.uxs.filter(function (x) {
+          return x.uuid !== d.args[0];
+        });
+      } else if (d.event === 'modify-interface') {
+        var ux = this.uxs.filter(function (x) {
+          return x.uuid === d.args[0];
+        });
+
+        if (ux.length) {
+          this.modify(ux[0], d.args[1]);
+        }
+      } else if (d.event === 'hide-interface') {
+        var _ux = this.uxs.filter(function (x) {
+          return x.uuid === d.args[0];
+        });
+
+        if (_ux.length) {
+          _ux[0].hidden = true;
+          this.modify(_ux[0], {
+            hidden: true
+          });
+        }
+      } else if (d.event === 'show-interface') {
+        var _ux2 = this.uxs.filter(function (x) {
+          return x.uuid === d.args[0];
+        });
+
+        if (_ux2.length) {
+          this.modify(_ux2[0], {
+            hidden: false
+          });
+        }
+      } else {
+        return d;
+      }
+    },
+    modify: function modify(ux, obj) {
+      if (obj === void 0) {
+        obj = {};
+      }
+
+      for (var k in obj) {
+        if (k in ux) {
+          ux[k] = obj[k];
+        }
+      }
+    },
+    // Remove all UXs for a given overlay id
+    remove_all_ux: function remove_all_ux(id) {
+      this.uxs = this.uxs.filter(function (x) {
+        return x.overlay.id !== id;
+      });
+    }
+  },
+  data: function data() {
+    return {
+      uxs: []
+    };
+  }
+});
+// CONCATENATED MODULE: ./src/components/js/crosshair.js
+
+
+
+var crosshair_Crosshair = /*#__PURE__*/function () {
+  function Crosshair(comp) {
+    classCallCheck_default()(this, Crosshair);
+
+    this.comp = comp;
+    this.$p = comp.$props;
+    this.data = this.$p.sub;
+    this._visible = false;
+    this.locked = false;
+    this.layout = this.$p.layout;
+  }
+
+  createClass_default()(Crosshair, [{
+    key: "draw",
+    value: function draw(ctx) {
+      // Update reference to the grid
+      this.layout = this.$p.layout;
+      var cursor = this.comp.$props.cursor;
+      if (!this.visible && cursor.mode === 'explore') return;
+      this.x = this.$p.cursor.x;
+      this.y = this.$p.cursor.y;
+      ctx.save();
+      ctx.strokeStyle = this.$p.colors.cross;
+      ctx.beginPath();
+      ctx.setLineDash([5]); // H
+
+      if (this.$p.cursor.grid_id === this.layout.id) {
+        ctx.moveTo(0, this.y);
+        ctx.lineTo(this.layout.width - 0.5, this.y);
+      } // V
+
+
+      ctx.moveTo(this.x, 0);
+      ctx.lineTo(this.x, this.layout.height);
+      ctx.stroke();
+      ctx.restore();
+    }
+  }, {
+    key: "hide",
+    value: function hide() {
+      this.visible = false;
+      this.x = undefined;
+      this.y = undefined;
+    }
+  }, {
+    key: "visible",
+    get: function get() {
+      return this._visible;
+    },
+    set: function set(val) {
+      this._visible = val;
+    }
+  }]);
+
+  return Crosshair;
+}();
+
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/Crosshair.vue?vue&type=script&lang=js
+
+
+/* harmony default export */ var Crosshairvue_type_script_lang_js = ({
+  name: 'Crosshair',
+  props: ['cursor', 'colors', 'layout', 'sub'],
+  emits: ['new-grid-layer', 'redraw-grid'],
+  methods: {
+    create: function create() {
+      this.ch = new crosshair_Crosshair(this); // New grid overlay-renderer descriptor.
+      // Should implement draw() (see Spline.vue)
+
+      this.$emit('new-grid-layer', {
+        name: 'crosshair',
+        renderer: this.ch
+      });
+    }
+  },
+  watch: {
+    cursor: {
+      handler: function handler() {
+        if (!this.ch) this.create(); // Explore = default mode on mobile
+
+        var cursor = this.$props.cursor;
+        var explore = cursor.mode === 'explore';
+
+        if (!cursor.x || !cursor.y) {
+          this.ch.hide();
+          this.$emit('redraw-grid');
+          return;
+        }
+
+        this.ch.visible = !explore;
+      },
+      deep: true
+    }
+  },
+  render: function render() {
+    return [];
+  }
+});
+// CONCATENATED MODULE: ./src/components/Crosshair.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/Crosshair.vue
+
+
+
+/* harmony default export */ var components_Crosshair = (Crosshairvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/KeyboardListener.vue?vue&type=script&lang=js
+/* harmony default export */ var KeyboardListenervue_type_script_lang_js = ({
+  name: 'KeyboardListener',
+  emits: ['register-kb-listener', 'remove-kb-listener', 'keydown', 'keyup', 'keypress'],
+  render: function render() {
+    return [];
+  },
+  created: function created() {
+    this.$emit('register-kb-listener', {
+      id: this._uid,
+      keydown: this.keydown,
+      keyup: this.keyup,
+      keypress: this.keypress
+    });
+  },
+  beforeUnmount: function beforeUnmount() {
+    this.$emit('remove-kb-listener', {
+      id: this._uid
+    });
+  },
+  methods: {
+    keydown: function keydown(event) {
+      this.$emit('keydown', event);
+    },
+    keyup: function keyup(event) {
+      this.$emit('keyup', event);
+    },
+    keypress: function keypress(event) {
+      this.$emit('keypress', event);
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/KeyboardListener.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/KeyboardListener.vue
+
+
+
+/* harmony default export */ var KeyboardListener = (KeyboardListenervue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/components/UxLayer.vue?vue&type=template&id=42fdb034
+
+function UxLayervue_type_template_id_42fdb034_render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_ux_wrapper = resolveComponent("ux-wrapper");
+
+  return openBlock(), createBlock("span", {
+    "class": "trading-vue-grid-ux-".concat($props.id),
+    style: $options.style
+  }, [(openBlock(true), createBlock(Fragment, null, renderList($props.uxs, function (ux) {
+    return openBlock(), createBlock(_component_ux_wrapper, {
+      onCustomEvent: $options.on_custom_event,
+      key: ux.uuid,
+      ux: ux,
+      updater: $props.updater,
+      colors: $props.colors,
+      config: $props.config
+    }, null, 8
+    /* PROPS */
+    , ["onCustomEvent", "ux", "updater", "colors", "config"]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))], 6
+  /* CLASS, STYLE */
+  );
+}
+// CONCATENATED MODULE: ./src/components/UxLayer.vue?vue&type=template&id=42fdb034
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/components/UxWrapper.vue?vue&type=template&id=04e97c5a
+
+var UxWrappervue_type_template_id_04e97c5a_hoisted_1 = {
+  key: 1,
+  "class": "tvjs-ux-wrapper-head"
+};
+function UxWrappervue_type_template_id_04e97c5a_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return $data.visible ? (openBlock(), createBlock("div", {
+    key: 0,
+    "class": "trading-vue-ux-wrapper",
+    id: "tvjs-ux-wrapper-".concat($props.ux.uuid),
+    style: $options.style
+  }, [(openBlock(), createBlock(resolveDynamicComponent($props.ux.component), {
+    onCustomEvent: $options.on_custom_event,
+    ux: $props.ux,
+    updater: $props.updater,
+    wrapper: $options.wrapper,
+    colors: $props.colors
+  }, null, 8
+  /* PROPS */
+  , ["onCustomEvent", "ux", "updater", "wrapper", "colors"])), $props.ux.show_pin ? (openBlock(), createBlock("div", {
+    key: 0,
+    style: $options.pin_style,
+    "class": "tvjs-ux-wrapper-pin"
+  }, null, 4
+  /* STYLE */
+  )) : createCommentVNode("v-if", true), $props.ux.win_header !== false ? (openBlock(), createBlock("div", UxWrappervue_type_template_id_04e97c5a_hoisted_1, [createVNode("div", {
+    "class": "tvjs-ux-wrapper-close",
+    onClick: _cache[1] || (_cache[1] = function () {
+      return $options.close.apply($options, arguments);
+    }),
+    style: $options.btn_style
+  }, "×", 4
+  /* STYLE */
+  )])) : createCommentVNode("v-if", true)], 12
+  /* STYLE, PROPS */
+  , ["id"])) : createCommentVNode("v-if", true);
+}
+// CONCATENATED MODULE: ./src/components/UxWrapper.vue?vue&type=template&id=04e97c5a
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/UxWrapper.vue?vue&type=script&lang=js
+
+/* harmony default export */ var UxWrappervue_type_script_lang_js = ({
+  name: 'UxWrapper',
+  props: ['ux', 'updater', 'colors', 'config'],
+  mounted: function mounted() {
+    this.self = document.getElementById(this.uuid);
+    this.w = this.self.offsetWidth; // TODO: => width: "content"
+
+    this.h = this.self.offsetHeight; // TODO: => height: "content"
+
+    this.update_position();
+  },
+  created: function created() {
+    this.mouse.on('mousemove', this.mousemove);
+    this.mouse.on('mouseout', this.mouseout);
+  },
+  beforeUnmount: function beforeUnmount() {
+    this.mouse.off('mousemove', this.mousemove);
+    this.mouse.off('mouseout', this.mouseout);
+  },
+  methods: {
+    update_position: function update_position() {
+      if (this.uxr.hidden) return;
+      var lw = this.layout.width;
+      var lh = this.layout.height;
+      var pin = this.uxr.pin;
+
+      switch (pin[0]) {
+        case 'cursor':
+          var x = this.uxr.overlay.cursor.x;
+          break;
+
+        case 'mouse':
+          x = this.mouse.x;
+          break;
+
+        default:
+          if (typeof pin[0] === 'string') {
+            x = this.parse_coord(pin[0], lw);
+          } else {
+            x = this.layout.t2screen(pin[0]);
+          }
+
+      }
+
+      switch (pin[1]) {
+        case 'cursor':
+          var y = this.uxr.overlay.cursor.y;
+          break;
+
+        case 'mouse':
+          y = this.mouse.y;
+          break;
+
+        default:
+          if (typeof pin[1] === 'string') {
+            y = this.parse_coord(pin[1], lh);
+          } else {
+            y = this.layout.$2screen(pin[1]);
+          }
+
+      }
+
+      this.x = x + this.ox;
+      this.y = y + this.oy;
+    },
+    parse_coord: function parse_coord(str, scale) {
+      str = str.trim();
+      if (str === '0' || str === '') return 0;
+      var plus = str.split('+');
+
+      if (plus.length === 2) {
+        return this.parse_coord(plus[0], scale) + this.parse_coord(plus[1], scale);
+      }
+
+      var minus = str.split('-');
+
+      if (minus.length === 2) {
+        return this.parse_coord(minus[0], scale) - this.parse_coord(minus[1], scale);
+      }
+
+      var per = str.split('%');
+
+      if (per.length === 2) {
+        return scale * parseInt(per[0]) / 100;
+      }
+
+      var px = str.split('px');
+
+      if (px.length === 2) {
+        return parseInt(px[0]);
+      }
+
+      return undefined;
+    },
+    mousemove: function mousemove() {
+      this.update_position();
+      this.visible = true;
+    },
+    mouseout: function mouseout() {
+      if (this.uxr.pin.includes('cursor') || this.uxr.pin.includes('mouse')) this.visible = false;
+    },
+    on_custom_event: function on_custom_event(event) {
+      this.$emit('custom-event', event);
+
+      if (event.event === 'modify-interface') {
+        if (this.self) {
+          this.w = this.self.offsetWidth;
+          this.h = this.self.offsetHeight;
+        }
+
+        this.update_position();
+      }
+    },
+    close: function close() {
+      this.$emit('custom-event', {
+        event: 'close-interface',
+        args: [this.$props.ux.uuid]
+      });
+    }
+  },
+  computed: {
+    uxr: function uxr() {
+      return this.$props.ux; // just a ref
+    },
+    layout: function layout() {
+      return this.$props.ux.overlay.layout;
+    },
+    settings: function settings() {
+      return this.$props.ux.overlay.settings;
+    },
+    uuid: function uuid() {
+      return "tvjs-ux-wrapper-".concat(this.uxr.uuid);
+    },
+    mouse: function mouse() {
+      return this.uxr.overlay.mouse;
+    },
+    style: function style() {
+      var st = {
+        'display': this.uxr.hidden ? 'none' : undefined,
+        'left': "".concat(this.x, "px"),
+        'top': "".concat(this.y, "px"),
+        'pointer-events': this.uxr.pointer_events || 'all',
+        'z-index': this.z_index
+      };
+      if (this.uxr.win_styling !== false) st = Object.assign(st, {
+        'border': "1px solid ".concat(this.$props.colors.grid),
+        'border-radius': '3px',
+        'background': "".concat(this.background)
+      });
+      return st;
+    },
+    pin_style: function pin_style() {
+      return {
+        'left': "".concat(-this.ox, "px"),
+        'top': "".concat(-this.oy, "px"),
+        'background-color': this.uxr.pin_color
+      };
+    },
+    btn_style: function btn_style() {
+      return {
+        'background': "".concat(this.inactive_btn_color),
+        'color': "".concat(this.inactive_btn_color)
+      };
+    },
+    pin_pos: function pin_pos() {
+      return this.uxr.pin_position ? this.uxr.pin_position.split(',') : ['0', '0'];
+    },
+    // Offset x
+    ox: function ox() {
+      if (this.pin_pos.length !== 2) return undefined;
+      var x = this.parse_coord(this.pin_pos[0], this.w);
+      return -x;
+    },
+    // Offset y
+    oy: function oy() {
+      if (this.pin_pos.length !== 2) return undefined;
+      var y = this.parse_coord(this.pin_pos[1], this.h);
+      return -y;
+    },
+    z_index: function z_index() {
+      var base_index = this.settings['z-index'] || this.settings['zIndex'] || 0;
+      var ux_index = this.uxr['z_index'] || 0;
+      return base_index + ux_index;
+    },
+    background: function background() {
+      var c = this.uxr.background || this.$props.colors.back;
+      return utils.apply_opacity(c, this.uxr.background_opacity || this.$props.config.UX_OPACITY);
+    },
+    inactive_btn_color: function inactive_btn_color() {
+      return this.uxr.inactive_btn_color || this.$props.colors.grid;
+    },
+    wrapper: function wrapper() {
+      return {
+        x: this.x,
+        y: this.y,
+        pin_x: this.x - this.ox,
+        pin_y: this.y - this.oy
+      };
+    }
+  },
+  watch: {
+    updater: function updater() {
+      this.update_position();
+    }
+  },
+  data: function data() {
+    return {
+      x: 0,
+      y: 0,
+      w: 0,
+      h: 0,
+      visible: true
+    };
+  }
+});
+// CONCATENATED MODULE: ./src/components/UxWrapper.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./src/components/UxWrapper.vue?vue&type=style&index=0&id=04e97c5a&lang=css
+var UxWrappervue_type_style_index_0_id_04e97c5a_lang_css = __webpack_require__(49);
+
+// CONCATENATED MODULE: ./src/components/UxWrapper.vue
+
+
+
+
+
+UxWrappervue_type_script_lang_js.render = UxWrappervue_type_template_id_04e97c5a_render
+
+/* harmony default export */ var UxWrapper = (UxWrappervue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/UxLayer.vue?vue&type=script&lang=js
+
+/* harmony default export */ var UxLayervue_type_script_lang_js = ({
+  name: 'UxLayer',
+  props: ['tv_id', 'id', 'uxs', 'updater', 'colors', 'config'],
+  components: {
+    UxWrapper: UxWrapper
+  },
+  created: function created() {},
+  mounted: function mounted() {},
+  beforeUnmount: function beforeUnmount() {},
+  methods: {
+    on_custom_event: function on_custom_event(event) {
+      this.$emit('custom-event', event);
+    }
+  },
+  computed: {
+    style: function style() {
+      return {
+        'top': this.$props.id !== 0 ? '1px' : 0,
+        'left': 0,
+        'width': '100%',
+        'height': 'calc(100% - 2px)',
+        'position': 'absolute',
+        'z-index': '1',
+        'pointer-events': 'none',
+        'overflow': 'hidden'
+      };
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/UxLayer.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/UxLayer.vue
+
+
+
+UxLayervue_type_script_lang_js.render = UxLayervue_type_template_id_42fdb034_render
+
+/* harmony default export */ var UxLayer = (UxLayervue_type_script_lang_js);
+// CONCATENATED MODULE: ./src/stuff/mouse.js
+
+
+
+function mouse_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = mouse_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function mouse_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return mouse_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return mouse_arrayLikeToArray(o, minLen); }
+
+function mouse_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+// Mouse event handler for overlay
+var mouse_Mouse = /*#__PURE__*/function () {
+  function Mouse(comp) {
+    classCallCheck_default()(this, Mouse);
+
+    this.comp = comp;
+    this.map = {};
+    this.listeners = 0;
+    this.pressed = false;
+    this.x = comp.$props.cursor.x;
+    this.y = comp.$props.cursor.y;
+    this.t = comp.$props.cursor.t;
+    this.y$ = comp.$props.cursor.y$;
+  } // You can choose where to place the handler
+  // (beginning or end of the queue)
+
+
+  createClass_default()(Mouse, [{
+    key: "on",
+    value: function on(name, handler, dir) {
+      if (dir === void 0) {
+        dir = "unshift";
+      }
+
+      if (!handler) return;
+      this.map[name] = this.map[name] || [];
+      this.map[name][dir](handler);
+      this.listeners++;
+    }
+  }, {
+    key: "off",
+    value: function off(name, handler) {
+      if (!this.map[name]) return;
+      var i = this.map[name].indexOf(handler);
+      if (i < 0) return;
+      this.map[name].splice(i, 1);
+      this.listeners--;
+    } // Called by grid.js
+
+  }, {
+    key: "emit",
+    value: function emit(name, event) {
+      var l = this.comp.layout;
+
+      if (name in this.map) {
+        var _iterator = mouse_createForOfIteratorHelper(this.map[name]),
+            _step;
+
+        try {
+          for (_iterator.s(); !(_step = _iterator.n()).done;) {
+            var f = _step.value;
+            f(event);
+          }
+        } catch (err) {
+          _iterator.e(err);
+        } finally {
+          _iterator.f();
+        }
+      }
+
+      if (name === 'mousemove') {
+        this.x = event.layerX;
+        this.y = event.layerY;
+        this.t = l.screen2t(this.x);
+        this.y$ = l.screen2$(this.y);
+      }
+
+      if (name === 'mousedown') {
+        this.pressed = true;
+      }
+
+      if (name === 'mouseup') {
+        this.pressed = false;
+      }
+    }
+  }]);
+
+  return Mouse;
+}();
+
+
+// CONCATENATED MODULE: ./src/mixins/overlay.js
+// Usuful stuff for creating overlays. Include as mixin
+
+/* harmony default export */ var mixins_overlay = ({
+  props: ['id', 'num', 'interval', 'cursor', 'colors', 'layout', 'sub', 'data', 'settings', 'grid_id', 'font', 'config', 'meta', 'tf', 'i0'],
+  emits: ['new-grid-layer', 'layer-meta-props', 'delete-grid-layer', 'custom-event', 'show-grid-layer', 'drawing-mode-off', 'scroll-lock', 'change-settings', 'object-selected', 'new-shader', 'remove-tool', 'redraw-grid'],
+  mounted: function mounted() {
+    // TODO(1): when hot reloading, dynamicaly changed mixins
+    // dissapear (cuz it's a hack), the only way for now
+    // is to reload the browser
+    if (!this.draw) {
+      this.draw = function (ctx) {
+        var text = 'EARLY ADOPTER BUG: reload the browser & enjoy';
+        console.warn(text);
+      };
+    } // Main chart?
+
+
+    var main = this.$props.sub === this.$props.data;
+    this.meta_info();
+    this.$emit('new-grid-layer', {
+      name: this.$options.name,
+      id: this.$props.id,
+      renderer: this,
+      display: 'display' in this.$props.settings ? this.$props.settings['display'] : true,
+      z: this.$props.settings['z-index'] || this.$props.settings['zIndex'] || (main ? 0 : -1)
+    }); // Overlay meta-props (adjusting behaviour)
+
+    this.$emit('layer-meta-props', {
+      grid_id: this.$props.grid_id,
+      layer_id: this.$props.id,
+      legend: this.legend,
+      data_colors: this.data_colors,
+      y_range: this.y_range
+    });
+    this.exec_script();
+    this.mouse = new mouse_Mouse(this);
+    if (this.init_tool) this.init_tool();
+    if (this.init) this.init();
+  },
+  beforeUnmount: function beforeUnmount() {
+    if (this.destroy) this.destroy();
+    this.$emit('delete-grid-layer', this.$props.id);
+  },
+  methods: {
+    use_for: function use_for() {
+      /* override it (mandatory) */
+      console.warn('use_for() should be implemented');
+      console.warn("Format: use_for() {\n                  return ['type1', 'type2', ...]\n            }");
+    },
+    meta_info: function meta_info() {
+      /* override it (optional) */
+      var id = this.$props.id;
+      console.warn("".concat(id, " meta_info() is req. for publishing"));
+      console.warn("Format: meta_info() {\n                author: 'Satoshi Smith',\n                version: '1.0.0',\n                contact (opt) '<email>'\n                github: (opt) '<GitHub Page>',\n            }");
+    },
+    custom_event: function custom_event(event) {
+      if (event.split(':')[0] === 'hook') return;
+
+      for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+        args[_key - 1] = arguments[_key];
+      }
+
+      if (event === 'change-settings' || event === 'object-selected' || event === 'new-shader' || event === 'new-interface' || event === 'remove-tool') {
+        args.push(this.grid_id, this.id);
+
+        if (this.$props.settings.$uuid) {
+          args.push(this.$props.settings.$uuid);
+        }
+      }
+
+      if (event === 'new-interface') {
+        args[0].overlay = this;
+        args[0].uuid = this.last_ux_id = "".concat(this.grid_id, "-").concat(this.id, "-").concat(this.uxs_count++);
+      }
+
+      this.$emit('custom-event', {
+        event: event,
+        args: args
+      });
+    },
+    // TODO: the event is not firing when the same
+    // overlay type is added to the offchart[]
+    exec_script: function exec_script() {
+      if (this.calc) this.$emit('exec-script', {
+        grid_id: this.$props.grid_id,
+        layer_id: this.$props.id,
+        src: this.calc(),
+        use_for: this.use_for()
+      });
+    }
+  },
+  watch: {
+    settings: {
+      handler: function handler(n, p) {
+        if (this.watch_uuid) this.watch_uuid(n, p);
+        this.$emit('show-grid-layer', {
+          id: this.$props.id,
+          display: 'display' in this.$props.settings ? this.$props.settings['display'] : true
+        });
+      },
+      deep: true
+    }
+  },
+  data: function data() {
+    return {
+      uxs_count: 0,
+      last_ux_id: null
+    };
+  },
+  render: function render() {
+    return [];
+  }
+});
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/overlays/Spline.vue?vue&type=script&lang=js
+// Spline renderer. (SMAs, EMAs, TEMAs...
+// you know what I mean)
+// TODO: make a real spline, not a bunch of lines...
+// Adds all necessary stuff for you.
+
+/* harmony default export */ var Splinevue_type_script_lang_js = ({
+  name: 'Spline',
+  mixins: [mixins_overlay],
+  methods: {
+    meta_info: function meta_info() {
+      return {
+        author: 'C451',
+        version: '1.1.2'
+      };
+    },
+    // Here goes your code. You are provided with:
+    // { All stuff is reactive }
+    // $props.layout -> positions of all chart elements +
+    //  some helper functions (see layout_fn.js)
+    // $props.interval -> candlestick time interval
+    // $props.sub -> current subset of candlestick data
+    // $props.data -> your indicator's data subset.
+    //  Comes "as is", should have the following format:
+    //  [[<timestamp>, ... ], ... ]
+    // $props.colors -> colors (see TradingVue.vue)
+    // $props.cursor -> current position of crosshair
+    // $props.settings -> indicator's custom settings
+    //  E.g. colors, line thickness, etc. You define it.
+    // $props.num -> indicator's layer number (of All
+    // layers in the current grid)
+    // $props.id -> indicator's id (e.g. EMA_0)
+    // ~
+    // Finally, let's make the canvas dirty!
+    draw: function draw(ctx) {
+      ctx.lineWidth = this.line_width;
+      ctx.strokeStyle = this.color;
+      ctx.beginPath();
+      var layout = this.$props.layout;
+      var i = this.data_index;
+      var data = this.$props.data;
+
+      if (!this.skip_nan) {
+        for (var k = 0, n = data.length; k < n; k++) {
+          var p = data[k];
+          var x = layout.t2screen(p[0]);
+          var y = layout.$2screen(p[i]);
+          ctx.lineTo(x, y);
+        }
+      } else {
+        var skip = false;
+
+        for (var k = 0, n = data.length; k < n; k++) {
+          var _p = data[k];
+
+          var _x = layout.t2screen(_p[0]);
+
+          var _y = layout.$2screen(_p[i]);
+
+          if (_p[i] == null || _y !== _y) {
+            skip = true;
+          } else {
+            if (skip) ctx.moveTo(_x, _y);
+            ctx.lineTo(_x, _y);
+            skip = false;
+          }
+        }
+      }
+
+      ctx.stroke();
+    },
+    // For all data with these types overlay will be
+    // added to the renderer list. And '$props.data'
+    // will have the corresponding values. If you want to
+    // redefine the default behviour for a prticular
+    // indicator (let's say EMA),
+    // just create a new overlay with the same type:
+    // e.g. use_for() { return ['EMA'] }.
+    use_for: function use_for() {
+      return ['Spline', 'EMA', 'SMA'];
+    },
+    // Colors for the legend, should have the
+    // same dimention as a data point (excl. timestamp)
+    data_colors: function data_colors() {
+      return [this.color];
+    }
+  },
+  // Define internal setting & constants here
+  computed: {
+    sett: function sett() {
+      return this.$props.settings;
+    },
+    line_width: function line_width() {
+      return this.sett.lineWidth || 0.75;
+    },
+    color: function color() {
+      var n = this.$props.num % 5;
+      return this.sett.color || this.COLORS[n];
+    },
+    data_index: function data_index() {
+      return this.sett.dataIndex || 1;
+    },
+    // Don't connect separate parts if true
+    skip_nan: function skip_nan() {
+      return this.sett.skipNaN;
+    }
+  },
+  data: function data() {
+    return {
+      COLORS: ['#42b28a', '#5691ce', '#612ff9', '#d50b90', '#ff2316']
+    };
+  }
+});
+// CONCATENATED MODULE: ./src/components/overlays/Spline.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/overlays/Spline.vue
+
+
+
+/* harmony default export */ var Spline = (Splinevue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/overlays/Splines.vue?vue&type=script&lang=js
+// Channel renderer. (Keltner, Bollinger)
+
+/* harmony default export */ var Splinesvue_type_script_lang_js = ({
+  name: 'Splines',
+  mixins: [mixins_overlay],
+  methods: {
+    meta_info: function meta_info() {
+      return {
+        author: 'C451',
+        version: '1.1.0'
+      };
+    },
+    draw: function draw(ctx) {
+      for (var i = 0; i < this.lines_num; i++) {
+        var _i = i % this.clrx.length;
+
+        ctx.strokeStyle = this.clrx[_i];
+        ctx.lineWidth = this.widths[i] || this.line_width;
+        ctx.beginPath();
+        this.draw_spline(ctx, i);
+        ctx.stroke();
+      }
+    },
+    draw_spline: function draw_spline(ctx, i) {
+      var layout = this.$props.layout;
+      var data = this.$props.data;
+
+      if (!this.skip_nan) {
+        for (var k = 0, n = data.length; k < n; k++) {
+          var p = data[k];
+          var x = layout.t2screen(p[0]);
+          var y = layout.$2screen(p[i + 1]);
+          ctx.lineTo(x, y);
+        }
+      } else {
+        var skip = false;
+
+        for (var k = 0, n = data.length; k < n; k++) {
+          var _p = data[k];
+
+          var _x = layout.t2screen(_p[0]);
+
+          var _y = layout.$2screen(_p[i + 1]);
+
+          if (_p[i + 1] == null || _y !== _y) {
+            skip = true;
+          } else {
+            if (skip) ctx.moveTo(_x, _y);
+            ctx.lineTo(_x, _y);
+            skip = false;
+          }
+        }
+      }
+    },
+    use_for: function use_for() {
+      return ['Splines', 'DMI'];
+    },
+    data_colors: function data_colors() {
+      return this.clrx;
+    }
+  },
+  // Define internal setting & constants here
+  computed: {
+    sett: function sett() {
+      return this.$props.settings;
+    },
+    line_width: function line_width() {
+      return this.sett.lineWidth || 0.75;
+    },
+    widths: function widths() {
+      return this.sett.lineWidths || [];
+    },
+    clrx: function clrx() {
+      var colors = this.sett.colors || [];
+      var n = this.$props.num;
+
+      if (!colors.length) {
+        for (var i = 0; i < this.lines_num; i++) {
+          colors.push(this.COLORS[(n + i) % 5]);
+        }
+      }
+
+      return colors;
+    },
+    lines_num: function lines_num() {
+      if (!this.$props.data[0]) return 0;
+      return this.$props.data[0].length - 1;
+    },
+    // Don't connect separate parts if true
+    skip_nan: function skip_nan() {
+      return this.sett.skipNaN;
+    }
+  },
+  data: function data() {
+    return {
+      COLORS: ['#42b28a', '#5691ce', '#612ff9', '#d50b90', '#ff2316']
+    };
+  }
+});
+// CONCATENATED MODULE: ./src/components/overlays/Splines.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/overlays/Splines.vue
+
+
+
+/* harmony default export */ var Splines = (Splinesvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/overlays/Range.vue?vue&type=script&lang=js
+// R S I . Because we love it
+// Adds all necessary stuff for you.
+
+/* harmony default export */ var Rangevue_type_script_lang_js = ({
+  name: 'Range',
+  mixins: [mixins_overlay],
+  methods: {
+    meta_info: function meta_info() {
+      return {
+        author: 'C451',
+        version: '1.0.1'
+      };
+    },
+    // Here goes your code. You are provided with:
+    // { All stuff is reactive }
+    // $props.layout -> positions of all chart elements +
+    //  some helper functions (see layout_fn.js)
+    // $props.interval -> candlestick time interval
+    // $props.sub -> current subset of candlestick data
+    // $props.data -> your indicator's data subset.
+    //  Comes "as is", should have the following format:
+    //  [[<timestamp>, ... ], ... ]
+    // $props.colors -> colors (see TradingVue.vue)
+    // $props.cursor -> current position of crosshair
+    // $props.settings -> indicator's custom settings
+    //  E.g. colors, line thickness, etc. You define it.
+    // $props.num -> indicator's layer number (of All
+    // layers in the current grid)
+    // $props.id -> indicator's id (e.g. EMA_0)
+    // ~
+    // Finally, let's make the canvas dirty!
+    draw: function draw(ctx) {
+      var layout = this.$props.layout;
+      var upper = layout.$2screen(this.sett.upper || 70);
+      var lower = layout.$2screen(this.sett.lower || 30);
+      var data = this.$props.data; // RSI values
+
+      ctx.lineWidth = this.line_width;
+      ctx.strokeStyle = this.color;
+      ctx.beginPath();
+
+      for (var k = 0, n = data.length; k < n; k++) {
+        var p = data[k];
+        var x = layout.t2screen(p[0]);
+        var y = layout.$2screen(p[1]);
+        ctx.lineTo(x, y);
+      }
+
+      ctx.stroke();
+      ctx.strokeStyle = this.band_color;
+      ctx.setLineDash([5]); // Will be removed after draw()
+
+      ctx.beginPath(); // Fill the area between the bands
+
+      ctx.fillStyle = this.back_color;
+      ctx.fillRect(0, upper, layout.width, lower - upper); // Upper band
+
+      ctx.moveTo(0, upper);
+      ctx.lineTo(layout.width, upper); // Lower band
+
+      ctx.moveTo(0, lower);
+      ctx.lineTo(layout.width, lower);
+      ctx.stroke();
+    },
+    // For all data with these types overlay will be
+    // added to the renderer list. And '$props.data'
+    // will have the corresponding values. If you want to
+    // redefine the default behviour for a prticular
+    // indicator (let's say EMA),
+    // just create a new overlay with the same type:
+    // e.g. use_for() { return ['EMA'] }.
+    use_for: function use_for() {
+      return ['Range', 'RSI'];
+    },
+    // Colors for the legend, should have the
+    // same dimention as a data point (excl. timestamp)
+    data_colors: function data_colors() {
+      return [this.color];
+    },
+    // Y-Range tansform. For example you need a fixed
+    // Y-range for an indicator, you can do it here!
+    // Gets estimated range, @return you favorite range
+    y_range: function y_range(hi, lo) {
+      return [Math.max(hi, this.sett.upper || 70), Math.min(lo, this.sett.lower || 30)];
+    }
+  },
+  // Define internal setting & constants here
+  computed: {
+    sett: function sett() {
+      return this.$props.settings;
+    },
+    line_width: function line_width() {
+      return this.sett.lineWidth || 0.75;
+    },
+    color: function color() {
+      return this.sett.color || '#ec206e';
+    },
+    band_color: function band_color() {
+      return this.sett.bandColor || '#ddd';
+    },
+    back_color: function back_color() {
+      return this.sett.backColor || '#381e9c16';
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/overlays/Range.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/overlays/Range.vue
+
+
+
+/* harmony default export */ var Range = (Rangevue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/overlays/Trades.vue?vue&type=script&lang=js
+
+/* harmony default export */ var Tradesvue_type_script_lang_js = ({
+  name: 'Trades',
+  mixins: [mixins_overlay],
+  methods: {
+    meta_info: function meta_info() {
+      return {
+        author: 'C451',
+        version: '1.0.2'
+      };
+    },
+    draw: function draw(ctx) {
+      var layout = this.$props.layout;
+      var data = this.$props.data;
+      ctx.lineWidth = 1.5;
+      ctx.strokeStyle = 'black';
+
+      for (var k = 0, n = data.length; k < n; k++) {
+        var p = data[k];
+        ctx.fillStyle = p[1] ? this.buy_color : this.sell_color;
+        ctx.beginPath();
+        var x = layout.t2screen(p[0]); // x - Mapping
+
+        var y = layout.$2screen(p[2]); // y - Mapping
+
+        ctx.arc(x, y, this.marker_size + 0.5, 0, Math.PI * 2, true);
+        ctx.fill();
+        ctx.stroke();
+
+        if (this.show_label && p[3]) {
+          this.draw_label(ctx, x, y, p);
+        }
+      }
+    },
+    draw_label: function draw_label(ctx, x, y, p) {
+      ctx.fillStyle = this.label_color;
+      ctx.font = this.new_font;
+      ctx.textAlign = 'center';
+      ctx.fillText(p[3], x, y - 25);
+    },
+    use_for: function use_for() {
+      return ['Trades'];
+    },
+    // Defines legend format (values & colors)
+    legend: function legend(values) {
+      switch (values[1]) {
+        case 0:
+          var pos = 'Sell';
+          break;
+
+        case 1:
+          pos = 'Buy';
+          break;
+
+        default:
+          pos = 'Unknown';
+      }
+
+      return [{
+        value: pos
+      }, {
+        value: values[2].toFixed(4),
+        color: this.$props.colors.text
+      }].concat(values[3] ? [{
+        value: values[3]
+      }] : []);
+    }
+  },
+  // Define internal setting & constants here
+  computed: {
+    sett: function sett() {
+      return this.$props.settings;
+    },
+    default_font: function default_font() {
+      return '12px ' + this.$props.font.split('px').pop();
+    },
+    buy_color: function buy_color() {
+      return this.sett.buyColor || '#63df89';
+    },
+    sell_color: function sell_color() {
+      return this.sett.sellColor || '#ec4662';
+    },
+    label_color: function label_color() {
+      return this.sett.labelColor || '#999';
+    },
+    marker_size: function marker_size() {
+      return this.sett.markerSize || 5;
+    },
+    show_label: function show_label() {
+      return this.sett.showLabel !== false;
+    },
+    new_font: function new_font() {
+      return this.sett.font || this.default_font;
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/overlays/Trades.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/overlays/Trades.vue
+
+
+
+/* harmony default export */ var Trades = (Tradesvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/overlays/Channel.vue?vue&type=script&lang=js
+// Channel renderer. (Keltner, Bollinger)
+// TODO: allow color transparency
+// TODO: improve performance: draw in one solid chunk
+
+/* harmony default export */ var Channelvue_type_script_lang_js = ({
+  name: 'Channel',
+  mixins: [mixins_overlay],
+  methods: {
+    meta_info: function meta_info() {
+      return {
+        author: 'C451',
+        version: '1.0.1'
+      };
+    },
+
+    /*draw(ctx) {
+        ctx.lineWidth = this.line_width
+        ctx.strokeStyle = this.color
+        ctx.fillStyle = this.back_color
+         for (var i = 0; i < this.$props.data.length - 1; i++) {
+              let p1 = this.mapp(this.$props.data[i])
+            let p2 = this.mapp(this.$props.data[i+1])
+             if (!p2) continue
+            if (p1.y1 !== p1.y1) continue // Fix NaN
+             // Background
+            ctx.beginPath()
+            ctx.moveTo(p1.x, p1.y1)
+            ctx.lineTo(p2.x + 0.1, p2.y1)
+            ctx.lineTo(p2.x + 0.1, p2.y3)
+            ctx.lineTo(p1.x, p1.y3)
+            ctx.fill()
+             // Lines
+            ctx.beginPath()
+            ctx.moveTo(p1.x, p1.y1)
+            ctx.lineTo(p2.x, p2.y1)
+            if (this.show_mid) {
+                ctx.moveTo(p1.x, p1.y2)
+                ctx.lineTo(p2.x, p2.y2)
+            }
+            ctx.moveTo(p1.x, p1.y3)
+            ctx.lineTo(p2.x, p2.y3)
+            ctx.stroke()
+         }
+    },*/
+    draw: function draw(ctx) {
+      // Background
+      var data = this.data;
+      var layout = this.layout;
+      ctx.beginPath();
+      ctx.fillStyle = this.back_color;
+
+      for (var i = 0; i < data.length; i++) {
+        var p = data[i];
+        var x = layout.t2screen(p[0]);
+        var y = layout.$2screen(p[1] || undefined);
+        ctx.lineTo(x, y);
+      }
+
+      for (var i = data.length - 1; i >= 0; i--) {
+        var _p = data[i];
+
+        var _x = layout.t2screen(_p[0]);
+
+        var _y = layout.$2screen(_p[3] || undefined);
+
+        ctx.lineTo(_x, _y);
+      }
+
+      ctx.fill(); // Lines
+
+      ctx.lineWidth = this.line_width;
+      ctx.strokeStyle = this.color; // Top line
+
+      ctx.beginPath();
+
+      for (var i = 0; i < data.length; i++) {
+        var _p2 = data[i];
+
+        var _x2 = layout.t2screen(_p2[0]);
+
+        var _y2 = layout.$2screen(_p2[1] || undefined);
+
+        ctx.lineTo(_x2, _y2);
+      }
+
+      ctx.stroke(); // Bottom line
+
+      ctx.beginPath();
+
+      for (var i = 0; i < data.length; i++) {
+        var _p3 = data[i];
+
+        var _x3 = layout.t2screen(_p3[0]);
+
+        var _y3 = layout.$2screen(_p3[3] || undefined);
+
+        ctx.lineTo(_x3, _y3);
+      }
+
+      ctx.stroke(); // Middle line
+
+      if (!this.show_mid) return;
+      ctx.beginPath();
+
+      for (var i = 0; i < data.length; i++) {
+        var _p4 = data[i];
+
+        var _x4 = layout.t2screen(_p4[0]);
+
+        var _y4 = layout.$2screen(_p4[2] || undefined);
+
+        ctx.lineTo(_x4, _y4);
+      }
+
+      ctx.stroke();
+    },
+    mapp: function mapp(p) {
+      var layout = this.$props.layout;
+      return p && {
+        x: layout.t2screen(p[0]),
+        y1: layout.$2screen(p[1]),
+        y2: layout.$2screen(p[2]),
+        y3: layout.$2screen(p[3])
+      };
+    },
+    use_for: function use_for() {
+      return ['Channel', 'KC', 'BB'];
+    },
+    data_colors: function data_colors() {
+      return [this.color, this.color, this.color];
+    }
+  },
+  // Define internal setting & constants here
+  computed: {
+    sett: function sett() {
+      return this.$props.settings;
+    },
+    line_width: function line_width() {
+      return this.sett.lineWidth || 0.75;
+    },
+    color: function color() {
+      var n = this.$props.num % 5;
+      return this.sett.color || this.COLORS[n];
+    },
+    show_mid: function show_mid() {
+      return 'showMid' in this.sett ? this.sett.showMid : true;
+    },
+    back_color: function back_color() {
+      return this.sett.backColor || this.color + '11';
+    }
+  },
+  data: function data() {
+    return {
+      COLORS: ['#42b28a', '#5691ce', '#612ff9', '#d50b90', '#ff2316']
+    };
+  }
+});
+// CONCATENATED MODULE: ./src/components/overlays/Channel.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/overlays/Channel.vue
+
+
+
+/* harmony default export */ var Channel = (Channelvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/overlays/Segment.vue?vue&type=script&lang=js
+// Segment renderer.
+
+/* harmony default export */ var Segmentvue_type_script_lang_js = ({
+  name: 'Segment',
+  mixins: [mixins_overlay],
+  methods: {
+    meta_info: function meta_info() {
+      return {
+        author: 'C451',
+        version: '1.0.0'
+      };
+    },
+    draw: function draw(ctx) {
+      if (!this.p1 || !this.p2) return;
+      ctx.lineWidth = this.line_width;
+      ctx.strokeStyle = this.color;
+      ctx.beginPath();
+      var layout = this.$props.layout;
+      var x1 = layout.t2screen(this.p1[0]);
+      var y1 = layout.$2screen(this.p1[1]);
+      ctx.moveTo(x1, y1);
+      var x2 = layout.t2screen(this.p2[0]);
+      var y2 = layout.$2screen(this.p2[1]);
+      ctx.lineTo(x2, y2);
+      ctx.stroke();
+    },
+    use_for: function use_for() {
+      return ['Segment'];
+    },
+    data_colors: function data_colors() {
+      return [this.color];
+    }
+  },
+  // Define internal setting & constants here
+  computed: {
+    sett: function sett() {
+      return this.$props.settings;
+    },
+    p1: function p1() {
+      return this.$props.settings.p1;
+    },
+    p2: function p2() {
+      return this.$props.settings.p2;
+    },
+    line_width: function line_width() {
+      return this.sett.lineWidth || 0.9;
+    },
+    color: function color() {
+      var n = this.$props.num % 5;
+      return this.sett.color || this.COLORS[n];
+    }
+  },
+  data: function data() {
+    return {
+      COLORS: ['#42b28a', '#5691ce', '#612ff9', '#d50b90', '#ff2316']
+    };
+  }
+});
+// CONCATENATED MODULE: ./src/components/overlays/Segment.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/overlays/Segment.vue
+
+
+
+/* harmony default export */ var Segment = (Segmentvue_type_script_lang_js);
+// CONCATENATED MODULE: ./src/components/js/layout_cnv.js
+
+
+// Claculates postions and sizes for candlestick
+// and volume bars for the given subset of data
+
+function layout_cnv(self) {
+  var $p = self.$props;
+  var sub = $p.data;
+  var t2screen = $p.layout.t2screen;
+  var layout = $p.layout;
+  var candles = [];
+  var volume = []; // The volume bar height is determined as a percentage of
+  // the chart's height (VOLSCALE)
+
+  var maxv = Math.max.apply(Math, toConsumableArray_default()(sub.map(function (x) {
+    return x[5];
+  })));
+  var vs = $p.config.VOLSCALE * layout.height / maxv;
+  var x1,
+      x2,
+      w,
+      avg_w,
+      mid,
+      prev = undefined; // Subset interval against main interval
+
+  var _new_interval = new_interval(layout, $p, sub),
+      _new_interval2 = slicedToArray_default()(_new_interval, 2),
+      interval2 = _new_interval2[0],
+      ratio = _new_interval2[1];
+
+  var px_step2 = layout.px_step * ratio;
+  var splitter = px_step2 > 5 ? 1 : 0; // A & B are current chart tranformations:
+  // A === scale,  B === Y-axis shift
+
+  for (var i = 0; i < sub.length; i++) {
+    var p = sub[i];
+    mid = t2screen(p[0]) + 1; // Clear volume bar if there is a time gap
+
+    if (sub[i - 1] && p[0] - sub[i - 1][0] > interval2) {
+      prev = null;
+    }
+
+    x1 = prev || Math.floor(mid - px_step2 * 0.5);
+    x2 = Math.floor(mid + px_step2 * 0.5) - 0.5; // TODO: add log scale support
+
+    candles.push({
+      x: mid,
+      w: layout.px_step * $p.config.CANDLEW * ratio,
+      o: Math.floor(p[1] * layout.A + layout.B),
+      h: Math.floor(p[2] * layout.A + layout.B),
+      l: Math.floor(p[3] * layout.A + layout.B),
+      c: Math.floor(p[4] * layout.A + layout.B),
+      raw: p
+    });
+    volume.push({
+      x1: x1,
+      x2: x2,
+      h: p[5] * vs,
+      green: p[4] >= p[1],
+      raw: p
+    });
+    prev = x2 + splitter;
+  }
+
+  return {
+    candles: candles,
+    volume: volume
+  };
+}
+function layout_vol(self) {
+  var $p = self.$props;
+  var sub = $p.data;
+  var t2screen = $p.layout.t2screen;
+  var layout = $p.layout;
+  var volume = []; // Detect data second dimention size:
+
+  var dim = sub[0] ? sub[0].length : 0; // Support special volume data (see API book), or OHLCV
+  // Data indices:
+
+  self._i1 = dim < 6 ? 1 : 5;
+  self._i2 = dim < 6 ? function (p) {
+    return p[2];
+  } : function (p) {
+    return p[4] >= p[1];
+  };
+  var maxv = Math.max.apply(Math, toConsumableArray_default()(sub.map(function (x) {
+    return x[self._i1];
+  })));
+  var volscale = self.volscale || $p.config.VOLSCALE;
+  var vs = volscale * layout.height / maxv;
+  var x1,
+      x2,
+      mid,
+      prev = undefined; // Subset interval against main interval
+
+  var _new_interval3 = new_interval(layout, $p, sub),
+      _new_interval4 = slicedToArray_default()(_new_interval3, 2),
+      interval2 = _new_interval4[0],
+      ratio = _new_interval4[1];
+
+  var px_step2 = layout.px_step * ratio;
+  var splitter = px_step2 > 5 ? 1 : 0; // A & B are current chart tranformations:
+  // A === scale,  B === Y-axis shift
+
+  for (var i = 0; i < sub.length; i++) {
+    var p = sub[i];
+    mid = t2screen(p[0]) + 1; // Clear volume bar if there is a time gap
+
+    if (sub[i - 1] && p[0] - sub[i - 1][0] > interval2) {
+      prev = null;
+    }
+
+    x1 = prev || Math.floor(mid - px_step2 * 0.5);
+    x2 = Math.floor(mid + px_step2 * 0.5) - 0.5;
+    volume.push({
+      x1: x1,
+      x2: x2,
+      h: p[self._i1] * vs,
+      green: self._i2(p),
+      raw: p
+    });
+    prev = x2 + splitter;
+  }
+
+  return volume;
+}
+
+function new_interval(layout, $p, sub) {
+  // Subset interval against main interval
+  if (!layout.ti_map.ib) {
+    var interval2 = $p.tf || utils.detect_interval(sub);
+    var ratio = interval2 / $p.interval;
+  } else {
+    if ($p.tf) {
+      var ratio = $p.tf / layout.ti_map.tf;
+      var interval2 = ratio;
+    } else {
+      var interval2 = utils.detect_interval(sub);
+      var ratio = interval2 / $p.interval;
+    }
+  }
+
+  return [interval2, ratio];
+}
+// CONCATENATED MODULE: ./src/components/primitives/candle.js
+
+
+
+// Candle object for Candles overlay
+var candle_CandleExt = /*#__PURE__*/function () {
+  function CandleExt(overlay, ctx, data) {
+    classCallCheck_default()(this, CandleExt);
+
+    this.ctx = ctx;
+    this.self = overlay;
+    this.style = data.raw[6] || this.self;
+    this.draw(data);
+  }
+
+  createClass_default()(CandleExt, [{
+    key: "draw",
+    value: function draw(data) {
+      var green = data.raw[4] >= data.raw[1];
+      var body_color = green ? this.style.colorCandleUp : this.style.colorCandleDw;
+      var wick_color = green ? this.style.colorWickUp : this.style.colorWickDw;
+      var w = Math.max(data.w, 1);
+      var hw = Math.max(Math.floor(w * 0.5), 1);
+      var h = Math.abs(data.o - data.c);
+      var max_h = data.c === data.o ? 1 : 2;
+      var x05 = Math.floor(data.x) - 0.5;
+      this.ctx.strokeStyle = wick_color;
+      this.ctx.beginPath();
+      this.ctx.moveTo(x05, Math.floor(data.h));
+      this.ctx.lineTo(x05, Math.floor(data.l));
+      this.ctx.stroke();
+
+      if (data.w > 1.5) {
+        this.ctx.fillStyle = body_color; // TODO: Move common calculations to layout.js
+
+        var s = green ? 1 : -1;
+        this.ctx.fillRect(Math.floor(data.x - hw - 1), data.c, Math.floor(hw * 2 + 1), s * Math.max(h, max_h));
+      } else {
+        this.ctx.strokeStyle = body_color;
+        this.ctx.beginPath();
+        this.ctx.moveTo(x05, Math.floor(Math.min(data.o, data.c)));
+        this.ctx.lineTo(x05, Math.floor(Math.max(data.o, data.c)) + (data.o === data.c ? 1 : 0));
+        this.ctx.stroke();
+      }
+    }
+  }]);
+
+  return CandleExt;
+}();
+
+
+// CONCATENATED MODULE: ./src/components/primitives/volbar.js
+
+
+
+var volbar_VolbarExt = /*#__PURE__*/function () {
+  function VolbarExt(overlay, ctx, data) {
+    classCallCheck_default()(this, VolbarExt);
+
+    this.ctx = ctx;
+    this.$p = overlay.$props;
+    this.self = overlay;
+    this.style = data.raw[6] || this.self;
+    this.draw(data);
+  }
+
+  createClass_default()(VolbarExt, [{
+    key: "draw",
+    value: function draw(data) {
+      var y0 = this.$p.layout.height;
+      var w = data.x2 - data.x1;
+      var h = Math.floor(data.h);
+      this.ctx.fillStyle = data.green ? this.style.colorVolUp : this.style.colorVolDw;
+      this.ctx.fillRect(Math.floor(data.x1), Math.floor(y0 - h - 0.5), Math.floor(w), Math.floor(h + 1));
+    }
+  }]);
+
+  return VolbarExt;
+}();
+
+
+// CONCATENATED MODULE: ./src/components/primitives/price.js
+
+
+
+// Price bar & price line (shader)
+var price_Price = /*#__PURE__*/function () {
+  function Price(comp) {
+    classCallCheck_default()(this, Price);
+
+    this.comp = comp;
+    this.data = comp.$props.data;
+  } // Defines an inline shader (has access to both
+  // target & overlay's contexts)
+
+
+  createClass_default()(Price, [{
+    key: "init_shader",
+    value: function init_shader() {
+      var _this = this;
+
+      var layout = this.comp.$props.layout;
+      var config = this.comp.$props.config;
+      var comp = this.comp;
+
+      var last_bar = function last_bar() {
+        return _this.last_bar();
+      };
+
+      this.comp.$emit('new-shader', {
+        target: 'sidebar',
+        draw: function draw(ctx) {
+          if (!last_bar()) return;
+          var bar = last_bar();
+          var w = ctx.canvas.width;
+          var h = config.PANHEIGHT;
+          var lbl = bar.price.toFixed(layout.prec);
+          ctx.fillStyle = bar.color;
+          var x = -0.5;
+          var y = bar.y - h * 0.5 - 0.5;
+          var a = 7;
+          ctx.fillRect(x - 0.5, y, w + 1, h);
+          ctx.fillStyle = comp.$props.colors.textHL;
+          ctx.textAlign = 'left';
+          ctx.fillText(lbl, a, y + 15);
+        }
+      });
+      this.shader = true;
+    } // Regular draw call for overaly
+
+  }, {
+    key: "draw",
+    value: function draw(ctx) {
+      if (!this.comp.$props.meta.last) return;
+      if (!this.shader) this.init_shader();
+      var layout = this.comp.$props.layout;
+      var last = this.comp.$props.meta.last;
+      var dir = last[4] >= last[1];
+      var color = dir ? this.green() : this.red();
+      var y = layout.$2screen(last[4]) + (dir ? 1 : 0);
+      ctx.strokeStyle = color;
+      ctx.setLineDash([1, 1]);
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(layout.width, y);
+      ctx.stroke();
+      ctx.setLineDash([]);
+    }
+  }, {
+    key: "last_bar",
+    value: function last_bar() {
+      if (!this.data.length) return undefined;
+      var layout = this.comp.$props.layout;
+      var last = this.data[this.data.length - 1];
+      var y = layout.$2screen(last[4]);
+      var cndl = layout.c_magnet(last[0]);
+      return {
+        y: Math.floor(cndl.c) - 0.5,
+        price: last[4],
+        color: last[4] >= last[1] ? this.green() : this.red()
+      };
+    }
+  }, {
+    key: "last_price",
+    value: function last_price() {
+      return this.comp.$props.meta.last ? this.comp.$props.meta.last[4] : undefined;
+    }
+  }, {
+    key: "green",
+    value: function green() {
+      return this.comp.colorCandleUp;
+    }
+  }, {
+    key: "red",
+    value: function red() {
+      return this.comp.colorCandleDw;
+    }
+  }]);
+
+  return Price;
+}();
+
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/overlays/Candles.vue?vue&type=script&lang=js
+// Renedrer for candlesticks + volume (optional)
+// It can be used as the main chart or an indicator
+
+
+
+
+
+/* harmony default export */ var Candlesvue_type_script_lang_js = ({
+  name: 'Candles',
+  mixins: [mixins_overlay],
+  methods: {
+    meta_info: function meta_info() {
+      return {
+        author: 'C451',
+        version: '1.2.1'
+      };
+    },
+    init: function init() {
+      this.price = new price_Price(this);
+    },
+    draw: function draw(ctx) {
+      // If data === main candlestick data
+      // render as main chart:
+      if (this.$props.sub === this.$props.data) {
+        var cnv = {
+          candles: this.$props.layout.candles,
+          volume: this.$props.layout.volume
+        }; // Else, as offchart / onchart indicator:
+      } else {
+        cnv = layout_cnv(this);
+      }
+
+      if (this.show_volume) {
+        var cv = cnv.volume;
+
+        for (var i = 0, n = cv.length; i < n; i++) {
+          new volbar_VolbarExt(this, ctx, cv[i]);
+        }
+      }
+
+      var cc = cnv.candles;
+
+      for (var i = 0, n = cc.length; i < n; i++) {
+        new candle_CandleExt(this, ctx, cc[i]);
+      }
+
+      if (this.price_line) this.price.draw(ctx);
+    },
+    use_for: function use_for() {
+      return ['Candles'];
+    },
+    // In case it's added as offchart overlay
+    y_range: function y_range() {
+      var hi = -Infinity,
+          lo = Infinity;
+
+      for (var i = 0, n = this.sub.length; i < n; i++) {
+        var x = this.sub[i];
+        if (x[2] > hi) hi = x[2];
+        if (x[3] < lo) lo = x[3];
+      }
+
+      return [hi, lo];
+    }
+  },
+  // Define internal setting & constants here
+  computed: {
+    sett: function sett() {
+      return this.$props.settings;
+    },
+    show_volume: function show_volume() {
+      return 'showVolume' in this.sett ? this.sett.showVolume : true;
+    },
+    price_line: function price_line() {
+      return 'priceLine' in this.sett ? this.sett.priceLine : true;
+    },
+    colorCandleUp: function colorCandleUp() {
+      return this.sett.colorCandleUp || this.$props.colors.candleUp;
+    },
+    colorCandleDw: function colorCandleDw() {
+      return this.sett.colorCandleDw || this.$props.colors.candleDw;
+    },
+    colorWickUp: function colorWickUp() {
+      return this.sett.colorWickUp || this.$props.colors.wickUp;
+    },
+    colorWickDw: function colorWickDw() {
+      return this.sett.colorWickDw || this.$props.colors.wickDw;
+    },
+    colorWickSm: function colorWickSm() {
+      return this.sett.colorWickSm || this.$props.colors.wickSm;
+    },
+    colorVolUp: function colorVolUp() {
+      return this.sett.colorVolUp || this.$props.colors.volUp;
+    },
+    colorVolDw: function colorVolDw() {
+      return this.sett.colorVolDw || this.$props.colors.volDw;
+    }
+  },
+  data: function data() {
+    return {
+      price: {}
+    };
+  }
+});
+// CONCATENATED MODULE: ./src/components/overlays/Candles.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/overlays/Candles.vue
+
+
+
+/* harmony default export */ var Candles = (Candlesvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/overlays/Volume.vue?vue&type=script&lang=js
+
+
+function Volumevue_type_script_lang_js_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = Volumevue_type_script_lang_js_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function Volumevue_type_script_lang_js_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Volumevue_type_script_lang_js_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Volumevue_type_script_lang_js_arrayLikeToArray(o, minLen); }
+
+function Volumevue_type_script_lang_js_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+// Standalone renedrer for the volume
+
+
+
+/* harmony default export */ var Volumevue_type_script_lang_js = ({
+  name: 'Volume',
+  mixins: [mixins_overlay],
+  methods: {
+    meta_info: function meta_info() {
+      return {
+        author: 'C451',
+        version: '1.1.0'
+      };
+    },
+    draw: function draw(ctx) {
+      // TODO: volume average
+      // TODO: Y-axis scaling
+      var _iterator = Volumevue_type_script_lang_js_createForOfIteratorHelper(layout_vol(this)),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var v = _step.value;
+          new volbar_VolbarExt(this, ctx, v);
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+    },
+    use_for: function use_for() {
+      return ['Volume'];
+    },
+    // Defines legend format (values & colors)
+    // _i2 - detetected data index (see layout_cnv)
+    legend: function legend(values) {
+      var flag = this._i2 ? this._i2(values) : values[2];
+      var color = flag ? this.colorVolUpLegend : this.colorVolDwLegend;
+      return [{
+        value: values[this._i1 || 1],
+        color: color
+      }];
+    },
+    // When added as offchart overlay
+    // If data is OHLCV => recalc y-range
+    // _i1 - detetected data index (see layout_cnv)
+    y_range: function y_range(hi, lo) {
+      var _this = this;
+
+      if (this._i1 === 5) {
+        var sub = this.$props.sub;
+        return [Math.max.apply(Math, toConsumableArray_default()(sub.map(function (x) {
+          return x[_this._i1];
+        }))), Math.min.apply(Math, toConsumableArray_default()(sub.map(function (x) {
+          return x[_this._i1];
+        })))];
+      } else {
+        return [hi, lo];
+      }
+    }
+  },
+  // Define internal setting & constants here
+  computed: {
+    sett: function sett() {
+      return this.$props.settings;
+    },
+    colorVolUp: function colorVolUp() {
+      return this.sett.colorVolUp || this.$props.colors.volUp;
+    },
+    colorVolDw: function colorVolDw() {
+      return this.sett.colorVolDw || this.$props.colors.volDw;
+    },
+    colorVolUpLegend: function colorVolUpLegend() {
+      return this.sett.colorVolUpLegend || this.$props.colors.candleUp;
+    },
+    colorVolDwLegend: function colorVolDwLegend() {
+      return this.sett.colorVolDwLegend || this.$props.colors.candleDw;
+    },
+    volscale: function volscale() {
+      return this.sett.volscale || this.$props.grid_id > 0 ? 0.85 : this.$props.config.VOLSCALE;
+    }
+  },
+  data: function data() {
+    return {};
+  }
+});
+// CONCATENATED MODULE: ./src/components/overlays/Volume.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/overlays/Volume.vue
+
+
+
+/* harmony default export */ var Volume = (Volumevue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/overlays/Splitters.vue?vue&type=script&lang=js
+// Data section splitters (with labels)
+
+/* harmony default export */ var Splittersvue_type_script_lang_js = ({
+  name: 'Splitters',
+  mixins: [mixins_overlay],
+  methods: {
+    meta_info: function meta_info() {
+      return {
+        author: 'C451',
+        version: '1.0.1'
+      };
+    },
+    draw: function draw(ctx) {
+      var _this = this;
+
+      var layout = this.$props.layout;
+      ctx.lineWidth = this.line_width;
+      ctx.strokeStyle = this.line_color;
+      this.$props.data.forEach(function (p, i) {
+        ctx.beginPath();
+        var x = layout.t2screen(p[0]); // x - Mapping
+
+        ctx.setLineDash([10, 10]);
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, _this.layout.height);
+        ctx.stroke();
+        if (p[1]) _this.draw_label(ctx, x, p);
+      });
+    },
+    draw_label: function draw_label(ctx, x, p) {
+      var side = p[2] ? 1 : -1;
+      x += 2.5 * side;
+      ctx.font = this.new_font;
+      var pos = p[4] || this.y_position;
+      var w = ctx.measureText(p[1]).width + 10;
+      var y = this.layout.height * (1.0 - pos);
+      y = Math.floor(y);
+      ctx.fillStyle = p[3] || this.flag_color;
+      ctx.beginPath();
+      ctx.moveTo(x, y);
+      ctx.lineTo(x + 10 * side, y - 10 * side);
+      ctx.lineTo(x + (w + 10) * side, y - 10 * side);
+      ctx.lineTo(x + (w + 10) * side, y + 10 * side);
+      ctx.lineTo(x + 10 * side, y + 10 * side);
+      ctx.closePath();
+      ctx.fill();
+      ctx.fillStyle = this.label_color;
+      ctx.textAlign = side < 0 ? 'right' : 'left';
+      ctx.fillText(p[1], x + 15 * side, y + 4);
+    },
+    use_for: function use_for() {
+      return ['Splitters'];
+    }
+  },
+  // Define internal setting & constants here
+  computed: {
+    sett: function sett() {
+      return this.$props.settings;
+    },
+    new_font: function new_font() {
+      return this.sett.font || '12px ' + this.$props.font.split('px').pop();
+    },
+    flag_color: function flag_color() {
+      return this.sett.flagColor || '#4285f4';
+    },
+    label_color: function label_color() {
+      return this.sett.labelColor || '#fff';
+    },
+    line_color: function line_color() {
+      return this.sett.lineColor || '#4285f4';
+    },
+    line_width: function line_width() {
+      return this.sett.lineWidth || 1.0;
+    },
+    y_position: function y_position() {
+      return this.sett.yPosition || 0.9;
+    }
+  },
+  data: function data() {
+    return {};
+  }
+});
+// CONCATENATED MODULE: ./src/components/overlays/Splitters.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/overlays/Splitters.vue
+
+
+
+/* harmony default export */ var Splitters = (Splittersvue_type_script_lang_js);
+// CONCATENATED MODULE: ./src/stuff/keys.js
+
+
+
+function keys_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = keys_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function keys_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return keys_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return keys_arrayLikeToArray(o, minLen); }
+
+function keys_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+// Keyboard event handler for overlay
+var keys_Keys = /*#__PURE__*/function () {
+  function Keys(comp) {
+    classCallCheck_default()(this, Keys);
+
+    this.comp = comp;
+    this.map = {};
+    this.listeners = 0;
+    this.keymap = {};
+  }
+
+  createClass_default()(Keys, [{
+    key: "on",
+    value: function on(name, handler) {
+      if (!handler) return;
+      this.map[name] = this.map[name] || [];
+      this.map[name].push(handler);
+      this.listeners++;
+    } // Called by grid.js
+
+  }, {
+    key: "emit",
+    value: function emit(name, event) {
+      if (name in this.map) {
+        var _iterator = keys_createForOfIteratorHelper(this.map[name]),
+            _step;
+
+        try {
+          for (_iterator.s(); !(_step = _iterator.n()).done;) {
+            var f = _step.value;
+            f(event);
+          }
+        } catch (err) {
+          _iterator.e(err);
+        } finally {
+          _iterator.f();
+        }
+      }
+
+      if (name === 'keydown') {
+        if (!this.keymap[event.key]) {
+          this.emit(event.key);
+        }
+
+        this.keymap[event.key] = true;
+      }
+
+      if (name === 'keyup') {
+        this.keymap[event.key] = false;
+      }
+    }
+  }, {
+    key: "pressed",
+    value: function pressed(key) {
+      return this.keymap[key];
+    }
+  }]);
+
+  return Keys;
+}();
+
+
+// CONCATENATED MODULE: ./src/mixins/tool.js
+function tool_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = tool_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function tool_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return tool_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return tool_arrayLikeToArray(o, minLen); }
+
+function tool_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+// Usuful stuff for creating tools. Include as mixin
+
+
+/* harmony default export */ var mixins_tool = ({
+  methods: {
+    init_tool: function init_tool() {
+      var _this = this;
+
+      // Collision functions (float, float) => bool,
+      this.collisions = [];
+      this.pins = [];
+      this.mouse.on('mousemove', function (e) {
+        if (_this.collisions.some(function (f) {
+          return f(_this.mouse.x, _this.mouse.y);
+        })) {
+          _this.show_pins = true;
+        } else {
+          _this.show_pins = false;
+        }
+
+        if (_this.drag) _this.drag_update();
+      });
+      this.mouse.on('mousedown', function (e) {
+        if (utils.default_prevented(e)) return;
+
+        if (_this.collisions.some(function (f) {
+          return f(_this.mouse.x, _this.mouse.y);
+        })) {
+          if (!_this.selected) {
+            _this.$emit('object-selected');
+          }
+
+          _this.start_drag();
+
+          e.preventDefault();
+
+          _this.pins.forEach(function (x) {
+            return x.mousedown(e, true);
+          });
+        }
+      });
+      this.mouse.on('mouseup', function (e) {
+        _this.drag = null;
+
+        _this.$emit('scroll-lock', false);
+      });
+      this.keys = new keys_Keys(this);
+      this.keys.on('Delete', this.remove_tool);
+      this.keys.on('Backspace', this.remove_tool);
+      this.show_pins = false;
+      this.drag = null;
+    },
+    render_pins: function render_pins(ctx) {
+      if (this.selected || this.show_pins) {
+        this.pins.forEach(function (x) {
+          return x.draw(ctx);
+        });
+      }
+    },
+    set_state: function set_state(name) {
+      this.$emit('change-settings', {
+        $state: name
+      });
+    },
+    watch_uuid: function watch_uuid(n, p) {
+      // If layer $uuid is changed, then re-init
+      // pins & collisions
+      if (n.$uuid !== p.$uuid) {
+        var _iterator = tool_createForOfIteratorHelper(this.pins),
+            _step;
+
+        try {
+          for (_iterator.s(); !(_step = _iterator.n()).done;) {
+            var p = _step.value;
+            p.re_init();
+          }
+        } catch (err) {
+          _iterator.e(err);
+        } finally {
+          _iterator.f();
+        }
+
+        this.collisions = [];
+        this.show_pins = false;
+        this.drag = null;
+      }
+    },
+    pre_draw: function pre_draw() {
+      // Delete all collision functions before
+      // the draw() call and let primitives set
+      // them again
+      this.collisions = [];
+    },
+    remove_tool: function remove_tool() {
+      if (this.selected) this.$emit('remove-tool');
+    },
+    start_drag: function start_drag() {
+      this.$emit('scroll-lock', true);
+      var cursor = this.$props.cursor;
+      this.drag = {
+        t: cursor.t,
+        y$: cursor.y$
+      };
+      this.pins.forEach(function (x) {
+        return x.rec_position();
+      });
+    },
+    drag_update: function drag_update() {
+      var dt = this.$props.cursor.t - this.drag.t;
+      var dy = this.$props.cursor.y$ - this.drag.y$;
+      this.pins.forEach(function (x) {
+        return x.update_from([x.t1 + dt, x.y$1 + dy], true);
+      });
+    }
+  },
+  computed: {
+    // Settings starting with $ are reserved
+    selected: function selected() {
+      return this.$props.settings.$selected;
+    },
+    state: function state() {
+      return this.$props.settings.$state;
+    }
+  }
+});
+// EXTERNAL MODULE: ./src/stuff/icons.json
+var icons = __webpack_require__(9);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/defineProperty.js
+var defineProperty = __webpack_require__(17);
+var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
+
+// CONCATENATED MODULE: ./src/components/primitives/pin.js
+
+
+
+// Semi-automatic pin object. For stretching things.
+
+
+var pin_Pin = /*#__PURE__*/function () {
+  // (Comp reference, a name in overlay settings,
+  // pin parameters)
+  function Pin(comp, name, params) {
+    var _this = this;
+
+    if (params === void 0) {
+      params = {};
+    }
+
+    classCallCheck_default()(this, Pin);
+
+    this.RADIUS = comp.$props.config.PIN_RADIUS || 5.5;
+    this.RADIUS_SQ = Math.pow(this.RADIUS + 7, 2);
+
+    if (utils.is_mobile) {
+      this.RADIUS += 2;
+      this.RADIUS_SQ *= 2.5;
+    }
+
+    this.COLOR_BACK = comp.$props.colors.back;
+    this.COLOR_BR = comp.$props.colors.text;
+    this.comp = comp;
+    this.layout = comp.layout;
+    this.mouse = comp.mouse;
+    this.name = name;
+    this.state = params.state || 'settled';
+    this.hidden = params.hidden || false;
+    this.mouse.on('mousemove', function (e) {
+      return _this.mousemove(e);
+    });
+    this.mouse.on('mousedown', function (e) {
+      return _this.mousedown(e);
+    });
+    this.mouse.on('mouseup', function (e) {
+      return _this.mouseup(e);
+    });
+
+    if (comp.state === 'finished') {
+      this.state = 'settled';
+      this.update_from(comp.$props.settings[name]);
+    } else {
+      this.update();
+    }
+
+    if (this.state !== 'settled') {
+      this.comp.$emit('scroll-lock', true);
+    }
+  }
+
+  createClass_default()(Pin, [{
+    key: "re_init",
+    value: function re_init() {
+      this.update_from(this.comp.$props.settings[this.name]);
+    }
+  }, {
+    key: "draw",
+    value: function draw(ctx) {
+      if (this.hidden) return;
+
+      switch (this.state) {
+        case 'tracking':
+          break;
+
+        case 'dragging':
+          if (!this.moved) this.draw_circle(ctx);
+          break;
+
+        case 'settled':
+          this.draw_circle(ctx);
+          break;
+      }
+    }
+  }, {
+    key: "draw_circle",
+    value: function draw_circle(ctx) {
+      this.layout = this.comp.layout;
+
+      if (this.comp.selected) {
+        var r = this.RADIUS,
+            lw = 1.5;
+      } else {
+        var r = this.RADIUS * 0.95,
+            lw = 1;
+      }
+
+      ctx.lineWidth = lw;
+      ctx.strokeStyle = this.COLOR_BR;
+      ctx.fillStyle = this.COLOR_BACK;
+      ctx.beginPath();
+      ctx.arc(this.x = this.layout.t2screen(this.t), this.y = this.layout.$2screen(this.y$), r + 0.5, 0, Math.PI * 2, true);
+      ctx.fill();
+      ctx.stroke();
+    }
+  }, {
+    key: "update",
+    value: function update() {
+      this.y$ = this.comp.$props.cursor.y$;
+      this.y = this.comp.$props.cursor.y;
+      this.t = this.comp.$props.cursor.t;
+      this.x = this.comp.$props.cursor.x; // Save pin as time in IB mode
+      //if (this.layout.ti_map.ib) {
+      //    this.t = this.layout.ti_map.i2t(this.t )
+      //}
+      // Reset the settings attahed to the pin (position)
+
+      this.comp.$emit('change-settings', defineProperty_default()({}, this.name, [this.t, this.y$]));
+    }
+  }, {
+    key: "update_from",
+    value: function update_from(data, emit) {
+      if (emit === void 0) {
+        emit = false;
+      }
+
+      if (!data) return;
+      this.layout = this.comp.layout;
+      this.y$ = data[1];
+      this.y = this.layout.$2screen(this.y$);
+      this.t = data[0];
+      this.x = this.layout.t2screen(this.t); // TODO: Save pin as time in IB mode
+      //if (this.layout.ti_map.ib) {
+      //    this.t = this.layout.ti_map.i2t(this.t )
+      //}
+
+      if (emit) this.comp.$emit('change-settings', defineProperty_default()({}, this.name, [this.t, this.y$]));
+    }
+  }, {
+    key: "rec_position",
+    value: function rec_position() {
+      this.t1 = this.t;
+      this.y$1 = this.y$;
+    }
+  }, {
+    key: "mousemove",
+    value: function mousemove(event) {
+      switch (this.state) {
+        case 'tracking':
+        case 'dragging':
+          this.moved = true;
+          this.update();
+          break;
+      }
+    }
+  }, {
+    key: "mousedown",
+    value: function mousedown(event, force) {
+      if (force === void 0) {
+        force = false;
+      }
+
+      if (utils.default_prevented(event) && !force) return;
+
+      switch (this.state) {
+        case 'tracking':
+          this.state = 'settled';
+          if (this.on_settled) this.on_settled();
+          this.comp.$emit('scroll-lock', false);
+          break;
+
+        case 'settled':
+          if (this.hidden) return;
+
+          if (this.hover()) {
+            this.state = 'dragging';
+            this.moved = false;
+            this.comp.$emit('scroll-lock', true);
+            this.comp.$emit('object-selected');
+          }
+
+          break;
+      }
+
+      if (this.hover()) {
+        event.preventDefault();
+      }
+    }
+  }, {
+    key: "mouseup",
+    value: function mouseup(event) {
+      switch (this.state) {
+        case 'dragging':
+          this.state = 'settled';
+          if (this.on_settled) this.on_settled();
+          this.comp.$emit('scroll-lock', false);
+          break;
+      }
+    }
+  }, {
+    key: "on",
+    value: function on(name, handler) {
+      switch (name) {
+        case 'settled':
+          this.on_settled = handler;
+          break;
+      }
+    }
+  }, {
+    key: "hover",
+    value: function hover() {
+      var x = this.x;
+      var y = this.y;
+      return (x - this.mouse.x) * (x - this.mouse.x) + (y - this.mouse.y) * (y - this.mouse.y) < this.RADIUS_SQ;
+    }
+  }]);
+
+  return Pin;
+}();
+
+
+// CONCATENATED MODULE: ./src/components/primitives/seg.js
+
+
+// Draws a segment, adds corresponding collision f-n
+
+
+
+var seg_Seg = /*#__PURE__*/function () {
+  // Overlay ref, canvas ctx
+  function Seg(overlay, ctx) {
+    classCallCheck_default()(this, Seg);
+
+    this.ctx = ctx;
+    this.comp = overlay;
+    this.T = overlay.$props.config.TOOL_COLL;
+    if (utils.is_mobile) this.T *= 2;
+  } // p1[t, $], p2[t, $] (time-price coordinates)
+
+
+  createClass_default()(Seg, [{
+    key: "draw",
+    value: function draw(p1, p2) {
+      var layout = this.comp.$props.layout;
+      var x1 = layout.t2screen(p1[0]);
+      var y1 = layout.$2screen(p1[1]);
+      var x2 = layout.t2screen(p2[0]);
+      var y2 = layout.$2screen(p2[1]);
+      this.ctx.moveTo(x1, y1);
+      this.ctx.lineTo(x2, y2);
+      this.comp.collisions.push(this.make([x1, y1], [x2, y2]));
+    } // Collision function. x, y - mouse coord.
+
+  }, {
+    key: "make",
+    value: function make(p1, p2) {
+      var _this = this;
+
+      return function (x, y) {
+        return math.point2seg([x, y], p1, p2) < _this.T;
+      };
+    }
+  }]);
+
+  return Seg;
+}();
+
+
+// CONCATENATED MODULE: ./src/components/primitives/line.js
+
+
+// Draws a line, adds corresponding collision f-n
+
+
+
+var line_Line = /*#__PURE__*/function () {
+  // Overlay ref, canvas ctx
+  function Line(overlay, ctx) {
+    classCallCheck_default()(this, Line);
+
+    this.ctx = ctx;
+    this.comp = overlay;
+    this.T = overlay.$props.config.TOOL_COLL;
+    if (utils.is_mobile) this.T *= 2;
+  } // p1[t, $], p2[t, $] (time-price coordinates)
+
+
+  createClass_default()(Line, [{
+    key: "draw",
+    value: function draw(p1, p2) {
+      var layout = this.comp.$props.layout;
+      var x1 = layout.t2screen(p1[0]);
+      var y1 = layout.$2screen(p1[1]);
+      var x2 = layout.t2screen(p2[0]);
+      var y2 = layout.$2screen(p2[1]);
+      this.ctx.moveTo(x1, y1);
+      this.ctx.lineTo(x2, y2);
+      var w = layout.width;
+      var h = layout.height; // TODO: transform k (angle) to screen ratio
+      // (this requires a new a2screen function)
+
+      var k = (y2 - y1) / (x2 - x1);
+      var s = Math.sign(x2 - x1 || y2 - y1);
+      var dx = w * s * 2;
+      var dy = w * k * s * 2;
+
+      if (dy === Infinity) {
+        dx = 0, dy = h * s;
+      }
+
+      this.ctx.moveTo(x2, y2);
+      this.ctx.lineTo(x2 + dx, y2 + dy);
+
+      if (!this.ray) {
+        this.ctx.moveTo(x1, y1);
+        this.ctx.lineTo(x1 - dx, y1 - dy);
+      }
+
+      this.comp.collisions.push(this.make([x1, y1], [x2, y2]));
+    } // Collision function. x, y - mouse coord.
+
+  }, {
+    key: "make",
+    value: function make(p1, p2) {
+      var _this = this;
+
+      var f = this.ray ? math.point2ray.bind(math) : math.point2line.bind(math);
+      return function (x, y) {
+        return f([x, y], p1, p2) < _this.T;
+      };
+    }
+  }]);
+
+  return Line;
+}();
+
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/inherits.js
+var inherits = __webpack_require__(15);
+var inherits_default = /*#__PURE__*/__webpack_require__.n(inherits);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js
+var possibleConstructorReturn = __webpack_require__(16);
+var possibleConstructorReturn_default = /*#__PURE__*/__webpack_require__.n(possibleConstructorReturn);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/getPrototypeOf.js
+var getPrototypeOf = __webpack_require__(12);
+var getPrototypeOf_default = /*#__PURE__*/__webpack_require__.n(getPrototypeOf);
+
+// CONCATENATED MODULE: ./src/components/primitives/ray.js
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+// Draws a ray, adds corresponding collision f-n
+
+
+var ray_Ray = /*#__PURE__*/function (_Line) {
+  inherits_default()(Ray, _Line);
+
+  var _super = _createSuper(Ray);
+
+  function Ray(overlay, ctx) {
+    var _this;
+
+    classCallCheck_default()(this, Ray);
+
+    _this = _super.call(this, overlay, ctx);
+    _this.ray = true;
+    return _this;
+  }
+
+  return Ray;
+}(line_Line);
+
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/overlays/LineTool.vue?vue&type=script&lang=js
+// Line drawing tool
+// TODO: make an angle-snap when "Shift" is pressed
+
+
+
+
+
+
+
+/* harmony default export */ var LineToolvue_type_script_lang_js = ({
+  name: 'LineTool',
+  mixins: [mixins_overlay, mixins_tool],
+  methods: {
+    meta_info: function meta_info() {
+      return {
+        author: 'C451',
+        version: '1.1.0'
+      };
+    },
+    tool: function tool() {
+      return {
+        // Descriptor for the tool
+        group: 'Lines',
+        icon: icons['segment.png'],
+        type: 'Segment',
+        hint: 'This hint will be shown on hover',
+        data: [],
+        // Default data
+        settings: {},
+        // Default settings
+        // Modifications
+        mods: {
+          'Extended': {
+            // Rewrites the default setting fields
+            settings: {
+              extended: true
+            },
+            icon: icons['extended.png']
+          },
+          'Ray': {
+            // Rewrites the default setting fields
+            settings: {
+              ray: true
+            },
+            icon: icons['ray.png']
+          }
+        }
+      };
+    },
+    // Called after overlay mounted
+    init: function init() {
+      var _this = this;
+
+      // First pin is settled at the mouse position
+      this.pins.push(new pin_Pin(this, 'p1')); // Second one is following mouse until it clicks
+
+      this.pins.push(new pin_Pin(this, 'p2', {
+        state: 'tracking'
+      }));
+      this.pins[1].on('settled', function () {
+        // Call when current tool drawing is finished
+        // (Optionally) reset the mode back to 'Cursor'
+        _this.set_state('finished');
+
+        _this.$emit('drawing-mode-off');
+      });
+    },
+    draw: function draw(ctx) {
+      if (!this.p1 || !this.p2) return;
+      ctx.lineWidth = this.line_width;
+      ctx.strokeStyle = this.color;
+      ctx.beginPath();
+
+      if (this.sett.ray) {
+        new ray_Ray(this, ctx).draw(this.p1, this.p2);
+      } else if (this.sett.extended) {
+        new line_Line(this, ctx).draw(this.p1, this.p2);
+      } else {
+        new seg_Seg(this, ctx).draw(this.p1, this.p2);
+      }
+
+      ctx.stroke();
+      this.render_pins(ctx);
+    },
+    use_for: function use_for() {
+      return ['LineTool'];
+    },
+    data_colors: function data_colors() {
+      return [this.color];
+    }
+  },
+  // Define internal setting & constants here
+  computed: {
+    sett: function sett() {
+      return this.$props.settings;
+    },
+    p1: function p1() {
+      return this.$props.settings.p1;
+    },
+    p2: function p2() {
+      return this.$props.settings.p2;
+    },
+    line_width: function line_width() {
+      return this.sett.lineWidth || 0.9;
+    },
+    color: function color() {
+      return this.sett.color || '#42b28a';
+    }
+  },
+  data: function data() {
+    return {};
+  }
+});
+// CONCATENATED MODULE: ./src/components/overlays/LineTool.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/overlays/LineTool.vue
+
+
+
+/* harmony default export */ var LineTool = (LineToolvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/overlays/RangeTool.vue?vue&type=script&lang=js
+
+// Price/Time measurment tool
+
+
+
+
+
+/* harmony default export */ var RangeToolvue_type_script_lang_js = ({
+  name: 'RangeTool',
+  mixins: [mixins_overlay, mixins_tool],
+  methods: {
+    meta_info: function meta_info() {
+      return {
+        author: 'C451',
+        version: '2.0.1'
+      };
+    },
+    tool: function tool() {
+      return {
+        // Descriptor for the tool
+        group: 'Measurements',
+        icon: icons['price_range.png'],
+        type: 'Price',
+        hint: 'Price Range',
+        data: [],
+        // Default data
+        settings: {},
+        // Default settings
+        mods: {
+          'Time': {
+            // Rewrites the default setting fields
+            icon: icons['time_range.png'],
+            settings: {
+              price: false,
+              time: true
+            }
+          },
+          'PriceTime': {
+            // Rewrites the default setting fields
+            icon: icons['price_time.png'],
+            settings: {
+              price: true,
+              time: true
+            }
+          },
+          'ShiftMode': {
+            // Rewrites the default setting fields
+            settings: {
+              price: true,
+              time: true,
+              shiftMode: true
+            },
+            hidden: true
+          }
+        }
+      };
+    },
+    // Called after overlay mounted
+    init: function init() {
+      var _this = this;
+
+      // First pin is settled at the mouse position
+      this.pins.push(new pin_Pin(this, 'p1', {
+        hidden: this.shift
+      })); // Second one is following mouse until it clicks
+
+      this.pins.push(new pin_Pin(this, 'p2', {
+        state: 'tracking',
+        hidden: this.shift
+      }));
+      this.pins[1].on('settled', function () {
+        // Call when current tool drawing is finished
+        // (Optionally) reset the mode back to 'Cursor'
+        _this.set_state('finished');
+
+        _this.$emit('drawing-mode-off'); // Deselect the tool in shiftMode
+
+
+        if (_this.shift) _this._$emit('custom-event', {
+          event: 'object-selected',
+          args: []
+        });
+      });
+    },
+    draw: function draw(ctx) {
+      if (!this.p1 || !this.p2) return;
+      var dir = Math.sign(this.p2[1] - this.p1[1]);
+      var layout = this.$props.layout;
+      var xm = layout.t2screen((this.p1[0] + this.p2[0]) * 0.5);
+      ctx.lineWidth = this.line_width;
+      ctx.strokeStyle = this.color; // Background
+
+      ctx.fillStyle = this.back_color;
+      var x1 = layout.t2screen(this.p1[0]);
+      var y1 = layout.$2screen(this.p1[1]);
+      var x2 = layout.t2screen(this.p2[0]);
+      var y2 = layout.$2screen(this.p2[1]);
+      ctx.fillRect(x1, y1, x2 - x1, y2 - y1);
+      if (this.price) this.vertical(ctx, x1, y1, x2, y2, xm);
+      if (this.time) this.horizontal(ctx, x1, y1, x2, y2, xm);
+      this.draw_value(ctx, dir, xm, y2);
+      this.render_pins(ctx);
+    },
+    vertical: function vertical(ctx, x1, y1, x2, y2, xm) {
+      var layout = this.$props.layout;
+      var dir = Math.sign(this.p2[1] - this.p1[1]);
+      ctx.beginPath();
+
+      if (!this.shift) {
+        // Top
+        new seg_Seg(this, ctx).draw([this.p1[0], this.p2[1]], [this.p2[0], this.p2[1]]); // Bottom
+
+        new seg_Seg(this, ctx).draw([this.p1[0], this.p1[1]], [this.p2[0], this.p1[1]]);
+      } // Vertical Arrow
+
+
+      ctx.moveTo(xm - 4, y2 + 5 * dir);
+      ctx.lineTo(xm, y2);
+      ctx.lineTo(xm + 4, y2 + 5 * dir);
+      ctx.stroke(); // Vertical Line
+
+      ctx.beginPath();
+      ctx.setLineDash([5, 5]);
+      new seg_Seg(this, ctx).draw([(this.p1[0] + this.p2[0]) * 0.5, this.p2[1]], [(this.p1[0] + this.p2[0]) * 0.5, this.p1[1]]);
+      ctx.stroke();
+      ctx.setLineDash([]);
+    },
+    horizontal: function horizontal(ctx, x1, y1, x2, y2, xm) {
+      var layout = this.$props.layout;
+      var xdir = Math.sign(this.p2[0] - this.p1[0]);
+      var ym = (layout.$2screen(this.p1[1]) + layout.$2screen(this.p2[1])) / 2;
+      ctx.beginPath();
+
+      if (!this.shift) {
+        // Left
+        new seg_Seg(this, ctx).draw([this.p1[0], this.p1[1]], [this.p1[0], this.p2[1]]); // Right
+
+        new seg_Seg(this, ctx).draw([this.p2[0], this.p1[1]], [this.p2[0], this.p2[1]]);
+      } // Horizontal Arrow
+
+
+      ctx.moveTo(x2 - 5 * xdir, ym - 4);
+      ctx.lineTo(x2, ym);
+      ctx.lineTo(x2 - 5 * xdir, ym + 4);
+      ctx.stroke(); // Horizontal Line
+
+      ctx.beginPath();
+      ctx.setLineDash([5, 5]);
+      ctx.moveTo(x1, ym);
+      ctx.lineTo(x2, ym);
+      ctx.stroke();
+      ctx.setLineDash([]);
+    },
+    // WTF? I know dude, a lot of shitty code here
+    draw_value: function draw_value(ctx, dir, xm, y) {
+      var _this2 = this;
+
+      ctx.font = this.new_font; // Price delta (anf percent)
+
+      var d$ = (this.p2[1] - this.p1[1]).toFixed(this.prec);
+      var p = (100 * (this.p2[1] / this.p1[1] - 1)).toFixed(this.prec); // Map interval to the actual tf (in ms)
+
+      var f = function f(t) {
+        return _this2.layout.ti_map.smth2t(t);
+      };
+
+      var dt = f(this.p2[0]) - f(this.p1[0]);
+      var tf = this.layout.ti_map.tf; // Bars count (through the candle index)
+
+      var f2 = function f2(t) {
+        var c = _this2.layout.c_magnet(t);
+
+        var cn = _this2.layout.candles || _this2.layout.master_grid.candles;
+        return cn.indexOf(c);
+      }; // Bars count (and handling the negative values)
+
+
+      var b = f2(this.p2[0]) - f2(this.p1[0]); // Format time delta
+      // Format time delta
+
+      var dtstr = this.t2str(dt);
+      var text = [];
+      if (this.price) text.push("".concat(d$, "  (").concat(p, "%)"));
+      if (this.time) text.push("".concat(b, " bars, ").concat(dtstr));
+      text = text.join('\n'); // "Multiple" fillText
+
+      var lines = text.split('\n');
+      var w = Math.max.apply(Math, toConsumableArray_default()(lines.map(function (x) {
+        return ctx.measureText(x).width + 20;
+      })).concat([100]));
+      var n = lines.length;
+      var h = 20 * n;
+      ctx.fillStyle = this.value_back;
+      ctx.fillRect(xm - w * 0.5, y - (10 + h) * dir, w, h * dir);
+      ctx.fillStyle = this.value_color;
+      ctx.textAlign = 'center';
+      lines.forEach(function (l, i) {
+        ctx.fillText(l, xm, y + (dir > 0 ? 20 * i - 20 * n + 5 : 20 * i + 25));
+      });
+    },
+    // Formats time from ms to `1D 12h` for example
+    t2str: function t2str(t) {
+      var sign = Math.sign(t);
+      var abs = Math.abs(t);
+      var tfs = [[1000, 's', 60], [60000, 'm', 60], [3600000, 'h', 24], [86400000, 'D', 7], [604800000, 'W', 4], [2592000000, 'M', 12], [31536000000, 'Y', Infinity], [Infinity, 'Eternity', Infinity]];
+
+      for (var i = 0; i < tfs.length; i++) {
+        tfs[i][0] = Math.floor(abs / tfs[i][0]);
+
+        if (tfs[i][0] === 0) {
+          var p1 = tfs[i - 1];
+          var p2 = tfs[i - 2];
+          var txt = sign < 0 ? '-' : '';
+
+          if (p1) {
+            txt += p1.slice(0, 2).join('');
+          }
+
+          var n2 = p2 ? p2[0] - p1[0] * p2[2] : 0;
+
+          if (p2 && n2) {
+            txt += ' ';
+            txt += "".concat(n2).concat(p2[1]);
+          }
+
+          return txt;
+        }
+      }
+    },
+    use_for: function use_for() {
+      return ['RangeTool'];
+    },
+    data_colors: function data_colors() {
+      return [this.color];
+    }
+  },
+  // Define internal setting & constants here
+  computed: {
+    sett: function sett() {
+      return this.$props.settings;
+    },
+    p1: function p1() {
+      return this.$props.settings.p1;
+    },
+    p2: function p2() {
+      return this.$props.settings.p2;
+    },
+    line_width: function line_width() {
+      return this.sett.lineWidth || 0.9;
+    },
+    color: function color() {
+      return this.sett.color || this.$props.colors.cross;
+    },
+    back_color: function back_color() {
+      return this.sett.backColor || '#9b9ba316';
+    },
+    value_back: function value_back() {
+      return this.sett.valueBack || '#9b9ba316';
+    },
+    value_color: function value_color() {
+      return this.sett.valueColor || this.$props.colors.text;
+    },
+    prec: function prec() {
+      return this.sett.precision || 2;
+    },
+    new_font: function new_font() {
+      return '12px ' + this.$props.font.split('px').pop();
+    },
+    price: function price() {
+      return 'price' in this.sett ? this.sett.price : true;
+    },
+    time: function time() {
+      return 'time' in this.sett ? this.sett.time : false;
+    },
+    shift: function shift() {
+      return this.sett.shiftMode;
+    }
+  },
+  data: function data() {
+    return {};
+  }
+});
+// CONCATENATED MODULE: ./src/components/overlays/RangeTool.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/overlays/RangeTool.vue
+
+
+
+/* harmony default export */ var RangeTool = (RangeToolvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/Grid.vue?vue&type=script&lang=js
+function Gridvue_type_script_lang_js_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = Gridvue_type_script_lang_js_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function Gridvue_type_script_lang_js_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Gridvue_type_script_lang_js_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Gridvue_type_script_lang_js_arrayLikeToArray(o, minLen); }
+
+function Gridvue_type_script_lang_js_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+// Sets up all layers/overlays for the grid with 'grid_id'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* harmony default export */ var Gridvue_type_script_lang_js = ({
+  name: 'Grid',
+  props: ['sub', 'layout', 'range', 'interval', 'cursor', 'colors', 'overlays', 'width', 'height', 'data', 'grid_id', 'y_transform', 'font', 'tv_id', 'config', 'meta', 'shaders'],
+  emits: ['custom-event', 'register-tools', 'layer-meta-props', 'register-kb-listener', 'remove-kb-listener', 'cursor-changed', 'cursor-locked', 'rezoom-range', 'sidebar-transform'],
+  mixins: [mixins_canvas, uxlist],
+  components: {
+    Crosshair: components_Crosshair,
+    KeyboardListener: KeyboardListener
+  },
+  created: function created() {
+    var _this = this;
+
+    // List of all possible overlays (builtin + custom)
+    this._list = [Spline, Splines, Range, Trades, Channel, Segment, Candles, Volume, Splitters, LineTool, RangeTool].concat(this.$props.overlays);
+    this._registry = {}; // We need to know which components we will use.
+    // Custom overlay components overwrite built-ins:
+
+    var tools = [];
+
+    this._list.forEach(function (x, i) {
+      var use_for = x.methods.use_for();
+      if (x.methods.tool) tools.push({
+        use_for: use_for,
+        info: x.methods.tool()
+      });
+      use_for.forEach(function (indicator) {
+        _this._registry[indicator] = i;
+      });
+    });
+
+    this.$emit('custom-event', {
+      event: 'register-tools',
+      args: tools
+    }); // TODO: vue3
+    //this.$on('custom-event', e =>
+    //    this.on_ux_event(e, 'grid'))
+  },
+  beforeUnmount: function beforeUnmount() {
+    if (this.renderer) this.renderer.destroy();
+  },
+  mounted: function mounted() {
+    var _this2 = this;
+
+    var el = this.$refs['canvas'];
+    this.renderer = new grid_Grid(el, this);
+    this.setup();
+    this.$nextTick(function () {
+      return _this2.redraw();
+    });
+  },
+  render: function render() {
+    var id = this.$props.grid_id;
+    var layout = this.$props.layout.grids[id];
+    return this.create_canvas(runtime_core_esm_bundler_h, "grid-".concat(id), {
+      position: {
+        x: 0,
+        y: layout.offset || 0
+      },
+      attrs: {
+        width: layout.width,
+        height: layout.height,
+        overflow: 'hidden'
+      },
+      style: {
+        backgroundColor: this.$props.colors.back
+      },
+      hs: [runtime_core_esm_bundler_h(components_Crosshair, Object.assign(this.common_props(), this.layer_events)), runtime_core_esm_bundler_h(KeyboardListener, this.keyboard_events), runtime_core_esm_bundler_h(UxLayer, {
+        id: id,
+        tv_id: this.$props.tv_id,
+        uxs: this.uxs,
+        colors: this.$props.colors,
+        config: this.$props.config,
+        updater: Math.random(),
+        onCustomEvent: this.emit_ux_event
+      })].concat(this.get_overlays(runtime_core_esm_bundler_h))
+    });
+  },
+  methods: {
+    new_layer: function new_layer(layer) {
+      var _this3 = this;
+
+      this.$nextTick(function () {
+        return _this3.renderer.new_layer(layer);
+      });
+    },
+    del_layer: function del_layer(layer) {
+      var _this4 = this;
+
+      this.$nextTick(function () {
+        return _this4.renderer.del_layer(layer);
+      });
+      var grid_id = this.$props.grid_id;
+      this.$emit('custom-event', {
+        event: 'remove-shaders',
+        args: [grid_id, layer]
+      }); // TODO: close all interfaces
+
+      this.$emit('custom-event', {
+        event: 'remove-layer-meta',
+        args: [grid_id, layer]
+      });
+      this.remove_all_ux(layer);
+    },
+    get_overlays: function get_overlays(h) {
+      var _this5 = this;
+
+      // Distributes overlay data & settings according
+      // to this._registry; returns compo list
+      var comp_list = [],
+          count = {};
+
+      var _iterator = Gridvue_type_script_lang_js_createForOfIteratorHelper(this.$props.data),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var d = _step.value;
+          var comp = this._list[this._registry[d.type]];
+
+          if (comp) {
+            if (comp.methods.calc) {
+              comp = this.inject_renderer(comp);
+            }
+
+            comp_list.push({
+              cls: comp,
+              type: d.type,
+              data: d.data,
+              settings: d.settings,
+              i0: d.i0,
+              tf: d.tf
+            });
+            count[d.type] = 0;
+          }
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      return comp_list.map(function (x, i) {
+        return h(x.cls, Object.assign(_this5.common_props(), _this5.layer_events, {
+          id: "".concat(x.type, "_").concat(count[x.type]++),
+          type: x.type,
+          data: x.data,
+          settings: x.settings,
+          i0: x.i0,
+          tf: x.tf,
+          num: i,
+          grid_id: _this5.$props.grid_id,
+          meta: _this5.$props.meta
+        }));
+      });
+    },
+    common_props: function common_props() {
+      return {
+        cursor: this.$props.cursor,
+        colors: this.$props.colors,
+        layout: this.$props.layout.grids[this.$props.grid_id],
+        interval: this.$props.interval,
+        sub: this.$props.sub,
+        font: this.$props.font,
+        config: this.$props.config
+      };
+    },
+    emit_ux_event: function emit_ux_event(e) {
+      var e_pass = this.on_ux_event(e, 'grid');
+      if (e_pass) this.$emit('custom-event', e);
+    },
+    // Replace the current comp with 'renderer'
+    inject_renderer: function inject_renderer(comp) {
+      var src = comp.methods.calc();
+
+      if (!src.conf || !src.conf.renderer || comp.__renderer__) {
+        return comp;
+      } // Search for an overlay with the target 'name'
+
+
+      var f = this._list.find(function (x) {
+        return x.name === src.conf.renderer;
+      });
+
+      if (!f) return comp;
+      comp.mixins.push(f);
+      comp.__renderer__ = src.conf.renderer;
+      return comp;
+    }
+  },
+  computed: {
+    is_active: function is_active() {
+      return this.$props.cursor.t !== undefined && this.$props.cursor.grid_id === this.$props.grid_id;
+    }
+  },
+  watch: {
+    range: {
+      handler: function handler() {
+        var _this6 = this;
+
+        // TODO: Left-side render lag fix:
+        // Overlay data is updated one tick later than
+        // the main sub. Fast fix is to delay redraw()
+        // call. It will be a solution until a better
+        // one comes by.
+        this.$nextTick(function () {
+          return _this6.redraw();
+        });
+      },
+      deep: true
+    },
+    cursor: {
+      handler: function handler() {
+        if (!this.$props.cursor.locked) this.redraw();
+      },
+      deep: true
+    },
+    overlays: {
+      // Track changes in calc() functions
+      handler: function handler(ovs) {
+        var _iterator2 = Gridvue_type_script_lang_js_createForOfIteratorHelper(ovs),
+            _step2;
+
+        try {
+          for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+            var ov = _step2.value;
+
+            var _iterator3 = Gridvue_type_script_lang_js_createForOfIteratorHelper(this.$children),
+                _step3;
+
+            try {
+              for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+                var comp = _step3.value;
+                if (typeof comp.id !== 'string') continue;
+                var tuple = comp.id.split('_');
+                tuple.pop();
+
+                if (tuple.join('_') === ov.name) {
+                  comp.calc = ov.methods.calc;
+                  if (!comp.calc) continue;
+                  var calc = comp.calc.toString();
+
+                  if (calc !== ov.__prevscript__) {
+                    comp.exec_script();
+                  }
+
+                  ov.__prevscript__ = calc;
+                }
+              }
+            } catch (err) {
+              _iterator3.e(err);
+            } finally {
+              _iterator3.f();
+            }
+          }
+        } catch (err) {
+          _iterator2.e(err);
+        } finally {
+          _iterator2.f();
+        }
+      },
+      deep: true
+    },
+    // Redraw on the shader list change
+    shaders: function shaders(n, p) {
+      this.redraw();
+    }
+  },
+  data: function data() {
+    var _this7 = this;
+
+    return {
+      layer_events: {
+        onNewGridLayer: this.new_layer,
+        onDeleteGridLayer: this.del_layer,
+        onShowGridLayer: function onShowGridLayer(d) {
+          _this7.renderer.show_hide_layer(d);
+
+          _this7.redraw();
+        },
+        onRedrawGrid: this.redraw,
+        onLayerMetaProps: function onLayerMetaProps(d) {
+          return _this7.$emit('layer-meta-props', d);
+        },
+        onCustomEvent: function onCustomEvent(d) {
+          return _this7.$emit('custom-event', d);
+        }
+      },
+      keyboard_events: {
+        onRegisterKbListener: function onRegisterKbListener(event) {
+          _this7.$emit('register-kb-listener', event);
+        },
+        onRemoveKbListener: function onRemoveKbListener(event) {
+          _this7.$emit('remove-kb-listener', event);
+        },
+        onkeyup: function onkeyup(event) {
+          if (!_this7.is_active) return;
+
+          _this7.renderer.propagate('keyup', event);
+        },
+        onkeydown: function onkeydown(event) {
+          if (!_this7.is_active) return; // TODO: is this neeeded?
+
+          _this7.renderer.propagate('keydown', event);
+        },
+        onkeypress: function onkeypress(event) {
+          if (!_this7.is_active) return;
+
+          _this7.renderer.propagate('keypress', event);
+        }
+      }
+    };
+  }
+});
+// CONCATENATED MODULE: ./src/components/Grid.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/Grid.vue
+
+
+
+/* harmony default export */ var components_Grid = (Gridvue_type_script_lang_js);
+// CONCATENATED MODULE: ./src/components/js/sidebar.js
+
+
+
+function sidebar_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = sidebar_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function sidebar_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return sidebar_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return sidebar_arrayLikeToArray(o, minLen); }
+
+function sidebar_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+
+
+var PANHEIGHT;
+
+var sidebar_Sidebar = /*#__PURE__*/function () {
+  function Sidebar(canvas, comp, side) {
+    if (side === void 0) {
+      side = 'right';
+    }
+
+    classCallCheck_default()(this, Sidebar);
+
+    PANHEIGHT = comp.config.PANHEIGHT;
+    this.canvas = canvas;
+    this.ctx = canvas.getContext('2d');
+    this.comp = comp;
+    this.$p = comp.$props;
+    this.data = this.$p.sub;
+    this.range = this.$p.range;
+    this.id = this.$p.grid_id;
+    this.layout = this.$p.layout.grids[this.id];
+    this.side = side;
+    this.listeners();
+  }
+
+  createClass_default()(Sidebar, [{
+    key: "listeners",
+    value: function listeners() {
+      var _this = this;
+
+      var mc = this.mc = new hammer["Manager"](this.canvas);
+      mc.add(new hammer["Pan"]({
+        direction: hammer["DIRECTION_VERTICAL"],
+        threshold: 0
+      }));
+      mc.add(new hammer["Tap"]({
+        event: 'doubletap',
+        taps: 2,
+        posThreshold: 50
+      }));
+      mc.on('panstart', function (event) {
+        if (_this.$p.y_transform) {
+          _this.zoom = _this.$p.y_transform.zoom;
+        } else {
+          _this.zoom = 1.0;
+        }
+
+        _this.y_range = [_this.layout.$_hi, _this.layout.$_lo];
+        _this.drug = {
+          y: event.center.y,
+          z: _this.zoom,
+          mid: math.log_mid(_this.y_range, _this.layout.height),
+          A: _this.layout.A,
+          B: _this.layout.B
+        };
+      });
+      mc.on('panmove', function (event) {
+        if (_this.drug) {
+          _this.zoom = _this.calc_zoom(event);
+
+          _this.comp.$emit('sidebar-transform', {
+            grid_id: _this.id,
+            zoom: _this.zoom,
+            auto: false,
+            range: _this.calc_range(),
+            drugging: true
+          });
+
+          _this.update();
+        }
+      });
+      mc.on('panend', function () {
+        _this.drug = null;
+
+        _this.comp.$emit('sidebar-transform', {
+          grid_id: _this.id,
+          drugging: false
+        });
+      });
+      mc.on('doubletap', function () {
+        _this.comp.$emit('sidebar-transform', {
+          grid_id: _this.id,
+          zoom: 1.0,
+          auto: true
+        });
+
+        _this.zoom = 1.0;
+
+        _this.update();
+      }); // TODO: Do later for mobile version
+    }
+  }, {
+    key: "update",
+    value: function update() {
+      // Update reference to the grid
+      this.layout = this.$p.layout.grids[this.id];
+      var points = this.layout.ys;
+      var x,
+          y,
+          w,
+          h,
+          side = this.side;
+      var sb = this.layout.sb; //this.ctx.fillStyle = this.$p.colors.back
+
+      this.ctx.font = this.$p.font;
+
+      switch (side) {
+        case 'left':
+          x = 0;
+          y = 0;
+          w = Math.floor(sb);
+          h = this.layout.height; //this.ctx.fillRect(x, y, w, h)
+
+          this.ctx.clearRect(x, y, w, h);
+          this.ctx.strokeStyle = this.$p.colors.scale;
+          this.ctx.beginPath();
+          this.ctx.moveTo(x + 0.5, 0);
+          this.ctx.lineTo(x + 0.5, h);
+          this.ctx.stroke();
+          break;
+
+        case 'right':
+          x = 0;
+          y = 0;
+          w = Math.floor(sb);
+          h = this.layout.height; //this.ctx.fillRect(x, y, w, h)
+
+          this.ctx.clearRect(x, y, w, h);
+          this.ctx.strokeStyle = this.$p.colors.scale;
+          this.ctx.beginPath();
+          this.ctx.moveTo(x + 0.5, 0);
+          this.ctx.lineTo(x + 0.5, h);
+          this.ctx.stroke();
+          break;
+      }
+
+      this.ctx.fillStyle = this.$p.colors.text;
+      this.ctx.beginPath();
+
+      var _iterator = sidebar_createForOfIteratorHelper(points),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var p = _step.value;
+          if (p[0] > this.layout.height) continue;
+          var x1 = side === 'left' ? w - 0.5 : x - 0.5;
+          var x2 = side === 'left' ? x1 - 4.5 : x1 + 4.5;
+          this.ctx.moveTo(x1, p[0] - 0.5);
+          this.ctx.lineTo(x2, p[0] - 0.5);
+          var offst = side === 'left' ? -10 : 10;
+          this.ctx.textAlign = side === 'left' ? 'end' : 'start';
+          var d = this.layout.prec;
+          this.ctx.fillText(p[1].toFixed(d), x1 + offst, p[0] + 4);
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      this.ctx.stroke();
+      if (this.$p.grid_id) this.upper_border();
+      this.apply_shaders();
+      if (this.$p.cursor.y && this.$p.cursor.y$) this.panel();
+    }
+  }, {
+    key: "apply_shaders",
+    value: function apply_shaders() {
+      var layout = this.$p.layout.grids[this.id];
+      var props = {
+        layout: layout,
+        cursor: this.$p.cursor
+      };
+
+      var _iterator2 = sidebar_createForOfIteratorHelper(this.$p.shaders),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var s = _step2.value;
+          this.ctx.save();
+          s.draw(this.ctx, props);
+          this.ctx.restore();
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+    }
+  }, {
+    key: "upper_border",
+    value: function upper_border() {
+      this.ctx.strokeStyle = this.$p.colors.scale;
+      this.ctx.beginPath();
+      this.ctx.moveTo(0, 0.5);
+      this.ctx.lineTo(this.layout.width, 0.5);
+      this.ctx.stroke();
+    } // A gray bar behind the current price
+
+  }, {
+    key: "panel",
+    value: function panel() {
+      if (this.$p.cursor.grid_id !== this.layout.id) {
+        return;
+      }
+
+      var lbl = this.$p.cursor.y$.toFixed(this.layout.prec);
+      this.ctx.fillStyle = this.$p.colors.panel;
+      var panwidth = this.layout.sb + 1;
+      var x = -0.5;
+      var y = this.$p.cursor.y - PANHEIGHT * 0.5 - 0.5;
+      var a = 7;
+      this.ctx.fillRect(x - 0.5, y, panwidth, PANHEIGHT);
+      this.ctx.fillStyle = this.$p.colors.textHL;
+      this.ctx.textAlign = 'left';
+      this.ctx.fillText(lbl, a, y + 15);
+    }
+  }, {
+    key: "calc_zoom",
+    value: function calc_zoom(event) {
+      var d = this.drug.y - event.center.y;
+      var speed = d > 0 ? 3 : 1;
+      var k = 1 + speed * d / this.layout.height;
+      return utils.clamp(this.drug.z * k, 0.005, 100);
+    } // Not the best place to calculate y-range but
+    // this is the simplest solution I found up to
+    // date
+
+  }, {
+    key: "calc_range",
+    value: function calc_range(diff1, diff2) {
+      var _this2 = this;
+
+      if (diff1 === void 0) {
+        diff1 = 1;
+      }
+
+      if (diff2 === void 0) {
+        diff2 = 1;
+      }
+
+      var z = this.zoom / this.drug.z;
+      var zk = (1 / z - 1) / 2;
+      var range = this.y_range.slice();
+      var delta = range[0] - range[1];
+
+      if (!this.layout.grid.logScale) {
+        range[0] = range[0] + delta * zk * diff1;
+        range[1] = range[1] - delta * zk * diff2;
+      } else {
+        var px_mid = this.layout.height / 2;
+        var new_hi = px_mid - px_mid * (1 / z);
+        var new_lo = px_mid + px_mid * (1 / z); // Use old mapping to get a new range
+
+        var f = function f(y) {
+          return math.exp((y - _this2.drug.B) / _this2.drug.A);
+        };
+
+        var copy = range.slice();
+        range[0] = f(new_hi);
+        range[1] = f(new_lo);
+      }
+
+      return range;
+    }
+  }, {
+    key: "rezoom_range",
+    value: function rezoom_range(delta, diff1, diff2) {
+      if (!this.$p.y_transform || this.$p.y_transform.auto) return;
+      this.zoom = 1.0; // TODO: further work (improve scaling ratio)
+
+      if (delta < 0) delta /= 3.75; // Btw, idk why 3.75, but it works
+
+      delta *= 0.25;
+      this.y_range = [this.layout.$_hi, this.layout.$_lo];
+      this.drug = {
+        y: 0,
+        z: this.zoom,
+        mid: math.log_mid(this.y_range, this.layout.height),
+        A: this.layout.A,
+        B: this.layout.B
+      };
+      this.zoom = this.calc_zoom({
+        center: {
+          y: delta * this.layout.height
+        }
+      });
+      this.comp.$emit('sidebar-transform', {
+        grid_id: this.id,
+        zoom: this.zoom,
+        auto: false,
+        range: this.calc_range(diff1, diff2),
+        drugging: true
+      });
+      this.drug = null;
+      this.comp.$emit('sidebar-transform', {
+        grid_id: this.id,
+        drugging: false
+      });
+    }
+  }, {
+    key: "destroy",
+    value: function destroy() {
+      if (this.mc) this.mc.destroy();
+    }
+  }, {
+    key: "mousemove",
+    value: function mousemove() {}
+  }, {
+    key: "mouseout",
+    value: function mouseout() {}
+  }, {
+    key: "mouseup",
+    value: function mouseup() {}
+  }, {
+    key: "mousedown",
+    value: function mousedown() {}
+  }]);
+
+  return Sidebar;
+}();
+
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/Sidebar.vue?vue&type=script&lang=js
+// The side bar (yep, that thing with a bunch of $$$)
+
+
+
+/* harmony default export */ var Sidebarvue_type_script_lang_js = ({
+  name: 'Sidebar',
+  props: ['sub', 'layout', 'range', 'interval', 'cursor', 'colors', 'font', 'width', 'height', 'grid_id', 'rerender', 'y_transform', 'tv_id', 'config', 'shaders'],
+  mixins: [mixins_canvas],
+  mounted: function mounted() {
+    var el = this.$refs['canvas'];
+    this.renderer = new sidebar_Sidebar(el, this);
+    this.setup();
+    this.redraw();
+  },
+  render: function render() {
+    var id = this.$props.grid_id;
+    var layout = this.$props.layout.grids[id];
+    return this.create_canvas(runtime_core_esm_bundler_h, "sidebar-".concat(id), {
+      position: {
+        x: layout.width,
+        y: layout.offset || 0
+      },
+      attrs: {
+        rerender: this.$props.rerender,
+        width: this.$props.width,
+        height: layout.height
+      },
+      style: {
+        backgroundColor: this.$props.colors.back
+      }
+    });
+  },
+  watch: {
+    range: {
+      handler: function handler() {
+        this.redraw();
+      },
+      deep: true
+    },
+    cursor: {
+      handler: function handler() {
+        this.redraw();
+      },
+      deep: true
+    },
+    rerender: function rerender() {
+      var _this = this;
+
+      this.$nextTick(function () {
+        return _this.redraw();
+      });
+    }
+  },
+  beforeUnmount: function beforeUnmount() {
+    if (this.renderer) this.renderer.destroy();
+  }
+});
+// CONCATENATED MODULE: ./src/components/Sidebar.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/Sidebar.vue
+
+
+
+/* harmony default export */ var components_Sidebar = (Sidebarvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/components/Legend.vue?vue&type=template&id=e9e9c634
+
+var Legendvue_type_template_id_e9e9c634_hoisted_1 = {
+  key: 0
+};
+
+var _hoisted_2 = /*#__PURE__*/createTextVNode(" O");
+
+var _hoisted_3 = {
+  "class": "t-vue-lspan"
+};
+
+var _hoisted_4 = /*#__PURE__*/createTextVNode(" H");
+
+var _hoisted_5 = {
+  "class": "t-vue-lspan"
+};
+
+var _hoisted_6 = /*#__PURE__*/createTextVNode(" L");
+
+var _hoisted_7 = {
+  "class": "t-vue-lspan"
+};
+
+var _hoisted_8 = /*#__PURE__*/createTextVNode(" C");
+
+var _hoisted_9 = {
+  "class": "t-vue-lspan"
+};
+
+var _hoisted_10 = /*#__PURE__*/createTextVNode(" V");
+
+var _hoisted_11 = {
+  "class": "t-vue-lspan"
+};
+var _hoisted_12 = {
+  "class": "t-vue-ind"
+};
+var _hoisted_13 = {
+  "class": "t-vue-iname"
+};
+var _hoisted_14 = {
+  key: 0,
+  "class": "t-vue-ivalues"
+};
+var _hoisted_15 = {
+  key: 1,
+  "class": "t-vue-unknown"
+};
+function Legendvue_type_template_id_e9e9c634_render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_button_group = resolveComponent("button-group");
+
+  var _component_spinner = resolveComponent("spinner");
+
+  return openBlock(), createBlock("div", {
+    "class": "trading-vue-legend",
+    style: $options.calc_style
+  }, [$props.grid_id === 0 ? (openBlock(), createBlock("div", {
+    key: 0,
+    "class": "trading-vue-ohlcv",
+    style: {
+      'max-width': $props.common.width + 'px'
+    }
+  }, [createVNode("span", {
+    "class": "t-vue-title",
+    style: {
+      color: $props.common.colors.title
+    }
+  }, Object(dist_shared_esm_bundler["C" /* toDisplayString */])($props.common.title_txt), 5
+  /* TEXT, STYLE */
+  ), $options.show_values ? (openBlock(), createBlock("span", Legendvue_type_template_id_e9e9c634_hoisted_1, [_hoisted_2, createVNode("span", _hoisted_3, Object(dist_shared_esm_bundler["C" /* toDisplayString */])($options.ohlcv[0]), 1
+  /* TEXT */
+  ), _hoisted_4, createVNode("span", _hoisted_5, Object(dist_shared_esm_bundler["C" /* toDisplayString */])($options.ohlcv[1]), 1
+  /* TEXT */
+  ), _hoisted_6, createVNode("span", _hoisted_7, Object(dist_shared_esm_bundler["C" /* toDisplayString */])($options.ohlcv[2]), 1
+  /* TEXT */
+  ), _hoisted_8, createVNode("span", _hoisted_9, Object(dist_shared_esm_bundler["C" /* toDisplayString */])($options.ohlcv[3]), 1
+  /* TEXT */
+  ), _hoisted_10, createVNode("span", _hoisted_11, Object(dist_shared_esm_bundler["C" /* toDisplayString */])($options.ohlcv[4]), 1
+  /* TEXT */
+  )])) : createCommentVNode("v-if", true), !$options.show_values ? (openBlock(), createBlock("span", {
+    key: 1,
+    "class": "t-vue-lspan",
+    style: {
+      color: $props.common.colors.text
+    }
+  }, Object(dist_shared_esm_bundler["C" /* toDisplayString */])(($props.common.meta.last || [])[4]), 5
+  /* TEXT, STYLE */
+  )) : createCommentVNode("v-if", true)], 4
+  /* STYLE */
+  )) : createCommentVNode("v-if", true), (openBlock(true), createBlock(Fragment, null, renderList(this.indicators, function (ind) {
+    return openBlock(), createBlock("div", _hoisted_12, [createVNode("span", _hoisted_13, Object(dist_shared_esm_bundler["C" /* toDisplayString */])(ind.name), 1
+    /* TEXT */
+    ), createVNode(_component_button_group, {
+      buttons: $props.common.buttons,
+      config: $props.common.config,
+      ov_id: ind.id,
+      grid_id: $props.grid_id,
+      index: ind.index,
+      tv_id: $props.common.tv_id,
+      display: ind.v,
+      onLegendButtonClick: $options.button_click
+    }, null, 8
+    /* PROPS */
+    , ["buttons", "config", "ov_id", "grid_id", "index", "tv_id", "display", "onLegendButtonClick"]), ind.v ? (openBlock(), createBlock("span", _hoisted_14, [$options.show_values ? (openBlock(true), createBlock(Fragment, {
+      key: 0
+    }, renderList(ind.values, function (v) {
+      return openBlock(), createBlock("span", {
+        "class": "t-vue-lspan t-vue-ivalue",
+        style: {
+          color: v.color
+        }
+      }, Object(dist_shared_esm_bundler["C" /* toDisplayString */])(v.value), 5
+      /* TEXT, STYLE */
+      );
+    }), 256
+    /* UNKEYED_FRAGMENT */
+    )) : createCommentVNode("v-if", true)])) : createCommentVNode("v-if", true), ind.unk ? (openBlock(), createBlock("span", _hoisted_15, " (Unknown type) ")) : createCommentVNode("v-if", true), createVNode(Transition, {
+      name: "tvjs-appear"
+    }, {
+      "default": withCtx(function () {
+        return [ind.loading ? (openBlock(), createBlock(_component_spinner, {
+          key: 0,
+          colors: $props.common.colors
+        }, null, 8
+        /* PROPS */
+        , ["colors"])) : createCommentVNode("v-if", true)];
+      }),
+      _: 2
+    }, 1024
+    /* DYNAMIC_SLOTS */
+    )]);
+  }), 256
+  /* UNKEYED_FRAGMENT */
+  ))], 4
+  /* STYLE */
+  );
+}
+// CONCATENATED MODULE: ./src/components/Legend.vue?vue&type=template&id=e9e9c634
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/components/ButtonGroup.vue?vue&type=template&id=dd6a08e4
+
+var ButtonGroupvue_type_template_id_dd6a08e4_hoisted_1 = {
+  "class": "t-vue-lbtn-grp"
+};
+function ButtonGroupvue_type_template_id_dd6a08e4_render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_legend_button = resolveComponent("legend-button");
+
+  return openBlock(), createBlock("span", ButtonGroupvue_type_template_id_dd6a08e4_hoisted_1, [(openBlock(true), createBlock(Fragment, null, renderList($props.buttons, function (b, i) {
+    return openBlock(), createBlock(_component_legend_button, {
+      key: i,
+      id: b.name || b,
+      tv_id: $props.tv_id,
+      ov_id: $props.ov_id,
+      grid_id: $props.grid_id,
+      index: $props.index,
+      display: $props.display,
+      icon: b.icon,
+      config: $props.config,
+      onLegendButtonClick: $options.button_click
+    }, null, 8
+    /* PROPS */
+    , ["id", "tv_id", "ov_id", "grid_id", "index", "display", "icon", "config", "onLegendButtonClick"]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))]);
+}
+// CONCATENATED MODULE: ./src/components/ButtonGroup.vue?vue&type=template&id=dd6a08e4
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/components/LegendButton.vue?vue&type=template&id=058ef7da
+
+function LegendButtonvue_type_template_id_058ef7da_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createBlock("img", {
+    "class": "t-vue-lbtn",
+    src: $options.base64,
+    id: $options.uuid,
+    style: {
+      width: $props.config.L_BTN_SIZE + 'px',
+      height: $props.config.L_BTN_SIZE + 'px',
+      margin: $props.config.L_BTN_MARGIN
+    },
+    onClick: _cache[1] || (_cache[1] = function () {
+      return $options.onclick.apply($options, arguments);
+    })
+  }, null, 12
+  /* STYLE, PROPS */
+  , ["src", "id"]);
+}
+// CONCATENATED MODULE: ./src/components/LegendButton.vue?vue&type=template&id=058ef7da
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/LegendButton.vue?vue&type=script&lang=js
+
+/* harmony default export */ var LegendButtonvue_type_script_lang_js = ({
+  name: 'LegendButton',
+  props: ['id', 'tv_id', 'grid_id', 'ov_id', 'index', 'display', 'icon', 'config'],
+  emits: ['legend-button-click'],
+  mounted: function mounted() {},
+  computed: {
+    base64: function base64() {
+      return this.icon || icons[this.file_name];
+    },
+    file_name: function file_name() {
+      var id = this.$props.id;
+
+      if (this.$props.id === 'display') {
+        id = this.$props.display ? 'display_on' : 'display_off';
+      }
+
+      return id + '.png';
+    },
+    uuid: function uuid() {
+      var tv = this.$props.tv_id;
+      var gr = this.$props.grid_id;
+      var ov = this.$props.ov_id;
+      return "".concat(tv, "-btn-g").concat(gr, "-").concat(ov);
+    },
+    data_type: function data_type() {
+      return this.$props.grid_id === 0 ? "onchart" : "offchart";
+    },
+    data_index: function data_index() {
+      return this.$props.index;
+    }
+  },
+  methods: {
+    onclick: function onclick() {
+      this.$emit('legend-button-click', {
+        button: this.$props.id,
+        type: this.data_type,
+        dataIndex: this.data_index,
+        grid: this.$props.grid_id,
+        overlay: this.$props.ov_id
+      });
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/LegendButton.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./src/components/LegendButton.vue?vue&type=style&index=0&id=058ef7da&lang=css
+var LegendButtonvue_type_style_index_0_id_058ef7da_lang_css = __webpack_require__(52);
+
+// CONCATENATED MODULE: ./src/components/LegendButton.vue
+
+
+
+
+
+LegendButtonvue_type_script_lang_js.render = LegendButtonvue_type_template_id_058ef7da_render
+
+/* harmony default export */ var LegendButton = (LegendButtonvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/ButtonGroup.vue?vue&type=script&lang=js
+
+/* harmony default export */ var ButtonGroupvue_type_script_lang_js = ({
+  name: 'ButtonGroup',
+  props: ['buttons', 'tv_id', 'ov_id', 'grid_id', 'index', 'display', 'config'],
+  emits: ['legend-button-click'],
+  components: {
+    LegendButton: LegendButton
+  },
+  methods: {
+    button_click: function button_click(event) {
+      this.$emit('legend-button-click', event);
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/ButtonGroup.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./src/components/ButtonGroup.vue?vue&type=style&index=0&id=dd6a08e4&lang=css
+var ButtonGroupvue_type_style_index_0_id_dd6a08e4_lang_css = __webpack_require__(54);
+
+// CONCATENATED MODULE: ./src/components/ButtonGroup.vue
+
+
+
+
+
+ButtonGroupvue_type_script_lang_js.render = ButtonGroupvue_type_template_id_dd6a08e4_render
+
+/* harmony default export */ var ButtonGroup = (ButtonGroupvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/components/Spinner.vue?vue&type=template&id=a6fff878
+
+var Spinnervue_type_template_id_a6fff878_hoisted_1 = {
+  "class": "tvjs-spinner"
+};
+function Spinnervue_type_template_id_a6fff878_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createBlock("div", Spinnervue_type_template_id_a6fff878_hoisted_1, [(openBlock(), createBlock(Fragment, null, renderList(4, function (i) {
+    return createVNode("div", {
+      key: i,
+      style: {
+        background: $props.colors.text
+      }
+    }, null, 4
+    /* STYLE */
+    );
+  }), 64
+  /* STABLE_FRAGMENT */
+  ))]);
+}
+// CONCATENATED MODULE: ./src/components/Spinner.vue?vue&type=template&id=a6fff878
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/Spinner.vue?vue&type=script&lang=js
+/* harmony default export */ var Spinnervue_type_script_lang_js = ({
+  name: 'Spinner',
+  props: ['colors']
+});
+// CONCATENATED MODULE: ./src/components/Spinner.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./src/components/Spinner.vue?vue&type=style&index=0&id=a6fff878&lang=css
+var Spinnervue_type_style_index_0_id_a6fff878_lang_css = __webpack_require__(56);
+
+// CONCATENATED MODULE: ./src/components/Spinner.vue
+
+
+
+
+
+Spinnervue_type_script_lang_js.render = Spinnervue_type_template_id_a6fff878_render
+
+/* harmony default export */ var Spinner = (Spinnervue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/Legend.vue?vue&type=script&lang=js
+
+
+/* harmony default export */ var Legendvue_type_script_lang_js = ({
+  name: 'ChartLegend',
+  props: ['common', 'values', 'grid_id', 'meta_props'],
+  emits: ['legend-button-click'],
+  components: {
+    ButtonGroup: ButtonGroup,
+    Spinner: Spinner
+  },
+  computed: {
+    ohlcv: function ohlcv() {
+      if (!this.$props.values || !this.$props.values.ohlcv) {
+        return Array(6).fill('n/a');
+      }
+
+      var prec = this.layout.prec; // TODO: main the main legend more customizable
+
+      var id = this.main_type + '_0';
+      var meta = this.$props.meta_props[id] || {};
+
+      if (meta.legend) {
+        return (meta.legend() || []).map(function (x) {
+          return x.value;
+        });
+      }
+
+      return [this.$props.values.ohlcv[1].toFixed(prec), this.$props.values.ohlcv[2].toFixed(prec), this.$props.values.ohlcv[3].toFixed(prec), this.$props.values.ohlcv[4].toFixed(prec), this.$props.values.ohlcv[5] ? this.$props.values.ohlcv[5].toFixed(2) : 'n/a'];
+    },
+    // TODO: add support for { grid: { id : N }}
+    indicators: function indicators() {
+      var _this = this;
+
+      var values = this.$props.values;
+      var f = this.format;
+      var types = {};
+      return this.json_data.filter(function (x) {
+        return x.settings.legend !== false && !x.main;
+      }).map(function (x) {
+        if (!(x.type in types)) types[x.type] = 0;
+        var id = x.type + "_".concat(types[x.type]++);
+        return {
+          v: 'display' in x.settings ? x.settings.display : true,
+          name: x.name || id,
+          index: (_this.off_data || _this.json_data).indexOf(x),
+          id: id,
+          values: values ? f(id, values) : _this.n_a(1),
+          unk: !(id in (_this.$props.meta_props || {})),
+          loading: x.loading
+        };
+      });
+    },
+    calc_style: function calc_style() {
+      var top = this.layout.height > 150 ? 10 : 5;
+      var grids = this.$props.common.layout.grids;
+      var w = grids[0] ? grids[0].width : undefined;
+      return {
+        top: "".concat(this.layout.offset + top, "px"),
+        width: "".concat(w - 20, "px")
+      };
+    },
+    layout: function layout() {
+      var id = this.$props.grid_id;
+      return this.$props.common.layout.grids[id];
+    },
+    json_data: function json_data() {
+      return this.$props.common.data;
+    },
+    off_data: function off_data() {
+      return this.$props.common.offchart;
+    },
+    main_type: function main_type() {
+      var f = this.common.data.find(function (x) {
+        return x.main;
+      });
+      return f ? f.type : undefined;
+    },
+    show_values: function show_values() {
+      return this.common.cursor.mode !== 'explore';
+    }
+  },
+  methods: {
+    format: function format(id, values) {
+      var meta = this.$props.meta_props[id] || {}; // Matches Overlay.data_colors with the data values
+      // (see Spline.vue)
+
+      if (!values[id]) return this.n_a(1); // Custom formatter
+
+      if (meta.legend) return meta.legend(values[id]);
+      return values[id].slice(1).map(function (x, i) {
+        var cs = meta.data_colors ? meta.data_colors() : [];
+
+        if (typeof x == 'number') {
+          // Show 8 digits for small values
+          x = x.toFixed(Math.abs(x) > 0.001 ? 4 : 8);
+        }
+
+        return {
+          value: x,
+          color: cs ? cs[i % cs.length] : undefined
+        };
+      });
+    },
+    n_a: function n_a(len) {
+      return Array(len).fill({
+        value: 'n/a'
+      });
+    },
+    button_click: function button_click(event) {
+      this.$emit('legend-button-click', event);
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/Legend.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./src/components/Legend.vue?vue&type=style&index=0&id=e9e9c634&lang=css
+var Legendvue_type_style_index_0_id_e9e9c634_lang_css = __webpack_require__(58);
+
+// CONCATENATED MODULE: ./src/components/Legend.vue
+
+
+
+
+
+Legendvue_type_script_lang_js.render = Legendvue_type_template_id_e9e9c634_render
+
+/* harmony default export */ var Legend = (Legendvue_type_script_lang_js);
+// CONCATENATED MODULE: ./src/mixins/shaders.js
+function shaders_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = shaders_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function shaders_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return shaders_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return shaders_arrayLikeToArray(o, minLen); }
+
+function shaders_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+// Parser for shader events
+/* harmony default export */ var shaders = ({
+  methods: {
+    // Init shaders from extensions
+    init_shaders: function init_shaders(skin, prev) {
+      if (skin !== prev) {
+        if (prev) this.shaders = this.shaders.filter(function (x) {
+          return x.owner !== prev.id;
+        });
+
+        var _iterator = shaders_createForOfIteratorHelper(skin.shaders),
+            _step;
+
+        try {
+          for (_iterator.s(); !(_step = _iterator.n()).done;) {
+            var Shader = _step.value;
+            var shader = new Shader();
+            shader.owner = skin.id;
+            this.shaders.push(shader);
+          } // TODO: Sort by zIndex
+
+        } catch (err) {
+          _iterator.e(err);
+        } finally {
+          _iterator.f();
+        }
+      }
+    },
+    on_shader_event: function on_shader_event(d, target) {
+      if (d.event === 'new-shader') {
+        if (d.args[0].target === target) {
+          d.args[0].id = "".concat(d.args[1], "-").concat(d.args[2]);
+          this.shaders.push(d.args[0]);
+          this.rerender++;
+        }
+      }
+
+      if (d.event === 'remove-shaders') {
+        var id = d.args.join('-');
+        this.shaders = this.shaders.filter(function (x) {
+          return x.id !== id;
+        });
+      }
+    }
+  },
+  watch: {
+    skin: function skin(n, p) {
+      this.init_shaders(n, p);
+    }
+  },
+  data: function data() {
+    return {
+      shaders: []
+    };
+  }
+});
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/Section.vue?vue&type=script&lang=js
+
+
+
+
+
+/* harmony default export */ var Sectionvue_type_script_lang_js = ({
+  name: 'GridSection',
+  props: ['common', 'grid_id'],
+  emits: ['register-kb-listener', 'remove-kb-listener', 'range-changed', 'cursor-changed', 'cursor-locked', 'sidebar-transform', 'layer-meta-props', 'custom-event', 'legend-button-click'],
+  mixins: [shaders],
+  components: {
+    Grid: components_Grid,
+    Sidebar: components_Sidebar,
+    ChartLegend: Legend
+  },
+  mounted: function mounted() {
+    this.init_shaders(this.$props.common.skin);
+  },
+  methods: {
+    range_changed: function range_changed(r) {
+      this.$emit('range-changed', r);
+    },
+    cursor_changed: function cursor_changed(c) {
+      c.grid_id = this.$props.grid_id;
+      this.$emit('cursor-changed', c);
+    },
+    cursor_locked: function cursor_locked(state) {
+      this.$emit('cursor-locked', state);
+    },
+    sidebar_transform: function sidebar_transform(s) {
+      this.$emit('sidebar-transform', s);
+    },
+    emit_meta_props: function emit_meta_props(d) {
+      this.meta_props[d.layer_id] = d;
+      this.$emit('layer-meta-props', d);
+    },
+    emit_custom_event: function emit_custom_event(d) {
+      this.on_shader_event(d, 'sidebar');
+      this.$emit('custom-event', d);
+    },
+    button_click: function button_click(event) {
+      this.$emit('legend-button-click', event);
+    },
+    register_kb: function register_kb(event) {
+      this.$emit('register-kb-listener', event);
+    },
+    remove_kb: function remove_kb(event) {
+      this.$emit('remove-kb-listener', event);
+    },
+    rezoom_range: function rezoom_range(event) {
+      var id = 'sb-' + event.grid_id;
+
+      if (this.$refs[id]) {
+        this.$refs[id].renderer.rezoom_range(event.z, event.diff1, event.diff2);
+      }
+    },
+    ghash: function ghash(val) {
+      // Measures grid heights configuration
+      var hs = val.layout.grids.map(function (x) {
+        return x.height;
+      });
+      return hs.reduce(function (a, b) {
+        return a + b;
+      }, '');
+    }
+  },
+  computed: {
+    // Component-specific props subsets:
+    grid_props: function grid_props() {
+      var id = this.$props.grid_id;
+      var p = Object.assign({}, this.$props.common); // Split offchart data between offchart grids
+
+      if (id > 0) {
+        var _p$data;
+
+        var all = p.data;
+        p.data = [p.data[id - 1]]; // Merge offchart overlays with custom ids with
+        // the existing onse (by comparing the grid ids)
+
+        (_p$data = p.data).push.apply(_p$data, toConsumableArray_default()(all.filter(function (x) {
+          return x.grid && x.grid.id === id;
+        })));
+      }
+
+      p.width = p.layout.grids[id].width;
+      p.height = p.layout.grids[id].height;
+      p.y_transform = p.y_ts[id];
+      p.shaders = this.grid_shaders;
+      return p;
+    },
+    sidebar_props: function sidebar_props() {
+      var id = this.$props.grid_id;
+      var p = Object.assign({}, this.$props.common);
+      p.width = p.layout.grids[id].sb;
+      p.height = p.layout.grids[id].height;
+      p.y_transform = p.y_ts[id];
+      p.shaders = this.sb_shaders;
+      return p;
+    },
+    section_values: function section_values() {
+      var id = this.$props.grid_id;
+      var p = Object.assign({}, this.$props.common);
+      p.width = p.layout.grids[id].width;
+      return p.cursor.values[id];
+    },
+    legend_props: function legend_props() {
+      var id = this.$props.grid_id;
+      var p = Object.assign({}, this.$props.common); // Split offchart data between offchart grids
+
+      if (id > 0) {
+        var _p$data2;
+
+        var all = p.data;
+        p.offchart = all;
+        p.data = [p.data[id - 1]];
+
+        (_p$data2 = p.data).push.apply(_p$data2, toConsumableArray_default()(all.filter(function (x) {
+          return x.grid && x.grid.id === id;
+        })));
+      }
+
+      return p;
+    },
+    get_meta_props: function get_meta_props() {
+      return this.meta_props;
+    },
+    grid_shaders: function grid_shaders() {
+      return this.shaders.filter(function (x) {
+        return x.target === 'grid';
+      });
+    },
+    sb_shaders: function sb_shaders() {
+      return this.shaders.filter(function (x) {
+        return x.target === 'sidebar';
+      });
+    }
+  },
+  watch: {
+    common: {
+      handler: function handler(val, old_val) {
+        var newhash = this.ghash(val);
+
+        if (newhash !== this.last_ghash) {
+          this.rerender++;
+        }
+
+        if (val.data.length !== old_val.data.length) {
+          // Look at this nasty trick!
+          this.rerender++;
+        }
+
+        this.last_ghash = newhash;
+      },
+      deep: true
+    }
+  },
+  data: function data() {
+    return {
+      meta_props: {},
+      rerender: 0,
+      last_ghash: ''
+    };
+  }
+});
+// CONCATENATED MODULE: ./src/components/Section.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./src/components/Section.vue?vue&type=style&index=0&id=191d8ca9&lang=css
+var Sectionvue_type_style_index_0_id_191d8ca9_lang_css = __webpack_require__(60);
+
+// CONCATENATED MODULE: ./src/components/Section.vue
+
+
+
+
+
+Sectionvue_type_script_lang_js.render = Sectionvue_type_template_id_191d8ca9_render
+
+/* harmony default export */ var Section = (Sectionvue_type_script_lang_js);
+// CONCATENATED MODULE: ./src/components/js/botbar.js
+
+
+
+function botbar_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = botbar_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function botbar_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return botbar_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return botbar_arrayLikeToArray(o, minLen); }
+
+function botbar_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+
+var botbar_MINUTE15 = constants.MINUTE15,
+    botbar_MINUTE = constants.MINUTE,
+    botbar_HOUR = constants.HOUR,
+    botbar_DAY = constants.DAY,
+    botbar_WEEK = constants.WEEK,
+    botbar_MONTH = constants.MONTH,
+    botbar_YEAR = constants.YEAR,
+    botbar_MONTHMAP = constants.MONTHMAP;
+
+var botbar_Botbar = /*#__PURE__*/function () {
+  function Botbar(canvas, comp) {
+    classCallCheck_default()(this, Botbar);
+
+    this.canvas = canvas;
+    this.ctx = canvas.getContext('2d');
+    this.comp = comp;
+    this.$p = comp.$props;
+    this.data = this.$p.sub;
+    this.range = this.$p.range;
+    this.layout = this.$p.layout;
+  }
+
+  createClass_default()(Botbar, [{
+    key: "update",
+    value: function update() {
+      this.grid_0 = this.layout.grids[0];
+      var width = this.layout.botbar.width;
+      var height = this.layout.botbar.height;
+      var sb = this.layout.grids[0].sb; //this.ctx.fillStyle = this.$p.colors.back
+
+      this.ctx.font = this.$p.font; //this.ctx.fillRect(0, 0, width, height)
+
+      this.ctx.clearRect(0, 0, width, height);
+      this.ctx.strokeStyle = this.$p.colors.scale;
+      this.ctx.beginPath();
+      this.ctx.moveTo(0, 0.5);
+      this.ctx.lineTo(Math.floor(width + 1), 0.5);
+      this.ctx.stroke();
+      this.ctx.fillStyle = this.$p.colors.text;
+      this.ctx.beginPath();
+
+      var _iterator = botbar_createForOfIteratorHelper(this.layout.botbar.xs),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var p = _step.value;
+          var lbl = this.format_date(p);
+          if (p[0] > width - sb) continue;
+          this.ctx.moveTo(p[0] - 0.5, 0);
+          this.ctx.lineTo(p[0] - 0.5, 4.5);
+
+          if (!this.lbl_highlight(p[1][0])) {
+            this.ctx.globalAlpha = 0.85;
+          }
+
+          this.ctx.textAlign = 'center';
+          this.ctx.fillText(lbl, p[0], 18);
+          this.ctx.globalAlpha = 1;
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      this.ctx.stroke();
+      this.apply_shaders();
+      if (this.$p.cursor.x && this.$p.cursor.t !== undefined) this.panel();
+    }
+  }, {
+    key: "apply_shaders",
+    value: function apply_shaders() {
+      var layout = this.layout.grids[0];
+      var props = {
+        layout: layout,
+        cursor: this.$p.cursor
+      };
+
+      var _iterator2 = botbar_createForOfIteratorHelper(this.comp.bot_shaders),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var s = _step2.value;
+          this.ctx.save();
+          s.draw(this.ctx, props);
+          this.ctx.restore();
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+    }
+  }, {
+    key: "panel",
+    value: function panel() {
+      var lbl = this.format_cursor_x();
+      this.ctx.fillStyle = this.$p.colors.panel;
+      var measure = this.ctx.measureText(lbl + '    ');
+      var panwidth = Math.floor(measure.width);
+      var cursor = this.$p.cursor.x;
+      var x = Math.floor(cursor - panwidth * 0.5);
+      var y = -0.5;
+      var panheight = this.comp.config.PANHEIGHT;
+      this.ctx.fillRect(x, y, panwidth, panheight + 0.5);
+      this.ctx.fillStyle = this.$p.colors.textHL;
+      this.ctx.textAlign = 'center';
+      this.ctx.fillText(lbl, cursor, y + 16);
+    }
+  }, {
+    key: "format_date",
+    value: function format_date(p) {
+      var t = p[1][0];
+      t = this.grid_0.ti_map.i2t(t);
+      var ti = this.$p.layout.grids[0].ti_map.tf; // Enable timezones only for tf < 1D
+
+      var k = ti < botbar_DAY ? 1 : 0;
+      var tZ = t + k * this.$p.timezone * botbar_HOUR; //t += new Date(t).getTimezoneOffset() * MINUTE
+
+      var d = new Date(tZ);
+
+      if (p[2] === botbar_YEAR || utils.year_start(t) === t) {
+        return d.getUTCFullYear();
+      }
+
+      if (p[2] === botbar_MONTH || utils.month_start(t) === t) {
+        return botbar_MONTHMAP[d.getUTCMonth()];
+      } // TODO(*) see grid_maker.js
+
+
+      if (utils.day_start(tZ) === tZ) return d.getUTCDate();
+      var h = utils.add_zero(d.getUTCHours());
+      var m = utils.add_zero(d.getUTCMinutes());
+      return h + ":" + m;
+    }
+  }, {
+    key: "format_cursor_x",
+    value: function format_cursor_x() {
+      var t = this.$p.cursor.t;
+      t = this.grid_0.ti_map.i2t(t); //let ti = this.$p.interval
+
+      var ti = this.$p.layout.grids[0].ti_map.tf; // Enable timezones only for tf < 1D
+
+      var k = ti < botbar_DAY ? 1 : 0; //t += new Date(t).getTimezoneOffset() * MINUTE
+
+      var d = new Date(t + k * this.$p.timezone * botbar_HOUR);
+
+      if (ti === botbar_YEAR) {
+        return d.getUTCFullYear();
+      }
+
+      if (ti < botbar_YEAR) {
+        var yr = '`' + "".concat(d.getUTCFullYear()).slice(-2);
+        var mo = botbar_MONTHMAP[d.getUTCMonth()];
+        var dd = '01';
+      }
+
+      if (ti <= botbar_WEEK) dd = d.getUTCDate();
+      var date = "".concat(dd, " ").concat(mo, " ").concat(yr);
+      var time = '';
+
+      if (ti < botbar_DAY) {
+        var h = utils.add_zero(d.getUTCHours());
+        var m = utils.add_zero(d.getUTCMinutes());
+        time = h + ":" + m;
+      }
+
+      return "".concat(date, "  ").concat(time);
+    } // Highlights the begining of a time interval
+    // TODO: improve. Problem: let's say we have a new month,
+    // but if there is no grid line in place, there
+    // will be no month name on t-axis. Sad.
+    // Solution: manipulate the grid, skew it, you know
+
+  }, {
+    key: "lbl_highlight",
+    value: function lbl_highlight(t) {
+      var ti = this.$p.interval;
+      if (t === 0) return true;
+      if (utils.month_start(t) === t) return true;
+      if (utils.day_start(t) === t) return true;
+      if (ti <= botbar_MINUTE15 && t % botbar_HOUR === 0) return true;
+      return false;
+    }
+  }, {
+    key: "mousemove",
+    value: function mousemove() {}
+  }, {
+    key: "mouseout",
+    value: function mouseout() {}
+  }, {
+    key: "mouseup",
+    value: function mouseup() {}
+  }, {
+    key: "mousedown",
+    value: function mousedown() {}
+  }]);
+
+  return Botbar;
+}();
+
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/Botbar.vue?vue&type=script&lang=js
+// The bottom bar (yep, that thing with a bunch of dates)
+
+
+
+/* harmony default export */ var Botbarvue_type_script_lang_js = ({
+  name: 'Botbar',
+  props: ['sub', 'layout', 'range', 'interval', 'cursor', 'colors', 'font', 'width', 'height', 'rerender', 'tv_id', 'config', 'shaders', 'timezone'],
+  mixins: [mixins_canvas],
+  mounted: function mounted() {
+    var el = this.$refs['canvas'];
+    this.renderer = new botbar_Botbar(el, this);
+    this.setup();
+    this.redraw();
+  },
+  render: function render() {
+    var sett = this.$props.layout.botbar;
+    return this.create_canvas(runtime_core_esm_bundler_h, 'botbar', {
+      position: {
+        x: 0,
+        y: sett.offset || 0
+      },
+      attrs: {
+        rerender: this.$props.rerender,
+        width: sett.width,
+        height: sett.height
+      },
+      style: {
+        backgroundColor: this.$props.colors.back
+      }
+    });
+  },
+  computed: {
+    bot_shaders: function bot_shaders() {
+      return this.$props.shaders.filter(function (x) {
+        return x.target === 'botbar';
+      });
+    }
+  },
+  watch: {
+    range: {
+      handler: function handler() {
+        this.redraw();
+      },
+      deep: true
+    },
+    cursor: {
+      handler: function handler() {
+        this.redraw();
+      },
+      deep: true
+    },
+    rerender: function rerender() {
+      var _this = this;
+
+      this.$nextTick(function () {
+        return _this.redraw();
+      });
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/Botbar.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./src/components/Botbar.vue?vue&type=style&index=0&id=74d70618&lang=css
+var Botbarvue_type_style_index_0_id_74d70618_lang_css = __webpack_require__(62);
+
+// CONCATENATED MODULE: ./src/components/Botbar.vue
+
+
+
+
+
+/* harmony default export */ var components_Botbar = (Botbarvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/Keyboard.vue?vue&type=script&lang=js
+/* harmony default export */ var Keyboardvue_type_script_lang_js = ({
+  name: 'Keyboard',
+  created: function created() {
+    window.addEventListener('keydown', this.keydown);
+    window.addEventListener('keyup', this.keyup);
+    window.addEventListener('keypress', this.keypress);
+    this._listeners = {};
+  },
+  beforeUnmount: function beforeUnmount() {
+    window.removeEventListener('keydown', this.keydown);
+    window.removeEventListener('keyup', this.keyup);
+    window.removeEventListener('keypress', this.keypress);
+  },
+  render: function render() {
+    return [];
+  },
+  methods: {
+    keydown: function keydown(event) {
+      for (var id in this._listeners) {
+        var l = this._listeners[id];
+
+        if (l && l.keydown) {
+          l.keydown(event);
+        } else {
+          console.warn("No 'keydown' listener for ".concat(id));
+        }
+      }
+    },
+    keyup: function keyup(event) {
+      for (var id in this._listeners) {
+        var l = this._listeners[id];
+
+        if (l && l.keyup) {
+          l.keyup(event);
+        } else {
+          console.warn("No 'keyup' listener for ".concat(id));
+        }
+      }
+    },
+    keypress: function keypress(event) {
+      for (var id in this._listeners) {
+        var l = this._listeners[id];
+
+        if (l && l.keypress) {
+          l.keypress(event);
+        } else {
+          console.warn("No 'keypress' listener for ".concat(id));
+        }
+      }
+    },
+    register: function register(listener) {
+      this._listeners[listener.id] = listener;
+    },
+    remove: function remove(listener) {
+      delete this._listeners[listener.id];
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/Keyboard.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/Keyboard.vue
+
+
+
+/* harmony default export */ var Keyboard = (Keyboardvue_type_script_lang_js);
+// CONCATENATED MODULE: ./src/mixins/datatrack.js
+// Data tracker/watcher
+
+/* harmony default export */ var datatrack = ({
+  methods: {
+    data_changed: function data_changed() {
+      var n = this.ohlcv;
+      var changed = false;
+
+      if (this._data_n0 !== n[0] && this._data_len !== n.length) {
+        changed = true;
+      }
+
+      this.check_all_data(changed);
+
+      if (this.ti_map.ib) {
+        this.reindex_delta(n[0], this._data_n0);
+      }
+
+      this._data_n0 = n[0];
+      this._data_len = n.length;
+      this.save_data_t();
+      return changed;
+    },
+    check_all_data: function check_all_data(changed) {
+      // If length of data in the Structure changed by > 1 point
+      // emit a special event for DC to recalc the scripts
+      // TODO: check overlays data too
+      var len = this._data_len || 0;
+
+      if (Math.abs(this.ohlcv.length - len) > 1 || this._data_n0 !== this.ohlcv[0]) {
+        this.$emit('custom-event', {
+          event: 'data-len-changed',
+          args: []
+        });
+      }
+    },
+    reindex_delta: function reindex_delta(n, p) {
+      n = n || [[0]];
+      p = p || [[0]];
+      var dt = n[0] - p[0];
+
+      if (dt !== 0 && this._data_t) {
+        // Convert t back to index
+        try {
+          // More precise method first
+          var nt = this._data_t + 0.01; // fix for the filter lib
+
+          var res = utils.fast_nearest(this.ohlcv, nt);
+          var cndl = this.ohlcv[res[0]];
+          var off = (nt - cndl[0]) / this.interval_ms;
+          this["goto"](res[0] + off);
+        } catch (e) {
+          this["goto"](this.ti_map.t2i(this._data_t));
+        }
+      }
+    },
+    save_data_t: function save_data_t() {
+      this._data_t = this.ti_map.i2t(this.range[1]); // save as t
+    }
+  },
+  data: function data() {
+    return {
+      _data_n0: null,
+      _data_len: 0,
+      _data_t: 0
+    };
+  }
+});
+// CONCATENATED MODULE: ./src/components/js/ti_mapping.js
+
+
+
+
+// Time-index mapping (for non-linear t-axis)
+
+var MAX_ARR = Math.pow(2, 32); // 3 MODES of index calculation for overlays/subcharts:
+// ::: indexSrc :::
+// * "map"      -> use TI mapping functions to detect index
+//                 (slowest, for stocks only. DEFAULT)
+//
+// * "calc"     -> calculate shift between sub & data
+//                 (faster, but overlay data should be perfectly
+//                  align with the main chart,
+//                  1-1 candle/data point. Supports Renko)
+//
+// * "data"     -> overlay data should come with candle index
+//                 (fastest, supports Renko)
+
+var ti_mapping_TI = /*#__PURE__*/function () {
+  function TI() {
+    classCallCheck_default()(this, TI);
+
+    this.ib = false;
+  }
+
+  createClass_default()(TI, [{
+    key: "init",
+    value: function init(params, res) {
+      var sub = params.sub,
+          interval = params.interval,
+          meta = params.meta,
+          $p = params.$props,
+          interval_ms = params.interval_ms,
+          sub_start = params.sub_start,
+          ib = params.ib;
+      this.ti_map = [];
+      this.it_map = [];
+      this.sub_i = [];
+      this.ib = ib;
+      this.sub = res;
+      this.ss = sub_start;
+      this.tf = interval_ms;
+      var start = meta.sub_start; // Skip mapping for the regular mode
+
+      if (this.ib) {
+        this.map_sub(res);
+      }
+    } // Make maps for the main subset
+
+  }, {
+    key: "map_sub",
+    value: function map_sub(res) {
+      for (var i = 0; i < res.length; i++) {
+        var t = res[i][0];
+
+        var _i = this.ss + i;
+
+        this.ti_map[t] = _i;
+        this.it_map[_i] = t; // Overwrite t with i
+
+        var copy = toConsumableArray_default()(res[i]);
+
+        copy[0] = _i;
+        this.sub_i.push(copy);
+      }
+    } // Map overlay data
+    // TODO: parse() called 3 times instead of 2 for 'spx_sample.json'
+
+  }, {
+    key: "parse",
+    value: function parse(data, mode) {
+      if (!this.ib || !this.sub[0] || mode === 'data') return data;
+      var res = [];
+      var k = 0; // Candlestick index
+
+      if (mode === 'calc') {
+        var shift = utils.index_shift(this.sub, data);
+
+        for (var i = 0; i < data.length; i++) {
+          var _i = this.ss + i;
+
+          var copy = toConsumableArray_default()(data[i]);
+
+          copy[0] = _i + shift;
+          res.push(copy);
+        }
+
+        return res;
+      } // If indicator data starts after ohlcv, calc the first index
+
+
+      if (data.length) {
+        try {
+          var k1 = utils.fast_nearest(this.sub, data[0][0])[0];
+          if (k1 !== null && k1 >= 0) k = k1;
+        } catch (e) {}
+      }
+
+      var t0 = this.sub[0][0];
+      var tN = this.sub[this.sub.length - 1][0];
+
+      for (var i = 0; i < data.length; i++) {
+        var _copy = toConsumableArray_default()(data[i]);
+
+        var tk = this.sub[k][0];
+        var t = data[i][0];
+        var index = this.ti_map[t];
+
+        if (index === undefined) {
+          // Linear extrapolation
+          if (t < t0 || t > tN) {
+            index = this.ss + k - (tk - t) / this.tf;
+            t = data[i + 1] ? data[i + 1][0] : undefined;
+          } // Linear interpolation
+          else {
+              var tk2 = this.sub[k + 1][0];
+              index = tk === tk2 ? this.ss + k : this.ss + k + (t - tk) / (tk2 - tk);
+              t = data[i + 1] ? data[i + 1][0] : undefined;
+            }
+        } // Race of data points & sub points (ohlcv)
+        // (like turn based increments)
+
+
+        while (k + 1 < this.sub.length - 1 && t > this.sub[k + 1][0]) {
+          k++;
+          tk = this.sub[k][0];
+        }
+
+        _copy[0] = index;
+        res.push(_copy);
+      }
+
+      return res;
+    } // index => time
+
+  }, {
+    key: "i2t",
+    value: function i2t(i) {
+      if (!this.ib || !this.sub.length) return i; // Regular mode
+      // Discrete mapping
+
+      var res = this.it_map[i];
+      if (res !== undefined) return res; // Linear extrapolation
+      else if (i >= this.ss + this.sub_i.length) {
+          var di = i - (this.ss + this.sub_i.length) + 1;
+          var last = this.sub[this.sub.length - 1];
+          return last[0] + di * this.tf;
+        } else if (i < this.ss) {
+          var _di = i - this.ss;
+
+          return this.sub[0][0] + _di * this.tf;
+        } // Linear Interpolation
+
+      var i1 = Math.floor(i) - this.ss;
+      var i2 = i1 + 1;
+      var len = this.sub.length;
+      if (i2 >= len) i2 = len - 1;
+      var sub1 = this.sub[i1];
+      var sub2 = this.sub[i2];
+
+      if (sub1 && sub2) {
+        var t1 = sub1[0];
+        var t2 = sub2[0];
+        return t1 + (t2 - t1) * (i - i1 - this.ss);
+      }
+
+      return undefined;
+    } // Map or bypass depending on the mode
+
+  }, {
+    key: "i2t_mode",
+    value: function i2t_mode(i, mode) {
+      return mode === 'data' ? i : this.i2t(i);
+    } // time => index
+    // TODO: when switch from IB mode to regular tools
+    // disappear (bc there is no more mapping)
+
+  }, {
+    key: "t2i",
+    value: function t2i(t) {
+      if (!this.sub.length) return undefined; // Discrete mapping
+
+      var res = this.ti_map[t];
+      if (res !== undefined) return res;
+      var t0 = this.sub[0][0];
+      var tN = this.sub[this.sub.length - 1][0]; // Linear extrapolation
+
+      if (t < t0) {
+        return this.ss - (t0 - t) / this.tf;
+      } else if (t > tN) {
+        var k = this.sub.length - 1;
+        return this.ss + k - (tN - t) / this.tf;
+      }
+
+      try {
+        // Linear Interpolation
+        var i = utils.fast_nearest(this.sub, t);
+        var tk = this.sub[i[0]][0];
+        var tk2 = this.sub[i[1]][0];
+
+        var _k = (t - tk) / (tk2 - tk);
+
+        return this.ss + i[0] + _k * (i[1] - i[0]);
+      } catch (e) {}
+
+      return undefined;
+    } // Auto detect: is it time or index?
+    // Assuming that index-based mode is ON
+
+  }, {
+    key: "smth2i",
+    value: function smth2i(smth) {
+      if (smth > MAX_ARR) {
+        return this.t2i(smth); // it was time
+      } else {
+          return smth; // it was an index
+        }
+    }
+  }, {
+    key: "smth2t",
+    value: function smth2t(smth) {
+      if (smth < MAX_ARR) {
+        return this.i2t(smth); // it was an index
+      } else {
+          return smth; // it was time
+        }
+    } // Global Time => Index (uses all data, approx. method)
+    // Used by tv.goto()
+
+  }, {
+    key: "gt2i",
+    value: function gt2i(smth, ohlcv) {
+      if (smth > MAX_ARR) {
+        var E = 0.1; // Fixes the arrayslicer bug
+
+        var _Utils$fast_nearest = utils.fast_nearest(ohlcv, smth + E),
+            _Utils$fast_nearest2 = slicedToArray_default()(_Utils$fast_nearest, 2),
+            i1 = _Utils$fast_nearest2[0],
+            i2 = _Utils$fast_nearest2[1];
+
+        if (typeof i1 === 'number') {
+          return i1;
+        } else {
+          return this.t2i(smth); // fallback
+        }
+      } else {
+          return smth; // it was an index
+        }
+    }
+  }]);
+
+  return TI;
+}();
+
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/Chart.vue?vue&type=script&lang=js
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* harmony default export */ var Chartvue_type_script_lang_js = ({
+  name: 'Chart',
+  props: ['title_txt', 'data', 'width', 'height', 'font', 'colors', 'overlays', 'tv_id', 'config', 'buttons', 'toolbar', 'ib', 'skin', 'timezone'],
+  emits: ['custom-event', 'range-changed', 'legend-button-click'],
+  mixins: [shaders, datatrack],
+  components: {
+    GridSection: Section,
+    Botbar: components_Botbar,
+    Keyboard: Keyboard
+  },
+  created: function created() {
+    // Context for text measurements
+    this.ctx = new stuff_context(this.$props); // Initial layout (All measurments for the chart)
+
+    this.init_range();
+    this.sub = this.subset();
+    utils.overwrite(this.range, this.range); // Fix for IB mode
+
+    this._layout = new js_layout(this); // Updates current cursor values
+
+    this.updater = new updater(this);
+    this.update_last_candle();
+    this.init_shaders(this.skin);
+  },
+  methods: {
+    range_changed: function range_changed(r) {
+      // Overwite & keep the original references
+      // Quick fix for IB mode (switch 2 next lines)
+      // TODO: wtf?
+      var sub = this.subset(r);
+      utils.overwrite(this.range, r);
+      utils.overwrite(this.sub, sub);
+      this.update_layout();
+      this.$emit('range-changed', r);
+      if (this.$props.ib) this.save_data_t();
+    },
+    "goto": function goto(t) {
+      var dt = this.range[1] - this.range[0];
+      this.range_changed([t - dt, t]);
+    },
+    setRange: function setRange(t1, t2) {
+      this.range_changed([t1, t2]);
+    },
+    cursor_changed: function cursor_changed(e) {
+      if (e.mode) this.cursor.mode = e.mode;
+
+      if (this.cursor.mode !== 'explore') {
+        this.updater.sync(e);
+      }
+
+      if (this._hook_xchanged) this.ce('?x-changed', e);
+    },
+    cursor_locked: function cursor_locked(state) {
+      if (this.cursor.scroll_lock && state) return;
+      this.cursor.locked = state;
+      if (this._hook_xlocked) this.ce('?x-locked', state);
+    },
+    calc_interval: function calc_interval() {
+      var _this = this;
+
+      var tf = utils.parse_tf(this.forced_tf);
+      if (this.ohlcv.length < 2 && !tf) return;
+      this.interval_ms = tf || utils.detect_interval(this.ohlcv);
+      this.interval = this.$props.ib ? 1 : this.interval_ms;
+      utils.warn(function () {
+        return _this.$props.ib && !_this.chart.tf;
+      }, constants.IB_TF_WARN, constants.SECOND);
+    },
+    set_ytransform: function set_ytransform(s) {
+      var obj = this.y_transforms[s.grid_id] || {};
+      Object.assign(obj, s);
+      this.y_transforms[s.grid_id] = obj;
+      this.update_layout();
+      utils.overwrite(this.range, this.range);
+    },
+    default_range: function default_range() {
+      var dl = this.$props.config.DEFAULT_LEN;
+      var ml = this.$props.config.MINIMUM_LEN + 0.5;
+      var l = this.ohlcv.length - 1;
+      if (this.ohlcv.length < 2) return;
+
+      if (this.ohlcv.length <= dl) {
+        var s = 0,
+            d = ml;
+      } else {
+        s = l - dl, d = 0.5;
+      }
+
+      if (!this.$props.ib) {
+        utils.overwrite(this.range, [this.ohlcv[s][0] - this.interval * d, this.ohlcv[l][0] + this.interval * ml]);
+      } else {
+        utils.overwrite(this.range, [s - this.interval * d, l + this.interval * ml]);
+      }
+    },
+    subset: function subset(range) {
+      if (range === void 0) {
+        range = this.range;
+      }
+
+      var _this$filter = this.filter(this.ohlcv, range[0] - this.interval, range[1]),
+          _this$filter2 = slicedToArray_default()(_this$filter, 2),
+          res = _this$filter2[0],
+          index = _this$filter2[1];
+
+      this.ti_map = new ti_mapping_TI();
+
+      if (res) {
+        this.sub_start = index;
+        this.ti_map.init(this, res);
+        if (!this.$props.ib) return res || [];
+        return this.ti_map.sub_i;
+      }
+
+      return [];
+    },
+    common_props: function common_props() {
+      return {
+        title_txt: this.chart.name || this.$props.title_txt,
+        layout: this._layout,
+        sub: this.sub,
+        range: this.range,
+        interval: this.interval,
+        cursor: this.cursor,
+        colors: this.$props.colors,
+        font: this.$props.font,
+        y_ts: this.y_transforms,
+        tv_id: this.$props.tv_id,
+        config: this.$props.config,
+        buttons: this.$props.buttons,
+        meta: this.meta,
+        skin: this.$props.skin
+      };
+    },
+    overlay_subset: function overlay_subset(source) {
+      var _this2 = this;
+
+      return source.map(function (d) {
+        var res = utils.fast_filter(d.data, _this2.ti_map.i2t_mode(_this2.range[0] - _this2.interval, d.indexSrc), _this2.ti_map.i2t_mode(_this2.range[1], d.indexSrc));
+        return {
+          type: d.type,
+          name: utils.format_name(d),
+          data: _this2.ti_map.parse(res[0] || [], d.indexSrc || 'map'),
+          settings: d.settings || _this2.settings_ov,
+          grid: d.grid || {},
+          tf: utils.parse_tf(d.tf),
+          i0: res[1],
+          loading: d.loading
+        };
+      });
+    },
+    section_props: function section_props(i) {
+      return i === 0 ? this.main_section : this.sub_section;
+    },
+    init_range: function init_range() {
+      this.calc_interval();
+      this.default_range();
+    },
+    layer_meta_props: function layer_meta_props(d) {
+      // TODO: check reactivity when layout is changed
+      if (!(d.grid_id in this.layers_meta)) {
+        this.layers_meta[d.grid_id] = {};
+      }
+
+      this.layers_meta[d.grid_id][d.layer_id] = d; // Rerender
+
+      this.update_layout();
+    },
+    remove_meta_props: function remove_meta_props(grid_id, layer_id) {
+      if (grid_id in this.layers_meta) {
+        this.$delete(this.layers_meta[grid_id], layer_id);
+      }
+    },
+    emit_custom_event: function emit_custom_event(d) {
+      this.on_shader_event(d, 'botbar');
+      this.$emit('custom-event', d);
+
+      if (d.event === 'remove-layer-meta') {
+        this.remove_meta_props.apply(this, toConsumableArray_default()(d.args));
+      }
+    },
+    update_layout: function update_layout(clac_tf) {
+      if (clac_tf) this.calc_interval();
+      var lay = new js_layout(this);
+      utils.copy_layout(this._layout, lay);
+      if (this._hook_update) this.ce('?chart-update', lay);
+    },
+    legend_button_click: function legend_button_click(event) {
+      this.$emit('legend-button-click', event);
+    },
+    register_kb: function register_kb(event) {
+      if (!this.$refs.keyboard) return;
+      this.$refs.keyboard.register(event);
+    },
+    remove_kb: function remove_kb(event) {
+      if (!this.$refs.keyboard) return;
+      this.$refs.keyboard.remove(event);
+    },
+    update_last_candle: function update_last_candle() {
+      // TODO: add last values for all overlays
+      this.last_candle = this.ohlcv ? this.ohlcv[this.ohlcv.length - 1] : undefined;
+    },
+    // Hook events for extensions
+    ce: function ce(event) {
+      for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+        args[_key - 1] = arguments[_key];
+      }
+
+      this.emit_custom_event({
+        event: event,
+        args: args
+      });
+    },
+    // Set hooks list (called from an extension)
+    hooks: function hooks() {
+      var _this3 = this;
+
+      for (var _len2 = arguments.length, list = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        list[_key2] = arguments[_key2];
+      }
+
+      list.forEach(function (x) {
+        return _this3["_hook_".concat(x)] = true;
+      });
+    }
+  },
+  computed: {
+    // Component-specific props subsets:
+    main_section: function main_section() {
+      var p = Object.assign({}, this.common_props());
+      p.data = this.overlay_subset(this.onchart);
+      p.data.push({
+        type: this.chart.type || 'Candles',
+        main: true,
+        data: this.sub,
+        i0: this.sub_start,
+        settings: this.chart.settings || this.settings_ohlcv,
+        grid: this.chart.grid || {}
+      });
+      p.overlays = this.$props.overlays;
+      return p;
+    },
+    sub_section: function sub_section() {
+      var p = Object.assign({}, this.common_props());
+      p.data = this.overlay_subset(this.offchart);
+      p.overlays = this.$props.overlays;
+      return p;
+    },
+    botbar_props: function botbar_props() {
+      var p = Object.assign({}, this.common_props());
+      p.width = p.layout.botbar.width;
+      p.height = p.layout.botbar.height;
+      p.rerender = this.rerender;
+      return p;
+    },
+    offsub: function offsub() {
+      return this.overlay_subset(this.offchart);
+    },
+    // Datasets: candles, onchart, offchart indicators
+    ohlcv: function ohlcv() {
+      return this.$props.data.ohlcv || this.chart.data || [];
+    },
+    chart: function chart() {
+      return this.$props.data.chart || {
+        grid: {}
+      };
+    },
+    onchart: function onchart() {
+      return this.$props.data.onchart || [];
+    },
+    offchart: function offchart() {
+      return this.$props.data.offchart || [];
+    },
+    filter: function filter() {
+      return this.$props.ib ? utils.fast_filter_i : utils.fast_filter;
+    },
+    styles: function styles() {
+      var w = this.$props.toolbar ? this.$props.config.TOOLBAR : 0;
+      return {
+        'margin-left': "".concat(w, "px")
+      };
+    },
+    meta: function meta() {
+      return {
+        last: this.last_candle,
+        sub_start: this.sub_start,
+        activated: this.activated
+      };
+    },
+    forced_tf: function forced_tf() {
+      return this.chart.tf;
+    }
+  },
+  data: function data() {
+    return {
+      // Current data slice
+      sub: [],
+      // Time range
+      range: [],
+      // Candlestick interval
+      interval: 0,
+      // Crosshair states
+      cursor: {
+        x: null,
+        y: null,
+        t: null,
+        y$: null,
+        grid_id: null,
+        locked: false,
+        values: {},
+        scroll_lock: false,
+        mode: utils.xmode()
+      },
+      // A trick to re-render botbar
+      rerender: 0,
+      // Layers meta-props (changing behaviour)
+      layers_meta: {},
+      // Y-transforms (for y-zoom and -shift)
+      y_transforms: {},
+      // Default OHLCV settings (when using DataStructure v1.0)
+      settings_ohlcv: {},
+      // Default overlay settings
+      settings_ov: {},
+      // Meta data
+      last_candle: [],
+      sub_start: undefined,
+      activated: false
+    };
+  },
+  watch: {
+    width: function width() {
+      this.update_layout();
+      if (this._hook_resize) this.ce('?chart-resize');
+    },
+    height: function height() {
+      this.update_layout();
+      if (this._hook_resize) this.ce('?chart-resize');
+    },
+    ib: function ib(nw) {
+      if (!nw) {
+        // Change range index => time
+        var t1 = this.ti_map.i2t(this.range[0]);
+        var t2 = this.ti_map.i2t(this.range[1]);
+        utils.overwrite(this.range, [t1, t2]);
+        this.interval = this.interval_ms;
+      } else {
+        this.init_range(); // TODO: calc index range instead
+
+        utils.overwrite(this.range, this.range);
+        this.interval = 1;
+      }
+
+      var sub = this.subset();
+      utils.overwrite(this.sub, sub);
+      this.update_layout();
+    },
+    timezone: function timezone() {
+      this.update_layout();
+    },
+    colors: function colors() {
+      utils.overwrite(this.range, this.range);
+    },
+    forced_tf: function forced_tf(n, p) {
+      this.update_layout(true);
+      this.ce('exec-all-scripts');
+    },
+    data: {
+      handler: function handler(n, p) {
+        if (!this.sub.length) this.init_range();
+        var sub = this.subset(); // Fixes Infinite loop warn, when the subset is empty
+        // TODO: Consider removing 'sub' from data entirely
+
+        if (this.sub.length || sub.length) {
+          utils.overwrite(this.sub, sub);
+        }
+
+        var nw = this.data_changed();
+        this.update_layout(nw);
+        utils.overwrite(this.range, this.range);
+        this.cursor.scroll_lock = !!n.scrollLock;
+
+        if (n.scrollLock && this.cursor.locked) {
+          this.cursor.locked = false;
+        }
+
+        if (this._hook_data) this.ce('?chart-data', nw);
+        this.update_last_candle(); // TODO: update legend values for overalys
+
+        this.rerender++;
+      },
+      deep: true
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/Chart.vue?vue&type=script&lang=js
+ 
+// CONCATENATED MODULE: ./src/components/Chart.vue
+
+
+
+Chartvue_type_script_lang_js.render = Chartvue_type_template_id_9b3aef22_render
+
+/* harmony default export */ var Chart = (Chartvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/components/Toolbar.vue?vue&type=template&id=e0d3bb5c
+
+function Toolbarvue_type_template_id_e0d3bb5c_render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_toolbar_item = resolveComponent("toolbar-item");
+
+  return openBlock(), createBlock("div", {
+    "class": "trading-vue-toolbar",
+    style: $options.styles,
+    key: $data.tool_count
+  }, [_ctx.tool.icon && !_ctx.tool.hidden ? (openBlock(true), createBlock(Fragment, {
+    key: 0
+  }, renderList($options.groups, function (tool, i) {
+    return openBlock(), createBlock(_component_toolbar_item, {
+      onItemSelected: $options.selected,
+      key: i,
+      data: tool,
+      subs: $data.sub_map,
+      dc: $props.data,
+      config: $props.config,
+      colors: $props.colors,
+      selected: $options.is_selected(tool)
+    }, null, 8
+    /* PROPS */
+    , ["onItemSelected", "data", "subs", "dc", "config", "colors", "selected"]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  )) : createCommentVNode("v-if", true)], 4
+  /* STYLE */
+  );
+}
+// CONCATENATED MODULE: ./src/components/Toolbar.vue?vue&type=template&id=e0d3bb5c
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/components/ToolbarItem.vue?vue&type=template&id=24cfb58a
+
+function ToolbarItemvue_type_template_id_24cfb58a_render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_item_list = resolveComponent("item-list");
+
+  return openBlock(), createBlock("div", {
+    "class": ['trading-vue-tbitem', $props.selected ? 'selected-item' : ''],
+    onClick: _cache[5] || (_cache[5] = function ($event) {
+      return $options.emit_selected('click');
+    }),
+    onMousedown: _cache[6] || (_cache[6] = function () {
+      return $options.mousedown.apply($options, arguments);
+    }),
+    onTouchstart: _cache[7] || (_cache[7] = function () {
+      return $options.mousedown.apply($options, arguments);
+    }),
+    onTouchend: _cache[8] || (_cache[8] = function ($event) {
+      return $options.emit_selected('touch');
+    }),
+    style: $options.item_style
+  }, [createVNode("div", {
+    "class": "trading-vue-tbicon tvjs-pixelated",
+    style: $options.icon_style
+  }, null, 4
+  /* STYLE */
+  ), $props.data.group ? (openBlock(), createBlock("div", {
+    key: 0,
+    "class": "trading-vue-tbitem-exp",
+    style: $options.exp_style,
+    onClick: _cache[1] || (_cache[1] = function () {
+      return $options.exp_click.apply($options, arguments);
+    }),
+    onMousedown: _cache[2] || (_cache[2] = function () {
+      return $options.expmousedown.apply($options, arguments);
+    }),
+    onMouseover: _cache[3] || (_cache[3] = function () {
+      return $options.expmouseover.apply($options, arguments);
+    }),
+    onMouseleave: _cache[4] || (_cache[4] = function () {
+      return $options.expmouseleave.apply($options, arguments);
+    })
+  }, " ᐳ ", 36
+  /* STYLE, HYDRATE_EVENTS */
+  )) : createCommentVNode("v-if", true), $data.show_exp_list ? (openBlock(), createBlock(_component_item_list, {
+    key: 1,
+    config: $props.config,
+    items: $props.data.items,
+    colors: $props.colors,
+    dc: $props.dc,
+    onCloseList: $options.close_list,
+    onItemSelected: $options.emit_selected_sub
+  }, null, 8
+  /* PROPS */
+  , ["config", "items", "colors", "dc", "onCloseList", "onItemSelected"])) : createCommentVNode("v-if", true)], 38
+  /* CLASS, STYLE, HYDRATE_EVENTS */
+  );
+}
+// CONCATENATED MODULE: ./src/components/ToolbarItem.vue?vue&type=template&id=24cfb58a
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/components/ItemList.vue?vue&type=template&id=18a2e05e
+
+function ItemListvue_type_template_id_18a2e05e_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createBlock("div", {
+    "class": "tvjs-item-list",
+    style: $options.list_style(),
+    onMousedown: _cache[1] || (_cache[1] = function () {
+      return $options.thismousedown.apply($options, arguments);
+    })
+  }, [!_ctx.item.hidden ? (openBlock(true), createBlock(Fragment, {
+    key: 0
+  }, renderList($props.items, function (item) {
+    return openBlock(), createBlock("div", {
+      "class": $options.item_class(item),
+      onClick: function onClick(e) {
+        return $options.item_click(e, item);
+      },
+      style: $options.item_style(item)
+    }, [createVNode("div", {
+      "class": "trading-vue-tbicon tvjs-pixelated",
+      style: $options.icon_style(item)
+    }, null, 4
+    /* STYLE */
+    ), createVNode("div", null, Object(dist_shared_esm_bundler["C" /* toDisplayString */])(item.type), 1
+    /* TEXT */
+    )], 14
+    /* CLASS, STYLE, PROPS */
+    , ["onClick"]);
+  }), 256
+  /* UNKEYED_FRAGMENT */
+  )) : createCommentVNode("v-if", true)], 36
+  /* STYLE, HYDRATE_EVENTS */
+  );
+}
+// CONCATENATED MODULE: ./src/components/ItemList.vue?vue&type=template&id=18a2e05e
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/ItemList.vue?vue&type=script&lang=js
+/* harmony default export */ var ItemListvue_type_script_lang_js = ({
+  name: 'ItemList',
+  props: ['config', 'items', 'colors', 'dc'],
+  emits: ['item-selected', 'close-list'],
+  mounted: function mounted() {
+    window.addEventListener('mousedown', this.onmousedown);
+  },
+  beforeDestroy: function beforeDestroy() {
+    window.removeEventListener('mousedown', this.onmousedown);
+  },
+  methods: {
+    list_style: function list_style() {
+      var conf = this.$props.config;
+      var w = conf.TOOLBAR;
+      var brd = this.colors.tbListBorder || this.colors.grid;
+      var bstl = "1px solid ".concat(brd);
+      return {
+        left: "".concat(w, "px"),
+        background: this.colors.back,
+        borderTop: bstl,
+        borderRight: bstl,
+        borderBottom: bstl
+      };
+    },
+    item_class: function item_class(item) {
+      if (this.dc.tool === item.type) {
+        return "tvjs-item-list-item selected-item";
+      }
+
+      return "tvjs-item-list-item";
+    },
+    item_style: function item_style(item) {
+      var conf = this.$props.config;
+      var h = conf.TB_ICON + conf.TB_ITEM_M * 2 + 8;
+      var sel = this.dc.tool === item.type;
+      return {
+        height: "".concat(h, "px"),
+        color: sel ? undefined : "#888888"
+      };
+    },
+    icon_style: function icon_style(data) {
+      var conf = this.$props.config;
+      var br = conf.TB_ICON_BRI;
+      var im = conf.TB_ITEM_M;
+      return {
+        'background-image': "url(".concat(data.icon, ")"),
+        'width': '25px',
+        'height': '25px',
+        'margin': "".concat(im, "px"),
+        'filter': "brightness(".concat(br, ")")
+      };
+    },
+    item_click: function item_click(e, item) {
+      e.cancelBubble = true;
+      this.$emit('item-selected', item);
+      this.$emit('close-list');
+    },
+    onmousedown: function onmousedown() {
+      this.$emit('close-list');
+    },
+    thismousedown: function thismousedown(e) {
+      e.stopPropagation();
+    }
+  },
+  computed: {},
+  data: function data() {
+    return {};
+  }
+});
+// CONCATENATED MODULE: ./src/components/ItemList.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./src/components/ItemList.vue?vue&type=style&index=0&id=18a2e05e&lang=css
+var ItemListvue_type_style_index_0_id_18a2e05e_lang_css = __webpack_require__(64);
+
+// CONCATENATED MODULE: ./src/components/ItemList.vue
+
+
+
+
+
+ItemListvue_type_script_lang_js.render = ItemListvue_type_template_id_18a2e05e_render
+
+/* harmony default export */ var ItemList = (ItemListvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/ToolbarItem.vue?vue&type=script&lang=js
+
+
+/* harmony default export */ var ToolbarItemvue_type_script_lang_js = ({
+  name: 'ToolbarItem',
+  props: ['data', 'selected', 'colors', 'tv_id', 'config', 'dc', 'subs'],
+  components: {
+    ItemList: ItemList
+  },
+  mounted: function mounted() {
+    if (this.data.group) {
+      var type = this.subs[this.data.group];
+      var item = this.data.items.find(function (x) {
+        return x.type === type;
+      });
+      if (item) this.sub_item = item;
+    }
+  },
+  methods: {
+    mousedown: function mousedown(e) {
+      var _this = this;
+
+      this.click_start = utils.now();
+      this.click_id = setTimeout(function () {
+        _this.show_exp_list = true;
+      }, this.config.TB_ICON_HOLD);
+    },
+    expmouseover: function expmouseover() {
+      this.exp_hover = true;
+    },
+    expmouseleave: function expmouseleave() {
+      this.exp_hover = false;
+    },
+    expmousedown: function expmousedown(e) {
+      if (this.show_exp_list) e.stopPropagation();
+    },
+    emit_selected: function emit_selected(src) {
+      if (utils.now() - this.click_start > this.config.TB_ICON_HOLD) return;
+      clearTimeout(this.click_id); //if (Utils.is_mobile && src === 'click') return
+      // TODO: double firing
+
+      if (!this.data.group) {
+        this.$emit('item-selected', this.data);
+      } else {
+        var item = this.sub_item || this.data.items[0];
+        this.$emit('item-selected', item);
+      }
+    },
+    emit_selected_sub: function emit_selected_sub(item) {
+      this.$emit('item-selected', item);
+      this.sub_item = item;
+    },
+    exp_click: function exp_click(e) {
+      if (!this.data.group) return;
+      e.cancelBubble = true;
+      this.show_exp_list = !this.show_exp_list;
+    },
+    close_list: function close_list() {
+      this.show_exp_list = false;
+    }
+  },
+  computed: {
+    item_style: function item_style() {
+      if (this.$props.data.type === 'System:Splitter') {
+        return this.splitter;
+      }
+
+      var conf = this.$props.config;
+      var im = conf.TB_ITEM_M;
+      var m = (conf.TOOLBAR - conf.TB_ICON) * 0.5 - im;
+      var s = conf.TB_ICON + im * 2;
+      var b = this.exp_hover ? 0 : 3;
+      return {
+        'width': "".concat(s, "px"),
+        'height': "".concat(s, "px"),
+        'margin': "8px ".concat(m, "px 0px ").concat(m, "px"),
+        'border-radius': "3px ".concat(b, "px ").concat(b, "px 3px")
+      };
+    },
+    icon_style: function icon_style() {
+      if (this.$props.data.type === 'System:Splitter') {
+        return {};
+      }
+
+      var conf = this.$props.config;
+      var br = conf.TB_ICON_BRI;
+      var sz = conf.TB_ICON;
+      var im = conf.TB_ITEM_M;
+      var ic = this.sub_item ? this.sub_item.icon : this.$props.data.icon;
+      return {
+        'background-image': "url(".concat(ic, ")"),
+        'width': "".concat(sz, "px"),
+        'height': "".concat(sz, "px"),
+        'margin': "".concat(im, "px"),
+        'filter': "brightness(".concat(br, ")")
+      };
+    },
+    exp_style: function exp_style() {
+      var conf = this.$props.config;
+      var im = conf.TB_ITEM_M;
+      var s = conf.TB_ICON * 0.5 + im;
+      var p = (conf.TOOLBAR - s * 2) / 4;
+      return {
+        padding: "".concat(s, "px ").concat(p, "px"),
+        transform: this.show_exp_list ? "scale(-0.6, 1)" : "scaleX(0.6)"
+      };
+    },
+    splitter: function splitter() {
+      var conf = this.$props.config;
+      var colors = this.$props.colors;
+      var c = colors.grid;
+      var im = conf.TB_ITEM_M;
+      var m = (conf.TOOLBAR - conf.TB_ICON) * 0.5 - im;
+      var s = conf.TB_ICON + im * 2;
+      return {
+        'width': "".concat(s, "px"),
+        'height': '1px',
+        'margin': "8px ".concat(m, "px 8px ").concat(m, "px"),
+        'background-color': c
+      };
+    }
+  },
+  data: function data() {
+    return {
+      exp_hover: false,
+      show_exp_list: false,
+      sub_item: null
+    };
+  }
+});
+// CONCATENATED MODULE: ./src/components/ToolbarItem.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./src/components/ToolbarItem.vue?vue&type=style&index=0&id=24cfb58a&lang=css
+var ToolbarItemvue_type_style_index_0_id_24cfb58a_lang_css = __webpack_require__(66);
+
+// CONCATENATED MODULE: ./src/components/ToolbarItem.vue
+
+
+
+
+
+ToolbarItemvue_type_script_lang_js.render = ToolbarItemvue_type_template_id_24cfb58a_render
+
+/* harmony default export */ var ToolbarItem = (ToolbarItemvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/Toolbar.vue?vue&type=script&lang=js
+function Toolbarvue_type_script_lang_js_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = Toolbarvue_type_script_lang_js_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function Toolbarvue_type_script_lang_js_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Toolbarvue_type_script_lang_js_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Toolbarvue_type_script_lang_js_arrayLikeToArray(o, minLen); }
+
+function Toolbarvue_type_script_lang_js_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+/* harmony default export */ var Toolbarvue_type_script_lang_js = ({
+  name: 'Toolbar',
+  props: ['data', 'height', 'colors', 'tv_id', 'config'],
+  emits: ['custom-event'],
+  components: {
+    ToolbarItem: ToolbarItem
+  },
+  mounted: function mounted() {},
+  methods: {
+    selected: function selected(tool) {
+      this.$emit('custom-event', {
+        event: 'tool-selected',
+        args: [tool.type]
+      });
+
+      if (tool.group) {
+        // TODO: emit the sub map to DC (save)
+        this.sub_map[tool.group] = tool.type;
+      }
+    },
+    is_selected: function is_selected(tool) {
+      var _this = this;
+
+      if (tool.group) {
+        return !!tool.items.find(function (x) {
+          return x.type === _this.data.tool;
+        });
+      }
+
+      return tool.type === this.data.tool;
+    }
+  },
+  computed: {
+    styles: function styles() {
+      var colors = this.$props.colors;
+      var b = this.$props.config.TB_BORDER;
+      var w = this.$props.config.TOOLBAR - b;
+      var c = colors.grid;
+      var cb = colors.tbBack || colors.back;
+      var brd = colors.tbBorder || colors.scale;
+      var st = this.$props.config.TB_B_STYLE;
+      return {
+        'width': "".concat(w, "px"),
+        'height': "".concat(this.$props.height - 3, "px"),
+        'background-color': cb,
+        'border-right': "".concat(b, "px ").concat(st, " ").concat(brd)
+      };
+    },
+    groups: function groups() {
+      var arr = [];
+
+      var _iterator = Toolbarvue_type_script_lang_js_createForOfIteratorHelper(this.data.tools || []),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var tool = _step.value;
+
+          if (!tool.group) {
+            arr.push(tool);
+            continue;
+          }
+
+          var g = arr.find(function (x) {
+            return x.group === tool.group;
+          });
+
+          if (!g) {
+            arr.push({
+              group: tool.group,
+              icon: tool.icon,
+              items: [tool]
+            });
+          } else {
+            g.items.push(tool);
+          }
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      return arr;
+    }
+  },
+  watch: {
+    data: {
+      handler: function handler(n) {
+        // For some reason Vue.js doesn't want to
+        // update 'tools' automatically when new item
+        // is pushed/removed. Yo, Vue, I herd you
+        // you want more dirty tricks?
+        if (n.tools) this.tool_count = n.tools.length;
+      },
+      deep: true
+    }
+  },
+  data: function data() {
+    return {
+      tool_count: 0,
+      sub_map: {}
+    };
+  }
+});
+// CONCATENATED MODULE: ./src/components/Toolbar.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./src/components/Toolbar.vue?vue&type=style&index=0&id=e0d3bb5c&lang=css
+var Toolbarvue_type_style_index_0_id_e0d3bb5c_lang_css = __webpack_require__(68);
+
+// CONCATENATED MODULE: ./src/components/Toolbar.vue
+
+
+
+
+
+Toolbarvue_type_script_lang_js.render = Toolbarvue_type_template_id_e0d3bb5c_render
+
+/* harmony default export */ var Toolbar = (Toolbarvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/components/Widgets.vue?vue&type=template&id=00dc0900
+
+function Widgetsvue_type_template_id_00dc0900_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createBlock(Fragment, null, [createCommentVNode(" WidgetS Layer "), createVNode("div", {
+    "class": "tvjs-widgets",
+    style: {
+      width: $props.width + 'px',
+      height: $props.height + 'px'
+    }
+  }, [(openBlock(true), createBlock(Fragment, null, renderList(Object.keys($props.map), function (id) {
+    return openBlock(), createBlock(resolveDynamicComponent($options.initw(id)), {
+      key: id,
+      id: id,
+      main: $props.map[id].ctrl,
+      data: $props.map[id].data,
+      tv: $props.tv,
+      dc: $props.dc
+    }, null, 8
+    /* PROPS */
+    , ["id", "main", "data", "tv", "dc"]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))], 4
+  /* STYLE */
+  )], 64
+  /* STABLE_FRAGMENT */
+  );
+}
+// CONCATENATED MODULE: ./src/components/Widgets.vue?vue&type=template&id=00dc0900
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/Widgets.vue?vue&type=script&lang=js
+/* harmony default export */ var Widgetsvue_type_script_lang_js = ({
+  name: 'Widgets',
+  props: ['width', 'height', 'map', 'tv', 'dc'],
+  methods: {
+    initw: function initw(id) {
+      return this.$props.map[id].cls;
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/Widgets.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./src/components/Widgets.vue?vue&type=style&index=0&id=00dc0900&lang=css
+var Widgetsvue_type_style_index_0_id_00dc0900_lang_css = __webpack_require__(70);
+
+// CONCATENATED MODULE: ./src/components/Widgets.vue
+
+
+
+
+
+Widgetsvue_type_script_lang_js.render = Widgetsvue_type_template_id_00dc0900_render
+
+/* harmony default export */ var Widgets = (Widgetsvue_type_script_lang_js);
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist/templateLoader.js??ref--6!./node_modules/vue-loader/dist??ref--11-0!./src/components/TheTip.vue?vue&type=template&id=cdc89010
+
+function TheTipvue_type_template_id_cdc89010_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createBlock("div", {
+    "class": "tvjs-the-tip",
+    innerHTML: $props.data.text,
+    onMousedown: _cache[1] || (_cache[1] = function ($event) {
+      return _ctx.$emit('remove-me');
+    }),
+    style: $options.style
+  }, null, 44
+  /* STYLE, PROPS, HYDRATE_EVENTS */
+  , ["innerHTML"]);
+}
+// CONCATENATED MODULE: ./src/components/TheTip.vue?vue&type=template&id=cdc89010
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/components/TheTip.vue?vue&type=script&lang=js
+/* harmony default export */ var TheTipvue_type_script_lang_js = ({
+  name: 'TheTip',
+  props: ['data'],
+  emits: ['remove-me'],
+  mounted: function mounted() {
+    var _this = this;
+
+    setTimeout(function () {
+      return _this.$emit('remove-me');
+    }, 3000);
+  },
+  computed: {
+    style: function style() {
+      return {
+        background: this.data.color
+      };
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/TheTip.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./src/components/TheTip.vue?vue&type=style&index=0&id=cdc89010&lang=css
+var TheTipvue_type_style_index_0_id_cdc89010_lang_css = __webpack_require__(72);
+
+// CONCATENATED MODULE: ./src/components/TheTip.vue
+
+
+
+
+
+TheTipvue_type_script_lang_js.render = TheTipvue_type_template_id_cdc89010_render
+
+/* harmony default export */ var TheTip = (TheTipvue_type_script_lang_js);
+// CONCATENATED MODULE: ./src/mixins/xcontrol.js
+function xcontrol_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = xcontrol_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function xcontrol_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return xcontrol_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return xcontrol_arrayLikeToArray(o, minLen); }
+
+function xcontrol_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+// extensions control
+/* harmony default export */ var xcontrol = ({
+  mounted: function mounted() {
+    debugger;
+    this.ctrllist();
+    debugger;
+    this.skin_styles();
+    debugger;
+  },
+  methods: {
+    // Build / rebuild component list
+    ctrllist: function ctrllist() {
+      this.ctrl_destroy();
+      this.controllers = [];
+
+      var _iterator = xcontrol_createForOfIteratorHelper(this.$props.extensions),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var x = _step.value;
+          var name = x.Main.__name__;
+
+          if (!this.xSettings[name]) {
+            this.xSettings[name] = {};
+          }
+
+          var nc = new x.Main(this, // tv inst
+          this.data, // dc
+          this.xSettings[name] // settings
+          );
+          nc.name = name;
+          this.controllers.push(nc);
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      return this.controllers;
+    },
+    // TODO: preventDefault
+    pre_dc: function pre_dc(e) {
+      var _iterator2 = xcontrol_createForOfIteratorHelper(this.controllers),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var ctrl = _step2.value;
+
+          if (ctrl.update) {
+            ctrl.update(e);
+          }
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+    },
+    post_dc: function post_dc(e) {
+      var _iterator3 = xcontrol_createForOfIteratorHelper(this.controllers),
+          _step3;
+
+      try {
+        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+          var ctrl = _step3.value;
+
+          if (ctrl.post_update) {
+            ctrl.post_update(e);
+          }
+        }
+      } catch (err) {
+        _iterator3.e(err);
+      } finally {
+        _iterator3.f();
+      }
+    },
+    ctrl_destroy: function ctrl_destroy() {
+      var _iterator4 = xcontrol_createForOfIteratorHelper(this.controllers),
+          _step4;
+
+      try {
+        for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+          var ctrl = _step4.value;
+          if (ctrl.destroy) ctrl.destroy();
+        }
+      } catch (err) {
+        _iterator4.e(err);
+      } finally {
+        _iterator4.f();
+      }
+    },
+    skin_styles: function skin_styles() {
+      var id = 'tvjs-skin-styles';
+      var stbr = document.getElementById(id);
+
+      if (stbr) {
+        var parent = stbr.parentNode;
+        parent.removeChild(stbr);
+      }
+
+      if (this.skin_proto && this.skin_proto.styles) {
+        var sheet = document.createElement('style');
+        sheet.setAttribute("id", id);
+        sheet.innerHTML = this.skin_proto.styles;
+        this.$el.appendChild(sheet);
+      }
+    }
+  },
+  computed: {
+    ws: function ws() {
+      var ws = {};
+
+      var _iterator5 = xcontrol_createForOfIteratorHelper(this.controllers),
+          _step5;
+
+      try {
+        for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
+          var ctrl = _step5.value;
+
+          if (ctrl.widgets) {
+            for (var id in ctrl.widgets) {
+              ws[id] = ctrl.widgets[id];
+              ws[id].ctrl = ctrl;
+            }
+          }
+        }
+      } catch (err) {
+        _iterator5.e(err);
+      } finally {
+        _iterator5.f();
+      }
+
+      return ws;
+    },
+    skins: function skins() {
+      var sks = {};
+
+      var _iterator6 = xcontrol_createForOfIteratorHelper(this.$props.extensions),
+          _step6;
+
+      try {
+        for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
+          var x = _step6.value;
+
+          for (var id in x.skins || {}) {
+            sks[id] = x.skins[id];
+          }
+        }
+      } catch (err) {
+        _iterator6.e(err);
+      } finally {
+        _iterator6.f();
+      }
+
+      return sks;
+    },
+    skin_proto: function skin_proto() {
+      return this.skins[this.$props.skin];
+    },
+    colorpack: function colorpack() {
+      var sel = this.skins[this.$props.skin];
+      return sel ? sel.colors : undefined;
+    }
+  },
+  watch: {
+    // TODO: This is fast & dirty fix, need
+    // to fix the actual reactivity problem
+    skin: function skin(n, p) {
+      if (n !== p) this.resetChart();
+      this.skin_styles();
+    },
+    extensions: function extensions() {
+      this.ctrllist();
+    },
+    xSettings: {
+      handler: function handler(n, p) {
+        var _iterator7 = xcontrol_createForOfIteratorHelper(this.controllers),
+            _step7;
+
+        try {
+          for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {
+            var ctrl = _step7.value;
+
+            if (ctrl.onsettings) {
+              ctrl.onsettings(n, p);
+            }
+          }
+        } catch (err) {
+          _iterator7.e(err);
+        } finally {
+          _iterator7.f();
+        }
+      },
+      deep: true
+    }
+  },
+  data: function data() {
+    return {
+      controllers: []
+    };
+  }
+});
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--11-0!./src/TradingVue.vue?vue&type=script&lang=js
+
+
+function TradingVuevue_type_script_lang_js_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = TradingVuevue_type_script_lang_js_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function TradingVuevue_type_script_lang_js_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return TradingVuevue_type_script_lang_js_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return TradingVuevue_type_script_lang_js_arrayLikeToArray(o, minLen); }
+
+function TradingVuevue_type_script_lang_js_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+
+
+
+
+
+/* harmony default export */ var TradingVuevue_type_script_lang_js = ({
+  name: 'TradingVue',
+  components: {
+    Chart: Chart,
+    Toolbar: Toolbar,
+    Widgets: Widgets,
+    TheTip: TheTip
+  },
+  mixins: [xcontrol],
+  emits: ['register-tools', 'data-len-changed', 'range-changed', 'signal'],
+  props: {
+    titleTxt: {
+      type: String,
+      "default": 'TradingVue.js'
+    },
+    id: {
+      type: String,
+      "default": 'trading-vue-js'
+    },
+    width: {
+      type: Number,
+      "default": 800
+    },
+    height: {
+      type: Number,
+      "default": 421
+    },
+    colorTitle: {
+      type: String,
+      "default": '#42b883'
+    },
+    colorBack: {
+      type: String,
+      "default": '#121826'
+    },
+    colorGrid: {
+      type: String,
+      "default": '#2f3240'
+    },
+    colorText: {
+      type: String,
+      "default": '#dedddd'
+    },
+    colorTextHL: {
+      type: String,
+      "default": '#fff'
+    },
+    colorScale: {
+      type: String,
+      "default": '#838383'
+    },
+    colorCross: {
+      type: String,
+      "default": '#8091a0'
+    },
+    colorCandleUp: {
+      type: String,
+      "default": '#23a776'
+    },
+    colorCandleDw: {
+      type: String,
+      "default": '#e54150'
+    },
+    colorWickUp: {
+      type: String,
+      "default": '#23a77688'
+    },
+    colorWickDw: {
+      type: String,
+      "default": '#e5415088'
+    },
+    colorWickSm: {
+      type: String,
+      "default": 'transparent' // deprecated
+
+    },
+    colorVolUp: {
+      type: String,
+      "default": '#79999e42'
+    },
+    colorVolDw: {
+      type: String,
+      "default": '#ef535042'
+    },
+    colorPanel: {
+      type: String,
+      "default": '#565c68'
+    },
+    colorTbBack: {
+      type: String
+    },
+    colorTbBorder: {
+      type: String,
+      "default": '#8282827d'
+    },
+    colors: {
+      type: Object
+    },
+    font: {
+      type: String,
+      "default": constants.ChartConfig.FONT
+    },
+    toolbar: {
+      type: Boolean,
+      "default": false
+    },
+    data: {
+      type: Object,
+      required: true
+    },
+    // Your overlay classes here
+    overlays: {
+      type: Array,
+      "default": function _default() {
+        return [];
+      }
+    },
+    // Overwrites ChartConfig values,
+    // see constants.js
+    chartConfig: {
+      type: Object,
+      "default": function _default() {
+        return {};
+      }
+    },
+    legendButtons: {
+      type: Array,
+      "default": function _default() {
+        return [];
+      }
+    },
+    indexBased: {
+      type: Boolean,
+      "default": false
+    },
+    extensions: {
+      type: Array,
+      "default": function _default() {
+        return [];
+      }
+    },
+    xSettings: {
+      type: Object,
+      "default": function _default() {
+        return {};
+      }
+    },
+    skin: {
+      type: String // Skin Name
+
+    },
+    timezone: {
+      type: Number,
+      "default": 0
+    }
+  },
+  computed: {
+    // Copy a subset of TradingVue props
+    chart_props: function chart_props() {
+      var offset = this.$props.toolbar ? this.chart_config.TOOLBAR : 0;
+      var chart_props = {
+        title_txt: this.$props.titleTxt,
+        overlays: this.$props.overlays.concat(this.mod_ovs),
+        data: this.decubed,
+        width: this.$props.width - offset,
+        height: this.$props.height,
+        font: this.font_comp,
+        buttons: this.$props.legendButtons,
+        toolbar: this.$props.toolbar,
+        ib: this.$props.indexBased || this.index_based || false,
+        colors: Object.assign({}, this.$props.colors || this.colorpack),
+        skin: this.skin_proto,
+        timezone: this.$props.timezone
+      };
+      this.parse_colors(chart_props.colors);
+      return chart_props;
+    },
+    chart_config: function chart_config() {
+      return Object.assign({}, constants.ChartConfig, this.$props.chartConfig);
+    },
+    decubed: function decubed() {
+      var data = this.$props.data;
+
+      if (data.data !== undefined) {
+        // DataCube detected
+        data.init_tvjs(this);
+        return data.data;
+      } else {
+        return data;
+      }
+    },
+    index_based: function index_based() {
+      var base = this.$props.data;
+
+      if (base.chart) {
+        return base.chart.indexBased;
+      } else if (base.data) {
+        return base.data.chart.indexBased;
+      }
+
+      return false;
+    },
+    mod_ovs: function mod_ovs() {
+      var arr = [];
+
+      var _iterator = TradingVuevue_type_script_lang_js_createForOfIteratorHelper(this.$props.extensions),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var x = _step.value;
+          arr.push.apply(arr, toConsumableArray_default()(Object.values(x.overlays)));
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      return arr;
+    },
+    font_comp: function font_comp() {
+      return this.skin_proto && this.skin_proto.font ? this.skin_proto.font : this.font;
+    }
+  },
+  data: function data() {
+    return {
+      reset: 0,
+      tip: null
+    };
+  },
+  beforeUnmount: function beforeUnmount() {
+    this.custom_event({
+      event: 'before-destroy'
+    });
+    this.ctrl_destroy();
+  },
+  methods: {
+    // TODO: reset extensions?
+    resetChart: function resetChart(resetRange) {
+      var _this = this;
+
+      if (resetRange === void 0) {
+        resetRange = true;
+      }
+
+      this.reset++;
+      var range = this.getRange();
+
+      if (!resetRange && range[0] && range[1]) {
+        this.$nextTick(function () {
+          return _this.setRange.apply(_this, toConsumableArray_default()(range));
+        });
+      }
+
+      this.$nextTick(function () {
+        return _this.custom_event({
+          event: 'chart-reset',
+          args: []
+        });
+      });
+    },
+    "goto": function goto(t) {
+      // TODO: limit goto & setRange (out of data error)
+      if (this.chart_props.ib) {
+        var ti_map = this.$refs.chart.ti_map;
+        t = ti_map.gt2i(t, this.$refs.chart.ohlcv);
+      }
+
+      this.$refs.chart["goto"](t);
+    },
+    setRange: function setRange(t1, t2) {
+      if (this.chart_props.ib) {
+        var ti_map = this.$refs.chart.ti_map;
+        var ohlcv = this.$refs.chart.ohlcv;
+        t1 = ti_map.gt2i(t1, ohlcv);
+        t2 = ti_map.gt2i(t2, ohlcv);
+      }
+
+      this.$refs.chart.setRange(t1, t2);
+    },
+    getRange: function getRange() {
+      if (this.chart_props.ib) {
+        var ti_map = this.$refs.chart.ti_map; // Time range => index range
+
+        return this.$refs.chart.range.map(function (x) {
+          return ti_map.i2t(x);
+        });
+      }
+
+      return this.$refs.chart.range;
+    },
+    getCursor: function getCursor() {
+      var cursor = this.$refs.chart.cursor;
+
+      if (this.chart_props.ib) {
+        var ti_map = this.$refs.chart.ti_map;
+        var copy = Object.assign({}, cursor);
+        copy.i = copy.t;
+        copy.t = ti_map.i2t(copy.t);
+        return copy;
+      }
+
+      return cursor;
+    },
+    showTheTip: function showTheTip(text, color) {
+      if (color === void 0) {
+        color = "orange";
+      }
+
+      this.tip = {
+        text: text,
+        color: color
+      };
+    },
+    legend_button: function legend_button(event) {
+      this.custom_event({
+        event: 'legend-button-click',
+        args: [event]
+      });
+    },
+    custom_event: function custom_event(d) {
+      if ('args' in d) {
+        this.$emit.apply(this, [d.event].concat(toConsumableArray_default()(d.args)));
+      } else {
+        this.$emit(d.event);
+      }
+
+      var data = this.$props.data;
+      var ctrl = this.controllers.length !== 0;
+      if (ctrl) this.pre_dc(d);
+
+      if (data.tv) {
+        // If the data object is DataCube
+        data.on_custom_event(d.event, d.args);
+      }
+
+      if (ctrl) this.post_dc(d);
+    },
+    range_changed: function range_changed(r) {
+      if (this.chart_props.ib) {
+        var ti_map = this.$refs.chart.ti_map;
+        r = r.map(function (x) {
+          return ti_map.i2t(x);
+        });
+      }
+
+      this.$emit('range-changed', r);
+      this.custom_event({
+        event: 'range-changed',
+        args: [r]
+      });
+      if (this.onrange) this.onrange(r);
+    },
+    set_loader: function set_loader(dc) {
+      var _this2 = this;
+
+      this.onrange = function (r) {
+        var pf = _this2.chart_props.ib ? '_ms' : '';
+        var tf = _this2.$refs.chart['interval' + pf];
+        dc.range_changed(r, tf);
+      };
+    },
+    parse_colors: function parse_colors(colors) {
+      for (var k in this.$props) {
+        if (k.indexOf('color') === 0 && k !== 'colors') {
+          var k2 = k.replace('color', '');
+          k2 = k2[0].toLowerCase() + k2.slice(1);
+          if (colors[k2]) continue;
+          colors[k2] = this.$props[k];
+        }
+      }
+    },
+    mousedown: function mousedown() {
+      this.$refs.chart.activated = true;
+    },
+    mouseleave: function mouseleave() {
+      this.$refs.chart.activated = false;
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/TradingVue.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./src/TradingVue.vue?vue&type=style&index=0&id=7a200e91&lang=css
+var TradingVuevue_type_style_index_0_id_7a200e91_lang_css = __webpack_require__(74);
+
+// CONCATENATED MODULE: ./src/TradingVue.vue
+
+
+
+
+
+TradingVuevue_type_script_lang_js.render = TradingVuevue_type_template_id_7a200e91_render
+
+/* harmony default export */ var TradingVue = (TradingVuevue_type_script_lang_js);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/typeof.js
+var helpers_typeof = __webpack_require__(13);
+var typeof_default = /*#__PURE__*/__webpack_require__.n(helpers_typeof);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/assertThisInitialized.js
+var assertThisInitialized = __webpack_require__(19);
+var assertThisInitialized_default = /*#__PURE__*/__webpack_require__.n(assertThisInitialized);
+
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/regenerator/index.js
-var regenerator = __webpack_require__(6);
+var regenerator = __webpack_require__(10);
 var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/asyncToGenerator.js
-var asyncToGenerator = __webpack_require__(9);
+var asyncToGenerator = __webpack_require__(14);
 var asyncToGenerator_default = /*#__PURE__*/__webpack_require__.n(asyncToGenerator);
 
-// EXTERNAL MODULE: ./src/stuff/icons.json
-var icons = __webpack_require__(16);
-
 // EXTERNAL MODULE: ./src/helpers/tmp/ww$$$.json
-var ww$$$ = __webpack_require__(21);
+var ww$$$ = __webpack_require__(38);
 
 // EXTERNAL MODULE: ./node_modules/lz-string/libs/lz-string.js
-var lz_string = __webpack_require__(22);
+var lz_string = __webpack_require__(39);
 var lz_string_default = /*#__PURE__*/__webpack_require__.n(lz_string);
 
 // EXTERNAL MODULE: ./src/helpers/script_ww.js
-var script_ww = __webpack_require__(31);
+var script_ww = __webpack_require__(77);
 
 // CONCATENATED MODULE: ./src/helpers/script_ww_api.js
 
@@ -13655,10 +26351,6 @@ var script_ww_api_WebWork = /*#__PURE__*/function () {
 }();
 
 /* harmony default export */ var script_ww_api = (script_ww_api_WebWork);
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/defineProperty.js
-var defineProperty = __webpack_require__(12);
-var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
-
 // CONCATENATED MODULE: ./src/helpers/script_utils.js
 
 
@@ -13894,11 +26586,11 @@ function script_utils_now() {
 
 
 
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+function dataset_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = dataset_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function dataset_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return dataset_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return dataset_arrayLikeToArray(o, minLen); }
 
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+function dataset_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 // Dataset proxy between vuejs & WebWorker
 
@@ -14033,7 +26725,7 @@ var dataset_Dataset = /*#__PURE__*/function () {
         return x.id;
       });
 
-      var _iterator = _createForOfIteratorHelper(nids),
+      var _iterator = dataset_createForOfIteratorHelper(nids),
           _step;
 
       try {
@@ -14053,7 +26745,7 @@ var dataset_Dataset = /*#__PURE__*/function () {
         _iterator.f();
       }
 
-      var _iterator2 = _createForOfIteratorHelper(pids),
+      var _iterator2 = dataset_createForOfIteratorHelper(pids),
           _step2;
 
       try {
@@ -14183,7 +26875,7 @@ var dataset_DatasetWW = /*#__PURE__*/function () {
         var iN = arr.length - 1;
         var last = arr[iN];
 
-        var _iterator3 = _createForOfIteratorHelper(data[k]),
+        var _iterator3 = dataset_createForOfIteratorHelper(data[k]),
             _step3;
 
         try {
@@ -14924,9 +27616,9 @@ function dc_core_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typ
 
 function dc_core_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+function dc_core_createSuper(Derived) { var hasNativeReflectConstruct = dc_core_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function dc_core_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 // DataCube "private" methods
 
@@ -14936,7 +27628,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 var dc_core_DCCore = /*#__PURE__*/function (_DCEvents) {
   inherits_default()(DCCore, _DCEvents);
 
-  var _super = _createSuper(DCCore);
+  var _super = dc_core_createSuper(DCCore);
 
   function DCCore() {
     classCallCheck_default()(this, DCCore);
@@ -15988,415 +28680,6 @@ var datacube_DataCube = /*#__PURE__*/function (_DCCore) {
 }(dc_core_DCCore);
 
 
-// CONCATENATED MODULE: ./src/stuff/mouse.js
-
-
-
-function mouse_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = mouse_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function mouse_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return mouse_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return mouse_arrayLikeToArray(o, minLen); }
-
-function mouse_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-// Mouse event handler for overlay
-var mouse_Mouse = /*#__PURE__*/function () {
-  function Mouse(comp) {
-    classCallCheck_default()(this, Mouse);
-
-    this.comp = comp;
-    this.map = {};
-    this.listeners = 0;
-    this.pressed = false;
-    this.x = comp.$props.cursor.x;
-    this.y = comp.$props.cursor.y;
-    this.t = comp.$props.cursor.t;
-    this.y$ = comp.$props.cursor.y$;
-  } // You can choose where to place the handler
-  // (beginning or end of the queue)
-
-
-  createClass_default()(Mouse, [{
-    key: "on",
-    value: function on(name, handler, dir) {
-      if (dir === void 0) {
-        dir = "unshift";
-      }
-
-      if (!handler) return;
-      this.map[name] = this.map[name] || [];
-      this.map[name][dir](handler);
-      this.listeners++;
-    }
-  }, {
-    key: "off",
-    value: function off(name, handler) {
-      if (!this.map[name]) return;
-      var i = this.map[name].indexOf(handler);
-      if (i < 0) return;
-      this.map[name].splice(i, 1);
-      this.listeners--;
-    } // Called by grid.js
-
-  }, {
-    key: "emit",
-    value: function emit(name, event) {
-      var l = this.comp.layout;
-
-      if (name in this.map) {
-        var _iterator = mouse_createForOfIteratorHelper(this.map[name]),
-            _step;
-
-        try {
-          for (_iterator.s(); !(_step = _iterator.n()).done;) {
-            var f = _step.value;
-            f(event);
-          }
-        } catch (err) {
-          _iterator.e(err);
-        } finally {
-          _iterator.f();
-        }
-      }
-
-      if (name === 'mousemove') {
-        this.x = event.layerX;
-        this.y = event.layerY;
-        this.t = l.screen2t(this.x);
-        this.y$ = l.screen2$(this.y);
-      }
-
-      if (name === 'mousedown') {
-        this.pressed = true;
-      }
-
-      if (name === 'mouseup') {
-        this.pressed = false;
-      }
-    }
-  }]);
-
-  return Mouse;
-}();
-
-
-// CONCATENATED MODULE: ./src/mixins/overlay.js
-// Usuful stuff for creating overlays. Include as mixin
-
-/* harmony default export */ var mixins_overlay = ({
-  props: ['id', 'num', 'interval', 'cursor', 'colors', 'layout', 'sub', 'data', 'settings', 'grid_id', 'font', 'config', 'meta', 'tf', 'i0'],
-  emits: ['new-grid-layer', 'layer-meta-props', 'delete-grid-layer', 'custom-event', 'show-grid-layer', 'drawing-mode-off', 'scroll-lock', 'change-settings', 'object-selected', 'new-shader', 'remove-tool', 'redraw-grid'],
-  mounted: function mounted() {
-    // TODO(1): when hot reloading, dynamicaly changed mixins
-    // dissapear (cuz it's a hack), the only way for now
-    // is to reload the browser
-    if (!this.draw) {
-      this.draw = function (ctx) {
-        var text = 'EARLY ADOPTER BUG: reload the browser & enjoy';
-        console.warn(text);
-      };
-    } // Main chart?
-
-
-    var main = this.$props.sub === this.$props.data;
-    this.meta_info();
-    this.$emit('new-grid-layer', {
-      name: this.$options.name,
-      id: this.$props.id,
-      renderer: this,
-      display: 'display' in this.$props.settings ? this.$props.settings['display'] : true,
-      z: this.$props.settings['z-index'] || this.$props.settings['zIndex'] || (main ? 0 : -1)
-    }); // Overlay meta-props (adjusting behaviour)
-
-    this.$emit('layer-meta-props', {
-      grid_id: this.$props.grid_id,
-      layer_id: this.$props.id,
-      legend: this.legend,
-      data_colors: this.data_colors,
-      y_range: this.y_range
-    });
-    this.exec_script();
-    this.mouse = new mouse_Mouse(this);
-    if (this.init_tool) this.init_tool();
-    if (this.init) this.init();
-  },
-  beforeUnmount: function beforeUnmount() {
-    if (this.destroy) this.destroy();
-    this.$emit('delete-grid-layer', this.$props.id);
-  },
-  methods: {
-    use_for: function use_for() {
-      /* override it (mandatory) */
-      console.warn('use_for() should be implemented');
-      console.warn("Format: use_for() {\n                  return ['type1', 'type2', ...]\n            }");
-    },
-    meta_info: function meta_info() {
-      /* override it (optional) */
-      var id = this.$props.id;
-      console.warn("".concat(id, " meta_info() is req. for publishing"));
-      console.warn("Format: meta_info() {\n                author: 'Satoshi Smith',\n                version: '1.0.0',\n                contact (opt) '<email>'\n                github: (opt) '<GitHub Page>',\n            }");
-    },
-    custom_event: function custom_event(event) {
-      if (event.split(':')[0] === 'hook') return;
-
-      for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-        args[_key - 1] = arguments[_key];
-      }
-
-      if (event === 'change-settings' || event === 'object-selected' || event === 'new-shader' || event === 'new-interface' || event === 'remove-tool') {
-        args.push(this.grid_id, this.id);
-
-        if (this.$props.settings.$uuid) {
-          args.push(this.$props.settings.$uuid);
-        }
-      }
-
-      if (event === 'new-interface') {
-        args[0].overlay = this;
-        args[0].uuid = this.last_ux_id = "".concat(this.grid_id, "-").concat(this.id, "-").concat(this.uxs_count++);
-      }
-
-      this.$emit('custom-event', {
-        event: event,
-        args: args
-      });
-    },
-    // TODO: the event is not firing when the same
-    // overlay type is added to the offchart[]
-    exec_script: function exec_script() {
-      if (this.calc) this.$emit('exec-script', {
-        grid_id: this.$props.grid_id,
-        layer_id: this.$props.id,
-        src: this.calc(),
-        use_for: this.use_for()
-      });
-    }
-  },
-  watch: {
-    settings: {
-      handler: function handler(n, p) {
-        if (this.watch_uuid) this.watch_uuid(n, p);
-        this.$emit('show-grid-layer', {
-          id: this.$props.id,
-          display: 'display' in this.$props.settings ? this.$props.settings['display'] : true
-        });
-      },
-      deep: true
-    }
-  },
-  data: function data() {
-    return {
-      uxs_count: 0,
-      last_ux_id: null
-    };
-  },
-  render: function render() {
-    return [];
-  }
-});
-// CONCATENATED MODULE: ./src/stuff/keys.js
-
-
-
-function keys_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = keys_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function keys_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return keys_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return keys_arrayLikeToArray(o, minLen); }
-
-function keys_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-// Keyboard event handler for overlay
-var keys_Keys = /*#__PURE__*/function () {
-  function Keys(comp) {
-    classCallCheck_default()(this, Keys);
-
-    this.comp = comp;
-    this.map = {};
-    this.listeners = 0;
-    this.keymap = {};
-  }
-
-  createClass_default()(Keys, [{
-    key: "on",
-    value: function on(name, handler) {
-      if (!handler) return;
-      this.map[name] = this.map[name] || [];
-      this.map[name].push(handler);
-      this.listeners++;
-    } // Called by grid.js
-
-  }, {
-    key: "emit",
-    value: function emit(name, event) {
-      if (name in this.map) {
-        var _iterator = keys_createForOfIteratorHelper(this.map[name]),
-            _step;
-
-        try {
-          for (_iterator.s(); !(_step = _iterator.n()).done;) {
-            var f = _step.value;
-            f(event);
-          }
-        } catch (err) {
-          _iterator.e(err);
-        } finally {
-          _iterator.f();
-        }
-      }
-
-      if (name === 'keydown') {
-        if (!this.keymap[event.key]) {
-          this.emit(event.key);
-        }
-
-        this.keymap[event.key] = true;
-      }
-
-      if (name === 'keyup') {
-        this.keymap[event.key] = false;
-      }
-    }
-  }, {
-    key: "pressed",
-    value: function pressed(key) {
-      return this.keymap[key];
-    }
-  }]);
-
-  return Keys;
-}();
-
-
-// CONCATENATED MODULE: ./src/mixins/tool.js
-function tool_createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = tool_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function tool_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return tool_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return tool_arrayLikeToArray(o, minLen); }
-
-function tool_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-// Usuful stuff for creating tools. Include as mixin
-
-
-/* harmony default export */ var mixins_tool = ({
-  methods: {
-    init_tool: function init_tool() {
-      var _this = this;
-
-      // Collision functions (float, float) => bool,
-      this.collisions = [];
-      this.pins = [];
-      this.mouse.on('mousemove', function (e) {
-        if (_this.collisions.some(function (f) {
-          return f(_this.mouse.x, _this.mouse.y);
-        })) {
-          _this.show_pins = true;
-        } else {
-          _this.show_pins = false;
-        }
-
-        if (_this.drag) _this.drag_update();
-      });
-      this.mouse.on('mousedown', function (e) {
-        if (utils.default_prevented(e)) return;
-
-        if (_this.collisions.some(function (f) {
-          return f(_this.mouse.x, _this.mouse.y);
-        })) {
-          if (!_this.selected) {
-            _this.$emit('object-selected');
-          }
-
-          _this.start_drag();
-
-          e.preventDefault();
-
-          _this.pins.forEach(function (x) {
-            return x.mousedown(e, true);
-          });
-        }
-      });
-      this.mouse.on('mouseup', function (e) {
-        _this.drag = null;
-
-        _this.$emit('scroll-lock', false);
-      });
-      this.keys = new keys_Keys(this);
-      this.keys.on('Delete', this.remove_tool);
-      this.keys.on('Backspace', this.remove_tool);
-      this.show_pins = false;
-      this.drag = null;
-    },
-    render_pins: function render_pins(ctx) {
-      if (this.selected || this.show_pins) {
-        this.pins.forEach(function (x) {
-          return x.draw(ctx);
-        });
-      }
-    },
-    set_state: function set_state(name) {
-      this.$emit('change-settings', {
-        $state: name
-      });
-    },
-    watch_uuid: function watch_uuid(n, p) {
-      // If layer $uuid is changed, then re-init
-      // pins & collisions
-      if (n.$uuid !== p.$uuid) {
-        var _iterator = tool_createForOfIteratorHelper(this.pins),
-            _step;
-
-        try {
-          for (_iterator.s(); !(_step = _iterator.n()).done;) {
-            var p = _step.value;
-            p.re_init();
-          }
-        } catch (err) {
-          _iterator.e(err);
-        } finally {
-          _iterator.f();
-        }
-
-        this.collisions = [];
-        this.show_pins = false;
-        this.drag = null;
-      }
-    },
-    pre_draw: function pre_draw() {
-      // Delete all collision functions before
-      // the draw() call and let primitives set
-      // them again
-      this.collisions = [];
-    },
-    remove_tool: function remove_tool() {
-      if (this.selected) this.$emit('remove-tool');
-    },
-    start_drag: function start_drag() {
-      this.$emit('scroll-lock', true);
-      var cursor = this.$props.cursor;
-      this.drag = {
-        t: cursor.t,
-        y$: cursor.y$
-      };
-      this.pins.forEach(function (x) {
-        return x.rec_position();
-      });
-    },
-    drag_update: function drag_update() {
-      var dt = this.$props.cursor.t - this.drag.t;
-      var dy = this.$props.cursor.y$ - this.drag.y$;
-      this.pins.forEach(function (x) {
-        return x.update_from([x.t1 + dt, x.y$1 + dy], true);
-      });
-    }
-  },
-  computed: {
-    // Settings starting with $ are reserved
-    selected: function selected() {
-      return this.$props.settings.$selected;
-    },
-    state: function state() {
-      return this.$props.settings.$state;
-    }
-  }
-});
 // CONCATENATED MODULE: ./src/mixins/interface.js
 // Html interface, shown on top of the grid.
 // Can be static (a tooltip) or interactive,
@@ -16451,817 +28734,6 @@ function tool_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) 
     return {};
   }
 });
-// CONCATENATED MODULE: ./src/components/primitives/candle.js
-
-
-
-// Candle object for Candles overlay
-var candle_CandleExt = /*#__PURE__*/function () {
-  function CandleExt(overlay, ctx, data) {
-    classCallCheck_default()(this, CandleExt);
-
-    this.ctx = ctx;
-    this.self = overlay;
-    this.style = data.raw[6] || this.self;
-    this.draw(data);
-  }
-
-  createClass_default()(CandleExt, [{
-    key: "draw",
-    value: function draw(data) {
-      var green = data.raw[4] >= data.raw[1];
-      var body_color = green ? this.style.colorCandleUp : this.style.colorCandleDw;
-      var wick_color = green ? this.style.colorWickUp : this.style.colorWickDw;
-      var w = Math.max(data.w, 1);
-      var hw = Math.max(Math.floor(w * 0.5), 1);
-      var h = Math.abs(data.o - data.c);
-      var max_h = data.c === data.o ? 1 : 2;
-      var x05 = Math.floor(data.x) - 0.5;
-      this.ctx.strokeStyle = wick_color;
-      this.ctx.beginPath();
-      this.ctx.moveTo(x05, Math.floor(data.h));
-      this.ctx.lineTo(x05, Math.floor(data.l));
-      this.ctx.stroke();
-
-      if (data.w > 1.5) {
-        this.ctx.fillStyle = body_color; // TODO: Move common calculations to layout.js
-
-        var s = green ? 1 : -1;
-        this.ctx.fillRect(Math.floor(data.x - hw - 1), data.c, Math.floor(hw * 2 + 1), s * Math.max(h, max_h));
-      } else {
-        this.ctx.strokeStyle = body_color;
-        this.ctx.beginPath();
-        this.ctx.moveTo(x05, Math.floor(Math.min(data.o, data.c)));
-        this.ctx.lineTo(x05, Math.floor(Math.max(data.o, data.c)) + (data.o === data.c ? 1 : 0));
-        this.ctx.stroke();
-      }
-    }
-  }]);
-
-  return CandleExt;
-}();
-
-
-// CONCATENATED MODULE: ./src/components/primitives/volbar.js
-
-
-
-var volbar_VolbarExt = /*#__PURE__*/function () {
-  function VolbarExt(overlay, ctx, data) {
-    classCallCheck_default()(this, VolbarExt);
-
-    this.ctx = ctx;
-    this.$p = overlay.$props;
-    this.self = overlay;
-    this.style = data.raw[6] || this.self;
-    this.draw(data);
-  }
-
-  createClass_default()(VolbarExt, [{
-    key: "draw",
-    value: function draw(data) {
-      var y0 = this.$p.layout.height;
-      var w = data.x2 - data.x1;
-      var h = Math.floor(data.h);
-      this.ctx.fillStyle = data.green ? this.style.colorVolUp : this.style.colorVolDw;
-      this.ctx.fillRect(Math.floor(data.x1), Math.floor(y0 - h - 0.5), Math.floor(w), Math.floor(h + 1));
-    }
-  }]);
-
-  return VolbarExt;
-}();
-
-
-// CONCATENATED MODULE: ./src/stuff/math.js
-// Math/Geometry
-/* harmony default export */ var math = ({
-  // Distance from point to line
-  // p1 = point, (p2, p3) = line
-  point2line: function point2line(p1, p2, p3) {
-    var _this$tri = this.tri(p1, p2, p3),
-        area = _this$tri.area,
-        base = _this$tri.base;
-
-    return Math.abs(this.tri_h(area, base));
-  },
-  // Distance from point to segment
-  // p1 = point, (p2, p3) = segment
-  point2seg: function point2seg(p1, p2, p3) {
-    var _this$tri2 = this.tri(p1, p2, p3),
-        area = _this$tri2.area,
-        base = _this$tri2.base; // Vector projection
-
-
-    var proj = this.dot_prod(p1, p2, p3) / base; // Distance from left pin
-
-    var l1 = Math.max(-proj, 0); // Distance from right pin
-
-    var l2 = Math.max(proj - base, 0); // Normal
-
-    var h = Math.abs(this.tri_h(area, base));
-    return Math.max(h, l1, l2);
-  },
-  // Distance from point to ray
-  // p1 = point, (p2, p3) = ray
-  point2ray: function point2ray(p1, p2, p3) {
-    var _this$tri3 = this.tri(p1, p2, p3),
-        area = _this$tri3.area,
-        base = _this$tri3.base; // Vector projection
-
-
-    var proj = this.dot_prod(p1, p2, p3) / base; // Distance from left pin
-
-    var l1 = Math.max(-proj, 0); // Normal
-
-    var h = Math.abs(this.tri_h(area, base));
-    return Math.max(h, l1);
-  },
-  tri: function tri(p1, p2, p3) {
-    var area = this.area(p1, p2, p3);
-    var dx = p3[0] - p2[0];
-    var dy = p3[1] - p2[1];
-    var base = Math.sqrt(dx * dx + dy * dy);
-    return {
-      area: area,
-      base: base
-    };
-  },
-
-  /* Area of triangle:
-          p1
-        /    \
-      p2  _  p3
-  */
-  area: function area(p1, p2, p3) {
-    return p1[0] * (p2[1] - p3[1]) + p2[0] * (p3[1] - p1[1]) + p3[0] * (p1[1] - p2[1]);
-  },
-  // Triangle height
-  tri_h: function tri_h(area, base) {
-    return area / base;
-  },
-  // Dot product of (p2, p3) and (p2, p1)
-  dot_prod: function dot_prod(p1, p2, p3) {
-    var v1 = [p3[0] - p2[0], p3[1] - p2[1]];
-    var v2 = [p1[0] - p2[0], p1[1] - p2[1]];
-    return v1[0] * v2[0] + v1[1] * v2[1];
-  },
-  // Symmetrical log
-  log: function log(x) {
-    // TODO: log for small values
-    return Math.sign(x) * Math.log(Math.abs(x) + 1);
-  },
-  // Symmetrical exp
-  exp: function exp(x) {
-    return Math.sign(x) * (Math.exp(Math.abs(x)) - 1);
-  },
-  // Middle line on log scale based on range & px height
-  log_mid: function log_mid(r, h) {
-    var log_hi = this.log(r[0]);
-    var log_lo = this.log(r[1]);
-    var px = h / 2;
-    var gx = log_hi - px * (log_hi - log_lo) / h;
-    return this.exp(gx);
-  },
-  // Return new adjusted range, based on the previous
-  // range, new $_hi, target middle line
-  re_range: function re_range(r1, hi2, mid) {
-    var log_hi1 = this.log(r1[0]);
-    var log_lo1 = this.log(r1[1]);
-    var log_hi2 = this.log(hi2);
-    var log_$ = this.log(mid);
-    var W = (log_hi2 - log_$) * (log_hi1 - log_lo1) / (log_hi1 - log_$);
-    return this.exp(log_hi2 - W);
-  } // Return new adjusted range, based on the previous
-  // range, new $_hi, target middle line + dy (shift)
-  // WASTE
-
-  /*range_shift(r1, hi2, mid, dy, h) {
-      let log_hi1 = this.log(r1[0])
-      let log_lo1 = this.log(r1[1])
-      let log_hi2 = this.log(hi2)
-      let log_$ = this.log(mid)
-       let W = h * (log_hi2 - log_$) /
-              (h * (log_hi1 - log_$) / (log_hi1 - log_lo1) + dy)
-       return this.exp(log_hi2 - W)
-   }*/
-
-});
-// CONCATENATED MODULE: ./src/components/primitives/line.js
-
-
-// Draws a line, adds corresponding collision f-n
-
-
-
-var line_Line = /*#__PURE__*/function () {
-  // Overlay ref, canvas ctx
-  function Line(overlay, ctx) {
-    classCallCheck_default()(this, Line);
-
-    this.ctx = ctx;
-    this.comp = overlay;
-    this.T = overlay.$props.config.TOOL_COLL;
-    if (utils.is_mobile) this.T *= 2;
-  } // p1[t, $], p2[t, $] (time-price coordinates)
-
-
-  createClass_default()(Line, [{
-    key: "draw",
-    value: function draw(p1, p2) {
-      var layout = this.comp.$props.layout;
-      var x1 = layout.t2screen(p1[0]);
-      var y1 = layout.$2screen(p1[1]);
-      var x2 = layout.t2screen(p2[0]);
-      var y2 = layout.$2screen(p2[1]);
-      this.ctx.moveTo(x1, y1);
-      this.ctx.lineTo(x2, y2);
-      var w = layout.width;
-      var h = layout.height; // TODO: transform k (angle) to screen ratio
-      // (this requires a new a2screen function)
-
-      var k = (y2 - y1) / (x2 - x1);
-      var s = Math.sign(x2 - x1 || y2 - y1);
-      var dx = w * s * 2;
-      var dy = w * k * s * 2;
-
-      if (dy === Infinity) {
-        dx = 0, dy = h * s;
-      }
-
-      this.ctx.moveTo(x2, y2);
-      this.ctx.lineTo(x2 + dx, y2 + dy);
-
-      if (!this.ray) {
-        this.ctx.moveTo(x1, y1);
-        this.ctx.lineTo(x1 - dx, y1 - dy);
-      }
-
-      this.comp.collisions.push(this.make([x1, y1], [x2, y2]));
-    } // Collision function. x, y - mouse coord.
-
-  }, {
-    key: "make",
-    value: function make(p1, p2) {
-      var _this = this;
-
-      var f = this.ray ? math.point2ray.bind(math) : math.point2line.bind(math);
-      return function (x, y) {
-        return f([x, y], p1, p2) < _this.T;
-      };
-    }
-  }]);
-
-  return Line;
-}();
-
-
-// CONCATENATED MODULE: ./src/components/primitives/pin.js
-
-
-
-// Semi-automatic pin object. For stretching things.
-
-
-var pin_Pin = /*#__PURE__*/function () {
-  // (Comp reference, a name in overlay settings,
-  // pin parameters)
-  function Pin(comp, name, params) {
-    var _this = this;
-
-    if (params === void 0) {
-      params = {};
-    }
-
-    classCallCheck_default()(this, Pin);
-
-    this.RADIUS = comp.$props.config.PIN_RADIUS || 5.5;
-    this.RADIUS_SQ = Math.pow(this.RADIUS + 7, 2);
-
-    if (utils.is_mobile) {
-      this.RADIUS += 2;
-      this.RADIUS_SQ *= 2.5;
-    }
-
-    this.COLOR_BACK = comp.$props.colors.back;
-    this.COLOR_BR = comp.$props.colors.text;
-    this.comp = comp;
-    this.layout = comp.layout;
-    this.mouse = comp.mouse;
-    this.name = name;
-    this.state = params.state || 'settled';
-    this.hidden = params.hidden || false;
-    this.mouse.on('mousemove', function (e) {
-      return _this.mousemove(e);
-    });
-    this.mouse.on('mousedown', function (e) {
-      return _this.mousedown(e);
-    });
-    this.mouse.on('mouseup', function (e) {
-      return _this.mouseup(e);
-    });
-
-    if (comp.state === 'finished') {
-      this.state = 'settled';
-      this.update_from(comp.$props.settings[name]);
-    } else {
-      this.update();
-    }
-
-    if (this.state !== 'settled') {
-      this.comp.$emit('scroll-lock', true);
-    }
-  }
-
-  createClass_default()(Pin, [{
-    key: "re_init",
-    value: function re_init() {
-      this.update_from(this.comp.$props.settings[this.name]);
-    }
-  }, {
-    key: "draw",
-    value: function draw(ctx) {
-      if (this.hidden) return;
-
-      switch (this.state) {
-        case 'tracking':
-          break;
-
-        case 'dragging':
-          if (!this.moved) this.draw_circle(ctx);
-          break;
-
-        case 'settled':
-          this.draw_circle(ctx);
-          break;
-      }
-    }
-  }, {
-    key: "draw_circle",
-    value: function draw_circle(ctx) {
-      this.layout = this.comp.layout;
-
-      if (this.comp.selected) {
-        var r = this.RADIUS,
-            lw = 1.5;
-      } else {
-        var r = this.RADIUS * 0.95,
-            lw = 1;
-      }
-
-      ctx.lineWidth = lw;
-      ctx.strokeStyle = this.COLOR_BR;
-      ctx.fillStyle = this.COLOR_BACK;
-      ctx.beginPath();
-      ctx.arc(this.x = this.layout.t2screen(this.t), this.y = this.layout.$2screen(this.y$), r + 0.5, 0, Math.PI * 2, true);
-      ctx.fill();
-      ctx.stroke();
-    }
-  }, {
-    key: "update",
-    value: function update() {
-      this.y$ = this.comp.$props.cursor.y$;
-      this.y = this.comp.$props.cursor.y;
-      this.t = this.comp.$props.cursor.t;
-      this.x = this.comp.$props.cursor.x; // Save pin as time in IB mode
-      //if (this.layout.ti_map.ib) {
-      //    this.t = this.layout.ti_map.i2t(this.t )
-      //}
-      // Reset the settings attahed to the pin (position)
-
-      this.comp.$emit('change-settings', defineProperty_default()({}, this.name, [this.t, this.y$]));
-    }
-  }, {
-    key: "update_from",
-    value: function update_from(data, emit) {
-      if (emit === void 0) {
-        emit = false;
-      }
-
-      if (!data) return;
-      this.layout = this.comp.layout;
-      this.y$ = data[1];
-      this.y = this.layout.$2screen(this.y$);
-      this.t = data[0];
-      this.x = this.layout.t2screen(this.t); // TODO: Save pin as time in IB mode
-      //if (this.layout.ti_map.ib) {
-      //    this.t = this.layout.ti_map.i2t(this.t )
-      //}
-
-      if (emit) this.comp.$emit('change-settings', defineProperty_default()({}, this.name, [this.t, this.y$]));
-    }
-  }, {
-    key: "rec_position",
-    value: function rec_position() {
-      this.t1 = this.t;
-      this.y$1 = this.y$;
-    }
-  }, {
-    key: "mousemove",
-    value: function mousemove(event) {
-      switch (this.state) {
-        case 'tracking':
-        case 'dragging':
-          this.moved = true;
-          this.update();
-          break;
-      }
-    }
-  }, {
-    key: "mousedown",
-    value: function mousedown(event, force) {
-      if (force === void 0) {
-        force = false;
-      }
-
-      if (utils.default_prevented(event) && !force) return;
-
-      switch (this.state) {
-        case 'tracking':
-          this.state = 'settled';
-          if (this.on_settled) this.on_settled();
-          this.comp.$emit('scroll-lock', false);
-          break;
-
-        case 'settled':
-          if (this.hidden) return;
-
-          if (this.hover()) {
-            this.state = 'dragging';
-            this.moved = false;
-            this.comp.$emit('scroll-lock', true);
-            this.comp.$emit('object-selected');
-          }
-
-          break;
-      }
-
-      if (this.hover()) {
-        event.preventDefault();
-      }
-    }
-  }, {
-    key: "mouseup",
-    value: function mouseup(event) {
-      switch (this.state) {
-        case 'dragging':
-          this.state = 'settled';
-          if (this.on_settled) this.on_settled();
-          this.comp.$emit('scroll-lock', false);
-          break;
-      }
-    }
-  }, {
-    key: "on",
-    value: function on(name, handler) {
-      switch (name) {
-        case 'settled':
-          this.on_settled = handler;
-          break;
-      }
-    }
-  }, {
-    key: "hover",
-    value: function hover() {
-      var x = this.x;
-      var y = this.y;
-      return (x - this.mouse.x) * (x - this.mouse.x) + (y - this.mouse.y) * (y - this.mouse.y) < this.RADIUS_SQ;
-    }
-  }]);
-
-  return Pin;
-}();
-
-
-// CONCATENATED MODULE: ./src/components/primitives/price.js
-
-
-
-// Price bar & price line (shader)
-var price_Price = /*#__PURE__*/function () {
-  function Price(comp) {
-    classCallCheck_default()(this, Price);
-
-    this.comp = comp;
-    this.data = comp.$props.data;
-  } // Defines an inline shader (has access to both
-  // target & overlay's contexts)
-
-
-  createClass_default()(Price, [{
-    key: "init_shader",
-    value: function init_shader() {
-      var _this = this;
-
-      var layout = this.comp.$props.layout;
-      var config = this.comp.$props.config;
-      var comp = this.comp;
-
-      var last_bar = function last_bar() {
-        return _this.last_bar();
-      };
-
-      this.comp.$emit('new-shader', {
-        target: 'sidebar',
-        draw: function draw(ctx) {
-          if (!last_bar()) return;
-          var bar = last_bar();
-          var w = ctx.canvas.width;
-          var h = config.PANHEIGHT;
-          var lbl = bar.price.toFixed(layout.prec);
-          ctx.fillStyle = bar.color;
-          var x = -0.5;
-          var y = bar.y - h * 0.5 - 0.5;
-          var a = 7;
-          ctx.fillRect(x - 0.5, y, w + 1, h);
-          ctx.fillStyle = comp.$props.colors.textHL;
-          ctx.textAlign = 'left';
-          ctx.fillText(lbl, a, y + 15);
-        }
-      });
-      this.shader = true;
-    } // Regular draw call for overaly
-
-  }, {
-    key: "draw",
-    value: function draw(ctx) {
-      if (!this.comp.$props.meta.last) return;
-      if (!this.shader) this.init_shader();
-      var layout = this.comp.$props.layout;
-      var last = this.comp.$props.meta.last;
-      var dir = last[4] >= last[1];
-      var color = dir ? this.green() : this.red();
-      var y = layout.$2screen(last[4]) + (dir ? 1 : 0);
-      ctx.strokeStyle = color;
-      ctx.setLineDash([1, 1]);
-      ctx.beginPath();
-      ctx.moveTo(0, y);
-      ctx.lineTo(layout.width, y);
-      ctx.stroke();
-      ctx.setLineDash([]);
-    }
-  }, {
-    key: "last_bar",
-    value: function last_bar() {
-      if (!this.data.length) return undefined;
-      var layout = this.comp.$props.layout;
-      var last = this.data[this.data.length - 1];
-      var y = layout.$2screen(last[4]);
-      var cndl = layout.c_magnet(last[0]);
-      return {
-        y: Math.floor(cndl.c) - 0.5,
-        price: last[4],
-        color: last[4] >= last[1] ? this.green() : this.red()
-      };
-    }
-  }, {
-    key: "last_price",
-    value: function last_price() {
-      return this.comp.$props.meta.last ? this.comp.$props.meta.last[4] : undefined;
-    }
-  }, {
-    key: "green",
-    value: function green() {
-      return this.comp.colorCandleUp;
-    }
-  }, {
-    key: "red",
-    value: function red() {
-      return this.comp.colorCandleDw;
-    }
-  }]);
-
-  return Price;
-}();
-
-
-// CONCATENATED MODULE: ./src/components/primitives/ray.js
-
-
-
-
-
-function ray_createSuper(Derived) { var hasNativeReflectConstruct = ray_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
-
-function ray_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-// Draws a ray, adds corresponding collision f-n
-
-
-var ray_Ray = /*#__PURE__*/function (_Line) {
-  inherits_default()(Ray, _Line);
-
-  var _super = ray_createSuper(Ray);
-
-  function Ray(overlay, ctx) {
-    var _this;
-
-    classCallCheck_default()(this, Ray);
-
-    _this = _super.call(this, overlay, ctx);
-    _this.ray = true;
-    return _this;
-  }
-
-  return Ray;
-}(line_Line);
-
-
-// CONCATENATED MODULE: ./src/components/primitives/seg.js
-
-
-// Draws a segment, adds corresponding collision f-n
-
-
-
-var seg_Seg = /*#__PURE__*/function () {
-  // Overlay ref, canvas ctx
-  function Seg(overlay, ctx) {
-    classCallCheck_default()(this, Seg);
-
-    this.ctx = ctx;
-    this.comp = overlay;
-    this.T = overlay.$props.config.TOOL_COLL;
-    if (utils.is_mobile) this.T *= 2;
-  } // p1[t, $], p2[t, $] (time-price coordinates)
-
-
-  createClass_default()(Seg, [{
-    key: "draw",
-    value: function draw(p1, p2) {
-      var layout = this.comp.$props.layout;
-      var x1 = layout.t2screen(p1[0]);
-      var y1 = layout.$2screen(p1[1]);
-      var x2 = layout.t2screen(p2[0]);
-      var y2 = layout.$2screen(p2[1]);
-      this.ctx.moveTo(x1, y1);
-      this.ctx.lineTo(x2, y2);
-      this.comp.collisions.push(this.make([x1, y1], [x2, y2]));
-    } // Collision function. x, y - mouse coord.
-
-  }, {
-    key: "make",
-    value: function make(p1, p2) {
-      var _this = this;
-
-      return function (x, y) {
-        return math.point2seg([x, y], p1, p2) < _this.T;
-      };
-    }
-  }]);
-
-  return Seg;
-}();
-
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/slicedToArray.js
-var slicedToArray = __webpack_require__(17);
-var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray);
-
-// CONCATENATED MODULE: ./src/components/js/layout_cnv.js
-
-
-// Claculates postions and sizes for candlestick
-// and volume bars for the given subset of data
-
-function layout_cnv(self) {
-  var $p = self.$props;
-  var sub = $p.data;
-  var t2screen = $p.layout.t2screen;
-  var layout = $p.layout;
-  var candles = [];
-  var volume = []; // The volume bar height is determined as a percentage of
-  // the chart's height (VOLSCALE)
-
-  var maxv = Math.max.apply(Math, toConsumableArray_default()(sub.map(function (x) {
-    return x[5];
-  })));
-  var vs = $p.config.VOLSCALE * layout.height / maxv;
-  var x1,
-      x2,
-      w,
-      avg_w,
-      mid,
-      prev = undefined; // Subset interval against main interval
-
-  var _new_interval = new_interval(layout, $p, sub),
-      _new_interval2 = slicedToArray_default()(_new_interval, 2),
-      interval2 = _new_interval2[0],
-      ratio = _new_interval2[1];
-
-  var px_step2 = layout.px_step * ratio;
-  var splitter = px_step2 > 5 ? 1 : 0; // A & B are current chart tranformations:
-  // A === scale,  B === Y-axis shift
-
-  for (var i = 0; i < sub.length; i++) {
-    var p = sub[i];
-    mid = t2screen(p[0]) + 1; // Clear volume bar if there is a time gap
-
-    if (sub[i - 1] && p[0] - sub[i - 1][0] > interval2) {
-      prev = null;
-    }
-
-    x1 = prev || Math.floor(mid - px_step2 * 0.5);
-    x2 = Math.floor(mid + px_step2 * 0.5) - 0.5; // TODO: add log scale support
-
-    candles.push({
-      x: mid,
-      w: layout.px_step * $p.config.CANDLEW * ratio,
-      o: Math.floor(p[1] * layout.A + layout.B),
-      h: Math.floor(p[2] * layout.A + layout.B),
-      l: Math.floor(p[3] * layout.A + layout.B),
-      c: Math.floor(p[4] * layout.A + layout.B),
-      raw: p
-    });
-    volume.push({
-      x1: x1,
-      x2: x2,
-      h: p[5] * vs,
-      green: p[4] >= p[1],
-      raw: p
-    });
-    prev = x2 + splitter;
-  }
-
-  return {
-    candles: candles,
-    volume: volume
-  };
-}
-function layout_vol(self) {
-  var $p = self.$props;
-  var sub = $p.data;
-  var t2screen = $p.layout.t2screen;
-  var layout = $p.layout;
-  var volume = []; // Detect data second dimention size:
-
-  var dim = sub[0] ? sub[0].length : 0; // Support special volume data (see API book), or OHLCV
-  // Data indices:
-
-  self._i1 = dim < 6 ? 1 : 5;
-  self._i2 = dim < 6 ? function (p) {
-    return p[2];
-  } : function (p) {
-    return p[4] >= p[1];
-  };
-  var maxv = Math.max.apply(Math, toConsumableArray_default()(sub.map(function (x) {
-    return x[self._i1];
-  })));
-  var volscale = self.volscale || $p.config.VOLSCALE;
-  var vs = volscale * layout.height / maxv;
-  var x1,
-      x2,
-      mid,
-      prev = undefined; // Subset interval against main interval
-
-  var _new_interval3 = new_interval(layout, $p, sub),
-      _new_interval4 = slicedToArray_default()(_new_interval3, 2),
-      interval2 = _new_interval4[0],
-      ratio = _new_interval4[1];
-
-  var px_step2 = layout.px_step * ratio;
-  var splitter = px_step2 > 5 ? 1 : 0; // A & B are current chart tranformations:
-  // A === scale,  B === Y-axis shift
-
-  for (var i = 0; i < sub.length; i++) {
-    var p = sub[i];
-    mid = t2screen(p[0]) + 1; // Clear volume bar if there is a time gap
-
-    if (sub[i - 1] && p[0] - sub[i - 1][0] > interval2) {
-      prev = null;
-    }
-
-    x1 = prev || Math.floor(mid - px_step2 * 0.5);
-    x2 = Math.floor(mid + px_step2 * 0.5) - 0.5;
-    volume.push({
-      x1: x1,
-      x2: x2,
-      h: p[self._i1] * vs,
-      green: self._i2(p),
-      raw: p
-    });
-    prev = x2 + splitter;
-  }
-
-  return volume;
-}
-
-function new_interval(layout, $p, sub) {
-  // Subset interval against main interval
-  if (!layout.ti_map.ib) {
-    var interval2 = $p.tf || utils.detect_interval(sub);
-    var ratio = interval2 / $p.interval;
-  } else {
-    if ($p.tf) {
-      var ratio = $p.tf / layout.ti_map.tf;
-      var interval2 = ratio;
-    } else {
-      var interval2 = utils.detect_interval(sub);
-      var ratio = interval2 / $p.interval;
-    }
-  }
-
-  return [interval2, ratio];
-}
 // CONCATENATED MODULE: ./src/index.js
 
 
