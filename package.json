@@ -6,6 +6,7 @@
   "scripts": {
     "test": "webpack-dev-server --config webpack/test.config.js --mode development --progress --hot",
     "auto-test": "ava",
+    "vite": "vite --debug",
     "eslint": "./node_modules/.bin/eslint --ext .js,.vue src",
     "dev": "webpack-dev-server --config webpack/dev.config.js --mode development --progress --hot",
     "ww": "webpack-dev-server --config webpack/dev.config.js --mode production --progress --hot",
@@ -48,6 +49,7 @@
     "@babel/plugin-transform-parameters": "^7.10.5",
     "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
+    "@vitejs/plugin-vue": "^1.1.5",
     "@vue/compiler-sfc": "^3.0.2",
     "ava": "^3.11.1",
     "babel-loader": "^8.1.0",
@@ -71,10 +73,13 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
+    "@intlify/vite-plugin-vue-i18n": "^2.0.4",
     "arrayslicer": "^1.2.3",
     "hammerjs": "^2.0.8",
     "hamsterjs": "^1.1.3",
     "lz-string": "^1.4.4",
+    "vite": "^2.1.3",
+    "vite-plugin-rewrite-all": "^0.1.2",
     "vue": "^3.0.5"
   }
 }
