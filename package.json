@@ -2,7 +2,7 @@
   "name": "trading-vue-js",
   "version": "1.0.1",
   "description": "Hackable charting lib for traders",
-  "main": "./dist/trading-vue.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "webpack-dev-server --config webpack/test.config.js --mode development --progress --hot",
     "auto-test": "ava",
