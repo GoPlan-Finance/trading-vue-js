@@ -1,5 +1,5 @@
 const { VueLoaderPlugin } = require('vue-loader')
-const TerserPlugin = require('terser-webpack-plugin')
+// const TerserPlugin = require('terser-webpack-plugin')
 
 const webpack = require('webpack')
 const path = require('path')
@@ -60,16 +60,16 @@ let common = {
             },
         ]
     },
-    optimization: {
-        minimize: true,
-        minimizer: [new TerserPlugin({
-            include: /\.min\.js$/,
-            sourceMap: true,
-            extractComments: {
-                banner: BANNER
-            }
-        })]
-    },
+    // optimization: {
+    //     minimize: true,
+    //     minimizer: [new TerserPlugin({
+    //         include: /\.min\.js$/,
+    //         sourceMap: true,
+    //         extractComments: {
+    //             banner: BANNER
+    //         }
+    //     })]
+    // },
     devtool: 'source-map',
     plugins: [
         new VueLoaderPlugin(),
